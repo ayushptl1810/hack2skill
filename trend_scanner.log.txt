@@ -1,0 +1,931 @@
+2025-08-29 17:24:58,415 [INFO] __main__: RedditScanTool initialized: velocity_threshold=30.0, min_score_threshold=50
+2025-08-29 17:24:58,426 [INFO] __main__: Starting enhanced Reddit trend scanning with CrewAI and web scraping...
+2025-08-29 17:24:58,429 [INFO] __main__: create_scan_tasks: created task for r/worldnews
+2025-08-29 17:24:58,434 [INFO] __main__: create_scan_tasks: created task for r/covid19
+2025-08-29 17:25:00,441 [INFO] __main__: Scanning r/worldnews with limit=50, sort=new
+2025-08-29 17:25:00,446 [INFO] __main__: Starting to process submissions from r/worldnews
+2025-08-29 17:25:08,988 [INFO] __main__: scraper: newspaper extracted 1712 chars from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing
+2025-08-29 17:25:08,992 [INFO] __main__: Successfully scraped https://p.dw.com/p/4zYnc?maca=en-reddit-sharing with trafilatura (1712 chars)
+2025-08-29 17:25:08,992 [INFO] __main__: Scraped content from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing (1712 chars)
+2025-08-29 17:25:11,855 [INFO] __main__: scraper: newspaper extracted 1070 chars from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html
+2025-08-29 17:25:11,859 [INFO] __main__: Successfully scraped https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html with trafilatura (1070 chars)
+2025-08-29 17:25:11,861 [INFO] __main__: Scraped content from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html (1070 chars)
+2025-08-29 17:25:13,533 [WARNING] __main__: requests.get failed for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256: 403 Client Error: Forbidden for url: https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 17:25:13,535 [INFO] __main__: Trafilatura failed to extract usable content for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 17:25:17,147 [INFO] __main__: scraper: newspaper extracted 1655 chars from https://www.kyivpost.com/post/59118
+2025-08-29 17:25:17,152 [INFO] __main__: Successfully scraped https://www.kyivpost.com/post/59118 with trafilatura (1655 chars)
+2025-08-29 17:25:17,152 [INFO] __main__: Scraped content from https://www.kyivpost.com/post/59118 (1655 chars)
+2025-08-29 17:25:25,317 [INFO] __main__: scraper: newspaper extracted 669 chars from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations
+2025-08-29 17:25:25,319 [INFO] __main__: Successfully scraped https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations with trafilatura (669 chars)
+2025-08-29 17:25:25,319 [INFO] __main__: Scraped content from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations (669 chars)
+2025-08-29 17:25:39,813 [INFO] __main__: scraper: newspaper extracted 2126 chars from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/
+2025-08-29 17:25:39,813 [INFO] __main__: Successfully scraped https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ with trafilatura (2126 chars)
+2025-08-29 17:25:39,813 [INFO] __main__: Scraped content from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ (2126 chars)
+2025-08-29 17:25:42,503 [INFO] __main__: scraper: readability extracted 1283 chars from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital
+2025-08-29 17:25:42,503 [INFO] __main__: Successfully scraped https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital with trafilatura (1283 chars)
+2025-08-29 17:25:42,505 [INFO] __main__: Scraped content from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital (1283 chars)
+2025-08-29 17:25:43,019 [INFO] __main__: FLAGGED: Iran-backed Houthi Prime Minister killed in Israeli airstrik... (velocity: 33.7, score: 15, risk: HIGH)
+2025-08-29 17:25:45,909 [INFO] __main__: scraper: newspaper extracted 4300 chars from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html
+2025-08-29 17:25:45,910 [INFO] __main__: Successfully scraped https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html with trafilatura (4300 chars)
+2025-08-29 17:25:45,910 [INFO] __main__: Scraped content from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html (4300 chars)
+2025-08-29 17:25:50,637 [INFO] __main__: scraper: newspaper extracted 1800 chars from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/
+2025-08-29 17:25:50,637 [INFO] __main__: Successfully scraped https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ with trafilatura (1800 chars)
+2025-08-29 17:25:50,637 [INFO] __main__: Scraped content from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ (1800 chars)
+2025-08-29 17:25:54,704 [INFO] __main__: scraper: newspaper extracted 290 chars from https://www.jpost.com/israel-news/article-865713
+2025-08-29 17:25:54,704 [INFO] __main__: Successfully scraped https://www.jpost.com/israel-news/article-865713 with trafilatura (290 chars)
+2025-08-29 17:25:54,704 [INFO] __main__: Scraped content from https://www.jpost.com/israel-news/article-865713 (290 chars)
+2025-08-29 17:25:55,213 [INFO] __main__: FLAGGED: IDF finds body of hostage Ilan Weiss in Gaza | The Jerusalem... (velocity: 44.0, score: 51, risk: MEDIUM)
+2025-08-29 17:25:56,372 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 17:25:56,372 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 17:26:01,763 [INFO] __main__: scraper: newspaper extracted 1760 chars from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme
+2025-08-29 17:26:01,765 [INFO] __main__: Successfully scraped https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme with trafilatura (1760 chars)
+2025-08-29 17:26:01,766 [INFO] __main__: Scraped content from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme (1760 chars)
+2025-08-29 17:26:02,288 [INFO] __main__: FLAGGED: Belgium pledges nearly $120 million to Ukraine under NATO-le... (velocity: 45.9, score: 62, risk: MEDIUM)
+2025-08-29 17:26:06,708 [INFO] __main__: scraper: newspaper extracted 1336 chars from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/
+2025-08-29 17:26:06,708 [INFO] __main__: Successfully scraped https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ with trafilatura (1336 chars)
+2025-08-29 17:26:06,708 [INFO] __main__: Scraped content from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ (1336 chars)
+2025-08-29 17:26:19,470 [INFO] __main__: FLAGGED: Spending overruns in Russian regional budgets reportedly sur... (velocity: 64.5, score: 93, risk: MEDIUM)
+2025-08-29 17:26:19,656 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 17:26:19,658 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 17:26:23,753 [INFO] __main__: scraper: newspaper extracted 718 chars from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061
+2025-08-29 17:26:23,753 [INFO] __main__: Successfully scraped https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 with trafilatura (718 chars)
+2025-08-29 17:26:23,753 [INFO] __main__: Scraped content from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 (718 chars)
+2025-08-29 17:26:28,745 [INFO] __main__: scraper: newspaper extracted 6476 chars from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl
+2025-08-29 17:26:28,763 [INFO] __main__: Successfully scraped https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl with trafilatura (6476 chars)
+2025-08-29 17:26:28,763 [INFO] __main__: Scraped content from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl (6476 chars)
+2025-08-29 17:26:29,453 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ
+2025-08-29 17:26:29,455 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ
+2025-08-29 17:26:30,697 [INFO] __main__: scraper: readability extracted 830 chars from https://www.euronews.com/culture/2025/08/29/newly-discovered-document-adds-evidence-that-shroud-of-turin-is-not-jesus-crucifixion-shro
+2025-08-29 17:26:30,697 [INFO] __main__: Successfully scraped https://www.euronews.com/culture/2025/08/29/newly-discovered-document-adds-evidence-that-shroud-of-turin-is-not-jesus-crucifixion-shro with trafilatura (830 chars)
+2025-08-29 17:26:30,697 [INFO] __main__: Scraped content from https://www.euronews.com/culture/2025/08/29/newly-discovered-document-adds-evidence-that-shroud-of-turin-is-not-jesus-crucifixion-shro (830 chars)
+2025-08-29 17:26:31,260 [INFO] __main__: FLAGGED: Newly discovered document adds evidence that Shroud of Turin... (velocity: 447.2, score: 1117, risk: HIGH)
+2025-08-29 17:26:41,591 [INFO] __main__: scraper: readability extracted 2322 chars from https://ukdefencejournal.org.uk/british-aircraft-carrier-arrives-in-japan-for-historic-visit/
+2025-08-29 17:26:41,591 [INFO] __main__: Successfully scraped https://ukdefencejournal.org.uk/british-aircraft-carrier-arrives-in-japan-for-historic-visit/ with trafilatura (2322 chars)
+2025-08-29 17:26:41,591 [INFO] __main__: Scraped content from https://ukdefencejournal.org.uk/british-aircraft-carrier-arrives-in-japan-for-historic-visit/ (2322 chars)
+2025-08-29 17:26:44,932 [INFO] __main__: scraper: newspaper extracted 1475 chars from https://www.channelnewsasia.com/asia/indonesia-protest-jakarta-senayan-lawmakers-pay-5312826
+2025-08-29 17:26:44,932 [INFO] __main__: Successfully scraped https://www.channelnewsasia.com/asia/indonesia-protest-jakarta-senayan-lawmakers-pay-5312826 with trafilatura (1475 chars)
+2025-08-29 17:26:44,932 [INFO] __main__: Scraped content from https://www.channelnewsasia.com/asia/indonesia-protest-jakarta-senayan-lawmakers-pay-5312826 (1475 chars)
+2025-08-29 17:26:49,698 [INFO] readability.readability: ruthless removal did not work. 
+2025-08-29 17:26:49,722 [INFO] __main__: No usable content extracted for https://tvpworld.com/88593220/-russia-drones-spy-on-us-army-operations-in-germany-nyt
+2025-08-29 17:26:49,723 [INFO] __main__: Trafilatura failed to extract usable content for https://tvpworld.com/88593220/-russia-drones-spy-on-us-army-operations-in-germany-nyt
+2025-08-29 17:26:50,219 [INFO] __main__: FLAGGED: Russia spying on US military ops in Germany: NYT... (velocity: 170.3, score: 663, risk: MEDIUM)
+2025-08-29 17:26:53,210 [INFO] __main__: scraper: readability extracted 4165 chars from https://www.newsweek.com/russia-ukraine-war-kyiv-strikes-zelensky-2121338?utm_source=reddit&utm_campaign=reddit_influencers
+2025-08-29 17:26:53,212 [INFO] __main__: Successfully scraped https://www.newsweek.com/russia-ukraine-war-kyiv-strikes-zelensky-2121338?utm_source=reddit&utm_campaign=reddit_influencers with trafilatura (4165 chars)
+2025-08-29 17:26:53,212 [INFO] __main__: Scraped content from https://www.newsweek.com/russia-ukraine-war-kyiv-strikes-zelensky-2121338?utm_source=reddit&utm_campaign=reddit_influencers (4165 chars)
+2025-08-29 17:26:53,721 [INFO] __main__: FLAGGED: Zelensky gives tragic update on Russia's Kyiv strikes... (velocity: 2163.8, score: 8460, risk: MEDIUM)
+2025-08-29 17:26:57,860 [INFO] __main__: scraper: newspaper extracted 4314 chars from https://batimes.com.ar/news/world/rafael-grossi-confirmed-his-candidacy-for-un-secretary-general.phtml
+2025-08-29 17:26:57,860 [INFO] __main__: Successfully scraped https://batimes.com.ar/news/world/rafael-grossi-confirmed-his-candidacy-for-un-secretary-general.phtml with trafilatura (4314 chars)
+2025-08-29 17:26:57,860 [INFO] __main__: Scraped content from https://batimes.com.ar/news/world/rafael-grossi-confirmed-his-candidacy-for-un-secretary-general.phtml (4314 chars)
+2025-08-29 17:27:00,574 [INFO] __main__: scraper: newspaper extracted 1784 chars from https://newsukraine.rbc.ua/news/europe-pushes-plan-for-40-kilometer-buffer-1756443533.html
+2025-08-29 17:27:00,579 [INFO] __main__: Successfully scraped https://newsukraine.rbc.ua/news/europe-pushes-plan-for-40-kilometer-buffer-1756443533.html with trafilatura (1784 chars)
+2025-08-29 17:27:00,579 [INFO] __main__: Scraped content from https://newsukraine.rbc.ua/news/europe-pushes-plan-for-40-kilometer-buffer-1756443533.html (1784 chars)
+2025-08-29 17:27:02,509 [INFO] __main__: FLAGGED: Europe pushes plan for 40-kilometer buffer between Ukraine a... (velocity: 26.0, score: 116, risk: MEDIUM)
+2025-08-29 17:27:07,529 [INFO] __main__: scraper: newspaper extracted 2924 chars from https://www.pravda.com.ua/eng/news/2025/08/29/7528346/
+2025-08-29 17:27:07,531 [INFO] __main__: Successfully scraped https://www.pravda.com.ua/eng/news/2025/08/29/7528346/ with trafilatura (2924 chars)
+2025-08-29 17:27:07,531 [INFO] __main__: Scraped content from https://www.pravda.com.ua/eng/news/2025/08/29/7528346/ (2924 chars)
+2025-08-29 17:27:08,173 [INFO] __main__: FLAGGED: European Commission wants to channel €200 billion of frozen ... (velocity: 284.9, score: 1514, risk: MEDIUM)
+2025-08-29 17:27:10,909 [INFO] __main__: scraper: newspaper extracted 3550 chars from https://www.bbc.com/news/articles/c4gzd8gkr5jo
+2025-08-29 17:27:10,917 [INFO] __main__: Successfully scraped https://www.bbc.com/news/articles/c4gzd8gkr5jo with trafilatura (3550 chars)
+2025-08-29 17:27:10,919 [INFO] __main__: Scraped content from https://www.bbc.com/news/articles/c4gzd8gkr5jo (3550 chars)
+2025-08-29 17:27:11,439 [INFO] __main__: FLAGGED: Trump adviser calls Ukraine conflict 'Modi's war' as US tari... (velocity: 66.9, score: 374, risk: MEDIUM)
+2025-08-29 17:27:13,529 [INFO] __main__: scraper: newspaper extracted 2207 chars from https://www.israelnationalnews.com/news/414059
+2025-08-29 17:27:13,529 [INFO] __main__: Successfully scraped https://www.israelnationalnews.com/news/414059 with trafilatura (2207 chars)
+2025-08-29 17:27:13,533 [INFO] __main__: Scraped content from https://www.israelnationalnews.com/news/414059 (2207 chars)
+2025-08-29 17:27:14,103 [INFO] __main__: FLAGGED: Reports in Yemen: Houthi-backed Prime Minister eliminated in... (velocity: 12.5, score: 84, risk: HIGH)
+2025-08-29 17:27:15,711 [INFO] __main__: scraper: newspaper extracted 9843 chars from https://www.bbc.com/news/articles/c4g0p0522zeo
+2025-08-29 17:27:15,713 [INFO] __main__: Successfully scraped https://www.bbc.com/news/articles/c4g0p0522zeo with trafilatura (9843 chars)
+2025-08-29 17:27:15,713 [INFO] __main__: Scraped content from https://www.bbc.com/news/articles/c4g0p0522zeo (9843 chars)
+2025-08-29 17:27:19,194 [INFO] __main__: scraper: newspaper extracted 1551 chars from https://www.nationthailand.com/news/policy/40054642?utm_source=chatgpt.com
+2025-08-29 17:27:19,194 [INFO] __main__: Successfully scraped https://www.nationthailand.com/news/policy/40054642?utm_source=chatgpt.com with trafilatura (1551 chars)
+2025-08-29 17:27:19,195 [INFO] __main__: Scraped content from https://www.nationthailand.com/news/policy/40054642?utm_source=chatgpt.com (1551 chars)
+2025-08-29 17:27:19,809 [INFO] __main__: FLAGGED: Thailand to introduce a Negative Income Tax in 2027... (velocity: 30.0, score: 205, risk: MEDIUM)
+2025-08-29 17:27:25,666 [INFO] __main__: scraper: newspaper extracted 2209 chars from https://kyivindependent.com/zelensky-putin-meeting-obviously-not-happening-german-chancellor-says/
+2025-08-29 17:27:25,671 [INFO] __main__: Successfully scraped https://kyivindependent.com/zelensky-putin-meeting-obviously-not-happening-german-chancellor-says/ with trafilatura (2209 chars)
+2025-08-29 17:27:25,671 [INFO] __main__: Scraped content from https://kyivindependent.com/zelensky-putin-meeting-obviously-not-happening-german-chancellor-says/ (2209 chars)
+2025-08-29 17:27:26,203 [INFO] __main__: FLAGGED: Zelensky-Putin meeting 'obviously' not happening, German cha... (velocity: 60.8, score: 424, risk: MEDIUM)
+2025-08-29 17:27:28,476 [INFO] __main__: scraper: newspaper extracted 3241 chars from https://indianexpress.com/article/india/india-names-dinesh-k-patnaik-as-next-envoy-to-canada-10217025
+2025-08-29 17:27:28,476 [INFO] __main__: Successfully scraped https://indianexpress.com/article/india/india-names-dinesh-k-patnaik-as-next-envoy-to-canada-10217025 with trafilatura (3241 chars)
+2025-08-29 17:27:28,480 [INFO] __main__: Scraped content from https://indianexpress.com/article/india/india-names-dinesh-k-patnaik-as-next-envoy-to-canada-10217025 (3241 chars)
+2025-08-29 17:27:34,787 [INFO] __main__: scraper: newspaper extracted 3127 chars from https://edition.cnn.com/2025/08/28/middleeast/un-peacekeeping-force-lebanon-unifil-latam-intl
+2025-08-29 17:27:34,795 [INFO] __main__: Successfully scraped https://edition.cnn.com/2025/08/28/middleeast/un-peacekeeping-force-lebanon-unifil-latam-intl with trafilatura (3127 chars)
+2025-08-29 17:27:34,795 [INFO] __main__: Scraped content from https://edition.cnn.com/2025/08/28/middleeast/un-peacekeeping-force-lebanon-unifil-latam-intl (3127 chars)
+2025-08-29 17:27:39,193 [INFO] __main__: scraper: newspaper extracted 4647 chars from https://batimes.com.ar/news/latin-america/untapped-lithium-riches-are-in-crosshairs-of-bolivian-candidate.phtml
+2025-08-29 17:27:39,193 [INFO] __main__: Successfully scraped https://batimes.com.ar/news/latin-america/untapped-lithium-riches-are-in-crosshairs-of-bolivian-candidate.phtml with trafilatura (4647 chars)
+2025-08-29 17:27:39,193 [INFO] __main__: Scraped content from https://batimes.com.ar/news/latin-america/untapped-lithium-riches-are-in-crosshairs-of-bolivian-candidate.phtml (4647 chars)
+2025-08-29 17:27:41,141 [INFO] __main__: FLAGGED: /r/WorldNews Live Thread: Russian Invasion of Ukraine Day 12... (velocity: 37.9, score: 300, risk: MEDIUM)
+2025-08-29 17:27:46,481 [INFO] __main__: scraper: newspaper extracted 233 chars from https://asia.nikkei.com/politics/international-relations/japan-s-legacy-lcd-and-chip-technology-find-new-home-in-india
+2025-08-29 17:27:46,485 [INFO] __main__: Successfully scraped https://asia.nikkei.com/politics/international-relations/japan-s-legacy-lcd-and-chip-technology-find-new-home-in-india with trafilatura (233 chars)
+2025-08-29 17:27:46,485 [INFO] __main__: Scraped content from https://asia.nikkei.com/politics/international-relations/japan-s-legacy-lcd-and-chip-technology-find-new-home-in-india (233 chars)
+2025-08-29 17:27:50,651 [INFO] __main__: scraper: newspaper extracted 2880 chars from https://www.dailynk.com/english/north-koreas-real-estate-paradox-soaring-prices-no-buyers/
+2025-08-29 17:27:50,653 [INFO] __main__: Successfully scraped https://www.dailynk.com/english/north-koreas-real-estate-paradox-soaring-prices-no-buyers/ with trafilatura (2880 chars)
+2025-08-29 17:27:50,653 [INFO] __main__: Scraped content from https://www.dailynk.com/english/north-koreas-real-estate-paradox-soaring-prices-no-buyers/ (2880 chars)
+2025-08-29 17:28:01,006 [INFO] __main__: scraper: newspaper extracted 2072 chars from https://mezha.net/eng/bukvy/argentine-president-javier-milei-evacuated-after-protest-attack-amid-political-turmoil/
+2025-08-29 17:28:01,006 [INFO] __main__: Successfully scraped https://mezha.net/eng/bukvy/argentine-president-javier-milei-evacuated-after-protest-attack-amid-political-turmoil/ with trafilatura (2072 chars)
+2025-08-29 17:28:01,006 [INFO] __main__: Scraped content from https://mezha.net/eng/bukvy/argentine-president-javier-milei-evacuated-after-protest-attack-amid-political-turmoil/ (2072 chars)
+2025-08-29 17:28:05,526 [INFO] __main__: scraper: newspaper extracted 1587 chars from https://www.lemonde.fr/en/france/article/2025/08/28/france-faces-record-number-of-homeless-children-as-school-year-begins_6744812_7.html
+2025-08-29 17:28:05,533 [INFO] __main__: Successfully scraped https://www.lemonde.fr/en/france/article/2025/08/28/france-faces-record-number-of-homeless-children-as-school-year-begins_6744812_7.html with trafilatura (1587 chars)
+2025-08-29 17:28:05,533 [INFO] __main__: Scraped content from https://www.lemonde.fr/en/france/article/2025/08/28/france-faces-record-number-of-homeless-children-as-school-year-begins_6744812_7.html (1587 chars)
+2025-08-29 17:28:08,640 [INFO] __main__: scraper: newspaper extracted 8741 chars from https://www.theguardian.com/global-development/2025/aug/13/women-face-increased-violence-argentina-javier-milei
+2025-08-29 17:28:08,645 [INFO] __main__: Successfully scraped https://www.theguardian.com/global-development/2025/aug/13/women-face-increased-violence-argentina-javier-milei with trafilatura (8741 chars)
+2025-08-29 17:28:08,645 [INFO] __main__: Scraped content from https://www.theguardian.com/global-development/2025/aug/13/women-face-increased-violence-argentina-javier-milei (8741 chars)
+2025-08-29 17:28:10,969 [INFO] __main__: scraper: newspaper extracted 5686 chars from https://www.theguardian.com/world/2025/aug/29/india-china-relations-modi-to-meet-xi-putin-first-china-trip-seven-years-us-tariffs
+2025-08-29 17:28:10,969 [INFO] __main__: Successfully scraped https://www.theguardian.com/world/2025/aug/29/india-china-relations-modi-to-meet-xi-putin-first-china-trip-seven-years-us-tariffs with trafilatura (5686 chars)
+2025-08-29 17:28:10,969 [INFO] __main__: Scraped content from https://www.theguardian.com/world/2025/aug/29/india-china-relations-modi-to-meet-xi-putin-first-china-trip-seven-years-us-tariffs (5686 chars)
+2025-08-29 17:28:11,507 [INFO] __main__: FLAGGED: India’s Modi to meet Xi and Putin on first China trip in sev... (velocity: 18.4, score: 176, risk: MEDIUM)
+2025-08-29 17:28:22,662 [INFO] __main__: scraper: newspaper extracted 2618 chars from https://kyivindependent.com/it-is-also-a-strike-by-russia-against-president-trump-missile-drone-attack-on-kyiv-undermines-peace-efforts-zelensky-says/
+2025-08-29 17:28:22,669 [INFO] __main__: Successfully scraped https://kyivindependent.com/it-is-also-a-strike-by-russia-against-president-trump-missile-drone-attack-on-kyiv-undermines-peace-efforts-zelensky-says/ with trafilatura (2618 chars)
+2025-08-29 17:28:22,669 [INFO] __main__: Scraped content from https://kyivindependent.com/it-is-also-a-strike-by-russia-against-president-trump-missile-drone-attack-on-kyiv-undermines-peace-efforts-zelensky-says/ (2618 chars)
+2025-08-29 17:28:24,566 [INFO] __main__: FLAGGED: 'It is also a strike by Russia against President Trump' — Mi... (velocity: 58.1, score: 569, risk: MEDIUM)
+2025-08-29 17:28:28,376 [INFO] __main__: scraper: newspaper extracted 9343 chars from https://abcnews.go.com/International/putin-stalling-peace-talks-nato-minister-us-powerful/story?id=124984870
+2025-08-29 17:28:28,376 [INFO] __main__: Successfully scraped https://abcnews.go.com/International/putin-stalling-peace-talks-nato-minister-us-powerful/story?id=124984870 with trafilatura (9343 chars)
+2025-08-29 17:28:28,376 [INFO] __main__: Scraped content from https://abcnews.go.com/International/putin-stalling-peace-talks-nato-minister-us-powerful/story?id=124984870 (9343 chars)
+2025-08-29 17:28:28,899 [INFO] __main__: FLAGGED: With Putin 'stalling' peace talks, NATO minister says US has... (velocity: 40.7, score: 411, risk: MEDIUM)
+2025-08-29 17:28:30,199 [INFO] __main__: scraper: newspaper extracted 3769 chars from https://www.theguardian.com/world/2025/aug/29/ukraine-war-briefing-thousands-of-cruise-missiles-for-kyiv-in-europe-funded-package
+2025-08-29 17:28:30,201 [INFO] __main__: Successfully scraped https://www.theguardian.com/world/2025/aug/29/ukraine-war-briefing-thousands-of-cruise-missiles-for-kyiv-in-europe-funded-package with trafilatura (3769 chars)
+2025-08-29 17:28:30,202 [INFO] __main__: Scraped content from https://www.theguardian.com/world/2025/aug/29/ukraine-war-briefing-thousands-of-cruise-missiles-for-kyiv-in-europe-funded-package (3769 chars)
+2025-08-29 17:28:30,753 [INFO] __main__: FLAGGED: Ukraine war briefing: Thousands of cruise missiles for Kyiv ... (velocity: 18.6, score: 191, risk: MEDIUM)
+2025-08-29 17:28:34,550 [INFO] __main__: scraper: newspaper extracted 3096 chars from https://m.koreaherald.com/article/10563104
+2025-08-29 17:28:34,550 [INFO] __main__: Successfully scraped https://m.koreaherald.com/article/10563104 with trafilatura (3096 chars)
+2025-08-29 17:28:34,550 [INFO] __main__: Scraped content from https://m.koreaherald.com/article/10563104 (3096 chars)
+2025-08-29 17:28:36,865 [INFO] __main__: scraper: newspaper extracted 2553 chars from https://www.theguardian.com/world/2025/aug/28/mexico-senate-fight-us-military-intervention-cartels
+2025-08-29 17:28:36,867 [INFO] __main__: Successfully scraped https://www.theguardian.com/world/2025/aug/28/mexico-senate-fight-us-military-intervention-cartels with trafilatura (2553 chars)
+2025-08-29 17:28:36,867 [INFO] __main__: Scraped content from https://www.theguardian.com/world/2025/aug/28/mexico-senate-fight-us-military-intervention-cartels (2553 chars)
+2025-08-29 17:28:37,384 [INFO] __main__: FLAGGED: Brawl erupts in Mexico’s senate after debate over US militar... (velocity: 219.7, score: 2640, risk: MEDIUM)
+2025-08-29 17:28:40,069 [INFO] __main__: scraper: newspaper extracted 2526 chars from https://en.tempo.co/read/2044053/police-vehicle-reportedly-runs-over-and-kills-ojol-driver-in-jakarta-protest
+2025-08-29 17:28:40,069 [INFO] __main__: Successfully scraped https://en.tempo.co/read/2044053/police-vehicle-reportedly-runs-over-and-kills-ojol-driver-in-jakarta-protest with trafilatura (2526 chars)
+2025-08-29 17:28:40,071 [INFO] __main__: Scraped content from https://en.tempo.co/read/2044053/police-vehicle-reportedly-runs-over-and-kills-ojol-driver-in-jakarta-protest (2526 chars)
+2025-08-29 17:28:43,607 [INFO] __main__: scraper: newspaper extracted 383 chars from https://www.jpost.com/middle-east/article-865617
+2025-08-29 17:28:43,609 [INFO] __main__: Successfully scraped https://www.jpost.com/middle-east/article-865617 with trafilatura (383 chars)
+2025-08-29 17:28:43,609 [INFO] __main__: Scraped content from https://www.jpost.com/middle-east/article-865617 (383 chars)
+2025-08-29 17:28:44,549 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/africa/south-africa-launches-g20-taskforce-examine-global-wealth-inequality-2025-08-28/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/africa/south-africa-launches-g20-taskforce-examine-global-wealth-inequality-2025-08-28/
+2025-08-29 17:28:44,549 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/africa/south-africa-launches-g20-taskforce-examine-global-wealth-inequality-2025-08-28/
+2025-08-29 17:28:48,837 [INFO] __main__: scraper: newspaper extracted 1688 chars from https://united24media.com/latest-news/us-approves-825m-sale-of-3350-eram-missiles-to-ukraine-11189
+2025-08-29 17:28:48,839 [INFO] __main__: Successfully scraped https://united24media.com/latest-news/us-approves-825m-sale-of-3350-eram-missiles-to-ukraine-11189 with trafilatura (1688 chars)
+2025-08-29 17:28:48,839 [INFO] __main__: Scraped content from https://united24media.com/latest-news/us-approves-825m-sale-of-3350-eram-missiles-to-ukraine-11189 (1688 chars)
+2025-08-29 17:28:49,388 [INFO] __main__: FLAGGED: US Approves $825M Sale of 3,350 ERAM Missiles to Ukraine... (velocity: 77.5, score: 1011, risk: MEDIUM)
+2025-08-29 17:28:49,574 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/africa/report-spotlights-tensions-mali-military-over-wagner-mercenaries-2025-08-27/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/africa/report-spotlights-tensions-mali-military-over-wagner-mercenaries-2025-08-27/
+2025-08-29 17:28:49,576 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/africa/report-spotlights-tensions-mali-military-over-wagner-mercenaries-2025-08-27/
+2025-08-29 17:28:50,734 [INFO] __main__: Processed 50 posts from r/worldnews, scraped 42 links, found 20 trending
+2025-08-29 17:29:48,106 [INFO] __main__: Scanning r/covid19 with limit=50, sort=new
+2025-08-29 17:29:48,108 [INFO] __main__: Starting to process submissions from r/covid19
+2025-08-29 17:29:48,124 [WARNING] prawcore: Retrying due to ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))) status: GET https://oauth.reddit.com/r/covid19/new
+2025-08-29 17:29:55,639 [INFO] __main__: scraper: newspaper extracted 1829 chars from https://pubmed.ncbi.nlm.nih.gov/40787786/
+2025-08-29 17:29:55,641 [INFO] __main__: Successfully scraped https://pubmed.ncbi.nlm.nih.gov/40787786/ with trafilatura (1829 chars)
+2025-08-29 17:29:55,641 [INFO] __main__: Scraped content from https://pubmed.ncbi.nlm.nih.gov/40787786/ (1829 chars)
+2025-08-29 17:30:00,073 [INFO] __main__: scraper: newspaper extracted 1966 chars from https://pubmed.ncbi.nlm.nih.gov/40791613/
+2025-08-29 17:30:00,075 [INFO] __main__: Successfully scraped https://pubmed.ncbi.nlm.nih.gov/40791613/ with trafilatura (1966 chars)
+2025-08-29 17:30:00,075 [INFO] __main__: Scraped content from https://pubmed.ncbi.nlm.nih.gov/40791613/ (1966 chars)
+2025-08-29 17:30:08,115 [INFO] __main__: scraper: newspaper extracted 15218 chars from https://link.springer.com/article/10.1007/s12672-025-03403-4
+2025-08-29 17:30:08,117 [INFO] __main__: Successfully scraped https://link.springer.com/article/10.1007/s12672-025-03403-4 with trafilatura (10000 chars)
+2025-08-29 17:30:08,117 [INFO] __main__: Scraped content from https://link.springer.com/article/10.1007/s12672-025-03403-4 (10000 chars)
+2025-08-29 17:30:17,362 [INFO] __main__: scraper: readability extracted 3665 chars from https://www.medrxiv.org/content/10.1101/2025.08.12.25333155v1
+2025-08-29 17:30:17,364 [INFO] __main__: Successfully scraped https://www.medrxiv.org/content/10.1101/2025.08.12.25333155v1 with trafilatura (3665 chars)
+2025-08-29 17:30:17,364 [INFO] __main__: Scraped content from https://www.medrxiv.org/content/10.1101/2025.08.12.25333155v1 (3665 chars)
+2025-08-29 17:30:19,010 [WARNING] __main__: requests.get failed for https://www.science.org/doi/10.1126/scitranslmed.adx5758: 403 Client Error: Forbidden for url: https://www.science.org/doi/10.1126/scitranslmed.adx5758
+2025-08-29 17:30:19,010 [INFO] __main__: Trafilatura failed to extract usable content for https://www.science.org/doi/10.1126/scitranslmed.adx5758
+2025-08-29 17:30:28,999 [INFO] __main__: scraper: newspaper extracted 34672 chars from https://www.nature.com/articles/s41586-025-09332-0
+2025-08-29 17:30:29,003 [INFO] __main__: Successfully scraped https://www.nature.com/articles/s41586-025-09332-0 with trafilatura (10000 chars)
+2025-08-29 17:30:29,003 [INFO] __main__: Scraped content from https://www.nature.com/articles/s41586-025-09332-0 (10000 chars)
+2025-08-29 17:30:30,678 [WARNING] __main__: requests.get failed for https://www.science.org/doi/10.1126/sciadv.ads5006: 403 Client Error: Forbidden for url: https://www.science.org/doi/10.1126/sciadv.ads5006
+2025-08-29 17:30:30,682 [INFO] __main__: Trafilatura failed to extract usable content for https://www.science.org/doi/10.1126/sciadv.ads5006
+2025-08-29 17:30:38,323 [INFO] __main__: scraper: newspaper extracted 216 chars from https://www.medrxiv.org/content/10.1101/2024.12.13.24318856v1
+2025-08-29 17:30:38,323 [INFO] __main__: Successfully scraped https://www.medrxiv.org/content/10.1101/2024.12.13.24318856v1 with trafilatura (216 chars)
+2025-08-29 17:30:38,323 [INFO] __main__: Scraped content from https://www.medrxiv.org/content/10.1101/2024.12.13.24318856v1 (216 chars)
+2025-08-29 17:30:39,809 [WARNING] __main__: requests.get failed for https://www.sciencedirect.com/science/article/pii/S0264410X25007935?via%3Dihub: 400 Client Error: Bad Request for url: https://www.sciencedirect.com/unsupported_browser
+2025-08-29 17:30:39,811 [INFO] __main__: Trafilatura failed to extract usable content for https://www.sciencedirect.com/science/article/pii/S0264410X25007935?via%3Dihub
+2025-08-29 17:30:41,683 [WARNING] __main__: requests.get failed for https://jamanetwork.com/journals/jamaoncology/fullarticle/2836492: 403 Client Error: Forbidden for url: https://jamanetwork.com/journals/jamaoncology/fullarticle/2836492
+2025-08-29 17:30:41,686 [INFO] __main__: Trafilatura failed to extract usable content for https://jamanetwork.com/journals/jamaoncology/fullarticle/2836492
+2025-08-29 17:30:48,157 [INFO] __main__: scraper: newspaper extracted 15345 chars from https://www.nature.com/articles/s41541-025-01144-7
+2025-08-29 17:30:48,159 [INFO] __main__: Successfully scraped https://www.nature.com/articles/s41541-025-01144-7 with trafilatura (10000 chars)
+2025-08-29 17:30:48,159 [INFO] __main__: Scraped content from https://www.nature.com/articles/s41541-025-01144-7 (10000 chars)
+2025-08-29 17:30:50,742 [WARNING] __main__: requests.get failed for https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247%2825%2900093-X/fulltext: 403 Client Error: Forbidden for url: https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247%2825%2900093-X/fulltext
+2025-08-29 17:30:50,744 [INFO] __main__: Trafilatura failed to extract usable content for https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247%2825%2900093-X/fulltext
+2025-08-29 17:30:57,833 [INFO] __main__: scraper: newspaper extracted 14288 chars from https://www.nature.com/articles/s42003-025-08435-8
+2025-08-29 17:30:57,843 [INFO] __main__: Successfully scraped https://www.nature.com/articles/s42003-025-08435-8 with trafilatura (10000 chars)
+2025-08-29 17:30:57,843 [INFO] __main__: Scraped content from https://www.nature.com/articles/s42003-025-08435-8 (10000 chars)
+2025-08-29 17:31:04,446 [INFO] __main__: scraper: newspaper extracted 10040 chars from https://www.nature.com/articles/s41598-025-04815-6
+2025-08-29 17:31:04,448 [INFO] __main__: Successfully scraped https://www.nature.com/articles/s41598-025-04815-6 with trafilatura (10000 chars)
+2025-08-29 17:31:04,450 [INFO] __main__: Scraped content from https://www.nature.com/articles/s41598-025-04815-6 (10000 chars)
+2025-08-29 17:31:06,599 [WARNING] __main__: requests.get failed for https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/spc3.12795: 403 Client Error: Forbidden for url: https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/spc3.12795
+2025-08-29 17:31:06,605 [INFO] __main__: Trafilatura failed to extract usable content for https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/spc3.12795
+2025-08-29 17:31:10,870 [INFO] __main__: scraper: newspaper extracted 45397 chars from https://pmc.ncbi.nlm.nih.gov/articles/PMC9037584/
+2025-08-29 17:31:10,873 [INFO] __main__: Successfully scraped https://pmc.ncbi.nlm.nih.gov/articles/PMC9037584/ with trafilatura (10000 chars)
+2025-08-29 17:31:10,873 [INFO] __main__: Scraped content from https://pmc.ncbi.nlm.nih.gov/articles/PMC9037584/ (10000 chars)
+2025-08-29 17:31:12,870 [WARNING] __main__: requests.get failed for https://www.journalofinfection.com/article/S0163-4453(25)00137-9/fulltext: 403 Client Error: Forbidden for url: https://www.journalofinfection.com/article/S0163-4453(25)00137-9/fulltext
+2025-08-29 17:31:12,875 [INFO] __main__: Trafilatura failed to extract usable content for https://www.journalofinfection.com/article/S0163-4453(25)00137-9/fulltext
+2025-08-29 17:31:15,003 [WARNING] __main__: requests.get failed for https://www.biorxiv.org/content/10.1101/2025.06.27.661994v1: 403 Client Error: Forbidden for url: https://www.biorxiv.org/content/10.1101/2025.06.27.661994v1
+2025-08-29 17:31:15,013 [INFO] __main__: Trafilatura failed to extract usable content for https://www.biorxiv.org/content/10.1101/2025.06.27.661994v1
+2025-08-29 17:31:17,238 [WARNING] __main__: requests.get failed for https://www.biorxiv.org/content/10.1101/2025.06.27.661568v1: 403 Client Error: Forbidden for url: https://www.biorxiv.org/content/10.1101/2025.06.27.661568v1
+2025-08-29 17:31:17,242 [INFO] __main__: Trafilatura failed to extract usable content for https://www.biorxiv.org/content/10.1101/2025.06.27.661568v1
+2025-08-29 17:31:21,022 [INFO] __main__: scraper: newspaper extracted 3529 chars from https://www.researchsquare.com/article/rs-6654935/v1
+2025-08-29 17:31:21,022 [INFO] __main__: Successfully scraped https://www.researchsquare.com/article/rs-6654935/v1 with trafilatura (3529 chars)
+2025-08-29 17:31:21,027 [INFO] __main__: Scraped content from https://www.researchsquare.com/article/rs-6654935/v1 (3529 chars)
+2025-08-29 17:31:25,421 [INFO] __main__: scraper: newspaper extracted 12569 chars from https://www.yalemedicine.org/news/covid-19-vaccine-comparison
+2025-08-29 17:31:25,421 [INFO] __main__: Successfully scraped https://www.yalemedicine.org/news/covid-19-vaccine-comparison with trafilatura (10000 chars)
+2025-08-29 17:31:25,424 [INFO] __main__: Scraped content from https://www.yalemedicine.org/news/covid-19-vaccine-comparison (10000 chars)
+2025-08-29 17:31:27,612 [WARNING] __main__: requests.get failed for https://www.mdpi.com/2076-0817/14/6/555: 403 Client Error: Forbidden for url: https://www.mdpi.com/2076-0817/14/6/555
+2025-08-29 17:31:27,621 [INFO] __main__: Trafilatura failed to extract usable content for https://www.mdpi.com/2076-0817/14/6/555
+2025-08-29 17:31:30,239 [INFO] __main__: scraper: newspaper extracted 8844 chars from https://www.researchsquare.com/article/rs-6717727/v1
+2025-08-29 17:31:30,239 [INFO] __main__: Successfully scraped https://www.researchsquare.com/article/rs-6717727/v1 with trafilatura (8844 chars)
+2025-08-29 17:31:30,239 [INFO] __main__: Scraped content from https://www.researchsquare.com/article/rs-6717727/v1 (8844 chars)
+2025-08-29 17:31:32,399 [WARNING] __main__: requests.get failed for https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00031-X/fulltext: 403 Client Error: Forbidden for url: https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00031-X/fulltext
+2025-08-29 17:31:32,406 [INFO] __main__: Trafilatura failed to extract usable content for https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00031-X/fulltext
+2025-08-29 17:31:34,539 [WARNING] __main__: requests.get failed for https://www.mdpi.com/2075-1729/15/5/821: 403 Client Error: Forbidden for url: https://www.mdpi.com/2075-1729/15/5/821
+2025-08-29 17:31:34,546 [INFO] __main__: Trafilatura failed to extract usable content for https://www.mdpi.com/2075-1729/15/5/821
+2025-08-29 17:31:36,601 [WARNING] __main__: requests.get failed for https://www.tandfonline.com/doi/full/10.1080/09515070.2024.2354272?scroll=top&needAccess=true: 403 Client Error: Forbidden for url: https://www.tandfonline.com/doi/full/10.1080/09515070.2024.2354272?scroll=top&needAccess=true
+2025-08-29 17:31:36,605 [INFO] __main__: Trafilatura failed to extract usable content for https://www.tandfonline.com/doi/full/10.1080/09515070.2024.2354272?scroll=top&needAccess=true
+2025-08-29 17:31:42,883 [INFO] __main__: scraper: newspaper extracted 7163 chars from https://www.nature.com/articles/s41598-023-48258-3
+2025-08-29 17:31:42,883 [INFO] __main__: Successfully scraped https://www.nature.com/articles/s41598-023-48258-3 with trafilatura (7163 chars)
+2025-08-29 17:31:42,889 [INFO] __main__: Scraped content from https://www.nature.com/articles/s41598-023-48258-3 (7163 chars)
+2025-08-29 17:31:49,691 [INFO] __main__: scraper: newspaper extracted 1883 chars from https://link.springer.com/article/10.1007/s13365-024-01232-9
+2025-08-29 17:31:49,699 [INFO] __main__: Successfully scraped https://link.springer.com/article/10.1007/s13365-024-01232-9 with trafilatura (1883 chars)
+2025-08-29 17:31:49,699 [INFO] __main__: Scraped content from https://link.springer.com/article/10.1007/s13365-024-01232-9 (1883 chars)
+2025-08-29 17:31:51,632 [WARNING] __main__: requests.get failed for https://www.ahajournals.org/doi/full/10.1161/JAHA.124.040629: 403 Client Error: Forbidden for url: https://www.ahajournals.org/doi/full/10.1161/JAHA.124.040629
+2025-08-29 17:31:51,639 [INFO] __main__: Trafilatura failed to extract usable content for https://www.ahajournals.org/doi/full/10.1161/JAHA.124.040629
+2025-08-29 17:31:53,985 [INFO] __main__: scraper: newspaper extracted 3214 chars from https://news.uga.edu/financial-aid-could-reduce-child-maltreatment/
+2025-08-29 17:31:53,989 [INFO] __main__: Successfully scraped https://news.uga.edu/financial-aid-could-reduce-child-maltreatment/ with trafilatura (3214 chars)
+2025-08-29 17:31:53,989 [INFO] __main__: Scraped content from https://news.uga.edu/financial-aid-could-reduce-child-maltreatment/ (3214 chars)
+2025-08-29 17:31:56,172 [WARNING] __main__: requests.get failed for https://www.sciencedirect.com/science/article/pii/S0264410X25004724: 400 Client Error: Bad Request for url: https://www.sciencedirect.com/unsupported_browser
+2025-08-29 17:31:56,173 [INFO] __main__: Trafilatura failed to extract usable content for https://www.sciencedirect.com/science/article/pii/S0264410X25004724
+2025-08-29 17:32:00,607 [WARNING] __main__: requests.get failed for https://doi.org/10.1111/imm.13922: 403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/10.1111/imm.13922
+2025-08-29 17:32:00,616 [INFO] __main__: Trafilatura failed to extract usable content for https://doi.org/10.1111/imm.13922
+2025-08-29 17:32:03,024 [WARNING] __main__: requests.get failed for https://www.biorxiv.org/content/10.1101/2025.04.30.651462v1: 403 Client Error: Forbidden for url: https://www.biorxiv.org/content/10.1101/2025.04.30.651462v1
+2025-08-29 17:32:03,033 [INFO] __main__: Trafilatura failed to extract usable content for https://www.biorxiv.org/content/10.1101/2025.04.30.651462v1
+2025-08-29 17:32:05,313 [WARNING] __main__: requests.get failed for https://academic.oup.com/mrcr/article/9/1/218/7750595: 403 Client Error: Forbidden for url: https://academic.oup.com/mrcr/article/9/1/218/7750595
+2025-08-29 17:32:05,324 [INFO] __main__: Trafilatura failed to extract usable content for https://academic.oup.com/mrcr/article/9/1/218/7750595
+2025-08-29 17:32:14,571 [INFO] __main__: scraper: readability extracted 4063 chars from https://www.medrxiv.org/content/10.1101/2025.04.16.25325949v1
+2025-08-29 17:32:14,573 [INFO] __main__: Successfully scraped https://www.medrxiv.org/content/10.1101/2025.04.16.25325949v1 with trafilatura (4063 chars)
+2025-08-29 17:32:14,573 [INFO] __main__: Scraped content from https://www.medrxiv.org/content/10.1101/2025.04.16.25325949v1 (4063 chars)
+2025-08-29 17:32:16,545 [WARNING] __main__: requests.get failed for https://academic.oup.com/ofid/advance-article/doi/10.1093/ofid/ofaf196/8102227: 403 Client Error: Forbidden for url: https://academic.oup.com/ofid/advance-article/doi/10.1093/ofid/ofaf196/8102227
+2025-08-29 17:32:16,553 [INFO] __main__: Trafilatura failed to extract usable content for https://academic.oup.com/ofid/advance-article/doi/10.1093/ofid/ofaf196/8102227
+2025-08-29 17:32:19,017 [WARNING] __main__: requests.get failed for https://www.biorxiv.org/content/10.1101/2025.04.05.647275v1: 403 Client Error: Forbidden for url: https://www.biorxiv.org/content/10.1101/2025.04.05.647275v1
+2025-08-29 17:32:19,023 [INFO] __main__: Trafilatura failed to extract usable content for https://www.biorxiv.org/content/10.1101/2025.04.05.647275v1
+2025-08-29 17:32:24,744 [INFO] __main__: scraper: newspaper extracted 8047 chars from https://link.springer.com/article/10.1007/s11357-025-01635-4
+2025-08-29 17:32:24,747 [INFO] __main__: Successfully scraped https://link.springer.com/article/10.1007/s11357-025-01635-4 with trafilatura (8047 chars)
+2025-08-29 17:32:24,748 [INFO] __main__: Scraped content from https://link.springer.com/article/10.1007/s11357-025-01635-4 (8047 chars)
+2025-08-29 17:32:28,943 [INFO] __main__: scraper: newspaper extracted 12327 chars from https://pmc.ncbi.nlm.nih.gov/articles/PMC10200033/
+2025-08-29 17:32:28,943 [INFO] __main__: Successfully scraped https://pmc.ncbi.nlm.nih.gov/articles/PMC10200033/ with trafilatura (10000 chars)
+2025-08-29 17:32:28,949 [INFO] __main__: Scraped content from https://pmc.ncbi.nlm.nih.gov/articles/PMC10200033/ (10000 chars)
+2025-08-29 17:32:31,113 [WARNING] __main__: requests.get failed for https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(25)00113-6/fulltext: 403 Client Error: Forbidden for url: https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(25)00113-6/fulltext
+2025-08-29 17:32:31,124 [INFO] __main__: Trafilatura failed to extract usable content for https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(25)00113-6/fulltext
+2025-08-29 17:32:38,791 [INFO] __main__: scraper: readability extracted 5604 chars from https://www.medrxiv.org/content/10.1101/2025.04.08.25325108v1
+2025-08-29 17:32:38,794 [INFO] __main__: Successfully scraped https://www.medrxiv.org/content/10.1101/2025.04.08.25325108v1 with trafilatura (5604 chars)
+2025-08-29 17:32:38,794 [INFO] __main__: Scraped content from https://www.medrxiv.org/content/10.1101/2025.04.08.25325108v1 (5604 chars)
+2025-08-29 17:32:48,879 [INFO] __main__: scraper: newspaper extracted 38151 chars from https://gut.bmj.com/content/early/2025/04/05/gutjnl-2024-333880
+2025-08-29 17:32:48,881 [INFO] __main__: Successfully scraped https://gut.bmj.com/content/early/2025/04/05/gutjnl-2024-333880 with trafilatura (10000 chars)
+2025-08-29 17:32:48,884 [INFO] __main__: Scraped content from https://gut.bmj.com/content/early/2025/04/05/gutjnl-2024-333880 (10000 chars)
+2025-08-29 17:32:51,224 [WARNING] __main__: requests.get failed for https://www.embopress.org/doi/full/10.1038/s44320-025-00093-6: 403 Client Error: Forbidden for url: https://www.embopress.org/doi/full/10.1038/s44320-025-00093-6
+2025-08-29 17:32:51,233 [INFO] __main__: Trafilatura failed to extract usable content for https://www.embopress.org/doi/full/10.1038/s44320-025-00093-6
+2025-08-29 17:32:58,765 [INFO] __main__: scraper: newspaper extracted 14308 chars from https://www.nature.com/articles/s41598-025-94570-5
+2025-08-29 17:32:58,768 [INFO] __main__: Successfully scraped https://www.nature.com/articles/s41598-025-94570-5 with trafilatura (10000 chars)
+2025-08-29 17:32:58,769 [INFO] __main__: Scraped content from https://www.nature.com/articles/s41598-025-94570-5 (10000 chars)
+2025-08-29 17:33:00,677 [WARNING] __main__: requests.get failed for https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(24)00831-4/abstract: 403 Client Error: Forbidden for url: https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(24)00831-4/abstract
+2025-08-29 17:33:00,681 [INFO] __main__: Trafilatura failed to extract usable content for https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(24)00831-4/abstract
+2025-08-29 17:33:00,781 [INFO] __main__: Processed 50 posts from r/covid19, scraped 22 links, found 0 trending
+2025-08-29 17:39:29,325 [INFO] __main__: RedditScanTool initialized: velocity_threshold=25.0, min_score_threshold=50
+2025-08-29 17:39:29,327 [INFO] __main__: Starting enhanced Reddit trend scanning with CrewAI and web scraping...
+2025-08-29 17:39:29,327 [INFO] __main__: create_scan_tasks: created task for r/worldnews
+2025-08-29 17:39:29,327 [INFO] __main__: create_scan_tasks: created task for r/covid19
+2025-08-29 17:39:31,860 [INFO] __main__: Scanning r/worldnews with limit=20, sort=new
+2025-08-29 17:39:31,860 [INFO] __main__: Starting to process submissions from r/worldnews
+2025-08-29 17:39:33,388 [WARNING] __main__: requests.get failed for https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/
+2025-08-29 17:39:33,389 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/
+2025-08-29 17:39:35,343 [INFO] __main__: scraper: newspaper extracted 1712 chars from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing
+2025-08-29 17:39:35,343 [INFO] __main__: Successfully scraped https://p.dw.com/p/4zYnc?maca=en-reddit-sharing with trafilatura (1712 chars)
+2025-08-29 17:39:35,343 [INFO] __main__: Scraped content from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing (1712 chars)
+2025-08-29 17:39:36,245 [INFO] __main__: scraper: newspaper extracted 1070 chars from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html
+2025-08-29 17:39:36,245 [INFO] __main__: Successfully scraped https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html with trafilatura (1070 chars)
+2025-08-29 17:39:36,245 [INFO] __main__: Scraped content from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html (1070 chars)
+2025-08-29 17:39:36,763 [WARNING] __main__: requests.get failed for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256: 403 Client Error: Forbidden for url: https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 17:39:36,764 [INFO] __main__: Trafilatura failed to extract usable content for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 17:39:39,309 [INFO] __main__: scraper: newspaper extracted 1655 chars from https://www.kyivpost.com/post/59118
+2025-08-29 17:39:39,309 [INFO] __main__: Successfully scraped https://www.kyivpost.com/post/59118 with trafilatura (1655 chars)
+2025-08-29 17:39:39,309 [INFO] __main__: Scraped content from https://www.kyivpost.com/post/59118 (1655 chars)
+2025-08-29 17:39:45,639 [INFO] __main__: scraper: newspaper extracted 669 chars from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations
+2025-08-29 17:39:45,639 [INFO] __main__: Successfully scraped https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations with trafilatura (669 chars)
+2025-08-29 17:39:45,640 [INFO] __main__: Scraped content from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations (669 chars)
+2025-08-29 17:39:50,216 [INFO] __main__: scraper: newspaper extracted 2126 chars from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/
+2025-08-29 17:39:50,216 [INFO] __main__: Successfully scraped https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ with trafilatura (2126 chars)
+2025-08-29 17:39:50,216 [INFO] __main__: Scraped content from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ (2126 chars)
+2025-08-29 17:39:52,670 [INFO] __main__: scraper: readability extracted 1327 chars from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital
+2025-08-29 17:39:52,672 [INFO] __main__: Successfully scraped https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital with trafilatura (1327 chars)
+2025-08-29 17:39:52,672 [INFO] __main__: Scraped content from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital (1327 chars)
+2025-08-29 17:39:53,267 [INFO] __main__: FLAGGED: Iran-backed Houthi Prime Minister killed in Israeli airstrik... (velocity: 33.7, score: 23, risk: HIGH)
+2025-08-29 17:39:54,012 [INFO] __main__: scraper: newspaper extracted 4300 chars from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html
+2025-08-29 17:39:54,012 [INFO] __main__: Successfully scraped https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html with trafilatura (4300 chars)
+2025-08-29 17:39:54,012 [INFO] __main__: Scraped content from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html (4300 chars)
+2025-08-29 17:39:56,587 [INFO] __main__: scraper: newspaper extracted 1800 chars from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/
+2025-08-29 17:39:56,587 [INFO] __main__: Successfully scraped https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ with trafilatura (1800 chars)
+2025-08-29 17:39:56,587 [INFO] __main__: Scraped content from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ (1800 chars)
+2025-08-29 17:39:58,561 [INFO] __main__: scraper: newspaper extracted 290 chars from https://www.jpost.com/israel-news/article-865713
+2025-08-29 17:39:58,562 [INFO] __main__: Successfully scraped https://www.jpost.com/israel-news/article-865713 with trafilatura (290 chars)
+2025-08-29 17:39:58,562 [INFO] __main__: Scraped content from https://www.jpost.com/israel-news/article-865713 (290 chars)
+2025-08-29 17:39:59,082 [INFO] __main__: FLAGGED: IDF finds body of hostage Ilan Weiss in Gaza | The Jerusalem... (velocity: 50.2, score: 70, risk: MEDIUM)
+2025-08-29 17:39:59,470 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 17:39:59,470 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 17:40:03,771 [INFO] __main__: scraper: newspaper extracted 1760 chars from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme
+2025-08-29 17:40:03,773 [INFO] __main__: Successfully scraped https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme with trafilatura (1760 chars)
+2025-08-29 17:40:03,773 [INFO] __main__: Scraped content from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme (1760 chars)
+2025-08-29 17:40:04,299 [INFO] __main__: FLAGGED: Belgium pledges nearly $120 million to Ukraine under NATO-le... (velocity: 41.0, score: 65, risk: MEDIUM)
+2025-08-29 17:40:07,488 [INFO] __main__: scraper: newspaper extracted 1336 chars from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/
+2025-08-29 17:40:07,489 [INFO] __main__: Successfully scraped https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ with trafilatura (1336 chars)
+2025-08-29 17:40:07,489 [INFO] __main__: Scraped content from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ (1336 chars)
+2025-08-29 17:40:08,022 [INFO] __main__: FLAGGED: Spending overruns in Russian regional budgets reportedly sur... (velocity: 74.6, score: 125, risk: MEDIUM)
+2025-08-29 17:40:08,178 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 17:40:08,178 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 17:40:10,656 [INFO] __main__: scraper: newspaper extracted 718 chars from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061
+2025-08-29 17:40:10,656 [INFO] __main__: Successfully scraped https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 with trafilatura (718 chars)
+2025-08-29 17:40:10,657 [INFO] __main__: Scraped content from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 (718 chars)
+2025-08-29 17:40:14,334 [INFO] __main__: scraper: newspaper extracted 6476 chars from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl
+2025-08-29 17:40:14,337 [INFO] __main__: Successfully scraped https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl with trafilatura (6476 chars)
+2025-08-29 17:40:14,337 [INFO] __main__: Scraped content from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl (6476 chars)
+2025-08-29 17:40:15,085 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ
+2025-08-29 17:40:15,085 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ
+2025-08-29 17:40:15,851 [INFO] __main__: scraper: newspaper extracted 3038 chars from https://www.euronews.com/culture/2025/08/29/newly-discovered-document-adds-evidence-that-shroud-of-turin-is-not-jesus-crucifixion-shro
+2025-08-29 17:40:15,852 [INFO] __main__: Successfully scraped https://www.euronews.com/culture/2025/08/29/newly-discovered-document-adds-evidence-that-shroud-of-turin-is-not-jesus-crucifixion-shro with trafilatura (3038 chars)
+2025-08-29 17:40:15,852 [INFO] __main__: Scraped content from https://www.euronews.com/culture/2025/08/29/newly-discovered-document-adds-evidence-that-shroud-of-turin-is-not-jesus-crucifixion-shro (3038 chars)
+2025-08-29 17:40:16,366 [INFO] __main__: FLAGGED: Newly discovered document adds evidence that Shroud of Turin... (velocity: 496.5, score: 1354, risk: MEDIUM)
+2025-08-29 17:40:18,098 [INFO] __main__: scraper: newspaper extracted 2396 chars from https://ukdefencejournal.org.uk/british-aircraft-carrier-arrives-in-japan-for-historic-visit/
+2025-08-29 17:40:18,099 [INFO] __main__: Successfully scraped https://ukdefencejournal.org.uk/british-aircraft-carrier-arrives-in-japan-for-historic-visit/ with trafilatura (2396 chars)
+2025-08-29 17:40:18,099 [INFO] __main__: Scraped content from https://ukdefencejournal.org.uk/british-aircraft-carrier-arrives-in-japan-for-historic-visit/ (2396 chars)
+2025-08-29 17:40:18,863 [INFO] __main__: Processed 20 posts from r/worldnews, scraped 15 links, found 5 trending
+2025-08-29 17:41:07,357 [INFO] __main__: Scanning r/covid19 with limit=20, sort=new
+2025-08-29 17:41:07,358 [INFO] __main__: Starting to process submissions from r/covid19
+2025-08-29 17:41:10,337 [INFO] __main__: scraper: newspaper extracted 1829 chars from https://pubmed.ncbi.nlm.nih.gov/40787786/
+2025-08-29 17:41:10,338 [INFO] __main__: Successfully scraped https://pubmed.ncbi.nlm.nih.gov/40787786/ with trafilatura (1829 chars)
+2025-08-29 17:41:10,338 [INFO] __main__: Scraped content from https://pubmed.ncbi.nlm.nih.gov/40787786/ (1829 chars)
+2025-08-29 17:41:12,840 [INFO] __main__: scraper: newspaper extracted 1966 chars from https://pubmed.ncbi.nlm.nih.gov/40791613/
+2025-08-29 17:41:12,840 [INFO] __main__: Successfully scraped https://pubmed.ncbi.nlm.nih.gov/40791613/ with trafilatura (1966 chars)
+2025-08-29 17:41:12,841 [INFO] __main__: Scraped content from https://pubmed.ncbi.nlm.nih.gov/40791613/ (1966 chars)
+2025-08-29 17:41:19,374 [INFO] __main__: scraper: newspaper extracted 15218 chars from https://link.springer.com/article/10.1007/s12672-025-03403-4
+2025-08-29 17:41:19,374 [INFO] __main__: Successfully scraped https://link.springer.com/article/10.1007/s12672-025-03403-4 with trafilatura (10000 chars)
+2025-08-29 17:41:19,374 [INFO] __main__: Scraped content from https://link.springer.com/article/10.1007/s12672-025-03403-4 (10000 chars)
+2025-08-29 17:41:27,006 [INFO] __main__: scraper: readability extracted 3665 chars from https://www.medrxiv.org/content/10.1101/2025.08.12.25333155v1
+2025-08-29 17:41:27,007 [INFO] __main__: Successfully scraped https://www.medrxiv.org/content/10.1101/2025.08.12.25333155v1 with trafilatura (3665 chars)
+2025-08-29 17:41:27,007 [INFO] __main__: Scraped content from https://www.medrxiv.org/content/10.1101/2025.08.12.25333155v1 (3665 chars)
+2025-08-29 17:41:27,554 [WARNING] __main__: requests.get failed for https://www.science.org/doi/10.1126/scitranslmed.adx5758: 403 Client Error: Forbidden for url: https://www.science.org/doi/10.1126/scitranslmed.adx5758
+2025-08-29 17:41:27,555 [INFO] __main__: Trafilatura failed to extract usable content for https://www.science.org/doi/10.1126/scitranslmed.adx5758
+2025-08-29 17:41:33,373 [INFO] __main__: scraper: newspaper extracted 34672 chars from https://www.nature.com/articles/s41586-025-09332-0
+2025-08-29 17:41:33,374 [INFO] __main__: Successfully scraped https://www.nature.com/articles/s41586-025-09332-0 with trafilatura (10000 chars)
+2025-08-29 17:41:33,374 [INFO] __main__: Scraped content from https://www.nature.com/articles/s41586-025-09332-0 (10000 chars)
+2025-08-29 17:41:33,909 [WARNING] __main__: requests.get failed for https://www.science.org/doi/10.1126/sciadv.ads5006: 403 Client Error: Forbidden for url: https://www.science.org/doi/10.1126/sciadv.ads5006
+2025-08-29 17:41:33,910 [INFO] __main__: Trafilatura failed to extract usable content for https://www.science.org/doi/10.1126/sciadv.ads5006
+2025-08-29 17:41:40,838 [INFO] __main__: scraper: newspaper extracted 216 chars from https://www.medrxiv.org/content/10.1101/2024.12.13.24318856v1
+2025-08-29 17:41:40,839 [INFO] __main__: Successfully scraped https://www.medrxiv.org/content/10.1101/2024.12.13.24318856v1 with trafilatura (216 chars)
+2025-08-29 17:41:40,839 [INFO] __main__: Scraped content from https://www.medrxiv.org/content/10.1101/2024.12.13.24318856v1 (216 chars)
+2025-08-29 17:41:41,710 [WARNING] __main__: requests.get failed for https://www.sciencedirect.com/science/article/pii/S0264410X25007935?via%3Dihub: 400 Client Error: Bad Request for url: https://www.sciencedirect.com/unsupported_browser
+2025-08-29 17:41:41,711 [INFO] __main__: Trafilatura failed to extract usable content for https://www.sciencedirect.com/science/article/pii/S0264410X25007935?via%3Dihub
+2025-08-29 17:41:42,274 [WARNING] __main__: requests.get failed for https://jamanetwork.com/journals/jamaoncology/fullarticle/2836492: 403 Client Error: Forbidden for url: https://jamanetwork.com/journals/jamaoncology/fullarticle/2836492
+2025-08-29 17:41:42,275 [INFO] __main__: Trafilatura failed to extract usable content for https://jamanetwork.com/journals/jamaoncology/fullarticle/2836492
+2025-08-29 17:41:46,260 [INFO] __main__: scraper: newspaper extracted 15345 chars from https://www.nature.com/articles/s41541-025-01144-7
+2025-08-29 17:41:46,261 [INFO] __main__: Successfully scraped https://www.nature.com/articles/s41541-025-01144-7 with trafilatura (10000 chars)
+2025-08-29 17:41:46,261 [INFO] __main__: Scraped content from https://www.nature.com/articles/s41541-025-01144-7 (10000 chars)
+2025-08-29 17:41:47,066 [WARNING] __main__: requests.get failed for https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247%2825%2900093-X/fulltext: 403 Client Error: Forbidden for url: https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247%2825%2900093-X/fulltext
+2025-08-29 17:41:47,067 [INFO] __main__: Trafilatura failed to extract usable content for https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247%2825%2900093-X/fulltext
+2025-08-29 17:41:51,016 [INFO] __main__: scraper: newspaper extracted 14288 chars from https://www.nature.com/articles/s42003-025-08435-8
+2025-08-29 17:41:51,017 [INFO] __main__: Successfully scraped https://www.nature.com/articles/s42003-025-08435-8 with trafilatura (10000 chars)
+2025-08-29 17:41:51,018 [INFO] __main__: Scraped content from https://www.nature.com/articles/s42003-025-08435-8 (10000 chars)
+2025-08-29 17:41:54,768 [INFO] __main__: scraper: newspaper extracted 10040 chars from https://www.nature.com/articles/s41598-025-04815-6
+2025-08-29 17:41:54,768 [INFO] __main__: Successfully scraped https://www.nature.com/articles/s41598-025-04815-6 with trafilatura (10000 chars)
+2025-08-29 17:41:54,769 [INFO] __main__: Scraped content from https://www.nature.com/articles/s41598-025-04815-6 (10000 chars)
+2025-08-29 17:41:55,382 [WARNING] __main__: requests.get failed for https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/spc3.12795: 403 Client Error: Forbidden for url: https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/spc3.12795
+2025-08-29 17:41:55,383 [INFO] __main__: Trafilatura failed to extract usable content for https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/spc3.12795
+2025-08-29 17:41:57,461 [INFO] __main__: scraper: newspaper extracted 45397 chars from https://pmc.ncbi.nlm.nih.gov/articles/PMC9037584/
+2025-08-29 17:41:57,462 [INFO] __main__: Successfully scraped https://pmc.ncbi.nlm.nih.gov/articles/PMC9037584/ with trafilatura (10000 chars)
+2025-08-29 17:41:57,462 [INFO] __main__: Scraped content from https://pmc.ncbi.nlm.nih.gov/articles/PMC9037584/ (10000 chars)
+2025-08-29 17:41:58,040 [WARNING] __main__: requests.get failed for https://www.journalofinfection.com/article/S0163-4453(25)00137-9/fulltext: 403 Client Error: Forbidden for url: https://www.journalofinfection.com/article/S0163-4453(25)00137-9/fulltext
+2025-08-29 17:41:58,042 [INFO] __main__: Trafilatura failed to extract usable content for https://www.journalofinfection.com/article/S0163-4453(25)00137-9/fulltext
+2025-08-29 17:41:58,663 [WARNING] __main__: requests.get failed for https://www.biorxiv.org/content/10.1101/2025.06.27.661994v1: 403 Client Error: Forbidden for url: https://www.biorxiv.org/content/10.1101/2025.06.27.661994v1
+2025-08-29 17:41:58,664 [INFO] __main__: Trafilatura failed to extract usable content for https://www.biorxiv.org/content/10.1101/2025.06.27.661994v1
+2025-08-29 17:41:58,765 [INFO] __main__: Processed 20 posts from r/covid19, scraped 10 links, found 0 trending
+2025-08-29 17:46:20,478 [INFO] __main__: RedditScanTool initialized: velocity_threshold=25.0, min_score_threshold=50
+2025-08-29 17:46:20,481 [INFO] __main__: Starting enhanced Reddit trend scanning with CrewAI and web scraping...
+2025-08-29 17:46:20,481 [INFO] __main__: create_scan_tasks: created task for r/worldnews
+2025-08-29 17:46:21,788 [INFO] __main__: Scanning r/worldnews with limit=20, sort=new
+2025-08-29 17:46:21,789 [INFO] __main__: Starting to process submissions from r/worldnews
+2025-08-29 17:46:23,097 [WARNING] __main__: requests.get failed for https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/
+2025-08-29 17:46:23,097 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/
+2025-08-29 17:46:25,171 [INFO] __main__: scraper: newspaper extracted 1712 chars from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing
+2025-08-29 17:46:25,172 [INFO] __main__: Successfully scraped https://p.dw.com/p/4zYnc?maca=en-reddit-sharing with trafilatura (1712 chars)
+2025-08-29 17:46:25,172 [INFO] __main__: Scraped content from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing (1712 chars)
+2025-08-29 17:46:26,082 [INFO] __main__: scraper: newspaper extracted 1070 chars from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html
+2025-08-29 17:46:26,084 [INFO] __main__: Successfully scraped https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html with trafilatura (1070 chars)
+2025-08-29 17:46:26,084 [INFO] __main__: Scraped content from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html (1070 chars)
+2025-08-29 17:46:26,582 [WARNING] __main__: requests.get failed for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256: 403 Client Error: Forbidden for url: https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 17:46:26,584 [INFO] __main__: Trafilatura failed to extract usable content for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 17:46:29,200 [INFO] __main__: scraper: newspaper extracted 1655 chars from https://www.kyivpost.com/post/59118
+2025-08-29 17:46:29,201 [INFO] __main__: Successfully scraped https://www.kyivpost.com/post/59118 with trafilatura (1655 chars)
+2025-08-29 17:46:29,201 [INFO] __main__: Scraped content from https://www.kyivpost.com/post/59118 (1655 chars)
+2025-08-29 17:46:36,468 [INFO] __main__: scraper: newspaper extracted 669 chars from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations
+2025-08-29 17:46:36,469 [INFO] __main__: Successfully scraped https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations with trafilatura (669 chars)
+2025-08-29 17:46:36,469 [INFO] __main__: Scraped content from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations (669 chars)
+2025-08-29 17:46:47,451 [INFO] __main__: scraper: newspaper extracted 2126 chars from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/
+2025-08-29 17:46:47,452 [INFO] __main__: Successfully scraped https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ with trafilatura (2126 chars)
+2025-08-29 17:46:47,452 [INFO] __main__: Scraped content from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ (2126 chars)
+2025-08-29 17:46:47,997 [INFO] __main__: FLAGGED: Ukraine claims strike on key Russian facility supplying fuel... (velocity: 100.9, score: 67, risk: MEDIUM)
+2025-08-29 17:46:48,561 [INFO] __main__: scraper: readability extracted 1327 chars from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital
+2025-08-29 17:46:48,561 [INFO] __main__: Successfully scraped https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital with trafilatura (1327 chars)
+2025-08-29 17:46:48,561 [INFO] __main__: Scraped content from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital (1327 chars)
+2025-08-29 17:46:49,234 [INFO] __main__: FLAGGED: Iran-backed Houthi Prime Minister killed in Israeli airstrik... (velocity: 31.4, score: 25, risk: HIGH)
+2025-08-29 17:46:50,463 [INFO] __main__: scraper: newspaper extracted 4300 chars from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html
+2025-08-29 17:46:50,464 [INFO] __main__: Successfully scraped https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html with trafilatura (4300 chars)
+2025-08-29 17:46:50,464 [INFO] __main__: Scraped content from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html (4300 chars)
+2025-08-29 17:46:52,800 [INFO] __main__: scraper: newspaper extracted 1800 chars from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/
+2025-08-29 17:46:52,800 [INFO] __main__: Successfully scraped https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ with trafilatura (1800 chars)
+2025-08-29 17:46:52,801 [INFO] __main__: Scraped content from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ (1800 chars)
+2025-08-29 17:46:54,654 [INFO] __main__: scraper: newspaper extracted 290 chars from https://www.jpost.com/israel-news/article-865713
+2025-08-29 17:46:54,654 [INFO] __main__: Successfully scraped https://www.jpost.com/israel-news/article-865713 with trafilatura (290 chars)
+2025-08-29 17:46:54,654 [INFO] __main__: Scraped content from https://www.jpost.com/israel-news/article-865713 (290 chars)
+2025-08-29 17:46:55,126 [INFO] __main__: FLAGGED: IDF finds body of hostage Ilan Weiss in Gaza | The Jerusalem... (velocity: 49.7, score: 75, risk: MEDIUM)
+2025-08-29 17:46:55,473 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 17:46:55,474 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 17:46:59,138 [INFO] __main__: scraper: newspaper extracted 1760 chars from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme
+2025-08-29 17:46:59,139 [INFO] __main__: Successfully scraped https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme with trafilatura (1760 chars)
+2025-08-29 17:46:59,139 [INFO] __main__: Scraped content from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme (1760 chars)
+2025-08-29 17:46:59,617 [INFO] __main__: FLAGGED: Belgium pledges nearly $120 million to Ukraine under NATO-le... (velocity: 42.3, score: 72, risk: MEDIUM)
+2025-08-29 17:47:02,739 [INFO] __main__: scraper: newspaper extracted 1336 chars from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/
+2025-08-29 17:47:02,739 [INFO] __main__: Successfully scraped https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ with trafilatura (1336 chars)
+2025-08-29 17:47:02,739 [INFO] __main__: Scraped content from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ (1336 chars)
+2025-08-29 17:47:03,398 [INFO] __main__: FLAGGED: Spending overruns in Russian regional budgets reportedly sur... (velocity: 78.7, score: 141, risk: MEDIUM)
+2025-08-29 17:47:03,554 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 17:47:03,555 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 17:47:05,695 [INFO] __main__: scraper: newspaper extracted 718 chars from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061
+2025-08-29 17:47:05,696 [INFO] __main__: Successfully scraped https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 with trafilatura (718 chars)
+2025-08-29 17:47:05,696 [INFO] __main__: Scraped content from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 (718 chars)
+2025-08-29 17:47:09,005 [INFO] __main__: scraper: newspaper extracted 6476 chars from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl
+2025-08-29 17:47:09,008 [INFO] __main__: Successfully scraped https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl with trafilatura (6476 chars)
+2025-08-29 17:47:09,008 [INFO] __main__: Scraped content from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl (6476 chars)
+2025-08-29 17:47:09,681 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ
+2025-08-29 17:47:09,681 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ
+2025-08-29 17:47:10,183 [INFO] __main__: scraper: newspaper extracted 3038 chars from https://www.euronews.com/culture/2025/08/29/newly-discovered-document-adds-evidence-that-shroud-of-turin-is-not-jesus-crucifixion-shro
+2025-08-29 17:47:10,184 [INFO] __main__: Successfully scraped https://www.euronews.com/culture/2025/08/29/newly-discovered-document-adds-evidence-that-shroud-of-turin-is-not-jesus-crucifixion-shro with trafilatura (3038 chars)
+2025-08-29 17:47:10,184 [INFO] __main__: Scraped content from https://www.euronews.com/culture/2025/08/29/newly-discovered-document-adds-evidence-that-shroud-of-turin-is-not-jesus-crucifixion-shro (3038 chars)
+2025-08-29 17:47:10,794 [INFO] __main__: FLAGGED: Newly discovered document adds evidence that Shroud of Turin... (velocity: 512.6, score: 1457, risk: MEDIUM)
+2025-08-29 17:47:14,578 [INFO] __main__: scraper: newspaper extracted 2396 chars from https://ukdefencejournal.org.uk/british-aircraft-carrier-arrives-in-japan-for-historic-visit/
+2025-08-29 17:47:14,578 [INFO] __main__: Successfully scraped https://ukdefencejournal.org.uk/british-aircraft-carrier-arrives-in-japan-for-historic-visit/ with trafilatura (2396 chars)
+2025-08-29 17:47:14,578 [INFO] __main__: Scraped content from https://ukdefencejournal.org.uk/british-aircraft-carrier-arrives-in-japan-for-historic-visit/ (2396 chars)
+2025-08-29 17:47:15,159 [INFO] __main__: Processed 20 posts from r/worldnews, scraped 15 links, found 6 trending
+2025-08-29 17:55:47,686 [INFO] __main__: RedditScanTool initialized: velocity_threshold=25.0, min_score_threshold=50
+2025-08-29 17:55:47,688 [INFO] __main__: Starting enhanced Reddit trend scanning with CrewAI and web scraping...
+2025-08-29 17:55:47,689 [INFO] __main__: create_scan_tasks: created task for r/worldnews
+2025-08-29 17:55:48,916 [INFO] __main__: Scanning r/worldnews with limit=20, sort=new
+2025-08-29 17:55:48,916 [INFO] __main__: Starting to process submissions from r/worldnews
+2025-08-29 17:55:51,340 [INFO] __main__: scraper: newspaper extracted 695 chars from https://www.cnbc.com/2025/08/29/indias-economy-grows-faster-than-expected-at-7point8percent-in-the-june-quarter.html
+2025-08-29 17:55:51,343 [INFO] __main__: Successfully scraped https://www.cnbc.com/2025/08/29/indias-economy-grows-faster-than-expected-at-7point8percent-in-the-june-quarter.html with trafilatura (695 chars)
+2025-08-29 17:55:51,344 [INFO] __main__: Scraped content from https://www.cnbc.com/2025/08/29/indias-economy-grows-faster-than-expected-at-7point8percent-in-the-june-quarter.html (695 chars)
+2025-08-29 17:55:52,161 [INFO] __main__: scraper: newspaper extracted 2698 chars from https://www.bbc.co.uk/news/articles/cvgpxwy2lkwo
+2025-08-29 17:55:52,161 [INFO] __main__: Successfully scraped https://www.bbc.co.uk/news/articles/cvgpxwy2lkwo with trafilatura (2698 chars)
+2025-08-29 17:55:52,162 [INFO] __main__: Scraped content from https://www.bbc.co.uk/news/articles/cvgpxwy2lkwo (2698 chars)
+2025-08-29 17:55:52,572 [WARNING] __main__: requests.get failed for https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/
+2025-08-29 17:55:52,573 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/
+2025-08-29 17:55:56,185 [INFO] __main__: scraper: newspaper extracted 1712 chars from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing
+2025-08-29 17:55:56,185 [INFO] __main__: Successfully scraped https://p.dw.com/p/4zYnc?maca=en-reddit-sharing with trafilatura (1712 chars)
+2025-08-29 17:55:56,186 [INFO] __main__: Scraped content from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing (1712 chars)
+2025-08-29 17:55:57,028 [INFO] __main__: scraper: newspaper extracted 1070 chars from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html
+2025-08-29 17:55:57,028 [INFO] __main__: Successfully scraped https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html with trafilatura (1070 chars)
+2025-08-29 17:55:57,028 [INFO] __main__: Scraped content from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html (1070 chars)
+2025-08-29 17:55:57,561 [WARNING] __main__: requests.get failed for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256: 403 Client Error: Forbidden for url: https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 17:55:57,562 [INFO] __main__: Trafilatura failed to extract usable content for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 17:56:00,095 [INFO] __main__: scraper: newspaper extracted 1655 chars from https://www.kyivpost.com/post/59118
+2025-08-29 17:56:00,095 [INFO] __main__: Successfully scraped https://www.kyivpost.com/post/59118 with trafilatura (1655 chars)
+2025-08-29 17:56:00,096 [INFO] __main__: Scraped content from https://www.kyivpost.com/post/59118 (1655 chars)
+2025-08-29 17:56:03,517 [INFO] __main__: scraper: newspaper extracted 669 chars from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations
+2025-08-29 17:56:03,517 [INFO] __main__: Successfully scraped https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations with trafilatura (669 chars)
+2025-08-29 17:56:03,518 [INFO] __main__: Scraped content from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations (669 chars)
+2025-08-29 17:56:08,308 [INFO] __main__: scraper: newspaper extracted 2126 chars from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/
+2025-08-29 17:56:08,309 [INFO] __main__: Successfully scraped https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ with trafilatura (2126 chars)
+2025-08-29 17:56:08,309 [INFO] __main__: Scraped content from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ (2126 chars)
+2025-08-29 17:56:09,091 [INFO] __main__: FLAGGED: Ukraine claims strike on key Russian facility supplying fuel... (velocity: 123.2, score: 101, risk: MEDIUM)
+2025-08-29 17:56:09,932 [INFO] __main__: scraper: readability extracted 982 chars from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital
+2025-08-29 17:56:09,932 [INFO] __main__: Successfully scraped https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital with trafilatura (982 chars)
+2025-08-29 17:56:09,932 [INFO] __main__: Scraped content from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital (982 chars)
+2025-08-29 17:56:10,437 [INFO] __main__: FLAGGED: Iran-backed Houthi Prime Minister killed in Israeli airstrik... (velocity: 34.6, score: 33, risk: HIGH)
+2025-08-29 17:56:11,468 [INFO] __main__: scraper: newspaper extracted 4300 chars from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html
+2025-08-29 17:56:11,468 [INFO] __main__: Successfully scraped https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html with trafilatura (4300 chars)
+2025-08-29 17:56:11,469 [INFO] __main__: Scraped content from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html (4300 chars)
+2025-08-29 17:56:14,661 [INFO] __main__: scraper: newspaper extracted 1800 chars from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/
+2025-08-29 17:56:14,661 [INFO] __main__: Successfully scraped https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ with trafilatura (1800 chars)
+2025-08-29 17:56:14,662 [INFO] __main__: Scraped content from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ (1800 chars)
+2025-08-29 17:56:16,774 [INFO] __main__: scraper: newspaper extracted 290 chars from https://www.jpost.com/israel-news/article-865713
+2025-08-29 17:56:16,774 [INFO] __main__: Successfully scraped https://www.jpost.com/israel-news/article-865713 with trafilatura (290 chars)
+2025-08-29 17:56:16,775 [INFO] __main__: Scraped content from https://www.jpost.com/israel-news/article-865713 (290 chars)
+2025-08-29 17:56:17,266 [INFO] __main__: FLAGGED: IDF finds body of hostage Ilan Weiss in Gaza | The Jerusalem... (velocity: 56.4, score: 94, risk: MEDIUM)
+2025-08-29 17:56:17,724 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 17:56:17,724 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 17:56:22,071 [INFO] __main__: scraper: newspaper extracted 1855 chars from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme
+2025-08-29 17:56:22,072 [INFO] __main__: Successfully scraped https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme with trafilatura (1855 chars)
+2025-08-29 17:56:22,072 [INFO] __main__: Scraped content from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme (1855 chars)
+2025-08-29 17:56:22,547 [INFO] __main__: FLAGGED: Belgium pledges nearly $120 million to Ukraine under NATO-le... (velocity: 43.6, score: 81, risk: MEDIUM)
+2025-08-29 17:56:25,800 [INFO] __main__: scraper: newspaper extracted 1336 chars from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/
+2025-08-29 17:56:25,802 [INFO] __main__: Successfully scraped https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ with trafilatura (1336 chars)
+2025-08-29 17:56:25,802 [INFO] __main__: Scraped content from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ (1336 chars)
+2025-08-29 17:56:26,330 [INFO] __main__: FLAGGED: Spending overruns in Russian regional budgets reportedly sur... (velocity: 87.3, score: 170, risk: MEDIUM)
+2025-08-29 17:56:26,519 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 17:56:26,519 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 17:56:30,945 [INFO] __main__: scraper: newspaper extracted 718 chars from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061
+2025-08-29 17:56:30,946 [INFO] __main__: Successfully scraped https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 with trafilatura (718 chars)
+2025-08-29 17:56:30,946 [INFO] __main__: Scraped content from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 (718 chars)
+2025-08-29 17:56:32,639 [INFO] __main__: scraper: newspaper extracted 6476 chars from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl
+2025-08-29 17:56:32,644 [INFO] __main__: Successfully scraped https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl with trafilatura (6476 chars)
+2025-08-29 17:56:32,644 [INFO] __main__: Scraped content from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl (6476 chars)
+2025-08-29 17:56:33,312 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ
+2025-08-29 17:56:33,313 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ
+2025-08-29 17:56:33,413 [INFO] __main__: Processed 20 posts from r/worldnews, scraped 15 links, found 5 trending
+2025-08-29 17:58:31,112 [INFO] __main__: RedditScanTool initialized: velocity_threshold=25.0, min_score_threshold=50
+2025-08-29 17:58:31,114 [INFO] __main__: Starting enhanced Reddit trend scanning with CrewAI and web scraping...
+2025-08-29 17:58:31,114 [INFO] __main__: create_scan_tasks: created task for r/worldnews
+2025-08-29 17:58:32,283 [INFO] __main__: Scanning r/worldnews with limit=20, sort=new
+2025-08-29 17:58:32,283 [INFO] __main__: Starting to process submissions from r/worldnews
+2025-08-29 17:58:36,367 [INFO] __main__: scraper: newspaper extracted 695 chars from https://www.cnbc.com/2025/08/29/indias-economy-grows-faster-than-expected-at-7point8percent-in-the-june-quarter.html
+2025-08-29 17:58:36,368 [INFO] __main__: Successfully scraped https://www.cnbc.com/2025/08/29/indias-economy-grows-faster-than-expected-at-7point8percent-in-the-june-quarter.html with trafilatura (695 chars)
+2025-08-29 17:58:36,369 [INFO] __main__: Scraped content from https://www.cnbc.com/2025/08/29/indias-economy-grows-faster-than-expected-at-7point8percent-in-the-june-quarter.html (695 chars)
+2025-08-29 17:58:37,162 [INFO] __main__: scraper: newspaper extracted 2698 chars from https://www.bbc.co.uk/news/articles/cvgpxwy2lkwo
+2025-08-29 17:58:37,165 [INFO] __main__: Successfully scraped https://www.bbc.co.uk/news/articles/cvgpxwy2lkwo with trafilatura (2698 chars)
+2025-08-29 17:58:37,166 [INFO] __main__: Scraped content from https://www.bbc.co.uk/news/articles/cvgpxwy2lkwo (2698 chars)
+2025-08-29 17:58:37,627 [WARNING] __main__: requests.get failed for https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/
+2025-08-29 17:58:37,627 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/
+2025-08-29 17:58:41,288 [INFO] __main__: scraper: newspaper extracted 1712 chars from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing
+2025-08-29 17:58:41,288 [INFO] __main__: Successfully scraped https://p.dw.com/p/4zYnc?maca=en-reddit-sharing with trafilatura (1712 chars)
+2025-08-29 17:58:41,289 [INFO] __main__: Scraped content from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing (1712 chars)
+2025-08-29 17:58:42,401 [INFO] __main__: scraper: newspaper extracted 1070 chars from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html
+2025-08-29 17:58:42,402 [INFO] __main__: Successfully scraped https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html with trafilatura (1070 chars)
+2025-08-29 17:58:42,402 [INFO] __main__: Scraped content from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html (1070 chars)
+2025-08-29 17:58:43,152 [WARNING] __main__: requests.get failed for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256: 403 Client Error: Forbidden for url: https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 17:58:43,155 [INFO] __main__: Trafilatura failed to extract usable content for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 17:58:43,695 [INFO] __main__: FLAGGED: India's GDP Grows 7.8% In Q1 Compared To 6.5% Last Year... (velocity: 72.9, score: 51, risk: MEDIUM)
+2025-08-29 17:58:45,335 [INFO] __main__: scraper: newspaper extracted 1655 chars from https://www.kyivpost.com/post/59118
+2025-08-29 17:58:45,336 [INFO] __main__: Successfully scraped https://www.kyivpost.com/post/59118 with trafilatura (1655 chars)
+2025-08-29 17:58:45,336 [INFO] __main__: Scraped content from https://www.kyivpost.com/post/59118 (1655 chars)
+2025-08-29 17:58:50,496 [INFO] __main__: scraper: newspaper extracted 669 chars from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations
+2025-08-29 17:58:50,496 [INFO] __main__: Successfully scraped https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations with trafilatura (669 chars)
+2025-08-29 17:58:50,496 [INFO] __main__: Scraped content from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations (669 chars)
+2025-08-29 17:58:55,232 [INFO] __main__: scraper: newspaper extracted 2126 chars from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/
+2025-08-29 17:58:55,233 [INFO] __main__: Successfully scraped https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ with trafilatura (2126 chars)
+2025-08-29 17:58:55,233 [INFO] __main__: Scraped content from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ (2126 chars)
+2025-08-29 17:58:55,752 [INFO] __main__: FLAGGED: Ukraine claims strike on key Russian facility supplying fuel... (velocity: 127.0, score: 110, risk: MEDIUM)
+2025-08-29 17:58:56,493 [INFO] __main__: scraper: readability extracted 982 chars from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital
+2025-08-29 17:58:56,493 [INFO] __main__: Successfully scraped https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital with trafilatura (982 chars)
+2025-08-29 17:58:56,493 [INFO] __main__: Scraped content from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital (982 chars)
+2025-08-29 17:58:57,904 [INFO] __main__: FLAGGED: Iran-backed Houthi Prime Minister killed in Israeli airstrik... (velocity: 33.0, score: 33, risk: HIGH)
+2025-08-29 17:58:58,751 [INFO] __main__: scraper: newspaper extracted 4300 chars from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html
+2025-08-29 17:58:58,752 [INFO] __main__: Successfully scraped https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html with trafilatura (4300 chars)
+2025-08-29 17:58:58,752 [INFO] __main__: Scraped content from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html (4300 chars)
+2025-08-29 17:59:01,627 [INFO] __main__: scraper: newspaper extracted 1800 chars from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/
+2025-08-29 17:59:01,627 [INFO] __main__: Successfully scraped https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ with trafilatura (1800 chars)
+2025-08-29 17:59:01,628 [INFO] __main__: Scraped content from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ (1800 chars)
+2025-08-29 17:59:03,690 [INFO] __main__: scraper: newspaper extracted 290 chars from https://www.jpost.com/israel-news/article-865713
+2025-08-29 17:59:03,691 [INFO] __main__: Successfully scraped https://www.jpost.com/israel-news/article-865713 with trafilatura (290 chars)
+2025-08-29 17:59:03,691 [INFO] __main__: Scraped content from https://www.jpost.com/israel-news/article-865713 (290 chars)
+2025-08-29 17:59:04,176 [INFO] __main__: FLAGGED: IDF finds body of hostage Ilan Weiss in Gaza | The Jerusalem... (velocity: 54.9, score: 94, risk: MEDIUM)
+2025-08-29 17:59:04,584 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 17:59:04,585 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 17:59:09,590 [INFO] __main__: scraper: newspaper extracted 1855 chars from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme
+2025-08-29 17:59:09,591 [INFO] __main__: Successfully scraped https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme with trafilatura (1855 chars)
+2025-08-29 17:59:09,591 [INFO] __main__: Scraped content from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme (1855 chars)
+2025-08-29 17:59:10,126 [INFO] __main__: FLAGGED: Belgium pledges nearly $120 million to Ukraine under NATO-le... (velocity: 42.0, score: 80, risk: LOW)
+2025-08-29 17:59:13,458 [INFO] __main__: scraper: newspaper extracted 1336 chars from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/
+2025-08-29 17:59:13,458 [INFO] __main__: Successfully scraped https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ with trafilatura (1336 chars)
+2025-08-29 17:59:13,458 [INFO] __main__: Scraped content from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ (1336 chars)
+2025-08-29 17:59:13,940 [INFO] __main__: FLAGGED: Spending overruns in Russian regional budgets reportedly sur... (velocity: 88.3, score: 176, risk: MEDIUM)
+2025-08-29 17:59:14,091 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 17:59:14,091 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 17:59:16,845 [INFO] __main__: scraper: newspaper extracted 718 chars from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061
+2025-08-29 17:59:16,846 [INFO] __main__: Successfully scraped https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 with trafilatura (718 chars)
+2025-08-29 17:59:16,846 [INFO] __main__: Scraped content from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 (718 chars)
+2025-08-29 17:59:19,228 [INFO] __main__: scraper: newspaper extracted 6476 chars from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl
+2025-08-29 17:59:19,231 [INFO] __main__: Successfully scraped https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl with trafilatura (6476 chars)
+2025-08-29 17:59:19,231 [INFO] __main__: Scraped content from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl (6476 chars)
+2025-08-29 17:59:19,898 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ
+2025-08-29 17:59:19,899 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/?utm_medium=Social&utm_source=Facebook&fbclid=IwdGRleAMeU1tleHRuA2FlbQIxMQABHtqPYxWtN-k-NQOd4hzW_cXYvDTNTbudkTvqB-_w25szdF7yQShxVTKLrH3p_aem_XVULc3svfhMTFoWBfQaxdQ
+2025-08-29 17:59:19,999 [INFO] __main__: Processed 20 posts from r/worldnews, scraped 15 links, found 6 trending
+2025-08-29 18:15:24,651 [INFO] __main__: RedditScanTool initialized: velocity_threshold=25.0, min_score_threshold=50
+2025-08-29 18:15:24,652 [INFO] __main__: Starting enhanced Reddit trend scanning with CrewAI and web scraping...
+2025-08-29 18:15:24,652 [INFO] __main__: create_scan_tasks: created task for r/worldnews
+2025-08-29 18:15:26,071 [INFO] __main__: Scanning r/worldnews with limit=20, sort=new
+2025-08-29 18:15:26,071 [INFO] __main__: Starting to process submissions from r/worldnews
+2025-08-29 18:15:29,389 [INFO] __main__: scraper: newspaper extracted 2678 chars from https://thisisbeirut.com.lb/articles/1324049/israeli-forces-dismantle-turkish-spy-equipment-near-damascus-source-says
+2025-08-29 18:15:29,389 [INFO] __main__: Successfully scraped https://thisisbeirut.com.lb/articles/1324049/israeli-forces-dismantle-turkish-spy-equipment-near-damascus-source-says with trafilatura (2678 chars)
+2025-08-29 18:15:29,390 [INFO] __main__: Scraped content from https://thisisbeirut.com.lb/articles/1324049/israeli-forces-dismantle-turkish-spy-equipment-near-damascus-source-says (2678 chars)
+2025-08-29 18:15:31,024 [INFO] __main__: scraper: newspaper extracted 1194 chars from https://www.cnbc.com/2025/08/29/indias-economy-grows-faster-than-expected-at-7point8percent-in-the-june-quarter.html
+2025-08-29 18:15:31,025 [INFO] __main__: Successfully scraped https://www.cnbc.com/2025/08/29/indias-economy-grows-faster-than-expected-at-7point8percent-in-the-june-quarter.html with trafilatura (1194 chars)
+2025-08-29 18:15:31,025 [INFO] __main__: Scraped content from https://www.cnbc.com/2025/08/29/indias-economy-grows-faster-than-expected-at-7point8percent-in-the-june-quarter.html (1194 chars)
+2025-08-29 18:15:32,560 [INFO] __main__: scraper: newspaper extracted 2698 chars from https://www.bbc.co.uk/news/articles/cvgpxwy2lkwo
+2025-08-29 18:15:32,561 [INFO] __main__: Successfully scraped https://www.bbc.co.uk/news/articles/cvgpxwy2lkwo with trafilatura (2698 chars)
+2025-08-29 18:15:32,562 [INFO] __main__: Scraped content from https://www.bbc.co.uk/news/articles/cvgpxwy2lkwo (2698 chars)
+2025-08-29 18:15:32,965 [WARNING] __main__: requests.get failed for https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/
+2025-08-29 18:15:32,966 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/business/energy/indias-russian-oil-gains-wiped-out-by-trumps-tariffs-2025-08-27/
+2025-08-29 18:15:36,193 [INFO] __main__: scraper: newspaper extracted 1712 chars from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing
+2025-08-29 18:15:36,193 [INFO] __main__: Successfully scraped https://p.dw.com/p/4zYnc?maca=en-reddit-sharing with trafilatura (1712 chars)
+2025-08-29 18:15:36,194 [INFO] __main__: Scraped content from https://p.dw.com/p/4zYnc?maca=en-reddit-sharing (1712 chars)
+2025-08-29 18:15:37,253 [INFO] __main__: scraper: newspaper extracted 1070 chars from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html
+2025-08-29 18:15:37,254 [INFO] __main__: Successfully scraped https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html with trafilatura (1070 chars)
+2025-08-29 18:15:37,254 [INFO] __main__: Scraped content from https://www.smh.com.au/world/asia/police-chief-apologises-after-riot-vehicle-crushes-man-during-jakarta-protest-20250829-p5mqy5.html (1070 chars)
+2025-08-29 18:15:37,892 [WARNING] __main__: requests.get failed for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256: 403 Client Error: Forbidden for url: https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 18:15:37,894 [INFO] __main__: Trafilatura failed to extract usable content for https://www.ndtv.com/india-news/indias-gdp-grows-at-7-8-in-q1-compared-to-6-5-last-year-9181256
+2025-08-29 18:15:38,411 [INFO] __main__: FLAGGED: India's GDP Grows 7.8% In Q1 Compared To 6.5% Last Year... (velocity: 74.4, score: 73, risk: MEDIUM)
+2025-08-29 18:15:40,556 [INFO] __main__: scraper: newspaper extracted 1655 chars from https://www.kyivpost.com/post/59118
+2025-08-29 18:15:40,557 [INFO] __main__: Successfully scraped https://www.kyivpost.com/post/59118 with trafilatura (1655 chars)
+2025-08-29 18:15:40,557 [INFO] __main__: Scraped content from https://www.kyivpost.com/post/59118 (1655 chars)
+2025-08-29 18:15:44,542 [INFO] __main__: scraper: newspaper extracted 669 chars from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations
+2025-08-29 18:15:44,542 [INFO] __main__: Successfully scraped https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations with trafilatura (669 chars)
+2025-08-29 18:15:44,542 [INFO] __main__: Scraped content from https://report.az/en/other-countries/pakistan-armenia-agree-to-consider-establishing-diplomatic-relations (669 chars)
+2025-08-29 18:15:49,500 [INFO] __main__: scraper: newspaper extracted 2126 chars from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/
+2025-08-29 18:15:49,501 [INFO] __main__: Successfully scraped https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ with trafilatura (2126 chars)
+2025-08-29 18:15:49,501 [INFO] __main__: Scraped content from https://kyivindependent.com/ukraine-claims-strike-on-russian-facility-supplying-fuel-to-moscows-army/ (2126 chars)
+2025-08-29 18:15:51,442 [INFO] __main__: FLAGGED: Ukraine claims strike on key Russian facility supplying fuel... (velocity: 155.1, score: 178, risk: MEDIUM)
+2025-08-29 18:15:52,787 [INFO] __main__: scraper: newspaper extracted 2636 chars from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital
+2025-08-29 18:15:52,788 [INFO] __main__: Successfully scraped https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital with trafilatura (2636 chars)
+2025-08-29 18:15:52,788 [INFO] __main__: Scraped content from https://www.euronews.com/2025/08/29/iran-backed-houthi-pm-killed-in-israeli-airstrikes-on-yemens-capital (2636 chars)
+2025-08-29 18:15:53,351 [INFO] __main__: FLAGGED: Iran-backed Houthi Prime Minister killed in Israeli airstrik... (velocity: 28.1, score: 36, risk: HIGH)
+2025-08-29 18:15:55,245 [INFO] __main__: scraper: newspaper extracted 4218 chars from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html
+2025-08-29 18:15:55,246 [INFO] __main__: Successfully scraped https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html with trafilatura (4218 chars)
+2025-08-29 18:15:55,246 [INFO] __main__: Scraped content from https://www.news18.com/amp/india/important-for-india-china-as-2-major-economies-to-work-together-to-stabilise-world-order-pm-modi-ws-l-9536397.html (4218 chars)
+2025-08-29 18:15:58,125 [INFO] __main__: scraper: newspaper extracted 1800 chars from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/
+2025-08-29 18:15:58,125 [INFO] __main__: Successfully scraped https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ with trafilatura (1800 chars)
+2025-08-29 18:15:58,125 [INFO] __main__: Scraped content from https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:250829-99-865854/ (1800 chars)
+2025-08-29 18:16:00,490 [INFO] __main__: scraper: newspaper extracted 290 chars from https://www.jpost.com/israel-news/article-865713
+2025-08-29 18:16:00,490 [INFO] __main__: Successfully scraped https://www.jpost.com/israel-news/article-865713 with trafilatura (290 chars)
+2025-08-29 18:16:00,491 [INFO] __main__: Scraped content from https://www.jpost.com/israel-news/article-865713 (290 chars)
+2025-08-29 18:16:01,008 [INFO] __main__: FLAGGED: IDF finds body of hostage Ilan Weiss in Gaza | The Jerusalem... (velocity: 63.2, score: 126, risk: MEDIUM)
+2025-08-29 18:16:01,426 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 18:16:01,427 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/asia-pacific/thai-court-sacks-pm-paetongtarn-shinawatra-ethics-violation-2025-08-29/
+2025-08-29 18:16:07,139 [INFO] __main__: scraper: newspaper extracted 1855 chars from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme
+2025-08-29 18:16:07,140 [INFO] __main__: Successfully scraped https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme with trafilatura (1855 chars)
+2025-08-29 18:16:07,141 [INFO] __main__: Scraped content from https://kyivindependent.com/belgium-pledges-nearly-120-million-to-ukraine-under-nato-led-arms-scheme (1855 chars)
+2025-08-29 18:16:09,068 [INFO] __main__: FLAGGED: Belgium pledges nearly $120 million to Ukraine under NATO-le... (velocity: 38.0, score: 83, risk: LOW)
+2025-08-29 18:16:12,350 [INFO] __main__: scraper: newspaper extracted 1336 chars from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/
+2025-08-29 18:16:12,350 [INFO] __main__: Successfully scraped https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ with trafilatura (1336 chars)
+2025-08-29 18:16:12,351 [INFO] __main__: Scraped content from https://www.pravda.com.ua/eng/news/2025/08/29/7528389/ (1336 chars)
+2025-08-29 18:16:12,874 [INFO] __main__: FLAGGED: Spending overruns in Russian regional budgets reportedly sur... (velocity: 95.7, score: 218, risk: MEDIUM)
+2025-08-29 18:16:13,027 [WARNING] __main__: requests.get failed for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 18:16:13,028 [INFO] __main__: Trafilatura failed to extract usable content for https://www.reuters.com/world/europe/germany-tells-nationals-leave-iran-fearing-retaliation-over-sanctions-2025-08-29/
+2025-08-29 18:16:15,530 [INFO] __main__: scraper: newspaper extracted 718 chars from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061
+2025-08-29 18:16:15,530 [INFO] __main__: Successfully scraped https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 with trafilatura (718 chars)
+2025-08-29 18:16:15,531 [INFO] __main__: Scraped content from https://www.channelnewsasia.com/asia/jakarta-protest-indonesia-tear-gas-live-5322061 (718 chars)
+2025-08-29 18:16:17,579 [INFO] __main__: scraper: newspaper extracted 6476 chars from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl
+2025-08-29 18:16:17,582 [INFO] __main__: Successfully scraped https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl with trafilatura (6476 chars)
+2025-08-29 18:16:17,583 [INFO] __main__: Scraped content from https://www.cnn.com/2025/08/29/asia/thailand-paetongtarn-shinawatra-court-hnk-intl (6476 chars)
+2025-08-29 18:16:18,208 [INFO] __main__: Processed 20 posts from r/worldnews, scraped 16 links, found 6 trending
+2025-08-30 01:31:07,897 [INFO] httpx: HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-30 01:31:11,112 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:12,291 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:12,296 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:14,739 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3018 chars from https://newsukraine.rbc.ua/news/trump-reportedly-backs-putin-idea-of-chinese-1756496568.html
+2025-08-30 01:31:16,072 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1021 chars from https://www.scmp.com/news/china/diplomacy/article/3323418/north-korean-leader-kim-jong-un-will-attend-military-parade-beijing
+2025-08-30 01:31:17,485 [INFO] trend_scanner.scraper: scraper: newspaper extracted 518 chars from https://www.jpost.com/israel-news/article-865726
+2025-08-30 01:31:18,838 [INFO] trend_scanner.scraper: scraper: readability extracted 5880 chars from https://www.timesofisrael.com/israel-fumes-as-uk-bars-its-officials-from-london-arms-fair-wont-set-up-pavilion/
+2025-08-30 01:31:18,840 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:19,830 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:19,831 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:22,105 [INFO] trend_scanner.scraper: scraper: newspaper extracted 10638 chars from https://www.bpdaily.com/post-brexit-britain-imf-bailout/?utm_source=reddit&utm_medium=ref&utm_campaign=thea0822
+2025-08-30 01:31:22,106 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:23,243 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:23,245 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:23,966 [WARNING] trend_scanner.scraper: requests.get failed for https://euromaidanpress.com/2025/08/29/russia-still-demands-ukraines-full-elimination-despite-trumps-deadline-for-moscow-which-expires-in-three-days: 403 Client Error: Forbidden for url: https://euromaidanpress.com/2025/08/29/russia-still-demands-ukraines-full-elimination-despite-trumps-deadline-for-moscow-which-expires-in-three-days
+2025-08-30 01:31:23,968 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:24,524 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:24,525 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:25,775 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2593 chars from https://www.dw.com/en/indonesia-protests-escalate-after-death-of-demonstrator/a-73805617
+2025-08-30 01:31:25,776 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:26,269 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:26,271 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:26,700 [WARNING] trend_scanner.scraper: requests.get failed for https://www.axios.com/2025/08/29/us-deny-palestinian-authority-visa-un-assembly: 403 Client Error: Forbidden for url: https://www.axios.com/2025/08/29/us-deny-palestinian-authority-visa-un-assembly
+2025-08-30 01:31:26,702 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:27,548 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:27,549 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:30,416 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3270 chars from https://www.thedailybeast.com/portuguese-president-marcelo-rebelo-de-sousa-calls-donald-trump-a-soviet-asset-over-russia-ukraine-war/
+2025-08-30 01:31:30,417 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:30,910 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:30,912 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:32,118 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1459 chars from https://www.newindianexpress.com/amp/story/world/2025/Aug/29/russias-putin-to-visit-india-in-december
+2025-08-30 01:31:32,602 [WARNING] trend_scanner.scraper: requests.get failed for https://www.politico.com/news/2025/08/28/europe-buffer-zone-ukraine-russia-peace-deal-00534483?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication: 403 Client Error: Forbidden for url: https://www.politico.com/news/2025/08/28/europe-buffer-zone-ukraine-russia-peace-deal-00534483?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication
+2025-08-30 01:31:34,445 [INFO] trend_scanner.scraper: scraper: readability extracted 290 chars from https://financialpost.com/pmn/japan-accelerates-missile-deployment-amid-rising-regional-tensions
+2025-08-30 01:31:37,420 [INFO] trend_scanner.scraper: scraper: newspaper extracted 14516 chars from https://www.eurointegration.com.ua/eng/articles/2025/08/29/7219040/
+2025-08-30 01:31:37,420 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:38,609 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:38,615 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:39,457 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1000 chars from https://unn.ua/en/news/diplomacy-is-a-faster-path-to-peace-than-war-zelenskyy
+2025-08-30 01:31:39,458 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:40,435 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:40,437 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:46,133 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1271 chars from https://www.politico.eu/article/france-germany-open-strategic-dialogue-nuclear-weapons-emmanuel-macron-friedrich-merz/
+2025-08-30 01:31:46,133 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:48,408 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:48,409 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:49,716 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1647 chars from https://www.politico.eu/article/eu-military-training-war-in-ukraine-ceasefire-kaja-kallas/
+2025-08-30 01:31:50,914 [INFO] trend_scanner.scraper: scraper: readability extracted 5526 chars from https://www.newsweek.com/donald-trump-maduro-venezuela-warships-military-forces-2121630
+2025-08-30 01:31:50,914 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:51,951 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:51,952 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:52,220 [WARNING] trend_scanner.scraper: requests.get failed for https://www.reuters.com/world/middle-east/uk-france-germany-urge-iran-agree-deal-delay-un-sanctions-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/middle-east/uk-france-germany-urge-iran-agree-deal-delay-un-sanctions-2025-08-29/
+2025-08-30 01:31:52,221 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:53,257 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:53,257 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:54,574 [INFO] trend_scanner.scraper: scraper: readability extracted 6664 chars from https://www.timesofisrael.com/israeli-strike-on-yemen-said-to-kill-houthi-prime-minister-other-top-officials/
+2025-08-30 01:31:54,575 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:55,061 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:55,063 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:56,606 [INFO] trend_scanner.scraper: scraper: newspaper extracted 277 chars from https://asia.nikkei.com/politics/international-relations/japan-to-invest-68bn-in-india-with-eye-on-semiconductors-and-ai
+2025-08-30 01:31:56,607 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:31:57,073 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:31:57,074 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:31:57,085 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:32:22,061 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:32:22,074 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:32:22,124 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:32:28,646 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:32:28,648 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:46:52,768 [INFO] httpx: HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-30 01:46:54,764 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:46:57,442 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:46:57,444 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:46:59,618 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3018 chars from https://newsukraine.rbc.ua/news/trump-reportedly-backs-putin-idea-of-chinese-1756496568.html
+2025-08-30 01:46:59,619 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:00,165 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:00,166 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:00,943 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1021 chars from https://www.scmp.com/news/china/diplomacy/article/3323418/north-korean-leader-kim-jong-un-will-attend-military-parade-beijing
+2025-08-30 01:47:02,894 [INFO] trend_scanner.scraper: scraper: newspaper extracted 518 chars from https://www.jpost.com/israel-news/article-865726
+2025-08-30 01:47:04,441 [INFO] trend_scanner.scraper: scraper: readability extracted 5880 chars from https://www.timesofisrael.com/israel-fumes-as-uk-bars-its-officials-from-london-arms-fair-wont-set-up-pavilion/
+2025-08-30 01:47:04,442 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:04,987 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:04,989 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:07,603 [INFO] trend_scanner.scraper: scraper: newspaper extracted 10638 chars from https://www.bpdaily.com/post-brexit-britain-imf-bailout/?utm_source=reddit&utm_medium=ref&utm_campaign=thea0822
+2025-08-30 01:47:07,604 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:08,110 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:08,111 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:08,958 [WARNING] trend_scanner.scraper: requests.get failed for https://euromaidanpress.com/2025/08/29/russia-still-demands-ukraines-full-elimination-despite-trumps-deadline-for-moscow-which-expires-in-three-days: 403 Client Error: Forbidden for url: https://euromaidanpress.com/2025/08/29/russia-still-demands-ukraines-full-elimination-despite-trumps-deadline-for-moscow-which-expires-in-three-days
+2025-08-30 01:47:08,959 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:09,479 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:09,480 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:11,603 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2593 chars from https://www.dw.com/en/indonesia-protests-escalate-after-death-of-demonstrator/a-73805617
+2025-08-30 01:47:11,605 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:12,160 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:12,161 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:12,789 [WARNING] trend_scanner.scraper: requests.get failed for https://www.axios.com/2025/08/29/us-deny-palestinian-authority-visa-un-assembly: 403 Client Error: Forbidden for url: https://www.axios.com/2025/08/29/us-deny-palestinian-authority-visa-un-assembly
+2025-08-30 01:47:12,791 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:13,444 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:13,445 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:16,079 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3270 chars from https://www.thedailybeast.com/portuguese-president-marcelo-rebelo-de-sousa-calls-donald-trump-a-soviet-asset-over-russia-ukraine-war/
+2025-08-30 01:47:16,081 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:16,603 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:16,605 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:18,229 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1459 chars from https://www.newindianexpress.com/amp/story/world/2025/Aug/29/russias-putin-to-visit-india-in-december
+2025-08-30 01:47:18,841 [WARNING] trend_scanner.scraper: requests.get failed for https://www.politico.com/news/2025/08/28/europe-buffer-zone-ukraine-russia-peace-deal-00534483?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication: 403 Client Error: Forbidden for url: https://www.politico.com/news/2025/08/28/europe-buffer-zone-ukraine-russia-peace-deal-00534483?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication
+2025-08-30 01:47:20,908 [INFO] trend_scanner.scraper: scraper: readability extracted 290 chars from https://financialpost.com/pmn/japan-accelerates-missile-deployment-amid-rising-regional-tensions
+2025-08-30 01:47:21,796 [INFO] trend_scanner.scraper: scraper: newspaper extracted 14516 chars from https://www.eurointegration.com.ua/eng/articles/2025/08/29/7219040/
+2025-08-30 01:47:21,797 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:23,715 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:23,716 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:24,840 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1000 chars from https://unn.ua/en/news/diplomacy-is-a-faster-path-to-peace-than-war-zelenskyy
+2025-08-30 01:47:24,841 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:25,370 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:25,371 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:27,547 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1271 chars from https://www.politico.eu/article/france-germany-open-strategic-dialogue-nuclear-weapons-emmanuel-macron-friedrich-merz/
+2025-08-30 01:47:27,549 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:28,060 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:28,061 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:30,084 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1647 chars from https://www.politico.eu/article/eu-military-training-war-in-ukraine-ceasefire-kaja-kallas/
+2025-08-30 01:47:31,425 [INFO] trend_scanner.scraper: scraper: readability extracted 5526 chars from https://www.newsweek.com/donald-trump-maduro-venezuela-warships-military-forces-2121630
+2025-08-30 01:47:31,427 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:31,960 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:31,960 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:32,269 [WARNING] trend_scanner.scraper: requests.get failed for https://www.reuters.com/world/middle-east/uk-france-germany-urge-iran-agree-deal-delay-un-sanctions-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/middle-east/uk-france-germany-urge-iran-agree-deal-delay-un-sanctions-2025-08-29/
+2025-08-30 01:47:32,270 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:33,245 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:33,247 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:34,468 [INFO] trend_scanner.scraper: scraper: readability extracted 6621 chars from https://www.timesofisrael.com/israeli-strike-on-yemen-said-to-kill-houthi-prime-minister-other-top-officials/
+2025-08-30 01:47:34,469 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:35,064 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:35,065 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:36,567 [INFO] trend_scanner.scraper: scraper: newspaper extracted 277 chars from https://asia.nikkei.com/politics/international-relations/japan-to-invest-68bn-in-india-with-eye-on-semiconductors-and-ai
+2025-08-30 01:47:36,568 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:47:37,052 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:47:37,055 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:47:37,075 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:48:02,617 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:48:02,630 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:48:02,677 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:48:57,608 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:48:57,610 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:53:59,219 [INFO] httpx: HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-30 01:54:01,262 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:02,418 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:02,419 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:04,584 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3018 chars from https://newsukraine.rbc.ua/news/trump-reportedly-backs-putin-idea-of-chinese-1756496568.html
+2025-08-30 01:54:04,585 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:05,063 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:05,064 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:05,631 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1021 chars from https://www.scmp.com/news/china/diplomacy/article/3323418/north-korean-leader-kim-jong-un-will-attend-military-parade-beijing
+2025-08-30 01:54:07,215 [INFO] trend_scanner.scraper: scraper: newspaper extracted 518 chars from https://www.jpost.com/israel-news/article-865726
+2025-08-30 01:54:08,765 [INFO] trend_scanner.scraper: scraper: readability extracted 5880 chars from https://www.timesofisrael.com/israel-fumes-as-uk-bars-its-officials-from-london-arms-fair-wont-set-up-pavilion/
+2025-08-30 01:54:08,767 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:09,251 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:09,253 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:10,346 [INFO] trend_scanner.scraper: scraper: newspaper extracted 10638 chars from https://www.bpdaily.com/post-brexit-britain-imf-bailout/?utm_source=reddit&utm_medium=ref&utm_campaign=thea0822
+2025-08-30 01:54:10,347 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:10,872 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:10,873 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:11,612 [WARNING] trend_scanner.scraper: requests.get failed for https://euromaidanpress.com/2025/08/29/russia-still-demands-ukraines-full-elimination-despite-trumps-deadline-for-moscow-which-expires-in-three-days: 403 Client Error: Forbidden for url: https://euromaidanpress.com/2025/08/29/russia-still-demands-ukraines-full-elimination-despite-trumps-deadline-for-moscow-which-expires-in-three-days
+2025-08-30 01:54:11,615 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:12,110 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:12,111 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:14,083 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2593 chars from https://www.dw.com/en/indonesia-protests-escalate-after-death-of-demonstrator/a-73805617
+2025-08-30 01:54:14,084 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:14,586 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:14,588 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:15,033 [WARNING] trend_scanner.scraper: requests.get failed for https://www.axios.com/2025/08/29/us-deny-palestinian-authority-visa-un-assembly: 403 Client Error: Forbidden for url: https://www.axios.com/2025/08/29/us-deny-palestinian-authority-visa-un-assembly
+2025-08-30 01:54:15,036 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:15,793 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:15,795 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:19,510 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3270 chars from https://www.thedailybeast.com/portuguese-president-marcelo-rebelo-de-sousa-calls-donald-trump-a-soviet-asset-over-russia-ukraine-war/
+2025-08-30 01:54:19,511 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:20,048 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:20,050 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:20,513 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1459 chars from https://www.newindianexpress.com/amp/story/world/2025/Aug/29/russias-putin-to-visit-india-in-december
+2025-08-30 01:54:20,948 [WARNING] trend_scanner.scraper: requests.get failed for https://www.politico.com/news/2025/08/28/europe-buffer-zone-ukraine-russia-peace-deal-00534483?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication: 403 Client Error: Forbidden for url: https://www.politico.com/news/2025/08/28/europe-buffer-zone-ukraine-russia-peace-deal-00534483?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication
+2025-08-30 01:54:23,135 [INFO] trend_scanner.scraper: scraper: readability extracted 290 chars from https://financialpost.com/pmn/japan-accelerates-missile-deployment-amid-rising-regional-tensions
+2025-08-30 01:54:23,769 [INFO] trend_scanner.scraper: scraper: newspaper extracted 14516 chars from https://www.eurointegration.com.ua/eng/articles/2025/08/29/7219040/
+2025-08-30 01:54:23,770 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:24,239 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:24,241 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:25,104 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1000 chars from https://unn.ua/en/news/diplomacy-is-a-faster-path-to-peace-than-war-zelenskyy
+2025-08-30 01:54:25,105 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:25,599 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:25,601 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:26,196 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1271 chars from https://www.politico.eu/article/france-germany-open-strategic-dialogue-nuclear-weapons-emmanuel-macron-friedrich-merz/
+2025-08-30 01:54:26,197 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:26,856 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:26,858 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:29,856 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1647 chars from https://www.politico.eu/article/eu-military-training-war-in-ukraine-ceasefire-kaja-kallas/
+2025-08-30 01:54:31,170 [INFO] trend_scanner.scraper: scraper: readability extracted 5526 chars from https://www.newsweek.com/donald-trump-maduro-venezuela-warships-military-forces-2121630
+2025-08-30 01:54:31,171 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:31,680 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:31,682 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:31,940 [WARNING] trend_scanner.scraper: requests.get failed for https://www.reuters.com/world/middle-east/uk-france-germany-urge-iran-agree-deal-delay-un-sanctions-2025-08-29/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/middle-east/uk-france-germany-urge-iran-agree-deal-delay-un-sanctions-2025-08-29/
+2025-08-30 01:54:31,941 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:32,880 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:32,882 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:34,196 [INFO] trend_scanner.scraper: scraper: readability extracted 6664 chars from https://www.timesofisrael.com/israeli-strike-on-yemen-said-to-kill-houthi-prime-minister-other-top-officials/
+2025-08-30 01:54:34,197 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:34,683 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:34,684 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:35,282 [INFO] trend_scanner.scraper: scraper: newspaper extracted 277 chars from https://asia.nikkei.com/politics/international-relations/japan-to-invest-68bn-in-india-with-eye-on-semiconductors-and-ai
+2025-08-30 01:54:35,283 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:54:35,934 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:54:35,935 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:54:35,949 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:55:01,606 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:55:01,619 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-08-30 01:55:01,670 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-1.5-flash; provider = gemini
+2025-08-30 01:55:10,224 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGxF6TEmVcsSsU_8Ch7OlBhkKvyzXvEPg "HTTP/1.1 200 OK"
+2025-08-30 01:55:10,226 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
