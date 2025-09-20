@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Optional
+from typing import Optional, List, Dict
 
 
 @dataclass
@@ -21,6 +21,31 @@ class TrendingPost:
     risk_level: str
     scraped_content: Optional[str] = None
     content_source: str = "reddit"
+
+
+@dataclass
+class BatchPostData:
+    """Data structure for batch processing posts"""
+    post_id: str
+    title: str
+    content: str
+    scraped_content: Optional[str]
+    subreddit: str
+    score: int
+    upvote_ratio: float
+    num_comments: int
+    age_hours: float
+    author: str
+    has_external_content: bool
+
+
+@dataclass
+class BatchRiskAssessment:
+    """Result of batch risk assessment"""
+    post_id: str
+    risk_level: str
+    confidence: float = 0.0
+    reasoning: Optional[str] = None
 
 
 @dataclass
