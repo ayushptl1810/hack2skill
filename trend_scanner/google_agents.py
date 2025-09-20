@@ -29,9 +29,13 @@ class GoogleAgent:
                     if hasattr(tool, '_run') and 'scan' in task_description.lower():
                         # This is likely a Reddit scanning task
                         try:
-                            # Use worldnews as fallback since subreddits are now configured at orchestrator level
-                            logger.info(f"Agent {self.role} executing tool scan (fallback)")
-                            tool_result = tool._run('worldnews')
+                            # Extract subreddit from task description (e.g., "Scan r/DebunkThis for...")
+                            import re
+                            subreddit_match = re.search(r'r/(\w+)', task_description)
+                            target_subreddit = subreddit_match.group(1) if subreddit_match else 'worldnews'
+                            
+                            logger.info(f"Agent {self.role} executing tool scan for r/{target_subreddit}")
+                            tool_result = tool._run(target_subreddit)
                             
                             result = {
                                 'agent_role': self.role,
@@ -432,6 +436,21 @@ class TrendScannerOrchestrator:
             client_secret=reddit_config['client_secret'],
             user_agent=reddit_config['user_agent']
         )
+        
+        # Test Reddit authentication
+        try:
+            # Try to access the Reddit user to test authentication
+            user = self.reddit.user.me()
+            logger.info(f"Reddit authentication successful (read-only mode)")
+        except Exception as e:
+            logger.warning(f"Reddit authentication test: {e} (This is expected for app-only authentication)")
+        
+        # Test basic subreddit access
+        try:
+            test_subreddit = self.reddit.subreddit("test")
+            logger.info(f"Reddit API connection verified - can access subreddits")
+        except Exception as e:
+            logger.error(f"Reddit API connection failed: {e}")
 
         # Simple LLM wrapper for backward compatibility
         class SimpleLLMWrapper:

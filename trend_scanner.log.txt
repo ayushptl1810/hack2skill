@@ -1,46 +1,214 @@
-2025-09-20 18:54:56,381 [INFO] trend_scanner.google_agents: Google Agents orchestration initialized successfully
-2025-09-20 18:54:57,408 [INFO] httpx: HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
-2025-09-20 18:54:58,608 [INFO] trend_scanner.tools: Google Agents SDK initialized successfully
-2025-09-20 18:54:58,608 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Enhanced Reddit Trend Scout
-2025-09-20 18:54:58,608 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Advanced Content Risk Assessor
-2025-09-20 18:54:58,608 [INFO] trend_scanner.google_agents: Google agents created successfully for orchestration
-2025-09-20 18:54:58,612 [INFO] trend_scanner.google_agents: Target subreddits configured: ['worldnews']
-2025-09-20 18:54:58,612 [INFO] trend_scanner.google_agents: Starting Google-orchestrated trend scanning...
-2025-09-20 18:54:58,612 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Reddit Trend Scout
-2025-09-20 18:54:58,612 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Content Risk Assessor
-2025-09-20 18:54:58,612 [INFO] trend_scanner.google_agents: Starting sequential workflow with 2 tasks
-2025-09-20 18:54:58,612 [INFO] trend_scanner.google_agents: Executing task 1/2 with agent 'reddit_scanner'
-2025-09-20 18:54:58,612 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing tool scan (fallback)
-2025-09-20 18:55:00,613 [INFO] trend_scanner.scraper: scraper: newspaper extracted 571 chars from https://www.bbc.co.uk/news/articles/cdx20xenzgqo
-2025-09-20 18:55:05,356 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1988 chars from https://kyivindependent.com/this-is-russias-war-russia-should-pay-uk-examining-new-ways-to-use-moscows-frozen-assets/
-2025-09-20 18:55:05,845 [WARNING] trend_scanner.scraper: requests.get failed for https://www.axios.com/2025/09/20/egypt-military-build-up-sinai-israel-us: 403 Client Error: Forbidden for url: https://www.axios.com/2025/09/20/egypt-military-build-up-sinai-israel-us
-2025-09-20 18:55:08,388 [INFO] trend_scanner.scraper: scraper: newspaper extracted 730 chars from https://www.bloomberg.com/news/articles/2025-09-20/putin-decides-russia-can-step-up-ukraine-attacks-and-trump-won-t-act
-2025-09-20 18:55:08,930 [INFO] trend_scanner.scraper: scraper: newspaper extracted 4615 chars from https://www.theguardian.com/world/2025/sep/20/zelenskyy-accuses-allies-of-wasting-time-as-he-prepares-for-trump-meeting
-2025-09-20 18:55:10,368 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3881 chars from https://www.cnn.com/2025/09/20/europe/poland-russia-aerial-assault-ukraine-intl
-2025-09-20 18:55:10,839 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2401 chars from https://www.indiatoday.in/world/story/cyberattack-disrupts-flight-operations-in-london-brussels-and-other-major-european-airports-2790519-2025-09-20
-2025-09-20 18:55:11,846 [INFO] trend_scanner.scraper: scraper: newspaper extracted 9672 chars from https://cpj.org/2025/09/israels-killing-of-31-yemeni-journalists-marks-deadliest-global-attack-in-16-years/
-2025-09-20 18:55:12,415 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5018 chars from https://www.bbc.com/news/articles/c3drpgv33pxo
-2025-09-20 18:55:12,878 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1562 chars from https://www.bbc.co.uk/news/articles/c3drpgv33pxo
-2025-09-20 18:55:19,360 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1362 chars from https://www.pravda.com.ua/eng/news/2025/09/20/7531704
-2025-09-20 18:55:19,946 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3045 chars from https://www.swissinfo.ch/eng/trade-policy/swiss-firm-suspected-of-violating-gold-sanctions-against-russia/90037330
-2025-09-20 18:55:21,209 [INFO] trend_scanner.scraper: scraper: newspaper extracted 536 chars from https://www.jpost.com/middle-east/article-868139
-2025-09-20 18:55:27,165 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2427 chars from https://www.arabobserver.com/french-ministry-of-the-interior-dissolves-the-european-institute-of-human-sciences/?utm_source=chatgpt.com
-2025-09-20 18:55:27,533 [WARNING] trend_scanner.scraper: requests.get failed for https://www.reuters.com/business/aerospace-defense/poland-scrambles-aircraft-after-russia-launches-strikes-ukraine-2025-09-20/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/business/aerospace-defense/poland-scrambles-aircraft-after-russia-launches-strikes-ukraine-2025-09-20/
-2025-09-20 18:55:28,170 [INFO] trend_scanner.scraper: scraper: readability extracted 316 chars from https://www.euronews.com/my-europe/2025/09/19/we-really-need-to-act-eu-breaks-taboo-with-first-ever-sanctions-on-russian-lng
-2025-09-20 18:55:28,235 [WARNING] trend_scanner.scraper: requests.get failed for https://www.reuters.com/business/media-telecom/three-dead-australia-after-optus-glitch-disrupts-emergency-calls-2025-09-19/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/business/media-telecom/three-dead-australia-after-optus-glitch-disrupts-emergency-calls-2025-09-19/
-2025-09-20 18:55:29,780 [INFO] trend_scanner.scraper: scraper: newspaper extracted 6047 chars from https://apnews.com/article/russia-ukraine-missile-drone-attack-zelenskyy-b517772651a4c95c8d66ce2777c544ff
-2025-09-20 18:55:30,318 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2829 chars from https://www.swissinfo.ch/eng/various/the-foundation-stone-for-the-future-blatten-has-been-laid/90033241
-2025-09-20 18:55:33,677 [INFO] trend_scanner.scraper: scraper: newspaper extracted 4451 chars from https://english.kyodonews.net/articles/-/61399
-2025-09-20 18:55:33,677 [INFO] trend_scanner.tools: Performing batch risk assessment for 15 posts
-2025-09-20 18:55:33,684 [INFO] LiteLLM: 
+2025-09-20 19:21:36,021 [INFO] trend_scanner.google_agents: Google Agents orchestration initialized successfully
+2025-09-20 19:21:37,140 [INFO] httpx: HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-20 19:21:38,334 [INFO] trend_scanner.tools: Google Agents SDK initialized successfully
+2025-09-20 19:21:38,334 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Enhanced Reddit Trend Scout
+2025-09-20 19:21:38,334 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Advanced Content Risk Assessor
+2025-09-20 19:21:38,335 [INFO] trend_scanner.google_agents: Google agents created successfully for orchestration
+2025-09-20 19:21:38,335 [INFO] trend_scanner.google_agents: Target subreddits configured: ['DebunkThis']
+2025-09-20 19:21:38,335 [INFO] trend_scanner.google_agents: Starting Google-orchestrated trend scanning...
+2025-09-20 19:21:38,335 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Reddit Trend Scout
+2025-09-20 19:21:38,335 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Content Risk Assessor
+2025-09-20 19:21:38,335 [INFO] trend_scanner.google_agents: Starting sequential workflow with 2 tasks
+2025-09-20 19:21:38,335 [INFO] trend_scanner.google_agents: Executing task 1/2 with agent 'reddit_scanner'
+2025-09-20 19:21:38,336 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing tool scan for r/DebunkThis
+2025-09-20 19:21:39,629 [INFO] trend_scanner.tools: Performing batch risk assessment for 0 posts
+2025-09-20 19:21:39,629 [INFO] trend_scanner.tools: Batch processing: assessed 0 posts in 1 API call vs 0 individual calls
+2025-09-20 19:21:39,629 [INFO] trend_scanner.google_agents: Task 1 completed successfully by 'reddit_scanner'
+2025-09-20 19:21:39,629 [INFO] trend_scanner.google_agents: Executing task 2/2 with agent 'risk_assessor'
+2025-09-20 19:21:44,015 [WARNING] trend_scanner.google_agents: No trending posts found in previous results for Risk Assessor
+2025-09-20 19:21:44,015 [INFO] trend_scanner.google_agents: Task 2 completed successfully by 'risk_assessor'
+2025-09-20 19:21:49,876 [INFO] trend_scanner.google_agents: Successfully processed Reddit scan data: 0 posts found
+2025-09-20 19:21:49,876 [INFO] trend_scanner.google_agents: No posts found from workflow - attempting direct tool execution
+2025-09-20 19:21:50,573 [INFO] trend_scanner.tools: Performing batch risk assessment for 0 posts
+2025-09-20 19:21:50,573 [INFO] trend_scanner.tools: Batch processing: assessed 0 posts in 1 API call vs 0 individual calls
+2025-09-20 19:21:50,573 [INFO] trend_scanner.google_agents: Direct tool execution found 0 posts
+2025-09-20 19:21:50,574 [INFO] trend_scanner.google_agents: Scan completed with Google Agents orchestration - Found 0 trending posts
+2025-09-20 19:22:12,978 [INFO] trend_scanner.google_agents: Google Agents orchestration initialized successfully
+2025-09-20 19:22:14,182 [INFO] httpx: HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-20 19:22:15,496 [INFO] trend_scanner.tools: Google Agents SDK initialized successfully
+2025-09-20 19:22:15,496 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Enhanced Reddit Trend Scout
+2025-09-20 19:22:15,496 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Advanced Content Risk Assessor
+2025-09-20 19:22:15,496 [INFO] trend_scanner.google_agents: Google agents created successfully for orchestration
+2025-09-20 19:22:15,496 [INFO] trend_scanner.google_agents: Target subreddits configured: ['DebunkThis']
+2025-09-20 19:22:15,496 [INFO] trend_scanner.google_agents: Starting Google-orchestrated trend scanning...
+2025-09-20 19:22:15,496 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Reddit Trend Scout
+2025-09-20 19:22:15,496 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Content Risk Assessor
+2025-09-20 19:22:15,496 [INFO] trend_scanner.google_agents: Starting sequential workflow with 2 tasks
+2025-09-20 19:22:15,496 [INFO] trend_scanner.google_agents: Executing task 1/2 with agent 'reddit_scanner'
+2025-09-20 19:22:15,496 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing tool scan for r/DebunkThis
+2025-09-20 19:22:17,187 [INFO] trend_scanner.tools: Performing batch risk assessment for 0 posts
+2025-09-20 19:22:17,187 [INFO] trend_scanner.tools: Batch processing: assessed 0 posts in 1 API call vs 0 individual calls
+2025-09-20 19:22:17,188 [INFO] trend_scanner.google_agents: Task 1 completed successfully by 'reddit_scanner'
+2025-09-20 19:22:17,188 [INFO] trend_scanner.google_agents: Executing task 2/2 with agent 'risk_assessor'
+2025-09-20 19:22:19,653 [WARNING] trend_scanner.google_agents: No trending posts found in previous results for Risk Assessor
+2025-09-20 19:22:19,653 [INFO] trend_scanner.google_agents: Task 2 completed successfully by 'risk_assessor'
+2025-09-20 19:22:27,558 [INFO] trend_scanner.google_agents: Successfully processed Reddit scan data: 0 posts found
+2025-09-20 19:22:27,558 [INFO] trend_scanner.google_agents: No posts found from workflow - attempting direct tool execution
+2025-09-20 19:22:28,211 [INFO] trend_scanner.tools: Performing batch risk assessment for 0 posts
+2025-09-20 19:22:28,211 [INFO] trend_scanner.tools: Batch processing: assessed 0 posts in 1 API call vs 0 individual calls
+2025-09-20 19:22:28,212 [INFO] trend_scanner.google_agents: Direct tool execution found 0 posts
+2025-09-20 19:22:28,212 [INFO] trend_scanner.google_agents: Scan completed with Google Agents orchestration - Found 0 trending posts
+2025-09-20 19:22:52,593 [INFO] trend_scanner.google_agents: Google Agents orchestration initialized successfully
+2025-09-20 19:22:53,658 [INFO] httpx: HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-20 19:22:54,802 [INFO] trend_scanner.tools: Google Agents SDK initialized successfully
+2025-09-20 19:22:54,802 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Enhanced Reddit Trend Scout
+2025-09-20 19:22:54,802 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Advanced Content Risk Assessor
+2025-09-20 19:22:54,803 [INFO] trend_scanner.google_agents: Google agents created successfully for orchestration
+2025-09-20 19:22:54,803 [INFO] trend_scanner.google_agents: Target subreddits configured: ['IsItBullshit']
+2025-09-20 19:22:54,803 [INFO] trend_scanner.google_agents: Starting Google-orchestrated trend scanning...
+2025-09-20 19:22:54,803 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Reddit Trend Scout
+2025-09-20 19:22:54,803 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Content Risk Assessor
+2025-09-20 19:22:54,803 [INFO] trend_scanner.google_agents: Starting sequential workflow with 2 tasks
+2025-09-20 19:22:54,803 [INFO] trend_scanner.google_agents: Executing task 1/2 with agent 'reddit_scanner'
+2025-09-20 19:22:54,803 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing tool scan for r/IsItBullshit
+2025-09-20 19:22:55,819 [INFO] trend_scanner.tools: Performing batch risk assessment for 0 posts
+2025-09-20 19:22:55,821 [INFO] trend_scanner.tools: Batch processing: assessed 0 posts in 1 API call vs 0 individual calls
+2025-09-20 19:22:55,821 [INFO] trend_scanner.google_agents: Task 1 completed successfully by 'reddit_scanner'
+2025-09-20 19:22:55,821 [INFO] trend_scanner.google_agents: Executing task 2/2 with agent 'risk_assessor'
+2025-09-20 19:22:59,133 [WARNING] trend_scanner.google_agents: No trending posts found in previous results for Risk Assessor
+2025-09-20 19:22:59,133 [INFO] trend_scanner.google_agents: Task 2 completed successfully by 'risk_assessor'
+2025-09-20 19:23:03,388 [INFO] trend_scanner.google_agents: Successfully processed Reddit scan data: 0 posts found
+2025-09-20 19:23:03,389 [INFO] trend_scanner.google_agents: No posts found from workflow - attempting direct tool execution
+2025-09-20 19:23:03,828 [INFO] trend_scanner.tools: Performing batch risk assessment for 0 posts
+2025-09-20 19:23:03,828 [INFO] trend_scanner.tools: Batch processing: assessed 0 posts in 1 API call vs 0 individual calls
+2025-09-20 19:23:03,828 [INFO] trend_scanner.google_agents: Direct tool execution found 0 posts
+2025-09-20 19:23:03,828 [INFO] trend_scanner.google_agents: Scan completed with Google Agents orchestration - Found 0 trending posts
+2025-09-20 19:26:36,847 [INFO] trend_scanner.google_agents: Google Agents orchestration initialized successfully
+2025-09-20 19:26:37,410 [INFO] trend_scanner.google_agents: Reddit authentication successful (read-only mode)
+2025-09-20 19:26:37,410 [INFO] trend_scanner.google_agents: Reddit API connection verified - can access subreddits
+2025-09-20 19:26:38,480 [INFO] httpx: HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-20 19:26:39,739 [INFO] trend_scanner.tools: Google Agents SDK initialized successfully
+2025-09-20 19:26:39,739 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Enhanced Reddit Trend Scout
+2025-09-20 19:26:39,739 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Advanced Content Risk Assessor
+2025-09-20 19:26:39,739 [INFO] trend_scanner.google_agents: Google agents created successfully for orchestration
+2025-09-20 19:26:39,739 [INFO] trend_scanner.google_agents: Target subreddits configured: ['IsItBullshit']
+2025-09-20 19:26:39,739 [INFO] trend_scanner.google_agents: Starting Google-orchestrated trend scanning...
+2025-09-20 19:26:39,739 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Reddit Trend Scout
+2025-09-20 19:26:39,739 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Content Risk Assessor
+2025-09-20 19:26:39,739 [INFO] trend_scanner.google_agents: Starting sequential workflow with 2 tasks
+2025-09-20 19:26:39,739 [INFO] trend_scanner.google_agents: Executing task 1/2 with agent 'reddit_scanner'
+2025-09-20 19:26:39,739 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing tool scan for r/IsItBullshit
+2025-09-20 19:26:39,739 [INFO] trend_scanner.tools: Starting to fetch submissions from r/IsItBullshit (limit=20, sort=new)
+2025-09-20 19:26:40,813 [INFO] trend_scanner.tools: Performing batch risk assessment for 0 posts
+2025-09-20 19:26:40,813 [INFO] trend_scanner.tools: Batch processing: assessed 0 posts in 1 API call vs 0 individual calls
+2025-09-20 19:26:40,813 [INFO] trend_scanner.tools: Scan summary: Scanned r/IsItBullshit (20 posts), scraped 0 links, found 0 trending posts
+2025-09-20 19:26:40,813 [INFO] trend_scanner.google_agents: Task 1 completed successfully by 'reddit_scanner'
+2025-09-20 19:26:40,813 [INFO] trend_scanner.google_agents: Executing task 2/2 with agent 'risk_assessor'
+2025-09-20 19:26:44,785 [WARNING] trend_scanner.google_agents: No trending posts found in previous results for Risk Assessor
+2025-09-20 19:26:44,785 [INFO] trend_scanner.google_agents: Task 2 completed successfully by 'risk_assessor'
+2025-09-20 19:26:51,173 [INFO] trend_scanner.google_agents: Successfully processed Reddit scan data: 0 posts found
+2025-09-20 19:26:51,173 [INFO] trend_scanner.google_agents: No posts found from workflow - attempting direct tool execution
+2025-09-20 19:26:51,173 [INFO] trend_scanner.tools: Starting to fetch submissions from r/IsItBullshit (limit=20, sort=new)
+2025-09-20 19:26:51,612 [INFO] trend_scanner.tools: Performing batch risk assessment for 0 posts
+2025-09-20 19:26:51,612 [INFO] trend_scanner.tools: Batch processing: assessed 0 posts in 1 API call vs 0 individual calls
+2025-09-20 19:26:51,612 [INFO] trend_scanner.tools: Scan summary: Scanned r/IsItBullshit (20 posts), scraped 0 links, found 0 trending posts
+2025-09-20 19:26:51,612 [INFO] trend_scanner.google_agents: Direct tool execution found 0 posts
+2025-09-20 19:26:51,612 [INFO] trend_scanner.google_agents: Scan completed with Google Agents orchestration - Found 0 trending posts
+2025-09-20 19:29:28,389 [INFO] trend_scanner.google_agents: Google Agents orchestration initialized successfully
+2025-09-20 19:29:28,437 [INFO] trend_scanner.google_agents: Reddit authentication successful (read-only mode)
+2025-09-20 19:29:28,437 [INFO] trend_scanner.google_agents: Reddit API connection verified - can access subreddits
+2025-09-20 19:29:29,450 [INFO] httpx: HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-20 19:29:30,592 [INFO] trend_scanner.tools: Google Agents SDK initialized successfully
+2025-09-20 19:29:30,592 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Enhanced Reddit Trend Scout
+2025-09-20 19:29:30,592 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Advanced Content Risk Assessor
+2025-09-20 19:29:30,592 [INFO] trend_scanner.google_agents: Google agents created successfully for orchestration
+2025-09-20 19:29:30,592 [INFO] trend_scanner.google_agents: Target subreddits configured: ['IsItBullshit']
+2025-09-20 19:29:30,592 [INFO] trend_scanner.google_agents: Starting Google-orchestrated trend scanning...
+2025-09-20 19:29:30,592 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Reddit Trend Scout
+2025-09-20 19:29:30,592 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Content Risk Assessor
+2025-09-20 19:29:30,592 [INFO] trend_scanner.google_agents: Starting sequential workflow with 2 tasks
+2025-09-20 19:29:30,592 [INFO] trend_scanner.google_agents: Executing task 1/2 with agent 'reddit_scanner'
+2025-09-20 19:29:30,592 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing tool scan for r/IsItBullshit
+2025-09-20 19:29:30,592 [INFO] trend_scanner.tools: Starting to fetch submissions from r/IsItBullshit (limit=20, sort=new)
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 1: score=0, velocity=0.0, age=10.6h, recent=True, basic_score_threshold=15.0
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 1 filter check: recent=True, score=0>=15.0(False)
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 1 FILTERED OUT: recent=True, meets_score=False
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 2: score=258, velocity=7.3, age=35.4h, recent=False, basic_score_threshold=15.0
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 2 filter check: recent=False, score=258>=15.0(True)
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 2 FILTERED OUT: recent=False, meets_score=True
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 3: score=116, velocity=2.8, age=41.3h, recent=False, basic_score_threshold=15.0
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 3 filter check: recent=False, score=116>=15.0(True)
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 3 FILTERED OUT: recent=False, meets_score=True
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 4 filter check: recent=False, score=0>=15.0(False)
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 4 FILTERED OUT: recent=False, meets_score=False
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 5 filter check: recent=False, score=45>=15.0(True)
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Post 5 FILTERED OUT: recent=False, meets_score=True
+2025-09-20 19:29:31,642 [INFO] trend_scanner.tools: Performing batch risk assessment for 0 posts
+2025-09-20 19:29:31,658 [INFO] trend_scanner.tools: Batch processing: assessed 0 posts in 1 API call vs 0 individual calls
+2025-09-20 19:29:31,658 [INFO] trend_scanner.tools: Scan summary: Scanned r/IsItBullshit (20 posts), scraped 0 links, found 0 trending posts
+2025-09-20 19:29:31,658 [INFO] trend_scanner.google_agents: Task 1 completed successfully by 'reddit_scanner'
+2025-09-20 19:29:31,658 [INFO] trend_scanner.google_agents: Executing task 2/2 with agent 'risk_assessor'
+2025-09-20 19:29:34,944 [WARNING] trend_scanner.google_agents: No trending posts found in previous results for Risk Assessor
+2025-09-20 19:29:34,944 [INFO] trend_scanner.google_agents: Task 2 completed successfully by 'risk_assessor'
+2025-09-20 19:29:39,645 [INFO] trend_scanner.google_agents: Successfully processed Reddit scan data: 0 posts found
+2025-09-20 19:29:39,645 [INFO] trend_scanner.google_agents: No posts found from workflow - attempting direct tool execution
+2025-09-20 19:29:39,645 [INFO] trend_scanner.tools: Starting to fetch submissions from r/IsItBullshit (limit=20, sort=new)
+2025-09-20 19:29:40,102 [INFO] trend_scanner.tools: Post 1: score=0, velocity=0.0, age=10.6h, recent=True, basic_score_threshold=15.0
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 1 filter check: recent=True, score=0>=15.0(False)
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 1 FILTERED OUT: recent=True, meets_score=False
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 2: score=261, velocity=1276.5, age=35.4h, recent=False, basic_score_threshold=15.0
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 2 filter check: recent=False, score=261>=15.0(True)
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 2 FILTERED OUT: recent=False, meets_score=True
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 3: score=120, velocity=1702.0, age=41.3h, recent=False, basic_score_threshold=15.0
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 3 filter check: recent=False, score=120>=15.0(True)
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 3 FILTERED OUT: recent=False, meets_score=True
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 4 filter check: recent=False, score=0>=15.0(False)
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 4 FILTERED OUT: recent=False, meets_score=False
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 5 filter check: recent=False, score=44>=15.0(True)
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Post 5 FILTERED OUT: recent=False, meets_score=True
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Performing batch risk assessment for 0 posts
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Batch processing: assessed 0 posts in 1 API call vs 0 individual calls
+2025-09-20 19:29:40,103 [INFO] trend_scanner.tools: Scan summary: Scanned r/IsItBullshit (20 posts), scraped 0 links, found 0 trending posts
+2025-09-20 19:29:40,103 [INFO] trend_scanner.google_agents: Direct tool execution found 0 posts
+2025-09-20 19:29:40,103 [INFO] trend_scanner.google_agents: Scan completed with Google Agents orchestration - Found 0 trending posts
+2025-09-20 19:36:04,219 [INFO] trend_scanner.google_agents: Google Agents orchestration initialized successfully
+2025-09-20 19:36:04,248 [INFO] trend_scanner.google_agents: Reddit authentication successful (read-only mode)
+2025-09-20 19:36:04,248 [INFO] trend_scanner.google_agents: Reddit API connection verified - can access subreddits
+2025-09-20 19:36:05,256 [INFO] httpx: HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-20 19:36:06,421 [INFO] trend_scanner.tools: Google Agents SDK initialized successfully
+2025-09-20 19:36:06,421 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Enhanced Reddit Trend Scout
+2025-09-20 19:36:06,421 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Advanced Content Risk Assessor
+2025-09-20 19:36:06,421 [INFO] trend_scanner.google_agents: Google agents created successfully for orchestration
+2025-09-20 19:36:06,421 [INFO] trend_scanner.google_agents: Target subreddits configured: ['NoFilterNews']
+2025-09-20 19:36:06,421 [INFO] trend_scanner.google_agents: Starting Google-orchestrated trend scanning...
+2025-09-20 19:36:06,421 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Reddit Trend Scout
+2025-09-20 19:36:06,421 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Content Risk Assessor
+2025-09-20 19:36:06,421 [INFO] trend_scanner.google_agents: Starting sequential workflow with 2 tasks
+2025-09-20 19:36:06,421 [INFO] trend_scanner.google_agents: Executing task 1/2 with agent 'reddit_scanner'
+2025-09-20 19:36:06,421 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing tool scan for r/NoFilterNews
+2025-09-20 19:36:06,427 [INFO] trend_scanner.tools: Starting to fetch submissions from r/NoFilterNews (limit=20, sort=new)
+2025-09-20 19:36:10,712 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3554 chars from https://www.yahoo.com/news/articles/donald-trump-wishes-air-force-194218473.html
+2025-09-20 19:36:10,714 [INFO] trend_scanner.tools: Post 1: score=1, velocity=29.8, age=0.0h, recent=True, basic_score_threshold=15.0
+2025-09-20 19:36:10,714 [INFO] trend_scanner.tools: Post 1 filter check: recent=True, score=1>=15.0(False)
+2025-09-20 19:36:10,714 [INFO] trend_scanner.tools: Post 1 FILTERED OUT: recent=True, meets_score=False
+2025-09-20 19:36:15,279 [INFO] trend_scanner.scraper: scraper: newspaper extracted 4766 chars from https://www.thedailybeast.com/pete-hegseth-orders-reporters-to-only-publish-his-talking-points/
+2025-09-20 19:36:15,281 [INFO] trend_scanner.tools: Post 2: score=1, velocity=6.9, age=0.1h, recent=True, basic_score_threshold=15.0
+2025-09-20 19:36:15,281 [INFO] trend_scanner.tools: Post 2 filter check: recent=True, score=1>=15.0(False)
+2025-09-20 19:36:15,281 [INFO] trend_scanner.tools: Post 2 FILTERED OUT: recent=True, meets_score=False
+2025-09-20 19:36:16,183 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5652 chars from https://www.nbcnews.com/politics/justice-department/no-evidence-charlie-kirk-shooting-left-wing-groups-rcna232513
+2025-09-20 19:36:16,184 [INFO] trend_scanner.tools: Post 3: score=2, velocity=11.5, age=0.2h, recent=True, basic_score_threshold=15.0
+2025-09-20 19:36:16,184 [INFO] trend_scanner.tools: Post 3 filter check: recent=True, score=2>=15.0(False)
+2025-09-20 19:36:16,185 [INFO] trend_scanner.tools: Post 3 FILTERED OUT: recent=True, meets_score=False
+2025-09-20 19:36:17,774 [INFO] trend_scanner.scraper: scraper: readability extracted 4546 chars from https://www.newsweek.com/charlie-kirk-legacy-should-dustbin-history-ilhan-omar-says-2132886
+2025-09-20 19:36:17,775 [INFO] trend_scanner.tools: Post 4 filter check: recent=True, score=21>=15.0(True)
+2025-09-20 19:36:17,775 [INFO] trend_scanner.tools: Post 5 filter check: recent=True, score=1>=15.0(False)
+2025-09-20 19:36:17,775 [INFO] trend_scanner.tools: Post 5 FILTERED OUT: recent=True, meets_score=False
+2025-09-20 19:36:47,827 [WARNING] trend_scanner.scraper: requests.get failed for https://www.dailymail.co.uk/news/article-15116663/School-meeting-chaos-teacher-Charlie-Kirk.html: HTTPSConnectionPool(host='www.dailymail.co.uk', port=443): Max retries exceeded with url: /news/article-15116663/School-meeting-chaos-teacher-Charlie-Kirk.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021BF8FAE2D0>, 'Connection to www.dailymail.co.uk timed out. (connect timeout=10)'))
+2025-09-20 19:36:50,486 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3346 chars from https://www.irishstar.com/news/us-news/donald-trump-young-people-die-35935658
+2025-09-20 19:36:54,613 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2957 chars from https://aje.io/x5sj5o
+2025-09-20 19:36:54,914 [WARNING] trend_scanner.scraper: requests.get failed for https://www.reuters.com/en/cyberattack-causes-flight-delays-cancellations-brussels-airport-2025-09-20/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/en/cyberattack-causes-flight-delays-cancellations-brussels-airport-2025-09-20/
+2025-09-20 19:36:55,203 [WARNING] trend_scanner.scraper: requests.get failed for https://www.dailykos.com/stories/2025/9/20/2344085/-Cartoon-Republican-Christmas-Card?pm_campaign=front_page&pm_source=top_news_slot_1&pm_medium=web: 403 Client Error: Forbidden for url: https://www.dailykos.com/stories/2025/9/20/2344085/-Cartoon-Republican-Christmas-Card?pm_campaign=front_page&pm_source=top_news_slot_1&pm_medium=web
+2025-09-20 19:36:55,203 [INFO] trend_scanner.tools: Performing batch risk assessment for 2 posts
+2025-09-20 19:36:55,223 [INFO] LiteLLM: 
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-09-20 18:55:49,386 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAXgObFS97rd0TcoLpQqHOWtDvI12ajj0Y "HTTP/1.1 200 OK"
-2025-09-20 18:55:49,389 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
-2025-09-20 18:55:49,392 [INFO] trend_scanner.tools: Batch risk assessment completed for 15 posts
-2025-09-20 18:55:49,394 [INFO] trend_scanner.tools: Batch processing: assessed 15 posts in 1 API call vs 15 individual calls
-2025-09-20 18:55:49,394 [INFO] trend_scanner.google_agents: Task 1 completed successfully by 'reddit_scanner'
-2025-09-20 18:55:49,394 [INFO] trend_scanner.google_agents: Executing task 2/2 with agent 'risk_assessor'
-2025-09-20 18:57:00,368 [INFO] trend_scanner.google_agents: Content Risk Assessor provided with 9 trending posts for detailed analysis
-2025-09-20 18:57:00,369 [INFO] trend_scanner.google_agents: Task 2 completed successfully by 'risk_assessor'
-2025-09-20 18:57:09,241 [INFO] trend_scanner.google_agents: Successfully processed Reddit scan data: 9 posts found
-2025-09-20 18:57:09,241 [INFO] trend_scanner.google_agents: Scan completed with Google Agents orchestration - Found 9 trending posts
+2025-09-20 19:37:04,934 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAXgObFS97rd0TcoLpQqHOWtDvI12ajj0Y "HTTP/1.1 200 OK"
+2025-09-20 19:37:04,939 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-09-20 19:37:04,941 [INFO] trend_scanner.tools: Batch risk assessment completed for 2 posts
+2025-09-20 19:37:04,941 [INFO] trend_scanner.tools: Batch processing: assessed 2 posts in 1 API call vs 2 individual calls
+2025-09-20 19:37:04,941 [INFO] trend_scanner.tools: Scan summary: Scanned r/NoFilterNews (20 posts), scraped 6 links, found 2 trending posts
+2025-09-20 19:37:04,941 [INFO] trend_scanner.google_agents: Task 1 completed successfully by 'reddit_scanner'
+2025-09-20 19:37:04,941 [INFO] trend_scanner.google_agents: Executing task 2/2 with agent 'risk_assessor'
+2025-09-20 19:37:37,381 [INFO] trend_scanner.google_agents: Content Risk Assessor provided with 2 trending posts for detailed analysis
+2025-09-20 19:37:37,381 [INFO] trend_scanner.google_agents: Task 2 completed successfully by 'risk_assessor'
+2025-09-20 19:37:43,802 [INFO] trend_scanner.google_agents: Successfully processed Reddit scan data: 2 posts found
+2025-09-20 19:37:43,802 [INFO] trend_scanner.google_agents: Scan completed with Google Agents orchestration - Found 2 trending posts

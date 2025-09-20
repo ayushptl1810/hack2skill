@@ -142,7 +142,7 @@ class RedditScanTool(GoogleTool):
     name: str = "reddit_scanner"
     description: str = "Scans Reddit subreddits for rapidly trending posts and ranks them by potential misinformation risk using Google Agents SDK"
 
-    def __init__(self, reddit_client, llm_wrapper, velocity_threshold=25, min_score_threshold=50, google_api_key=None):
+    def __init__(self, reddit_client, llm_wrapper, velocity_threshold=15, min_score_threshold=30, google_api_key=None):
         super().__init__()
         object.__setattr__(self, '_reddit', reddit_client)
         object.__setattr__(self, '_llm_wrapper', llm_wrapper)
@@ -294,12 +294,12 @@ POSTS TO ANALYZE:
             batch_prompt += f"""
 --- POST {i} (ID: {post.post_id}) ---
 Title: {post.title}
-Content: {post.content[:500]}{'...' if len(post.content) > 500 else ''}
+Content: {post.content[:50000]}{'...' if len(post.content) > 500 else ''}
 Subreddit: r/{post.subreddit}
 Score: {post.score} | Comments: {post.num_comments} | Age: {post.age_hours:.1f}h
 Author: {post.author}
 Has External Content: {post.has_external_content}
-{f'External Content: {post.scraped_content[:300]}...' if post.scraped_content else ''}
+{f'External Content: {post.scraped_content[:30000]}...' if post.scraped_content else ''}
 
 """
 
@@ -363,11 +363,15 @@ POST_ID: [post_id] | RISK: [HIGH/MEDIUM/LOW] | REASON: [brief reason]
             else:
                 submissions = subreddit.new(limit=limit)
 
+            # Debug: Log that we're about to iterate submissions
+            logger.info(f"Starting to fetch submissions from r/{subreddit_name} (limit={limit}, sort={sort_type})")
+            
             # First pass: collect all post data for batch processing
             candidate_posts = []
             submission_data = {}
             
             for submission in submissions:
+                logger.debug(f"Processing submission: {submission.id} - {submission.title[:50]}...")
                 processed_count += 1
                 content, scraped_content, content_source = self.extract_post_content(submission)
                 if scraped_content:
@@ -377,6 +381,11 @@ POST_ID: [post_id] | RISK: [HIGH/MEDIUM/LOW] | REASON: [brief reason]
                 engagement_rate = submission.num_comments / max(submission.score, 1)
                 is_recent = (time.time() - submission.created_utc) < 86400
                 meets_basic_score = submission.score >= (self._min_score_threshold * 0.3)
+                
+                # Debug: Log filtering criteria for first few posts
+                if processed_count <= 3:
+                    age_hours = (time.time() - submission.created_utc) / 3600
+                    logger.info(f"Post {processed_count}: score={submission.score}, velocity={velocity:.1f}, age={age_hours:.1f}h, recent={is_recent}, basic_score_threshold={self._min_score_threshold * 0.3}")
                 
                 # Store submission data for later use
                 submission_data[submission.id] = {
@@ -390,13 +399,17 @@ POST_ID: [post_id] | RISK: [HIGH/MEDIUM/LOW] | REASON: [brief reason]
                     'meets_basic_score': meets_basic_score
                 }
                 
+                # Debug: Log why posts are being filtered out
+                if processed_count <= 5:
+                    logger.info(f"Post {processed_count} filter check: recent={is_recent}, score={submission.score}>={self._min_score_threshold * 0.3}({meets_basic_score})")
+                
                 # Only add to batch assessment if it meets basic criteria
                 if is_recent and meets_basic_score:
                     batch_post = BatchPostData(
                         post_id=submission.id,
                         title=submission.title,
-                        content=content[:2000] if content else "",
-                        scraped_content=scraped_content[:1000] if scraped_content else None,
+                        content=content[:100000] if content else "",
+                        scraped_content=scraped_content[:100000] if scraped_content else None,
                         subreddit=submission.subreddit.display_name,
                         score=submission.score,
                         upvote_ratio=submission.upvote_ratio,
@@ -406,6 +419,9 @@ POST_ID: [post_id] | RISK: [HIGH/MEDIUM/LOW] | REASON: [brief reason]
                         has_external_content=scraped_content is not None
                     )
                     candidate_posts.append(batch_post)
+                else:
+                    if processed_count <= 5:
+                        logger.info(f"Post {processed_count} FILTERED OUT: recent={is_recent}, meets_score={meets_basic_score}")
 
             # Batch risk assessment for all candidate posts
             logger.info(f"Performing batch risk assessment for {len(candidate_posts)} posts")
@@ -467,6 +483,7 @@ POST_ID: [post_id] | RISK: [HIGH/MEDIUM/LOW] | REASON: [brief reason]
 
             # Log batch processing efficiency 
             logger.info(f"Batch processing: assessed {len(candidate_posts)} posts in 1 API call vs {len(candidate_posts)} individual calls")
+            logger.info(f"Scan summary: Scanned r/{subreddit_name} ({processed_count} posts), scraped {scraped_count} links, found {len(trending_posts)} trending posts")
 
             result = {
                 'trending_posts': trending_posts,
