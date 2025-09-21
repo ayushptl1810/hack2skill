@@ -25,7 +25,9 @@ from typing import List
 # Predefined list of subreddits to scan
 TARGET_SUBREDDITS = [
     'NoFilterNews',
-    'conspiracy'
+    'badscience',
+    'skeptic',
+    'conspiracytheories'
 ]
 
 def main_one_scan() -> dict:

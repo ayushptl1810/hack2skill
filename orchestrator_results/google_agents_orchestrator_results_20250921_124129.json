@@ -1,0 +1,1119 @@
+{
+  "success": true,
+  "message": "Successfully processed 9 posts with actual fact-checking results",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-09-21T12:39:38.870801",
+        "total_posts": 9,
+        "posts": [
+          {
+            "claim": "Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents.",
+            "summary": "A Reddit post in r/NoFilterNews discusses a now-deleted Truth Social post by Donald Trump. According to politico.com, the post appears to contain a letter intended for Pam Bondi, seemingly instructing her to arrest some of Trump's political opponents. The post received over 4000 upvotes.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/"
+          },
+          {
+            "claim": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+            "summary": "A Reddit post in r/skeptic reports on an NBC News article stating that the federal investigation into the shooting of Charlie Kirk has found no evidence connecting the alleged shooter, Tyler Robinson, to left-wing groups. The investigation suggests the shooting was an isolated incident motivated by Robinson's personal offense to Kirk's ideology. Federal charges against Robinson are uncertain.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nlzl2d/no_evidence_found_yet_of_ties_between_charlie/"
+          },
+          {
+            "claim": "Since 2018, all 31 targeted political attacks have been committed by Republicans, contrary to GOP claims of left-wing violence.",
+            "summary": "A Reddit post in r/skeptic references an article on wtfdetective.blog, disputing claims of left-wing political violence. The article claims that all 31 targeted political killings or attempted killings since 2018 were perpetrated by individuals associated with the Republican party. This contradicts statements made by Donald Trump attributing political assassinations to the radical left.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltr2o/gop_cries_about_leftwing_violence_but_every_one/"
+          },
+          {
+            "claim": "Leaked texts from the shooter, Tyler Robinson, in the Charlie Kirk case appear to be scripted.",
+            "summary": "A Reddit post in r/skeptic suggests that leaked texts attributed to Tyler Robinson, the alleged shooter in the Charlie Kirk case, seem scripted. No further information or evidence is provided in the post or available scraped content.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nmb712/the_leaked_texts_from_robinson_seem_scripted/"
+          },
+          {
+            "claim": "The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.",
+            "summary": "A Reddit post in r/skeptic links to a YouTube video titled \"Charlie Kirk and the Empathy Paradox.\" The post itself contains no further details, so the summary is limited to the title and source.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltp7c/charlie_kirk_and_the_empathy_paradox/"
+          },
+          {
+            "claim": "Tom Homan, the Border Czar, allegedly accepted $50,000 in cash while indicating he could help secure government contracts for undercover agents posing as business executives during the Trump administration, and the investigation was suspended.",
+            "summary": "A Reddit post in r/conspiracytheories claims that Tom Homan, the Border Czar, accepted $50,000 in cash, implying he could influence the awarding of government contracts to undercover agents posing as business executives during the Trump administration. The post also alleges that Patel suspended the investigation into this matter. The post states this is evidence that the Trump Administration was the most corrupt ever.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm9y3e/tom_homan_the_border_czar_accepted_50000_in_cash/"
+          },
+          {
+            "claim": "The post questions the credibility and truthfulness of unnamed individuals or entities.",
+            "summary": "A Reddit post in r/conspiracytheories poses the question, \"How can you believe they're not telling lies at this point?\" The post lacks specific context and does not identify who \"they\" refers to, making it a general statement of skepticism or distrust.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nmgcnc/how_can_you_believe_theyre_not_telling_lies_at/"
+          },
+          {
+            "claim": "A cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel.",
+            "summary": "A Reddit post in r/conspiracytheories suggests a possible connection between a recent cyber attack in Europe and the impending recognition of a Palestinian state by several European countries against Israel's wishes. The post implies that Israel might be responsible for the cyber attack.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm6lik/europe_is_hit_with_a_cyber_attack_a_day_before/"
+          },
+          {
+            "claim": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+            "summary": "A Reddit post in r/conspiracytheories reports on an NBC News article stating that the federal investigation into the shooting of Charlie Kirk has found no evidence connecting the alleged shooter, Tyler Robinson, to left-wing groups. The investigation suggests the shooting was an isolated incident motivated by Robinson's personal offense to Kirk's ideology. Federal charges against Robinson are uncertain.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm8tit/no_evidence_found_yet_of_ties_between_charlie/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 9 claims using Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents.",
+            "content_summary": "A Reddit post in r/NoFilterNews discusses a now-deleted Truth Social post by Donald Trump. According to politico.com, the post appears to contain a letter intended for Pam Bondi, seemingly instructing her to arrest some of Trump's political opponents. The post received over 4000 upvotes.",
+            "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The provided fact-checking sources do not contain any information supporting the claim that Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents. Instead, the sources indicate that Trump used Truth Social to generally engage in political discourse, defended Pam Bondi regarding the handling of Epstein files, and dismissed certain related controversies as a 'hoax.' There is no mention of him issuing or deleting such an instruction.",
+              "confidence": "high",
+              "reasoning": "1. What does each source say ACTUALLY HAPPENED?\n    *   **Source 1 (PBS, Jul 15, 2025):** States Trump used his Truth Social platform on Saturday (July 12, 2025) to stoke dark theories and is facing a political crisis related to his own making and the Epstein case blowback. It does not mention any post instructing Pam Bondi to arrest political opponents.\n    *   **Source 2 (Al Jazeera, Jul 17, 2025):** Reports that on Wednesday (July 16, 2025), Trump dismissed MAGA conspiracy theorists as 'weaklings' and described the controversy related to Pam Bondi and Epstein as a 'hoax' fabricated. This refers to Trump's reaction to, not initiation of, such a post.\n    *   **Source 3 (FactCheck.org, Apr 23, 2025):** Mentions Pam Bondi posted documents from the Abrego Garcia case on social media. This concerns Bondi's actions, not Trump's, and is also dated earlier than the other relevant articles regarding Trump's July 2025 social media activity.\n    *   **Source 4 (PBS, Jul 15, 2025):** Indicates that Trump defended Attorney General Pam Bondi on the handling of the Epstein files on Tuesday (July 14, 2025). He also claimed Comey, Obama, and Biden made up the Epstein files. This shows Trump defending Bondi and making claims about the files, not instructing her to make arrests.\n\n2. What does each source say was FAKE or MISLEADING?\n    *   **Source 1:** Does not explicitly state anything was fake or misleading related to the claim, but notes Trump stokes 'dark theories.'\n    *   **Source 2:** Reports that Trump himself dismissed 'MAGA conspiracy theorists' as 'weaklings' and described the *controversy* surrounding Bondi and Epstein as a 'hoax' fabricated. This suggests Trump was debunking or downplaying certain narratives, not creating one about arrests.\n    *   **Source 3:** Does not address the specific claim.\n    *   **Source 4:** Mentions Trump's claim that Comey, Obama, and Biden 'made up' the Epstein files, implying this is a statement by Trump, not a verified fact about the claim itself.\n\n3. Based on the evidence, what is the most likely truth about the claim?\n    *   None of the provided sources offer any evidence to support the claim that Donald Trump posted and deleted a Truth Social post instructing Pam Bondi to arrest his political opponents. The sources discuss Trump using Truth Social for general political commentary, defending Pam Bondi regarding the Epstein files, and dismissing certain related controversies as hoaxes. There is no mention of such a specific instruction being posted or deleted. Therefore, based on the provided information, the claim is unsupported.",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/politics/how-trump-spent-years-stoking-dark-theories-and-why-hes-facing-epstein-case-blowback-now",
+                  "https://www.aljazeera.com/news/2025/7/17/who-are-the-maga-influencers-calling-for-pam-bondis-head-over-epstein",
+                  "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                  "https://www.npr.org/2025/04/29/nx-s1-5327518/donald-trump-100-days-retribution-threats",
+                  "https://www.factcheck.org/2025/04/due-process-and-the-abrego-garcia-case/"
+                ],
+                "titles": [
+                  "How Trump spent years stoking dark theories, and why he's facing ...",
+                  "Who are the MAGA influencers calling for Pam Bondi's head over ...",
+                  "Attorney General Alerted Trump His Name Appeared in Epstein ...",
+                  "How Trump is using government power to target his enemies : NPR",
+                  "Due Process and the Abrego Garcia Case - FactCheck.org"
+                ],
+                "count": 10
+              },
+              "claim_text": "Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents.",
+              "verification_date": "2025-09-21T12:39:45.270731"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents."
+            },
+            "verification_timestamp": "2025-09-21T12:39:58.406450"
+          },
+          {
+            "claim_text": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+            "content_summary": "A Reddit post in r/skeptic reports on an NBC News article stating that the federal investigation into the shooting of Charlie Kirk has found no evidence connecting the alleged shooter, Tyler Robinson, to left-wing groups. The investigation suggests the shooting was an isolated incident motivated by ",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nlzl2d/no_evidence_found_yet_of_ties_between_charlie/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "Based on the provided sources, official investigations have not revealed a motive for Charlie Kirk's shooting, and therefore have not presented any evidence linking it to left-wing groups. While political figures have asserted such links, official sources have not corroborated these claims.",
+              "confidence": "high",
+              "reasoning": "1. **What each source says ACTUALLY HAPPENED:**\n    *   **Source 1 (PBS):** Announces an arrest in the shooting death of right-wing activist Charlie Kirk. Mentions 'rampant speculation' surrounding the event.\n    *   **Source 2 (NYT):** Notes that political figures, like JD Vance, discussed Kirk's shooting and its implications 'even before a suspect had been identified,' implying early speculation about motives.\n    *   **Source 3 (The Guardian):** Explicitly states: 'A motive has not been revealed by Utah officials.' It also notes that JD Vance has *said* 'left-wing extremism' is 'part of the reason' Kirk was killed, highlighting a disconnect between official statements and political rhetoric.\n    *   **Source 4 (NYT):** Reports that President Trump and his allies have invoked Kirk's killing to propose targeting liberal groups, indicating political attribution of the act to the left, but not an official finding.\n    *   **Source 5 (NYT):** Details the suspect's confession in charging documents ('I had to'), but does not mention any ideological motive (left-wing or otherwise) revealed by officials in these documents.\n\n2. **What each source says was FAKE or MISLEADING:**\n    *   The sources do not directly state that claims of left-wing links are 'fake' or 'misleading.' However, Source 3's declaration that 'A motive has not been revealed by Utah officials' *implicitly* undermines the political assertions made by figures like JD Vance (also mentioned in Source 3) and President Trump (Source 4) that the killing was due to 'left-wing extremism' or linked to liberal groups, as these assertions lack official backing. The 'rampant speculation' (Source 1) also suggests unsubstantiated claims.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim states: 'Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.'\n    *   Source 3 is the most direct and crucial: 'A motive has not been revealed by Utah officials.' While it refers to 'Utah officials' rather than explicitly 'federal officials,' it represents the primary official investigation. If the overall motive has not been revealed by the leading authorities, it logically follows that no specific evidence linking it to left-wing groups has been found or publicly presented by *any* officials, including federal ones. The absence of a stated motive means the absence of stated evidence for any specific motive, including a left-wing one.\n    *   Sources 2, 3, and 4 highlight that political figures *are* making claims about left-wing involvement. However, these are presented as statements from individuals (Vance, Trump) or as political strategy, not as findings from federal or state officials.\n    *   Source 5 details the suspect's confession but does not provide any official indication of an ideological motive, further supporting the idea that officials have not revealed such a link.\n    *   Therefore, based on the provided information, the official investigations have not disclosed a motive, and consequently, have not revealed any evidence linking Charlie Kirk's shooting to left-wing groups. The claim is consistent with the available information.",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/nation/what-we-know-so-far-about-the-charlie-kirk-shooting-suspect",
+                  "https://www.nytimes.com/2025/09/15/us/politics/jd-vance-charlie-kirk-show.html",
+                  "https://www.theguardian.com/us-news/2025/sep/16/court-hearing-charlie-kirk-shooting-suspect",
+                  "https://www.nytimes.com/2025/09/16/us/politics/trump-kirk-free-speech-hate-speech-left.html",
+                  "https://www.nytimes.com/live/2025/09/16/us/kirk-shooting-suspect-charges"
+                ],
+                "titles": [
+                  "What we know so far about the Charlie Kirk shooting suspect | PBS ...",
+                  "On Charlie Kirk Show, JD Vance Talks of Crackdown on Liberal ...",
+                  "Charlie Kirk suspect allegedly took responsibility for killing in online ...",
+                  "Trump Invokes Kirk's Killing in Seeking to Silence Opponents on Left ...",
+                  "Kirk Killing Suspect Faces Aggravated Murder Charge, and Death ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+              "verification_date": "2025-09-21T12:39:45.270731"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups."
+            },
+            "verification_timestamp": "2025-09-21T12:40:16.401697"
+          },
+          {
+            "claim_text": "Since 2018, all 31 targeted political attacks have been committed by Republicans, contrary to GOP claims of left-wing violence.",
+            "content_summary": "A Reddit post in r/skeptic references an article on wtfdetective.blog, disputing claims of left-wing political violence. The article claims that all 31 targeted political killings or attempted killings since 2018 were perpetrated by individuals associated with the Republican party. This contradicts ",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltr2o/gop_cries_about_leftwing_violence_but_every_one/",
+            "verification": {
+              "verified": false,
+              "verdict": "no_content",
+              "message": "No relevant fact-checked information found for this specific claim",
+              "confidence": "medium",
+              "reasoning": "Analysis completed",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/topic/gerry-adams?page=8",
+                  "https://www.nytimes.com/live/2025/09/16/us/trump-news",
+                  "https://www.wsj.com/politics/charlie-kirk-turning-point-usa-5cfe4015?gaa_at=eafs&gaa_n=ASWzDAjz7sbVbXMA6z7M-iChFByF7XSCpl5oIRThxQFf5lfiIrPNJjKhiNf3&gaa_ts=68cfa85e&gaa_sig=awFeDdYw1EwQdpKOqpUs2hMtgeQR6rqze9Wxh5sObRObtrQjLyqqQm-y0QStDMwGr--0OP6xePRfx5mO-h41Og%3D%3D",
+                  "https://www.theguardian.com/us-news/ng-interactive/2024/jun/25/charlie-kirk-turning-point-usa-chase-the-vote-trump"
+                ],
+                "titles": [
+                  "Gerry Adams - Page 8 - The New York Times",
+                  "Democrats Oppose Stopgap Bill, Raising Odds of a Shutdown - The ...",
+                  "Charlie Kirk, a Conservative Standard-Bearer, Killed at 31 - WSJ",
+                  "Charlie Kirk once unified conservative youth for Trump. Why are ..."
+                ],
+                "count": 4
+              },
+              "claim_text": "Since 2018, all 31 targeted political attacks have been committed by Republicans, contrary to GOP claims of left-wing violence.",
+              "verification_date": "2025-09-21T12:39:45.270731"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "Since 2018, all 31 targeted political attacks have been committed by Republicans, contrary to GOP claims of left-wing violence."
+            },
+            "verification_timestamp": "2025-09-21T12:40:17.826580"
+          },
+          {
+            "claim_text": "Leaked texts from the shooter, Tyler Robinson, in the Charlie Kirk case appear to be scripted.",
+            "content_summary": "A Reddit post in r/skeptic suggests that leaked texts attributed to Tyler Robinson, the alleged shooter in the Charlie Kirk case, seem scripted. No further information or evidence is provided in the post or available scraped content.",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nmb712/the_leaked_texts_from_robinson_seem_scripted/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "Unable to determine claim accuracy from available sources. Found fact-checking articles but analysis failed.",
+              "confidence": "low",
+              "reasoning": "Analysis completed",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2025/09/17/us/politics/charlie-kirk-killer.html",
+                  "https://www.bbc.com/news/world-us-canada-62683094",
+                  "https://www.aljazeera.com/news/2014/8/28/us-girl-shoots-gun-instructor-in-the-head",
+                  "https://www.aljazeera.com/news/2021/10/18/jury-selection-to-begin-in-us-killing-of-ahmaud-arbery",
+                  "https://www.aljazeera.com/sports/2025/3/28/real-madrid-vs-leganes-laliga-team-news-start-time-how-to-follow-stream"
+                ],
+                "titles": [
+                  "A Note, a Gun and a Mother's Conscience Led to an Arrest in Kirk's ...",
+                  "Mass shootings: What are the warning signs and could they help ...",
+                  "US girl shoots gun instructor in the head | Gun Violence News | Al ...",
+                  "Jury selection to begin in trial over killing of Ahmaud Arbery | Black ...",
+                  "Real Madrid vs Leganes – LaLiga: Team news, kickoff, how to follow ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Leaked texts from the shooter, Tyler Robinson, in the Charlie Kirk case appear to be scripted.",
+              "verification_date": "2025-09-21T12:39:45.270731"
+            },
+            "claim_metadata": {
+              "post_index": 3,
+              "extracted_claim": "Leaked texts from the shooter, Tyler Robinson, in the Charlie Kirk case appear to be scripted."
+            },
+            "verification_timestamp": "2025-09-21T12:40:31.162525"
+          },
+          {
+            "claim_text": "The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.",
+            "content_summary": "A Reddit post in r/skeptic links to a YouTube video titled \"Charlie Kirk and the Empathy Paradox.\" The post itself contains no further details, so the summary is limited to the title and source.",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltp7c/charlie_kirk_and_the_empathy_paradox/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided fact-checking sources focus entirely on the death and assassination of Charlie Kirk and the events surrounding it. They offer no information, neither corroborating nor refuting, about the existence of 'a post linking to a YouTube video analyzing Charlie Kirk and the concept of empathy.' Therefore, based solely on the given sources, the claim cannot be verified.",
+              "confidence": "high",
+              "reasoning": "1. **What does each source say ACTUALLY HAPPENED?**\n    *   All four sources consistently report that Charlie Kirk died after being shot/assassinated. This occurred during an appearance at Utah Valley University (Sources 1, 2). The events are dated around September 10-12, 2025.\n    *   Source 1 highlights Kirk's history of contentious views.\n    *   Source 2 states he was a practiced debater who posted his own videos 'parrying liberal critiques' and was doing so when shot.\n    *   Source 3 mentions a suspect caught on video jumping off a roof after firing one shot. It also includes an observation that 'Trump rarely shows empathy.'\n    *   Source 4 details unexpected calls for unity from Republicans and Democrats following his assassination.\n\n2. **What does each source say was FAKE or MISLEADING?**\n    *   None of the provided sources explicitly state anything as fake or misleading. They all present themselves as reporting factual events surrounding Charlie Kirk's death.\n    *   Crucially, none of the sources make any mention or allusion to 'a post linking to a YouTube video analyzing Charlie Kirk and the concept of empathy.' The topics covered are Charlie Kirk's death, his views, and the political aftermath, not specific online content about him in this manner.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim asserts the existence of a specific online activity: 'The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.'\n    *   The provided fact-checking sources are entirely dedicated to reporting on the death (assassination) of Charlie Kirk. They describe the circumstances, his background, and the reactions to his death.\n    *   There is no information within any of these sources that supports, contradicts, or even references a post linking to a YouTube video analyzing Charlie Kirk and the concept of empathy. While Source 2 mentions Kirk posting his *own* videos, this is distinct from a third-party analysis. Source 3's mention of 'empathy' is in reference to Donald Trump, not Charlie Kirk in the context of a video analysis.\n    *   Therefore, the claim cannot be verified as true or false based on the evidence presented in these specific fact-checking sources, as the sources do not address the claim's subject matter at all.",
+              "sources": {
+                "links": [
+                  "https://www.cbc.ca/news/world/charlie-kirk-controversies-1.7630859",
+                  "https://www.nytimes.com/2025/09/11/briefing/what-you-need-to-know-about-charlie-kirks-assassination.html",
+                  "https://www.nytimes.com/2025/09/16/opinion/ezra-klein-podcast-ben-shapiro.html",
+                  "https://www.npr.org/",
+                  "https://www.theguardian.com/world/2025/sep/12/friday-briefing-what-the-killing-of-charlie-kirk-means-for-a-polarised-country"
+                ],
+                "titles": [
+                  "Some of Charlie Kirk's most controversial takes | CBC News",
+                  "What You Need to Know About Charlie Kirk's Assassination - The ...",
+                  "Opinion | We Are Going to Have to Live Here With One Another ...",
+                  "NPR - Breaking News, Analysis, Music, Arts & Podcasts : NPR",
+                  "Friday briefing: What the killing of Charlie Kirk means for a polarised ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.",
+              "verification_date": "2025-09-21T12:39:45.270731"
+            },
+            "claim_metadata": {
+              "post_index": 4,
+              "extracted_claim": "The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy."
+            },
+            "verification_timestamp": "2025-09-21T12:40:50.502493"
+          },
+          {
+            "claim_text": "Tom Homan, the Border Czar, allegedly accepted $50,000 in cash while indicating he could help secure government contracts for undercover agents posing as business executives during the Trump administration, and the investigation was suspended.",
+            "content_summary": "A Reddit post in r/conspiracytheories claims that Tom Homan, the Border Czar, accepted $50,000 in cash, implying he could influence the awarding of government contracts to undercover agents posing as business executives during the Trump administration. The post also alleges that Patel suspended the ",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm9y3e/tom_homan_the_border_czar_accepted_50000_in_cash/",
+            "verification": {
+              "verified": false,
+              "verdict": "no_content",
+              "message": "No relevant fact-checked information found for this specific claim",
+              "confidence": "medium",
+              "reasoning": "Analysis completed",
+              "sources": {
+                "links": [
+                  "https://www.theguardian.com/us-news/live/2025/jul/21/ice-immigration-donald-trump-latest-us-politics-news-updates",
+                  "https://www.theguardian.com/us-news/2025/feb/07/trump-elon-musk-doge-agency",
+                  "https://www.theguardian.com/us-news/2025/aug/07/universities-settle-trump",
+                  "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance",
+                  "https://www.theguardian.com/us-news/2017/feb/08/tsa-screening-racial-religious-profiling-aclu-study"
+                ],
+                "titles": [
+                  "Senators question incoming CBS owner about 'side deal' with Trump ...",
+                  "Trump hints Musk 'Doge' team has free rein with Pentagon next in ...",
+                  "US universities' settlements with Trump 'will only fuel his ...",
+                  "Edward Snowden: the whistleblower behind the NSA surveillance ...",
+                  "TSA screening program risks racial profiling amid shaky science ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Tom Homan, the Border Czar, allegedly accepted $50,000 in cash while indicating he could help secure government contracts for undercover agents posing as business executives during the Trump administration, and the investigation was suspended.",
+              "verification_date": "2025-09-21T12:39:45.270731"
+            },
+            "claim_metadata": {
+              "post_index": 5,
+              "extracted_claim": "Tom Homan, the Border Czar, allegedly accepted $50,000 in cash while indicating he could help secure government contracts for undercover agents posing as business executives during the Trump administration, and the investigation was suspended."
+            },
+            "verification_timestamp": "2025-09-21T12:40:51.421654"
+          },
+          {
+            "claim_text": "The post questions the credibility and truthfulness of unnamed individuals or entities.",
+            "content_summary": "A Reddit post in r/conspiracytheories poses the question, \"How can you believe they're not telling lies at this point?\" The post lacks specific context and does not identify who \"they\" refers to, making it a general statement of skepticism or distrust.",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nmgcnc/how_can_you_believe_theyre_not_telling_lies_at/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The provided sources do not support the claim that 'The post questions the credibility and truthfulness of unnamed individuals or entities.' While one source mentions claims questioning credibility, the individuals and entities involved are explicitly named, directly contradicting the 'unnamed' aspect of the claim.",
+              "confidence": "high",
+              "reasoning": "Your step-by-step reasoning process:\n1.  **Analysis of the Claim:** The claim states that a 'post' questions the credibility and truthfulness of *unnamed* individuals or entities.\n\n2.  **Analysis of Source 1: 'The Principles of the Truth-O-Meter: PolitiFact's ... - PolitiFact'**\n    *   **What ACTUALLY HAPPENED?** This source explains PolitiFact's methodology and principles for fact-checking (how they choose facts, maintain nonpartisanship, etc.).\n    *   **What was FAKE or MISLEADING?** This source does not present any specific claims as fake or misleading. It is about the process of fact-checking itself.\n    *   **Relevance to the Claim:** This source provides no information about a specific 'post' or its content regarding the credibility of individuals or entities, named or unnamed. Therefore, it offers no evidence to support or refute the claim.\n\n3.  **Analysis of Source 2: 'GOP Misleading Claims in Biden Impeachment Investigation ... - FactCheck.org'**\n    *   **What ACTUALLY HAPPENED?** This source reports that 'Republicans' (a named entity) 'continued to present misleadingly incomplete information' in service of the claim that 'Biden' (a named individual) 'benefited from his family members’ (named individuals) “influence peddling”.\n    *   **What was FAKE or MISLEADING?** The claims made by Republicans are described as 'misleadingly incomplete information.' These claims implicitly question the credibility and truthfulness of President Biden and his family members regarding 'influence peddling.'\n    *   **Relevance to the Claim:** This source describes a situation where claims (which could be considered a 'post' or statement) question the credibility and truthfulness of individuals (Biden and his family) and were made by an entity (Republicans). However, crucially, both the entity making the claims ('Republicans') and the individuals whose credibility is questioned ('Biden' and 'his family members') are explicitly *named*. This directly contradicts the 'unnamed individuals or entities' aspect of the claim to be verified.\n\n4.  **Conclusion based on evidence:** Neither source supports the claim as stated. Source 1 is entirely unrelated to the content of any specific 'post.' Source 2 discusses claims that question credibility, but the entities and individuals involved are explicitly named, rendering the 'unnamed' part of the claim false based on the provided evidence.",
+              "sources": {
+                "links": [
+                  "https://www.economist.com/frequently-asked-questions",
+                  "https://www.nytimes.com/editorial-standards/ethical-journalism.html",
+                  "https://www.aljazeera.com/news/2024/12/12/why-are-mysterious-drones-flying-over-new-jersey",
+                  "https://www.nytimes.com/editorial-standards/guidelines-on-integrity.html",
+                  "https://www.politifact.com/article/2018/feb/12/principles-truth-o-meter-politifacts-methodology-i/"
+                ],
+                "titles": [
+                  "Frequently asked questions",
+                  "The New York Times Ethical Journalism Handbook",
+                  "Why are mysterious drones flying over New Jersey? | Science and ...",
+                  "Guidelines on Integrity",
+                  "The Principles of the Truth-O-Meter: PolitiFact's ... - PolitiFact"
+                ],
+                "count": 10
+              },
+              "claim_text": "The post questions the credibility and truthfulness of unnamed individuals or entities.",
+              "verification_date": "2025-09-21T12:39:45.270731"
+            },
+            "claim_metadata": {
+              "post_index": 6,
+              "extracted_claim": "The post questions the credibility and truthfulness of unnamed individuals or entities."
+            },
+            "verification_timestamp": "2025-09-21T12:41:00.932975"
+          },
+          {
+            "claim_text": "A cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel.",
+            "content_summary": "A Reddit post in r/conspiracytheories suggests a possible connection between a recent cyber attack in Europe and the impending recognition of a Palestinian state by several European countries against Israel's wishes. The post implies that Israel might be responsible for the cyber attack.",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm6lik/europe_is_hit_with_a_cyber_attack_a_day_before/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim that a cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel is not supported by the provided fact-checking sources. While some European countries are considering recognizing a Palestinian state, and Israel has taken military action in the region and condemned the potential recognition, none of the sources describe a recent or imminent cyber attack in Europe that is linked to Israel in this context.",
+              "confidence": "high",
+              "reasoning": "STEP-BY-STEP ANALYSIS:\n\n1.  **What does each source say ACTUALLY HAPPENED?**\n    *   **Source 1 (NPR, Jul 29, 2025):** Reports that the United Kingdom plans to recognize a Palestinian state by September 2025 unless Israel commits to peace in the Gaza Strip. This discusses a future intention related to Palestinian state recognition.\n    *   **Source 2 (BBC, Jun 13, 2025):** Describes an Israeli Air Force military attack targeting sites linked to Iran's nuclear program and air defenses. This is a military strike against Iran, not a cyber attack in Europe.\n    *   **Source 3 (CBC, Jul 24, 2025):** States that French President Emmanuel Macron announced France will 'soon recognize a Palestinian state,' a decision condemned by Israel. This also discusses a future intention related to Palestinian state recognition.\n    *   **Source 4 (BBC, Apr 27, 2017):** Details a significant cyber attack that occurred in Estonia 10 years prior to the article's date (i.e., around 2007). This is a past cyber attack in Europe, but it predates the current discussion of European countries recognizing a Palestinian state by nearly two decades.\n\n2.  **What does each source say was FAKE or MISLEADING?**\n    *   None of the provided sources explicitly state that any information related to the claim was fake or misleading. They present their content as factual reports or future plans.\n\n3.  **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim has three main components: 'A cyber attack in Europe,' 'before several countries recognize a Palestinian state,' and 'is potentially linked to Israel.'\n    *   **'A cyber attack in Europe':** Source 4 mentions a cyber attack in Estonia, which is in Europe. However, this attack occurred in 2007, long before the current context of countries considering Palestinian state recognition (2025, as per Sources 1 & 3). None of the sources mention a recent, ongoing, or imminent cyber attack in Europe.\n    *   **'before several countries recognize a Palestinian state':** Sources 1 and 3 indicate that the UK and France are indeed planning or considering recognizing a Palestinian state in the near future (2025). So, this part of the claim's premise is partially aligned with the sources' information about future intentions.\n    *   **'is potentially linked to Israel':** This is the crucial missing link. Source 2 describes an Israeli military attack on Iran, not a cyber attack in Europe. Sources 1 and 3 note Israel's opposition to the recognition of a Palestinian state by European countries, but *none* of the sources connect a cyber attack in Europe (whether the 2007 Estonian one or any other) to Israel, especially not in the context of preventing Palestinian state recognition.\n    *   Therefore, while European countries are considering recognizing a Palestinian state and Israel has expressed opposition, there is no evidence in the provided sources to support the existence of a *recent* cyber attack in Europe, nor any link between such an attack (or the 2007 one) and Israel in this specific context.",
+              "sources": {
+                "links": [
+                  "https://www.npr.org/2025/07/29/nx-s1-5484001/uk-palestinian-state-israel-hamas-gaza",
+                  "https://www.npr.org/2024/03/14/1233395830/ireland-pro-palestinian",
+                  "https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes",
+                  "https://www.euronews.com/my-europe/2025/04/09/president-macron-announces-potential-recognition-of-palestinian-state-in-coming-months",
+                  "https://www.bbc.com/news/articles/cvg72ny4xeyo"
+                ],
+                "titles": [
+                  "U.K. to recognize Palestinian state if Israel doesn't agree to Gaza ...",
+                  "Why Ireland is one of the most pro-Palestinian nations in the world ...",
+                  "'The machine did it coldly': Israel used AI to identify 37,000 Hamas ...",
+                  "President Macron announces potential recognition of Palestinian ...",
+                  "Iran is reeling from Israel's attack - and it is only the start"
+                ],
+                "count": 10
+              },
+              "claim_text": "A cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel.",
+              "verification_date": "2025-09-21T12:39:45.270731"
+            },
+            "claim_metadata": {
+              "post_index": 7,
+              "extracted_claim": "A cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel."
+            },
+            "verification_timestamp": "2025-09-21T12:41:12.847673"
+          },
+          {
+            "claim_text": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+            "content_summary": "A Reddit post in r/conspiracytheories reports on an NBC News article stating that the federal investigation into the shooting of Charlie Kirk has found no evidence connecting the alleged shooter, Tyler Robinson, to left-wing groups. The investigation suggests the shooting was an isolated incident mo",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm8tit/no_evidence_found_yet_of_ties_between_charlie/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "Unable to determine claim accuracy from available sources. Found fact-checking articles but analysis failed.",
+              "confidence": "low",
+              "reasoning": "Analysis completed",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/nation/what-we-know-so-far-about-the-charlie-kirk-shooting-suspect",
+                  "https://www.nytimes.com/2025/09/15/us/politics/jd-vance-charlie-kirk-show.html",
+                  "https://www.theguardian.com/us-news/2025/sep/16/court-hearing-charlie-kirk-shooting-suspect",
+                  "https://www.nytimes.com/2025/09/16/us/politics/trump-kirk-free-speech-hate-speech-left.html",
+                  "https://www.nytimes.com/live/2025/09/16/us/kirk-shooting-suspect-charges"
+                ],
+                "titles": [
+                  "What we know so far about the Charlie Kirk shooting suspect | PBS ...",
+                  "On Charlie Kirk Show, JD Vance Talks of Crackdown on Liberal ...",
+                  "Charlie Kirk suspect allegedly took responsibility for killing in online ...",
+                  "Trump Invokes Kirk's Killing in Seeking to Silence Opponents on Left ...",
+                  "Kirk Killing Suspect Faces Aggravated Murder Charge, and Death ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+              "verification_date": "2025-09-21T12:39:45.270731"
+            },
+            "claim_metadata": {
+              "post_index": 8,
+              "extracted_claim": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups."
+            },
+            "verification_timestamp": "2025-09-21T12:41:29.337346"
+          }
+        ],
+        "summary": {
+          "total_claims": 9,
+          "successfully_verified": 1,
+          "verification_errors": 0
+        },
+        "timestamp": "2025-09-21T12:41:29.337346"
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents.",
+      "summary": "A Reddit post in r/NoFilterNews discusses a now-deleted Truth Social post by Donald Trump. According to politico.com, the post appears to contain a letter intended for Pam Bondi, seemingly instructing her to arrest some of Trump's political opponents. The post received over 4000 upvotes.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The provided fact-checking sources do not contain any information supporting the claim that Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents. Instead, the sources indicate that Trump used Truth Social to generally engage in political discourse, defended Pam Bondi regarding the handling of Epstein files, and dismissed certain related controversies as a 'hoax.' There is no mention of him issuing or deleting such an instruction.",
+        "confidence": "high",
+        "reasoning": "1. What does each source say ACTUALLY HAPPENED?\n    *   **Source 1 (PBS, Jul 15, 2025):** States Trump used his Truth Social platform on Saturday (July 12, 2025) to stoke dark theories and is facing a political crisis related to his own making and the Epstein case blowback. It does not mention any post instructing Pam Bondi to arrest political opponents.\n    *   **Source 2 (Al Jazeera, Jul 17, 2025):** Reports that on Wednesday (July 16, 2025), Trump dismissed MAGA conspiracy theorists as 'weaklings' and described the controversy related to Pam Bondi and Epstein as a 'hoax' fabricated. This refers to Trump's reaction to, not initiation of, such a post.\n    *   **Source 3 (FactCheck.org, Apr 23, 2025):** Mentions Pam Bondi posted documents from the Abrego Garcia case on social media. This concerns Bondi's actions, not Trump's, and is also dated earlier than the other relevant articles regarding Trump's July 2025 social media activity.\n    *   **Source 4 (PBS, Jul 15, 2025):** Indicates that Trump defended Attorney General Pam Bondi on the handling of the Epstein files on Tuesday (July 14, 2025). He also claimed Comey, Obama, and Biden made up the Epstein files. This shows Trump defending Bondi and making claims about the files, not instructing her to make arrests.\n\n2. What does each source say was FAKE or MISLEADING?\n    *   **Source 1:** Does not explicitly state anything was fake or misleading related to the claim, but notes Trump stokes 'dark theories.'\n    *   **Source 2:** Reports that Trump himself dismissed 'MAGA conspiracy theorists' as 'weaklings' and described the *controversy* surrounding Bondi and Epstein as a 'hoax' fabricated. This suggests Trump was debunking or downplaying certain narratives, not creating one about arrests.\n    *   **Source 3:** Does not address the specific claim.\n    *   **Source 4:** Mentions Trump's claim that Comey, Obama, and Biden 'made up' the Epstein files, implying this is a statement by Trump, not a verified fact about the claim itself.\n\n3. Based on the evidence, what is the most likely truth about the claim?\n    *   None of the provided sources offer any evidence to support the claim that Donald Trump posted and deleted a Truth Social post instructing Pam Bondi to arrest his political opponents. The sources discuss Trump using Truth Social for general political commentary, defending Pam Bondi regarding the Epstein files, and dismissing certain related controversies as hoaxes. There is no mention of such a specific instruction being posted or deleted. Therefore, based on the provided information, the claim is unsupported.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/politics/how-trump-spent-years-stoking-dark-theories-and-why-hes-facing-epstein-case-blowback-now",
+            "https://www.aljazeera.com/news/2025/7/17/who-are-the-maga-influencers-calling-for-pam-bondis-head-over-epstein",
+            "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+            "https://www.npr.org/2025/04/29/nx-s1-5327518/donald-trump-100-days-retribution-threats",
+            "https://www.factcheck.org/2025/04/due-process-and-the-abrego-garcia-case/"
+          ],
+          "titles": [
+            "How Trump spent years stoking dark theories, and why he's facing ...",
+            "Who are the MAGA influencers calling for Pam Bondi's head over ...",
+            "Attorney General Alerted Trump His Name Appeared in Epstein ...",
+            "How Trump is using government power to target his enemies : NPR",
+            "Due Process and the Abrego Garcia Case - FactCheck.org"
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents.",
+        "verification_date": "2025-09-21T12:39:45.270731"
+      }
+    },
+    {
+      "claim": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+      "summary": "A Reddit post in r/skeptic reports on an NBC News article stating that the federal investigation into the shooting of Charlie Kirk has found no evidence connecting the alleged shooter, Tyler Robinson, to left-wing groups. The investigation suggests the shooting was an isolated incident motivated by Robinson's personal offense to Kirk's ideology. Federal charges against Robinson are uncertain.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nlzl2d/no_evidence_found_yet_of_ties_between_charlie/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "Based on the provided sources, official investigations have not revealed a motive for Charlie Kirk's shooting, and therefore have not presented any evidence linking it to left-wing groups. While political figures have asserted such links, official sources have not corroborated these claims.",
+        "confidence": "high",
+        "reasoning": "1. **What each source says ACTUALLY HAPPENED:**\n    *   **Source 1 (PBS):** Announces an arrest in the shooting death of right-wing activist Charlie Kirk. Mentions 'rampant speculation' surrounding the event.\n    *   **Source 2 (NYT):** Notes that political figures, like JD Vance, discussed Kirk's shooting and its implications 'even before a suspect had been identified,' implying early speculation about motives.\n    *   **Source 3 (The Guardian):** Explicitly states: 'A motive has not been revealed by Utah officials.' It also notes that JD Vance has *said* 'left-wing extremism' is 'part of the reason' Kirk was killed, highlighting a disconnect between official statements and political rhetoric.\n    *   **Source 4 (NYT):** Reports that President Trump and his allies have invoked Kirk's killing to propose targeting liberal groups, indicating political attribution of the act to the left, but not an official finding.\n    *   **Source 5 (NYT):** Details the suspect's confession in charging documents ('I had to'), but does not mention any ideological motive (left-wing or otherwise) revealed by officials in these documents.\n\n2. **What each source says was FAKE or MISLEADING:**\n    *   The sources do not directly state that claims of left-wing links are 'fake' or 'misleading.' However, Source 3's declaration that 'A motive has not been revealed by Utah officials' *implicitly* undermines the political assertions made by figures like JD Vance (also mentioned in Source 3) and President Trump (Source 4) that the killing was due to 'left-wing extremism' or linked to liberal groups, as these assertions lack official backing. The 'rampant speculation' (Source 1) also suggests unsubstantiated claims.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim states: 'Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.'\n    *   Source 3 is the most direct and crucial: 'A motive has not been revealed by Utah officials.' While it refers to 'Utah officials' rather than explicitly 'federal officials,' it represents the primary official investigation. If the overall motive has not been revealed by the leading authorities, it logically follows that no specific evidence linking it to left-wing groups has been found or publicly presented by *any* officials, including federal ones. The absence of a stated motive means the absence of stated evidence for any specific motive, including a left-wing one.\n    *   Sources 2, 3, and 4 highlight that political figures *are* making claims about left-wing involvement. However, these are presented as statements from individuals (Vance, Trump) or as political strategy, not as findings from federal or state officials.\n    *   Source 5 details the suspect's confession but does not provide any official indication of an ideological motive, further supporting the idea that officials have not revealed such a link.\n    *   Therefore, based on the provided information, the official investigations have not disclosed a motive, and consequently, have not revealed any evidence linking Charlie Kirk's shooting to left-wing groups. The claim is consistent with the available information.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/nation/what-we-know-so-far-about-the-charlie-kirk-shooting-suspect",
+            "https://www.nytimes.com/2025/09/15/us/politics/jd-vance-charlie-kirk-show.html",
+            "https://www.theguardian.com/us-news/2025/sep/16/court-hearing-charlie-kirk-shooting-suspect",
+            "https://www.nytimes.com/2025/09/16/us/politics/trump-kirk-free-speech-hate-speech-left.html",
+            "https://www.nytimes.com/live/2025/09/16/us/kirk-shooting-suspect-charges"
+          ],
+          "titles": [
+            "What we know so far about the Charlie Kirk shooting suspect | PBS ...",
+            "On Charlie Kirk Show, JD Vance Talks of Crackdown on Liberal ...",
+            "Charlie Kirk suspect allegedly took responsibility for killing in online ...",
+            "Trump Invokes Kirk's Killing in Seeking to Silence Opponents on Left ...",
+            "Kirk Killing Suspect Faces Aggravated Murder Charge, and Death ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+        "verification_date": "2025-09-21T12:39:45.270731"
+      }
+    },
+    {
+      "claim": "Since 2018, all 31 targeted political attacks have been committed by Republicans, contrary to GOP claims of left-wing violence.",
+      "summary": "A Reddit post in r/skeptic references an article on wtfdetective.blog, disputing claims of left-wing political violence. The article claims that all 31 targeted political killings or attempted killings since 2018 were perpetrated by individuals associated with the Republican party. This contradicts statements made by Donald Trump attributing political assassinations to the radical left.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltr2o/gop_cries_about_leftwing_violence_but_every_one/",
+      "verification": {
+        "verified": false,
+        "verdict": "no_content",
+        "message": "No relevant fact-checked information found for this specific claim",
+        "confidence": "medium",
+        "reasoning": "Analysis completed",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/topic/gerry-adams?page=8",
+            "https://www.nytimes.com/live/2025/09/16/us/trump-news",
+            "https://www.wsj.com/politics/charlie-kirk-turning-point-usa-5cfe4015?gaa_at=eafs&gaa_n=ASWzDAjz7sbVbXMA6z7M-iChFByF7XSCpl5oIRThxQFf5lfiIrPNJjKhiNf3&gaa_ts=68cfa85e&gaa_sig=awFeDdYw1EwQdpKOqpUs2hMtgeQR6rqze9Wxh5sObRObtrQjLyqqQm-y0QStDMwGr--0OP6xePRfx5mO-h41Og%3D%3D",
+            "https://www.theguardian.com/us-news/ng-interactive/2024/jun/25/charlie-kirk-turning-point-usa-chase-the-vote-trump"
+          ],
+          "titles": [
+            "Gerry Adams - Page 8 - The New York Times",
+            "Democrats Oppose Stopgap Bill, Raising Odds of a Shutdown - The ...",
+            "Charlie Kirk, a Conservative Standard-Bearer, Killed at 31 - WSJ",
+            "Charlie Kirk once unified conservative youth for Trump. Why are ..."
+          ],
+          "count": 4
+        },
+        "claim_text": "Since 2018, all 31 targeted political attacks have been committed by Republicans, contrary to GOP claims of left-wing violence.",
+        "verification_date": "2025-09-21T12:39:45.270731"
+      }
+    },
+    {
+      "claim": "Leaked texts from the shooter, Tyler Robinson, in the Charlie Kirk case appear to be scripted.",
+      "summary": "A Reddit post in r/skeptic suggests that leaked texts attributed to Tyler Robinson, the alleged shooter in the Charlie Kirk case, seem scripted. No further information or evidence is provided in the post or available scraped content.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nmb712/the_leaked_texts_from_robinson_seem_scripted/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "Unable to determine claim accuracy from available sources. Found fact-checking articles but analysis failed.",
+        "confidence": "low",
+        "reasoning": "Analysis completed",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2025/09/17/us/politics/charlie-kirk-killer.html",
+            "https://www.bbc.com/news/world-us-canada-62683094",
+            "https://www.aljazeera.com/news/2014/8/28/us-girl-shoots-gun-instructor-in-the-head",
+            "https://www.aljazeera.com/news/2021/10/18/jury-selection-to-begin-in-us-killing-of-ahmaud-arbery",
+            "https://www.aljazeera.com/sports/2025/3/28/real-madrid-vs-leganes-laliga-team-news-start-time-how-to-follow-stream"
+          ],
+          "titles": [
+            "A Note, a Gun and a Mother's Conscience Led to an Arrest in Kirk's ...",
+            "Mass shootings: What are the warning signs and could they help ...",
+            "US girl shoots gun instructor in the head | Gun Violence News | Al ...",
+            "Jury selection to begin in trial over killing of Ahmaud Arbery | Black ...",
+            "Real Madrid vs Leganes – LaLiga: Team news, kickoff, how to follow ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Leaked texts from the shooter, Tyler Robinson, in the Charlie Kirk case appear to be scripted.",
+        "verification_date": "2025-09-21T12:39:45.270731"
+      }
+    },
+    {
+      "claim": "The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.",
+      "summary": "A Reddit post in r/skeptic links to a YouTube video titled \"Charlie Kirk and the Empathy Paradox.\" The post itself contains no further details, so the summary is limited to the title and source.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltp7c/charlie_kirk_and_the_empathy_paradox/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided fact-checking sources focus entirely on the death and assassination of Charlie Kirk and the events surrounding it. They offer no information, neither corroborating nor refuting, about the existence of 'a post linking to a YouTube video analyzing Charlie Kirk and the concept of empathy.' Therefore, based solely on the given sources, the claim cannot be verified.",
+        "confidence": "high",
+        "reasoning": "1. **What does each source say ACTUALLY HAPPENED?**\n    *   All four sources consistently report that Charlie Kirk died after being shot/assassinated. This occurred during an appearance at Utah Valley University (Sources 1, 2). The events are dated around September 10-12, 2025.\n    *   Source 1 highlights Kirk's history of contentious views.\n    *   Source 2 states he was a practiced debater who posted his own videos 'parrying liberal critiques' and was doing so when shot.\n    *   Source 3 mentions a suspect caught on video jumping off a roof after firing one shot. It also includes an observation that 'Trump rarely shows empathy.'\n    *   Source 4 details unexpected calls for unity from Republicans and Democrats following his assassination.\n\n2. **What does each source say was FAKE or MISLEADING?**\n    *   None of the provided sources explicitly state anything as fake or misleading. They all present themselves as reporting factual events surrounding Charlie Kirk's death.\n    *   Crucially, none of the sources make any mention or allusion to 'a post linking to a YouTube video analyzing Charlie Kirk and the concept of empathy.' The topics covered are Charlie Kirk's death, his views, and the political aftermath, not specific online content about him in this manner.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim asserts the existence of a specific online activity: 'The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.'\n    *   The provided fact-checking sources are entirely dedicated to reporting on the death (assassination) of Charlie Kirk. They describe the circumstances, his background, and the reactions to his death.\n    *   There is no information within any of these sources that supports, contradicts, or even references a post linking to a YouTube video analyzing Charlie Kirk and the concept of empathy. While Source 2 mentions Kirk posting his *own* videos, this is distinct from a third-party analysis. Source 3's mention of 'empathy' is in reference to Donald Trump, not Charlie Kirk in the context of a video analysis.\n    *   Therefore, the claim cannot be verified as true or false based on the evidence presented in these specific fact-checking sources, as the sources do not address the claim's subject matter at all.",
+        "sources": {
+          "links": [
+            "https://www.cbc.ca/news/world/charlie-kirk-controversies-1.7630859",
+            "https://www.nytimes.com/2025/09/11/briefing/what-you-need-to-know-about-charlie-kirks-assassination.html",
+            "https://www.nytimes.com/2025/09/16/opinion/ezra-klein-podcast-ben-shapiro.html",
+            "https://www.npr.org/",
+            "https://www.theguardian.com/world/2025/sep/12/friday-briefing-what-the-killing-of-charlie-kirk-means-for-a-polarised-country"
+          ],
+          "titles": [
+            "Some of Charlie Kirk's most controversial takes | CBC News",
+            "What You Need to Know About Charlie Kirk's Assassination - The ...",
+            "Opinion | We Are Going to Have to Live Here With One Another ...",
+            "NPR - Breaking News, Analysis, Music, Arts & Podcasts : NPR",
+            "Friday briefing: What the killing of Charlie Kirk means for a polarised ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.",
+        "verification_date": "2025-09-21T12:39:45.270731"
+      }
+    },
+    {
+      "claim": "Tom Homan, the Border Czar, allegedly accepted $50,000 in cash while indicating he could help secure government contracts for undercover agents posing as business executives during the Trump administration, and the investigation was suspended.",
+      "summary": "A Reddit post in r/conspiracytheories claims that Tom Homan, the Border Czar, accepted $50,000 in cash, implying he could influence the awarding of government contracts to undercover agents posing as business executives during the Trump administration. The post also alleges that Patel suspended the investigation into this matter. The post states this is evidence that the Trump Administration was the most corrupt ever.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm9y3e/tom_homan_the_border_czar_accepted_50000_in_cash/",
+      "verification": {
+        "verified": false,
+        "verdict": "no_content",
+        "message": "No relevant fact-checked information found for this specific claim",
+        "confidence": "medium",
+        "reasoning": "Analysis completed",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/us-news/live/2025/jul/21/ice-immigration-donald-trump-latest-us-politics-news-updates",
+            "https://www.theguardian.com/us-news/2025/feb/07/trump-elon-musk-doge-agency",
+            "https://www.theguardian.com/us-news/2025/aug/07/universities-settle-trump",
+            "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance",
+            "https://www.theguardian.com/us-news/2017/feb/08/tsa-screening-racial-religious-profiling-aclu-study"
+          ],
+          "titles": [
+            "Senators question incoming CBS owner about 'side deal' with Trump ...",
+            "Trump hints Musk 'Doge' team has free rein with Pentagon next in ...",
+            "US universities' settlements with Trump 'will only fuel his ...",
+            "Edward Snowden: the whistleblower behind the NSA surveillance ...",
+            "TSA screening program risks racial profiling amid shaky science ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Tom Homan, the Border Czar, allegedly accepted $50,000 in cash while indicating he could help secure government contracts for undercover agents posing as business executives during the Trump administration, and the investigation was suspended.",
+        "verification_date": "2025-09-21T12:39:45.270731"
+      }
+    },
+    {
+      "claim": "The post questions the credibility and truthfulness of unnamed individuals or entities.",
+      "summary": "A Reddit post in r/conspiracytheories poses the question, \"How can you believe they're not telling lies at this point?\" The post lacks specific context and does not identify who \"they\" refers to, making it a general statement of skepticism or distrust.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nmgcnc/how_can_you_believe_theyre_not_telling_lies_at/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The provided sources do not support the claim that 'The post questions the credibility and truthfulness of unnamed individuals or entities.' While one source mentions claims questioning credibility, the individuals and entities involved are explicitly named, directly contradicting the 'unnamed' aspect of the claim.",
+        "confidence": "high",
+        "reasoning": "Your step-by-step reasoning process:\n1.  **Analysis of the Claim:** The claim states that a 'post' questions the credibility and truthfulness of *unnamed* individuals or entities.\n\n2.  **Analysis of Source 1: 'The Principles of the Truth-O-Meter: PolitiFact's ... - PolitiFact'**\n    *   **What ACTUALLY HAPPENED?** This source explains PolitiFact's methodology and principles for fact-checking (how they choose facts, maintain nonpartisanship, etc.).\n    *   **What was FAKE or MISLEADING?** This source does not present any specific claims as fake or misleading. It is about the process of fact-checking itself.\n    *   **Relevance to the Claim:** This source provides no information about a specific 'post' or its content regarding the credibility of individuals or entities, named or unnamed. Therefore, it offers no evidence to support or refute the claim.\n\n3.  **Analysis of Source 2: 'GOP Misleading Claims in Biden Impeachment Investigation ... - FactCheck.org'**\n    *   **What ACTUALLY HAPPENED?** This source reports that 'Republicans' (a named entity) 'continued to present misleadingly incomplete information' in service of the claim that 'Biden' (a named individual) 'benefited from his family members’ (named individuals) “influence peddling”.\n    *   **What was FAKE or MISLEADING?** The claims made by Republicans are described as 'misleadingly incomplete information.' These claims implicitly question the credibility and truthfulness of President Biden and his family members regarding 'influence peddling.'\n    *   **Relevance to the Claim:** This source describes a situation where claims (which could be considered a 'post' or statement) question the credibility and truthfulness of individuals (Biden and his family) and were made by an entity (Republicans). However, crucially, both the entity making the claims ('Republicans') and the individuals whose credibility is questioned ('Biden' and 'his family members') are explicitly *named*. This directly contradicts the 'unnamed individuals or entities' aspect of the claim to be verified.\n\n4.  **Conclusion based on evidence:** Neither source supports the claim as stated. Source 1 is entirely unrelated to the content of any specific 'post.' Source 2 discusses claims that question credibility, but the entities and individuals involved are explicitly named, rendering the 'unnamed' part of the claim false based on the provided evidence.",
+        "sources": {
+          "links": [
+            "https://www.economist.com/frequently-asked-questions",
+            "https://www.nytimes.com/editorial-standards/ethical-journalism.html",
+            "https://www.aljazeera.com/news/2024/12/12/why-are-mysterious-drones-flying-over-new-jersey",
+            "https://www.nytimes.com/editorial-standards/guidelines-on-integrity.html",
+            "https://www.politifact.com/article/2018/feb/12/principles-truth-o-meter-politifacts-methodology-i/"
+          ],
+          "titles": [
+            "Frequently asked questions",
+            "The New York Times Ethical Journalism Handbook",
+            "Why are mysterious drones flying over New Jersey? | Science and ...",
+            "Guidelines on Integrity",
+            "The Principles of the Truth-O-Meter: PolitiFact's ... - PolitiFact"
+          ],
+          "count": 10
+        },
+        "claim_text": "The post questions the credibility and truthfulness of unnamed individuals or entities.",
+        "verification_date": "2025-09-21T12:39:45.270731"
+      }
+    },
+    {
+      "claim": "A cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel.",
+      "summary": "A Reddit post in r/conspiracytheories suggests a possible connection between a recent cyber attack in Europe and the impending recognition of a Palestinian state by several European countries against Israel's wishes. The post implies that Israel might be responsible for the cyber attack.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm6lik/europe_is_hit_with_a_cyber_attack_a_day_before/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim that a cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel is not supported by the provided fact-checking sources. While some European countries are considering recognizing a Palestinian state, and Israel has taken military action in the region and condemned the potential recognition, none of the sources describe a recent or imminent cyber attack in Europe that is linked to Israel in this context.",
+        "confidence": "high",
+        "reasoning": "STEP-BY-STEP ANALYSIS:\n\n1.  **What does each source say ACTUALLY HAPPENED?**\n    *   **Source 1 (NPR, Jul 29, 2025):** Reports that the United Kingdom plans to recognize a Palestinian state by September 2025 unless Israel commits to peace in the Gaza Strip. This discusses a future intention related to Palestinian state recognition.\n    *   **Source 2 (BBC, Jun 13, 2025):** Describes an Israeli Air Force military attack targeting sites linked to Iran's nuclear program and air defenses. This is a military strike against Iran, not a cyber attack in Europe.\n    *   **Source 3 (CBC, Jul 24, 2025):** States that French President Emmanuel Macron announced France will 'soon recognize a Palestinian state,' a decision condemned by Israel. This also discusses a future intention related to Palestinian state recognition.\n    *   **Source 4 (BBC, Apr 27, 2017):** Details a significant cyber attack that occurred in Estonia 10 years prior to the article's date (i.e., around 2007). This is a past cyber attack in Europe, but it predates the current discussion of European countries recognizing a Palestinian state by nearly two decades.\n\n2.  **What does each source say was FAKE or MISLEADING?**\n    *   None of the provided sources explicitly state that any information related to the claim was fake or misleading. They present their content as factual reports or future plans.\n\n3.  **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim has three main components: 'A cyber attack in Europe,' 'before several countries recognize a Palestinian state,' and 'is potentially linked to Israel.'\n    *   **'A cyber attack in Europe':** Source 4 mentions a cyber attack in Estonia, which is in Europe. However, this attack occurred in 2007, long before the current context of countries considering Palestinian state recognition (2025, as per Sources 1 & 3). None of the sources mention a recent, ongoing, or imminent cyber attack in Europe.\n    *   **'before several countries recognize a Palestinian state':** Sources 1 and 3 indicate that the UK and France are indeed planning or considering recognizing a Palestinian state in the near future (2025). So, this part of the claim's premise is partially aligned with the sources' information about future intentions.\n    *   **'is potentially linked to Israel':** This is the crucial missing link. Source 2 describes an Israeli military attack on Iran, not a cyber attack in Europe. Sources 1 and 3 note Israel's opposition to the recognition of a Palestinian state by European countries, but *none* of the sources connect a cyber attack in Europe (whether the 2007 Estonian one or any other) to Israel, especially not in the context of preventing Palestinian state recognition.\n    *   Therefore, while European countries are considering recognizing a Palestinian state and Israel has expressed opposition, there is no evidence in the provided sources to support the existence of a *recent* cyber attack in Europe, nor any link between such an attack (or the 2007 one) and Israel in this specific context.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/07/29/nx-s1-5484001/uk-palestinian-state-israel-hamas-gaza",
+            "https://www.npr.org/2024/03/14/1233395830/ireland-pro-palestinian",
+            "https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes",
+            "https://www.euronews.com/my-europe/2025/04/09/president-macron-announces-potential-recognition-of-palestinian-state-in-coming-months",
+            "https://www.bbc.com/news/articles/cvg72ny4xeyo"
+          ],
+          "titles": [
+            "U.K. to recognize Palestinian state if Israel doesn't agree to Gaza ...",
+            "Why Ireland is one of the most pro-Palestinian nations in the world ...",
+            "'The machine did it coldly': Israel used AI to identify 37,000 Hamas ...",
+            "President Macron announces potential recognition of Palestinian ...",
+            "Iran is reeling from Israel's attack - and it is only the start"
+          ],
+          "count": 10
+        },
+        "claim_text": "A cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel.",
+        "verification_date": "2025-09-21T12:39:45.270731"
+      }
+    },
+    {
+      "claim": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+      "summary": "A Reddit post in r/conspiracytheories reports on an NBC News article stating that the federal investigation into the shooting of Charlie Kirk has found no evidence connecting the alleged shooter, Tyler Robinson, to left-wing groups. The investigation suggests the shooting was an isolated incident motivated by Robinson's personal offense to Kirk's ideology. Federal charges against Robinson are uncertain.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm8tit/no_evidence_found_yet_of_ties_between_charlie/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "Unable to determine claim accuracy from available sources. Found fact-checking articles but analysis failed.",
+        "confidence": "low",
+        "reasoning": "Analysis completed",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/nation/what-we-know-so-far-about-the-charlie-kirk-shooting-suspect",
+            "https://www.nytimes.com/2025/09/15/us/politics/jd-vance-charlie-kirk-show.html",
+            "https://www.theguardian.com/us-news/2025/sep/16/court-hearing-charlie-kirk-shooting-suspect",
+            "https://www.nytimes.com/2025/09/16/us/politics/trump-kirk-free-speech-hate-speech-left.html",
+            "https://www.nytimes.com/live/2025/09/16/us/kirk-shooting-suspect-charges"
+          ],
+          "titles": [
+            "What we know so far about the Charlie Kirk shooting suspect | PBS ...",
+            "On Charlie Kirk Show, JD Vance Talks of Crackdown on Liberal ...",
+            "Charlie Kirk suspect allegedly took responsibility for killing in online ...",
+            "Trump Invokes Kirk's Killing in Seeking to Silence Opponents on Left ...",
+            "Kirk Killing Suspect Faces Aggravated Murder Charge, and Death ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+        "verification_date": "2025-09-21T12:39:45.270731"
+      }
+    }
+  ],
+  "summary": {
+    "content_items_processed": 9,
+    "agents_executed": 2,
+    "workflow_success": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-09-21T12:39:38.870801",
+          "total_posts": 9,
+          "posts": [
+            {
+              "claim": "Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents.",
+              "summary": "A Reddit post in r/NoFilterNews discusses a now-deleted Truth Social post by Donald Trump. According to politico.com, the post appears to contain a letter intended for Pam Bondi, seemingly instructing her to arrest some of Trump's political opponents. The post received over 4000 upvotes.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/"
+            },
+            {
+              "claim": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+              "summary": "A Reddit post in r/skeptic reports on an NBC News article stating that the federal investigation into the shooting of Charlie Kirk has found no evidence connecting the alleged shooter, Tyler Robinson, to left-wing groups. The investigation suggests the shooting was an isolated incident motivated by Robinson's personal offense to Kirk's ideology. Federal charges against Robinson are uncertain.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nlzl2d/no_evidence_found_yet_of_ties_between_charlie/"
+            },
+            {
+              "claim": "Since 2018, all 31 targeted political attacks have been committed by Republicans, contrary to GOP claims of left-wing violence.",
+              "summary": "A Reddit post in r/skeptic references an article on wtfdetective.blog, disputing claims of left-wing political violence. The article claims that all 31 targeted political killings or attempted killings since 2018 were perpetrated by individuals associated with the Republican party. This contradicts statements made by Donald Trump attributing political assassinations to the radical left.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltr2o/gop_cries_about_leftwing_violence_but_every_one/"
+            },
+            {
+              "claim": "Leaked texts from the shooter, Tyler Robinson, in the Charlie Kirk case appear to be scripted.",
+              "summary": "A Reddit post in r/skeptic suggests that leaked texts attributed to Tyler Robinson, the alleged shooter in the Charlie Kirk case, seem scripted. No further information or evidence is provided in the post or available scraped content.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nmb712/the_leaked_texts_from_robinson_seem_scripted/"
+            },
+            {
+              "claim": "The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.",
+              "summary": "A Reddit post in r/skeptic links to a YouTube video titled \"Charlie Kirk and the Empathy Paradox.\" The post itself contains no further details, so the summary is limited to the title and source.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltp7c/charlie_kirk_and_the_empathy_paradox/"
+            },
+            {
+              "claim": "Tom Homan, the Border Czar, allegedly accepted $50,000 in cash while indicating he could help secure government contracts for undercover agents posing as business executives during the Trump administration, and the investigation was suspended.",
+              "summary": "A Reddit post in r/conspiracytheories claims that Tom Homan, the Border Czar, accepted $50,000 in cash, implying he could influence the awarding of government contracts to undercover agents posing as business executives during the Trump administration. The post also alleges that Patel suspended the investigation into this matter. The post states this is evidence that the Trump Administration was the most corrupt ever.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm9y3e/tom_homan_the_border_czar_accepted_50000_in_cash/"
+            },
+            {
+              "claim": "The post questions the credibility and truthfulness of unnamed individuals or entities.",
+              "summary": "A Reddit post in r/conspiracytheories poses the question, \"How can you believe they're not telling lies at this point?\" The post lacks specific context and does not identify who \"they\" refers to, making it a general statement of skepticism or distrust.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nmgcnc/how_can_you_believe_theyre_not_telling_lies_at/"
+            },
+            {
+              "claim": "A cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel.",
+              "summary": "A Reddit post in r/conspiracytheories suggests a possible connection between a recent cyber attack in Europe and the impending recognition of a Palestinian state by several European countries against Israel's wishes. The post implies that Israel might be responsible for the cyber attack.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm6lik/europe_is_hit_with_a_cyber_attack_a_day_before/"
+            },
+            {
+              "claim": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+              "summary": "A Reddit post in r/conspiracytheories reports on an NBC News article stating that the federal investigation into the shooting of Charlie Kirk has found no evidence connecting the alleged shooter, Tyler Robinson, to left-wing groups. The investigation suggests the shooting was an isolated incident motivated by Robinson's personal offense to Kirk's ideology. Federal charges against Robinson are uncertain.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm8tit/no_evidence_found_yet_of_ties_between_charlie/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 9 claims using Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents.",
+              "content_summary": "A Reddit post in r/NoFilterNews discusses a now-deleted Truth Social post by Donald Trump. According to politico.com, the post appears to contain a letter intended for Pam Bondi, seemingly instructing her to arrest some of Trump's political opponents. The post received over 4000 upvotes.",
+              "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The provided fact-checking sources do not contain any information supporting the claim that Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents. Instead, the sources indicate that Trump used Truth Social to generally engage in political discourse, defended Pam Bondi regarding the handling of Epstein files, and dismissed certain related controversies as a 'hoax.' There is no mention of him issuing or deleting such an instruction.",
+                "confidence": "high",
+                "reasoning": "1. What does each source say ACTUALLY HAPPENED?\n    *   **Source 1 (PBS, Jul 15, 2025):** States Trump used his Truth Social platform on Saturday (July 12, 2025) to stoke dark theories and is facing a political crisis related to his own making and the Epstein case blowback. It does not mention any post instructing Pam Bondi to arrest political opponents.\n    *   **Source 2 (Al Jazeera, Jul 17, 2025):** Reports that on Wednesday (July 16, 2025), Trump dismissed MAGA conspiracy theorists as 'weaklings' and described the controversy related to Pam Bondi and Epstein as a 'hoax' fabricated. This refers to Trump's reaction to, not initiation of, such a post.\n    *   **Source 3 (FactCheck.org, Apr 23, 2025):** Mentions Pam Bondi posted documents from the Abrego Garcia case on social media. This concerns Bondi's actions, not Trump's, and is also dated earlier than the other relevant articles regarding Trump's July 2025 social media activity.\n    *   **Source 4 (PBS, Jul 15, 2025):** Indicates that Trump defended Attorney General Pam Bondi on the handling of the Epstein files on Tuesday (July 14, 2025). He also claimed Comey, Obama, and Biden made up the Epstein files. This shows Trump defending Bondi and making claims about the files, not instructing her to make arrests.\n\n2. What does each source say was FAKE or MISLEADING?\n    *   **Source 1:** Does not explicitly state anything was fake or misleading related to the claim, but notes Trump stokes 'dark theories.'\n    *   **Source 2:** Reports that Trump himself dismissed 'MAGA conspiracy theorists' as 'weaklings' and described the *controversy* surrounding Bondi and Epstein as a 'hoax' fabricated. This suggests Trump was debunking or downplaying certain narratives, not creating one about arrests.\n    *   **Source 3:** Does not address the specific claim.\n    *   **Source 4:** Mentions Trump's claim that Comey, Obama, and Biden 'made up' the Epstein files, implying this is a statement by Trump, not a verified fact about the claim itself.\n\n3. Based on the evidence, what is the most likely truth about the claim?\n    *   None of the provided sources offer any evidence to support the claim that Donald Trump posted and deleted a Truth Social post instructing Pam Bondi to arrest his political opponents. The sources discuss Trump using Truth Social for general political commentary, defending Pam Bondi regarding the Epstein files, and dismissing certain related controversies as hoaxes. There is no mention of such a specific instruction being posted or deleted. Therefore, based on the provided information, the claim is unsupported.",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/politics/how-trump-spent-years-stoking-dark-theories-and-why-hes-facing-epstein-case-blowback-now",
+                    "https://www.aljazeera.com/news/2025/7/17/who-are-the-maga-influencers-calling-for-pam-bondis-head-over-epstein",
+                    "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "https://www.npr.org/2025/04/29/nx-s1-5327518/donald-trump-100-days-retribution-threats",
+                    "https://www.factcheck.org/2025/04/due-process-and-the-abrego-garcia-case/"
+                  ],
+                  "titles": [
+                    "How Trump spent years stoking dark theories, and why he's facing ...",
+                    "Who are the MAGA influencers calling for Pam Bondi's head over ...",
+                    "Attorney General Alerted Trump His Name Appeared in Epstein ...",
+                    "How Trump is using government power to target his enemies : NPR",
+                    "Due Process and the Abrego Garcia Case - FactCheck.org"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents.",
+                "verification_date": "2025-09-21T12:39:45.270731"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Donald Trump posted and deleted a Truth Social post appearing to instruct Pam Bondi to arrest his political opponents."
+              },
+              "verification_timestamp": "2025-09-21T12:39:58.406450"
+            },
+            {
+              "claim_text": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+              "content_summary": "A Reddit post in r/skeptic reports on an NBC News article stating that the federal investigation into the shooting of Charlie Kirk has found no evidence connecting the alleged shooter, Tyler Robinson, to left-wing groups. The investigation suggests the shooting was an isolated incident motivated by ",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nlzl2d/no_evidence_found_yet_of_ties_between_charlie/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "Based on the provided sources, official investigations have not revealed a motive for Charlie Kirk's shooting, and therefore have not presented any evidence linking it to left-wing groups. While political figures have asserted such links, official sources have not corroborated these claims.",
+                "confidence": "high",
+                "reasoning": "1. **What each source says ACTUALLY HAPPENED:**\n    *   **Source 1 (PBS):** Announces an arrest in the shooting death of right-wing activist Charlie Kirk. Mentions 'rampant speculation' surrounding the event.\n    *   **Source 2 (NYT):** Notes that political figures, like JD Vance, discussed Kirk's shooting and its implications 'even before a suspect had been identified,' implying early speculation about motives.\n    *   **Source 3 (The Guardian):** Explicitly states: 'A motive has not been revealed by Utah officials.' It also notes that JD Vance has *said* 'left-wing extremism' is 'part of the reason' Kirk was killed, highlighting a disconnect between official statements and political rhetoric.\n    *   **Source 4 (NYT):** Reports that President Trump and his allies have invoked Kirk's killing to propose targeting liberal groups, indicating political attribution of the act to the left, but not an official finding.\n    *   **Source 5 (NYT):** Details the suspect's confession in charging documents ('I had to'), but does not mention any ideological motive (left-wing or otherwise) revealed by officials in these documents.\n\n2. **What each source says was FAKE or MISLEADING:**\n    *   The sources do not directly state that claims of left-wing links are 'fake' or 'misleading.' However, Source 3's declaration that 'A motive has not been revealed by Utah officials' *implicitly* undermines the political assertions made by figures like JD Vance (also mentioned in Source 3) and President Trump (Source 4) that the killing was due to 'left-wing extremism' or linked to liberal groups, as these assertions lack official backing. The 'rampant speculation' (Source 1) also suggests unsubstantiated claims.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim states: 'Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.'\n    *   Source 3 is the most direct and crucial: 'A motive has not been revealed by Utah officials.' While it refers to 'Utah officials' rather than explicitly 'federal officials,' it represents the primary official investigation. If the overall motive has not been revealed by the leading authorities, it logically follows that no specific evidence linking it to left-wing groups has been found or publicly presented by *any* officials, including federal ones. The absence of a stated motive means the absence of stated evidence for any specific motive, including a left-wing one.\n    *   Sources 2, 3, and 4 highlight that political figures *are* making claims about left-wing involvement. However, these are presented as statements from individuals (Vance, Trump) or as political strategy, not as findings from federal or state officials.\n    *   Source 5 details the suspect's confession but does not provide any official indication of an ideological motive, further supporting the idea that officials have not revealed such a link.\n    *   Therefore, based on the provided information, the official investigations have not disclosed a motive, and consequently, have not revealed any evidence linking Charlie Kirk's shooting to left-wing groups. The claim is consistent with the available information.",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/nation/what-we-know-so-far-about-the-charlie-kirk-shooting-suspect",
+                    "https://www.nytimes.com/2025/09/15/us/politics/jd-vance-charlie-kirk-show.html",
+                    "https://www.theguardian.com/us-news/2025/sep/16/court-hearing-charlie-kirk-shooting-suspect",
+                    "https://www.nytimes.com/2025/09/16/us/politics/trump-kirk-free-speech-hate-speech-left.html",
+                    "https://www.nytimes.com/live/2025/09/16/us/kirk-shooting-suspect-charges"
+                  ],
+                  "titles": [
+                    "What we know so far about the Charlie Kirk shooting suspect | PBS ...",
+                    "On Charlie Kirk Show, JD Vance Talks of Crackdown on Liberal ...",
+                    "Charlie Kirk suspect allegedly took responsibility for killing in online ...",
+                    "Trump Invokes Kirk's Killing in Seeking to Silence Opponents on Left ...",
+                    "Kirk Killing Suspect Faces Aggravated Murder Charge, and Death ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+                "verification_date": "2025-09-21T12:39:45.270731"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups."
+              },
+              "verification_timestamp": "2025-09-21T12:40:16.401697"
+            },
+            {
+              "claim_text": "Since 2018, all 31 targeted political attacks have been committed by Republicans, contrary to GOP claims of left-wing violence.",
+              "content_summary": "A Reddit post in r/skeptic references an article on wtfdetective.blog, disputing claims of left-wing political violence. The article claims that all 31 targeted political killings or attempted killings since 2018 were perpetrated by individuals associated with the Republican party. This contradicts ",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltr2o/gop_cries_about_leftwing_violence_but_every_one/",
+              "verification": {
+                "verified": false,
+                "verdict": "no_content",
+                "message": "No relevant fact-checked information found for this specific claim",
+                "confidence": "medium",
+                "reasoning": "Analysis completed",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/topic/gerry-adams?page=8",
+                    "https://www.nytimes.com/live/2025/09/16/us/trump-news",
+                    "https://www.wsj.com/politics/charlie-kirk-turning-point-usa-5cfe4015?gaa_at=eafs&gaa_n=ASWzDAjz7sbVbXMA6z7M-iChFByF7XSCpl5oIRThxQFf5lfiIrPNJjKhiNf3&gaa_ts=68cfa85e&gaa_sig=awFeDdYw1EwQdpKOqpUs2hMtgeQR6rqze9Wxh5sObRObtrQjLyqqQm-y0QStDMwGr--0OP6xePRfx5mO-h41Og%3D%3D",
+                    "https://www.theguardian.com/us-news/ng-interactive/2024/jun/25/charlie-kirk-turning-point-usa-chase-the-vote-trump"
+                  ],
+                  "titles": [
+                    "Gerry Adams - Page 8 - The New York Times",
+                    "Democrats Oppose Stopgap Bill, Raising Odds of a Shutdown - The ...",
+                    "Charlie Kirk, a Conservative Standard-Bearer, Killed at 31 - WSJ",
+                    "Charlie Kirk once unified conservative youth for Trump. Why are ..."
+                  ],
+                  "count": 4
+                },
+                "claim_text": "Since 2018, all 31 targeted political attacks have been committed by Republicans, contrary to GOP claims of left-wing violence.",
+                "verification_date": "2025-09-21T12:39:45.270731"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "Since 2018, all 31 targeted political attacks have been committed by Republicans, contrary to GOP claims of left-wing violence."
+              },
+              "verification_timestamp": "2025-09-21T12:40:17.826580"
+            },
+            {
+              "claim_text": "Leaked texts from the shooter, Tyler Robinson, in the Charlie Kirk case appear to be scripted.",
+              "content_summary": "A Reddit post in r/skeptic suggests that leaked texts attributed to Tyler Robinson, the alleged shooter in the Charlie Kirk case, seem scripted. No further information or evidence is provided in the post or available scraped content.",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nmb712/the_leaked_texts_from_robinson_seem_scripted/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "Unable to determine claim accuracy from available sources. Found fact-checking articles but analysis failed.",
+                "confidence": "low",
+                "reasoning": "Analysis completed",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/09/17/us/politics/charlie-kirk-killer.html",
+                    "https://www.bbc.com/news/world-us-canada-62683094",
+                    "https://www.aljazeera.com/news/2014/8/28/us-girl-shoots-gun-instructor-in-the-head",
+                    "https://www.aljazeera.com/news/2021/10/18/jury-selection-to-begin-in-us-killing-of-ahmaud-arbery",
+                    "https://www.aljazeera.com/sports/2025/3/28/real-madrid-vs-leganes-laliga-team-news-start-time-how-to-follow-stream"
+                  ],
+                  "titles": [
+                    "A Note, a Gun and a Mother's Conscience Led to an Arrest in Kirk's ...",
+                    "Mass shootings: What are the warning signs and could they help ...",
+                    "US girl shoots gun instructor in the head | Gun Violence News | Al ...",
+                    "Jury selection to begin in trial over killing of Ahmaud Arbery | Black ...",
+                    "Real Madrid vs Leganes – LaLiga: Team news, kickoff, how to follow ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Leaked texts from the shooter, Tyler Robinson, in the Charlie Kirk case appear to be scripted.",
+                "verification_date": "2025-09-21T12:39:45.270731"
+              },
+              "claim_metadata": {
+                "post_index": 3,
+                "extracted_claim": "Leaked texts from the shooter, Tyler Robinson, in the Charlie Kirk case appear to be scripted."
+              },
+              "verification_timestamp": "2025-09-21T12:40:31.162525"
+            },
+            {
+              "claim_text": "The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.",
+              "content_summary": "A Reddit post in r/skeptic links to a YouTube video titled \"Charlie Kirk and the Empathy Paradox.\" The post itself contains no further details, so the summary is limited to the title and source.",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltp7c/charlie_kirk_and_the_empathy_paradox/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided fact-checking sources focus entirely on the death and assassination of Charlie Kirk and the events surrounding it. They offer no information, neither corroborating nor refuting, about the existence of 'a post linking to a YouTube video analyzing Charlie Kirk and the concept of empathy.' Therefore, based solely on the given sources, the claim cannot be verified.",
+                "confidence": "high",
+                "reasoning": "1. **What does each source say ACTUALLY HAPPENED?**\n    *   All four sources consistently report that Charlie Kirk died after being shot/assassinated. This occurred during an appearance at Utah Valley University (Sources 1, 2). The events are dated around September 10-12, 2025.\n    *   Source 1 highlights Kirk's history of contentious views.\n    *   Source 2 states he was a practiced debater who posted his own videos 'parrying liberal critiques' and was doing so when shot.\n    *   Source 3 mentions a suspect caught on video jumping off a roof after firing one shot. It also includes an observation that 'Trump rarely shows empathy.'\n    *   Source 4 details unexpected calls for unity from Republicans and Democrats following his assassination.\n\n2. **What does each source say was FAKE or MISLEADING?**\n    *   None of the provided sources explicitly state anything as fake or misleading. They all present themselves as reporting factual events surrounding Charlie Kirk's death.\n    *   Crucially, none of the sources make any mention or allusion to 'a post linking to a YouTube video analyzing Charlie Kirk and the concept of empathy.' The topics covered are Charlie Kirk's death, his views, and the political aftermath, not specific online content about him in this manner.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim asserts the existence of a specific online activity: 'The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.'\n    *   The provided fact-checking sources are entirely dedicated to reporting on the death (assassination) of Charlie Kirk. They describe the circumstances, his background, and the reactions to his death.\n    *   There is no information within any of these sources that supports, contradicts, or even references a post linking to a YouTube video analyzing Charlie Kirk and the concept of empathy. While Source 2 mentions Kirk posting his *own* videos, this is distinct from a third-party analysis. Source 3's mention of 'empathy' is in reference to Donald Trump, not Charlie Kirk in the context of a video analysis.\n    *   Therefore, the claim cannot be verified as true or false based on the evidence presented in these specific fact-checking sources, as the sources do not address the claim's subject matter at all.",
+                "sources": {
+                  "links": [
+                    "https://www.cbc.ca/news/world/charlie-kirk-controversies-1.7630859",
+                    "https://www.nytimes.com/2025/09/11/briefing/what-you-need-to-know-about-charlie-kirks-assassination.html",
+                    "https://www.nytimes.com/2025/09/16/opinion/ezra-klein-podcast-ben-shapiro.html",
+                    "https://www.npr.org/",
+                    "https://www.theguardian.com/world/2025/sep/12/friday-briefing-what-the-killing-of-charlie-kirk-means-for-a-polarised-country"
+                  ],
+                  "titles": [
+                    "Some of Charlie Kirk's most controversial takes | CBC News",
+                    "What You Need to Know About Charlie Kirk's Assassination - The ...",
+                    "Opinion | We Are Going to Have to Live Here With One Another ...",
+                    "NPR - Breaking News, Analysis, Music, Arts & Podcasts : NPR",
+                    "Friday briefing: What the killing of Charlie Kirk means for a polarised ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy.",
+                "verification_date": "2025-09-21T12:39:45.270731"
+              },
+              "claim_metadata": {
+                "post_index": 4,
+                "extracted_claim": "The post links to a YouTube video analyzing Charlie Kirk and the concept of empathy."
+              },
+              "verification_timestamp": "2025-09-21T12:40:50.502493"
+            },
+            {
+              "claim_text": "Tom Homan, the Border Czar, allegedly accepted $50,000 in cash while indicating he could help secure government contracts for undercover agents posing as business executives during the Trump administration, and the investigation was suspended.",
+              "content_summary": "A Reddit post in r/conspiracytheories claims that Tom Homan, the Border Czar, accepted $50,000 in cash, implying he could influence the awarding of government contracts to undercover agents posing as business executives during the Trump administration. The post also alleges that Patel suspended the ",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm9y3e/tom_homan_the_border_czar_accepted_50000_in_cash/",
+              "verification": {
+                "verified": false,
+                "verdict": "no_content",
+                "message": "No relevant fact-checked information found for this specific claim",
+                "confidence": "medium",
+                "reasoning": "Analysis completed",
+                "sources": {
+                  "links": [
+                    "https://www.theguardian.com/us-news/live/2025/jul/21/ice-immigration-donald-trump-latest-us-politics-news-updates",
+                    "https://www.theguardian.com/us-news/2025/feb/07/trump-elon-musk-doge-agency",
+                    "https://www.theguardian.com/us-news/2025/aug/07/universities-settle-trump",
+                    "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance",
+                    "https://www.theguardian.com/us-news/2017/feb/08/tsa-screening-racial-religious-profiling-aclu-study"
+                  ],
+                  "titles": [
+                    "Senators question incoming CBS owner about 'side deal' with Trump ...",
+                    "Trump hints Musk 'Doge' team has free rein with Pentagon next in ...",
+                    "US universities' settlements with Trump 'will only fuel his ...",
+                    "Edward Snowden: the whistleblower behind the NSA surveillance ...",
+                    "TSA screening program risks racial profiling amid shaky science ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Tom Homan, the Border Czar, allegedly accepted $50,000 in cash while indicating he could help secure government contracts for undercover agents posing as business executives during the Trump administration, and the investigation was suspended.",
+                "verification_date": "2025-09-21T12:39:45.270731"
+              },
+              "claim_metadata": {
+                "post_index": 5,
+                "extracted_claim": "Tom Homan, the Border Czar, allegedly accepted $50,000 in cash while indicating he could help secure government contracts for undercover agents posing as business executives during the Trump administration, and the investigation was suspended."
+              },
+              "verification_timestamp": "2025-09-21T12:40:51.421654"
+            },
+            {
+              "claim_text": "The post questions the credibility and truthfulness of unnamed individuals or entities.",
+              "content_summary": "A Reddit post in r/conspiracytheories poses the question, \"How can you believe they're not telling lies at this point?\" The post lacks specific context and does not identify who \"they\" refers to, making it a general statement of skepticism or distrust.",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nmgcnc/how_can_you_believe_theyre_not_telling_lies_at/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The provided sources do not support the claim that 'The post questions the credibility and truthfulness of unnamed individuals or entities.' While one source mentions claims questioning credibility, the individuals and entities involved are explicitly named, directly contradicting the 'unnamed' aspect of the claim.",
+                "confidence": "high",
+                "reasoning": "Your step-by-step reasoning process:\n1.  **Analysis of the Claim:** The claim states that a 'post' questions the credibility and truthfulness of *unnamed* individuals or entities.\n\n2.  **Analysis of Source 1: 'The Principles of the Truth-O-Meter: PolitiFact's ... - PolitiFact'**\n    *   **What ACTUALLY HAPPENED?** This source explains PolitiFact's methodology and principles for fact-checking (how they choose facts, maintain nonpartisanship, etc.).\n    *   **What was FAKE or MISLEADING?** This source does not present any specific claims as fake or misleading. It is about the process of fact-checking itself.\n    *   **Relevance to the Claim:** This source provides no information about a specific 'post' or its content regarding the credibility of individuals or entities, named or unnamed. Therefore, it offers no evidence to support or refute the claim.\n\n3.  **Analysis of Source 2: 'GOP Misleading Claims in Biden Impeachment Investigation ... - FactCheck.org'**\n    *   **What ACTUALLY HAPPENED?** This source reports that 'Republicans' (a named entity) 'continued to present misleadingly incomplete information' in service of the claim that 'Biden' (a named individual) 'benefited from his family members’ (named individuals) “influence peddling”.\n    *   **What was FAKE or MISLEADING?** The claims made by Republicans are described as 'misleadingly incomplete information.' These claims implicitly question the credibility and truthfulness of President Biden and his family members regarding 'influence peddling.'\n    *   **Relevance to the Claim:** This source describes a situation where claims (which could be considered a 'post' or statement) question the credibility and truthfulness of individuals (Biden and his family) and were made by an entity (Republicans). However, crucially, both the entity making the claims ('Republicans') and the individuals whose credibility is questioned ('Biden' and 'his family members') are explicitly *named*. This directly contradicts the 'unnamed individuals or entities' aspect of the claim to be verified.\n\n4.  **Conclusion based on evidence:** Neither source supports the claim as stated. Source 1 is entirely unrelated to the content of any specific 'post.' Source 2 discusses claims that question credibility, but the entities and individuals involved are explicitly named, rendering the 'unnamed' part of the claim false based on the provided evidence.",
+                "sources": {
+                  "links": [
+                    "https://www.economist.com/frequently-asked-questions",
+                    "https://www.nytimes.com/editorial-standards/ethical-journalism.html",
+                    "https://www.aljazeera.com/news/2024/12/12/why-are-mysterious-drones-flying-over-new-jersey",
+                    "https://www.nytimes.com/editorial-standards/guidelines-on-integrity.html",
+                    "https://www.politifact.com/article/2018/feb/12/principles-truth-o-meter-politifacts-methodology-i/"
+                  ],
+                  "titles": [
+                    "Frequently asked questions",
+                    "The New York Times Ethical Journalism Handbook",
+                    "Why are mysterious drones flying over New Jersey? | Science and ...",
+                    "Guidelines on Integrity",
+                    "The Principles of the Truth-O-Meter: PolitiFact's ... - PolitiFact"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The post questions the credibility and truthfulness of unnamed individuals or entities.",
+                "verification_date": "2025-09-21T12:39:45.270731"
+              },
+              "claim_metadata": {
+                "post_index": 6,
+                "extracted_claim": "The post questions the credibility and truthfulness of unnamed individuals or entities."
+              },
+              "verification_timestamp": "2025-09-21T12:41:00.932975"
+            },
+            {
+              "claim_text": "A cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel.",
+              "content_summary": "A Reddit post in r/conspiracytheories suggests a possible connection between a recent cyber attack in Europe and the impending recognition of a Palestinian state by several European countries against Israel's wishes. The post implies that Israel might be responsible for the cyber attack.",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm6lik/europe_is_hit_with_a_cyber_attack_a_day_before/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim that a cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel is not supported by the provided fact-checking sources. While some European countries are considering recognizing a Palestinian state, and Israel has taken military action in the region and condemned the potential recognition, none of the sources describe a recent or imminent cyber attack in Europe that is linked to Israel in this context.",
+                "confidence": "high",
+                "reasoning": "STEP-BY-STEP ANALYSIS:\n\n1.  **What does each source say ACTUALLY HAPPENED?**\n    *   **Source 1 (NPR, Jul 29, 2025):** Reports that the United Kingdom plans to recognize a Palestinian state by September 2025 unless Israel commits to peace in the Gaza Strip. This discusses a future intention related to Palestinian state recognition.\n    *   **Source 2 (BBC, Jun 13, 2025):** Describes an Israeli Air Force military attack targeting sites linked to Iran's nuclear program and air defenses. This is a military strike against Iran, not a cyber attack in Europe.\n    *   **Source 3 (CBC, Jul 24, 2025):** States that French President Emmanuel Macron announced France will 'soon recognize a Palestinian state,' a decision condemned by Israel. This also discusses a future intention related to Palestinian state recognition.\n    *   **Source 4 (BBC, Apr 27, 2017):** Details a significant cyber attack that occurred in Estonia 10 years prior to the article's date (i.e., around 2007). This is a past cyber attack in Europe, but it predates the current discussion of European countries recognizing a Palestinian state by nearly two decades.\n\n2.  **What does each source say was FAKE or MISLEADING?**\n    *   None of the provided sources explicitly state that any information related to the claim was fake or misleading. They present their content as factual reports or future plans.\n\n3.  **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim has three main components: 'A cyber attack in Europe,' 'before several countries recognize a Palestinian state,' and 'is potentially linked to Israel.'\n    *   **'A cyber attack in Europe':** Source 4 mentions a cyber attack in Estonia, which is in Europe. However, this attack occurred in 2007, long before the current context of countries considering Palestinian state recognition (2025, as per Sources 1 & 3). None of the sources mention a recent, ongoing, or imminent cyber attack in Europe.\n    *   **'before several countries recognize a Palestinian state':** Sources 1 and 3 indicate that the UK and France are indeed planning or considering recognizing a Palestinian state in the near future (2025). So, this part of the claim's premise is partially aligned with the sources' information about future intentions.\n    *   **'is potentially linked to Israel':** This is the crucial missing link. Source 2 describes an Israeli military attack on Iran, not a cyber attack in Europe. Sources 1 and 3 note Israel's opposition to the recognition of a Palestinian state by European countries, but *none* of the sources connect a cyber attack in Europe (whether the 2007 Estonian one or any other) to Israel, especially not in the context of preventing Palestinian state recognition.\n    *   Therefore, while European countries are considering recognizing a Palestinian state and Israel has expressed opposition, there is no evidence in the provided sources to support the existence of a *recent* cyber attack in Europe, nor any link between such an attack (or the 2007 one) and Israel in this specific context.",
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2025/07/29/nx-s1-5484001/uk-palestinian-state-israel-hamas-gaza",
+                    "https://www.npr.org/2024/03/14/1233395830/ireland-pro-palestinian",
+                    "https://www.theguardian.com/world/2024/apr/03/israel-gaza-ai-database-hamas-airstrikes",
+                    "https://www.euronews.com/my-europe/2025/04/09/president-macron-announces-potential-recognition-of-palestinian-state-in-coming-months",
+                    "https://www.bbc.com/news/articles/cvg72ny4xeyo"
+                  ],
+                  "titles": [
+                    "U.K. to recognize Palestinian state if Israel doesn't agree to Gaza ...",
+                    "Why Ireland is one of the most pro-Palestinian nations in the world ...",
+                    "'The machine did it coldly': Israel used AI to identify 37,000 Hamas ...",
+                    "President Macron announces potential recognition of Palestinian ...",
+                    "Iran is reeling from Israel's attack - and it is only the start"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "A cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel.",
+                "verification_date": "2025-09-21T12:39:45.270731"
+              },
+              "claim_metadata": {
+                "post_index": 7,
+                "extracted_claim": "A cyber attack in Europe before several countries recognize a Palestinian state is potentially linked to Israel."
+              },
+              "verification_timestamp": "2025-09-21T12:41:12.847673"
+            },
+            {
+              "claim_text": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+              "content_summary": "A Reddit post in r/conspiracytheories reports on an NBC News article stating that the federal investigation into the shooting of Charlie Kirk has found no evidence connecting the alleged shooter, Tyler Robinson, to left-wing groups. The investigation suggests the shooting was an isolated incident mo",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm8tit/no_evidence_found_yet_of_ties_between_charlie/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "Unable to determine claim accuracy from available sources. Found fact-checking articles but analysis failed.",
+                "confidence": "low",
+                "reasoning": "Analysis completed",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/nation/what-we-know-so-far-about-the-charlie-kirk-shooting-suspect",
+                    "https://www.nytimes.com/2025/09/15/us/politics/jd-vance-charlie-kirk-show.html",
+                    "https://www.theguardian.com/us-news/2025/sep/16/court-hearing-charlie-kirk-shooting-suspect",
+                    "https://www.nytimes.com/2025/09/16/us/politics/trump-kirk-free-speech-hate-speech-left.html",
+                    "https://www.nytimes.com/live/2025/09/16/us/kirk-shooting-suspect-charges"
+                  ],
+                  "titles": [
+                    "What we know so far about the Charlie Kirk shooting suspect | PBS ...",
+                    "On Charlie Kirk Show, JD Vance Talks of Crackdown on Liberal ...",
+                    "Charlie Kirk suspect allegedly took responsibility for killing in online ...",
+                    "Trump Invokes Kirk's Killing in Seeking to Silence Opponents on Left ...",
+                    "Kirk Killing Suspect Faces Aggravated Murder Charge, and Death ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups.",
+                "verification_date": "2025-09-21T12:39:45.270731"
+              },
+              "claim_metadata": {
+                "post_index": 8,
+                "extracted_claim": "Federal officials have found no evidence linking Charlie Kirk's shooting to left-wing groups."
+              },
+              "verification_timestamp": "2025-09-21T12:41:29.337346"
+            }
+          ],
+          "summary": {
+            "total_claims": 9,
+            "successfully_verified": 1,
+            "verification_errors": 0
+          },
+          "timestamp": "2025-09-21T12:41:29.337346"
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20250921_124129",
+    "completed_tasks": 2,
+    "total_tasks": 2
+  },
+  "timestamp": "2025-09-21T12:41:29.338350",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20250921_123553",
+    "created_at": "2025-09-21T12:41:29.338350",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "success": true,
+  "message": "Successfully processed 1 posts with actual fact-checking results",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-09-21T11:50:00.865713",
+        "total_posts": 1,
+        "posts": [
+          {
+            "claim": "Donald Trump posted and then deleted a Truth Social post that appeared to be a letter instructing Pam Bondi to arrest his political opponents.",
+            "summary": "A Reddit post on r/NoFilterNews discusses a now-deleted Truth Social post by Donald Trump. The post allegedly contained what appeared to be a letter addressed to Pam Bondi, former Attorney General of Florida, instructing her to arrest some of Trump's political rivals. The post links to a Politico article providing further details regarding the incident. The article title is \"Trump posts what looks to be a letter meant to Pam Bondi instructing her to arrest some of his political opponents\", confirming the claim made in the Reddit post title.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 1 claims using Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Donald Trump posted and then deleted a Truth Social post that appeared to be a letter instructing Pam Bondi to arrest his political opponents.",
+            "content_summary": "A Reddit post on r/NoFilterNews discusses a now-deleted Truth Social post by Donald Trump. The post allegedly contained what appeared to be a letter addressed to Pam Bondi, former Attorney General of Florida, instructing her to arrest some of Trump's political rivals. The post links to a Politico ar",
+            "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The provided fact-checking sources do not support the claim that Donald Trump posted and then deleted a Truth Social post instructing Pam Bondi to arrest his political opponents. While the sources confirm Trump uses Truth Social and Pam Bondi is a public figure involved in legal and political discussions, none of them mention such a specific post, its content, or its deletion by Trump.",
+              "confidence": "high",
+              "reasoning": "1. **What does each source say ACTUALLY HAPPENED?**\n    *   **Source 1 (Al Jazeera):** Mentions Elon Musk's now-deleted X post alleging Trump was named in Epstein files. It also refers to 'Maga influencers calling for Pam Bondi's head' over Epstein, implying controversy around Bondi, but not related to Trump instructing her to arrest opponents. It's about Musk's actions and influencer opinions, not Trump's deleted Truth Social post.\n    *   **Source 2 (NYT):** States Pam Bondi informed President Trump that his name appeared in the Jeffrey Epstein files. This is Bondi communicating *to* Trump about the Epstein files, not Trump instructing Bondi to arrest political opponents.\n    *   **Source 3 (The Guardian):** Reports on Donald Trump's lawsuit over a Wall Street Journal report concerning Jeffrey Epstein, and Pam Bondi stating the 'Epstein case 'a matter of public concern''. Again, this concerns Trump's involvement with Epstein and Bondi's commentary, not Trump instructing her to arrest opponents.\n    *   **Source 4 (The Guardian):** Confirms Donald Trump uses Truth Social ('Trump then wrote on his social media platform, Truth'). This source only establishes Trump's use of the platform but provides no details about any specific post, let alone one that was deleted or instructed Bondi.\n    *   **Source 5 (FactCheck.org):** States Pam Bondi posted documents related to the Abrego Garcia immigration case on social media. This is Bondi making a post, not Trump, and its content is unrelated to the claim.\n\n2. **What does each source say was FAKE or MISLEADING?**\n    *   None of the sources directly address the claim in question or state that it is fake or misleading. However, by detailing other events, they implicitly contradict the claim by providing no supporting evidence for it.\n    *   Source 1 mentions a 'now-deleted post on his X platform' by Elon Musk, not by Donald Trump on Truth Social.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim asserts a very specific event: Donald Trump posting and then deleting a Truth Social post that was a letter instructing Pam Bondi to arrest his political opponents. \n    *   Not a single provided source corroborates any part of this specific claim. While the sources confirm Trump's use of Truth Social and Bondi's public role and interactions with Trump, they detail entirely different events. There is no mention of such a letter, such an instruction, or such a deleted post by Trump.\n    *   Therefore, based *solely* on the provided sources, the claim is unsubstantiated and appears to be false.",
+              "sources": {
+                "links": [
+                  "https://www.aljazeera.com/news/2025/7/17/who-are-the-maga-influencers-calling-for-pam-bondis-head-over-epstein",
+                  "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                  "https://www.npr.org/2025/04/29/nx-s1-5327518/donald-trump-100-days-retribution-threats",
+                  "https://www.theguardian.com/us-news/live/2025/jul/18/donald-trump-epstein-files-wsj-birthright-citizenship-cryptocurrency-us-politics-live-news-updates",
+                  "https://www.nytimes.com/live/2025/07/22/us/trump-news"
+                ],
+                "titles": [
+                  "Who are the MAGA influencers calling for Pam Bondi's head over ...",
+                  "Attorney General Alerted Trump His Name Appeared in Epstein ...",
+                  "How Trump is using government power to target his enemies : NPR",
+                  "Epstein case 'a matter of public concern', Pam Bondi says in motion ...",
+                  "Trump Announces Trade Deal With Japan - The New York Times"
+                ],
+                "count": 10
+              },
+              "claim_text": "Donald Trump posted and then deleted a Truth Social post that appeared to be a letter instructing Pam Bondi to arrest his political opponents.",
+              "verification_date": "2025-09-21T11:50:03.961766"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Donald Trump posted and then deleted a Truth Social post that appeared to be a letter instructing Pam Bondi to arrest his political opponents."
+            },
+            "verification_timestamp": "2025-09-21T11:50:16.214603"
+          }
+        ],
+        "summary": {
+          "total_claims": 1,
+          "successfully_verified": 0,
+          "verification_errors": 0
+        },
+        "timestamp": "2025-09-21T11:50:16.214603"
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Donald Trump posted and then deleted a Truth Social post that appeared to be a letter instructing Pam Bondi to arrest his political opponents.",
+      "summary": "A Reddit post on r/NoFilterNews discusses a now-deleted Truth Social post by Donald Trump. The post allegedly contained what appeared to be a letter addressed to Pam Bondi, former Attorney General of Florida, instructing her to arrest some of Trump's political rivals. The post links to a Politico article providing further details regarding the incident. The article title is \"Trump posts what looks to be a letter meant to Pam Bondi instructing her to arrest some of his political opponents\", confirming the claim made in the Reddit post title.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The provided fact-checking sources do not support the claim that Donald Trump posted and then deleted a Truth Social post instructing Pam Bondi to arrest his political opponents. While the sources confirm Trump uses Truth Social and Pam Bondi is a public figure involved in legal and political discussions, none of them mention such a specific post, its content, or its deletion by Trump.",
+        "confidence": "high",
+        "reasoning": "1. **What does each source say ACTUALLY HAPPENED?**\n    *   **Source 1 (Al Jazeera):** Mentions Elon Musk's now-deleted X post alleging Trump was named in Epstein files. It also refers to 'Maga influencers calling for Pam Bondi's head' over Epstein, implying controversy around Bondi, but not related to Trump instructing her to arrest opponents. It's about Musk's actions and influencer opinions, not Trump's deleted Truth Social post.\n    *   **Source 2 (NYT):** States Pam Bondi informed President Trump that his name appeared in the Jeffrey Epstein files. This is Bondi communicating *to* Trump about the Epstein files, not Trump instructing Bondi to arrest political opponents.\n    *   **Source 3 (The Guardian):** Reports on Donald Trump's lawsuit over a Wall Street Journal report concerning Jeffrey Epstein, and Pam Bondi stating the 'Epstein case 'a matter of public concern''. Again, this concerns Trump's involvement with Epstein and Bondi's commentary, not Trump instructing her to arrest opponents.\n    *   **Source 4 (The Guardian):** Confirms Donald Trump uses Truth Social ('Trump then wrote on his social media platform, Truth'). This source only establishes Trump's use of the platform but provides no details about any specific post, let alone one that was deleted or instructed Bondi.\n    *   **Source 5 (FactCheck.org):** States Pam Bondi posted documents related to the Abrego Garcia immigration case on social media. This is Bondi making a post, not Trump, and its content is unrelated to the claim.\n\n2. **What does each source say was FAKE or MISLEADING?**\n    *   None of the sources directly address the claim in question or state that it is fake or misleading. However, by detailing other events, they implicitly contradict the claim by providing no supporting evidence for it.\n    *   Source 1 mentions a 'now-deleted post on his X platform' by Elon Musk, not by Donald Trump on Truth Social.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim asserts a very specific event: Donald Trump posting and then deleting a Truth Social post that was a letter instructing Pam Bondi to arrest his political opponents. \n    *   Not a single provided source corroborates any part of this specific claim. While the sources confirm Trump's use of Truth Social and Bondi's public role and interactions with Trump, they detail entirely different events. There is no mention of such a letter, such an instruction, or such a deleted post by Trump.\n    *   Therefore, based *solely* on the provided sources, the claim is unsubstantiated and appears to be false.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/2025/7/17/who-are-the-maga-influencers-calling-for-pam-bondis-head-over-epstein",
+            "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+            "https://www.npr.org/2025/04/29/nx-s1-5327518/donald-trump-100-days-retribution-threats",
+            "https://www.theguardian.com/us-news/live/2025/jul/18/donald-trump-epstein-files-wsj-birthright-citizenship-cryptocurrency-us-politics-live-news-updates",
+            "https://www.nytimes.com/live/2025/07/22/us/trump-news"
+          ],
+          "titles": [
+            "Who are the MAGA influencers calling for Pam Bondi's head over ...",
+            "Attorney General Alerted Trump His Name Appeared in Epstein ...",
+            "How Trump is using government power to target his enemies : NPR",
+            "Epstein case 'a matter of public concern', Pam Bondi says in motion ...",
+            "Trump Announces Trade Deal With Japan - The New York Times"
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump posted and then deleted a Truth Social post that appeared to be a letter instructing Pam Bondi to arrest his political opponents.",
+        "verification_date": "2025-09-21T11:50:03.961766"
+      }
+    }
+  ],
+  "summary": {
+    "content_items_processed": 1,
+    "agents_executed": 2,
+    "workflow_success": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-09-21T11:50:00.865713",
+          "total_posts": 1,
+          "posts": [
+            {
+              "claim": "Donald Trump posted and then deleted a Truth Social post that appeared to be a letter instructing Pam Bondi to arrest his political opponents.",
+              "summary": "A Reddit post on r/NoFilterNews discusses a now-deleted Truth Social post by Donald Trump. The post allegedly contained what appeared to be a letter addressed to Pam Bondi, former Attorney General of Florida, instructing her to arrest some of Trump's political rivals. The post links to a Politico article providing further details regarding the incident. The article title is \"Trump posts what looks to be a letter meant to Pam Bondi instructing her to arrest some of his political opponents\", confirming the claim made in the Reddit post title.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 1 claims using Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Donald Trump posted and then deleted a Truth Social post that appeared to be a letter instructing Pam Bondi to arrest his political opponents.",
+              "content_summary": "A Reddit post on r/NoFilterNews discusses a now-deleted Truth Social post by Donald Trump. The post allegedly contained what appeared to be a letter addressed to Pam Bondi, former Attorney General of Florida, instructing her to arrest some of Trump's political rivals. The post links to a Politico ar",
+              "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The provided fact-checking sources do not support the claim that Donald Trump posted and then deleted a Truth Social post instructing Pam Bondi to arrest his political opponents. While the sources confirm Trump uses Truth Social and Pam Bondi is a public figure involved in legal and political discussions, none of them mention such a specific post, its content, or its deletion by Trump.",
+                "confidence": "high",
+                "reasoning": "1. **What does each source say ACTUALLY HAPPENED?**\n    *   **Source 1 (Al Jazeera):** Mentions Elon Musk's now-deleted X post alleging Trump was named in Epstein files. It also refers to 'Maga influencers calling for Pam Bondi's head' over Epstein, implying controversy around Bondi, but not related to Trump instructing her to arrest opponents. It's about Musk's actions and influencer opinions, not Trump's deleted Truth Social post.\n    *   **Source 2 (NYT):** States Pam Bondi informed President Trump that his name appeared in the Jeffrey Epstein files. This is Bondi communicating *to* Trump about the Epstein files, not Trump instructing Bondi to arrest political opponents.\n    *   **Source 3 (The Guardian):** Reports on Donald Trump's lawsuit over a Wall Street Journal report concerning Jeffrey Epstein, and Pam Bondi stating the 'Epstein case 'a matter of public concern''. Again, this concerns Trump's involvement with Epstein and Bondi's commentary, not Trump instructing her to arrest opponents.\n    *   **Source 4 (The Guardian):** Confirms Donald Trump uses Truth Social ('Trump then wrote on his social media platform, Truth'). This source only establishes Trump's use of the platform but provides no details about any specific post, let alone one that was deleted or instructed Bondi.\n    *   **Source 5 (FactCheck.org):** States Pam Bondi posted documents related to the Abrego Garcia immigration case on social media. This is Bondi making a post, not Trump, and its content is unrelated to the claim.\n\n2. **What does each source say was FAKE or MISLEADING?**\n    *   None of the sources directly address the claim in question or state that it is fake or misleading. However, by detailing other events, they implicitly contradict the claim by providing no supporting evidence for it.\n    *   Source 1 mentions a 'now-deleted post on his X platform' by Elon Musk, not by Donald Trump on Truth Social.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   The claim asserts a very specific event: Donald Trump posting and then deleting a Truth Social post that was a letter instructing Pam Bondi to arrest his political opponents. \n    *   Not a single provided source corroborates any part of this specific claim. While the sources confirm Trump's use of Truth Social and Bondi's public role and interactions with Trump, they detail entirely different events. There is no mention of such a letter, such an instruction, or such a deleted post by Trump.\n    *   Therefore, based *solely* on the provided sources, the claim is unsubstantiated and appears to be false.",
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/news/2025/7/17/who-are-the-maga-influencers-calling-for-pam-bondis-head-over-epstein",
+                    "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "https://www.npr.org/2025/04/29/nx-s1-5327518/donald-trump-100-days-retribution-threats",
+                    "https://www.theguardian.com/us-news/live/2025/jul/18/donald-trump-epstein-files-wsj-birthright-citizenship-cryptocurrency-us-politics-live-news-updates",
+                    "https://www.nytimes.com/live/2025/07/22/us/trump-news"
+                  ],
+                  "titles": [
+                    "Who are the MAGA influencers calling for Pam Bondi's head over ...",
+                    "Attorney General Alerted Trump His Name Appeared in Epstein ...",
+                    "How Trump is using government power to target his enemies : NPR",
+                    "Epstein case 'a matter of public concern', Pam Bondi says in motion ...",
+                    "Trump Announces Trade Deal With Japan - The New York Times"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Donald Trump posted and then deleted a Truth Social post that appeared to be a letter instructing Pam Bondi to arrest his political opponents.",
+                "verification_date": "2025-09-21T11:50:03.961766"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Donald Trump posted and then deleted a Truth Social post that appeared to be a letter instructing Pam Bondi to arrest his political opponents."
+              },
+              "verification_timestamp": "2025-09-21T11:50:16.214603"
+            }
+          ],
+          "summary": {
+            "total_claims": 1,
+            "successfully_verified": 0,
+            "verification_errors": 0
+          },
+          "timestamp": "2025-09-21T11:50:16.214603"
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20250921_115016",
+    "completed_tasks": 2,
+    "total_tasks": 2
+  },
+  "timestamp": "2025-09-21T11:50:16.214603",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20250921_114844",
+    "created_at": "2025-09-21T11:50:16.214603",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "results_integrator"
+    ]
+  }
+}

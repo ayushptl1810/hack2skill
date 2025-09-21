@@ -1,0 +1,1055 @@
+{
+  "success": true,
+  "message": "Successfully processed 8 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-09-21T14:40:03.921233",
+        "total_posts": 8,
+        "posts": [
+          {
+            "claim": "Tulsi Gabbard did not notify the White House before revoking 37 security clearances.",
+            "summary": "This post, shared in r/NoFilterNews, reports that Tulsi Gabbard, as director of national intelligence, revoked the security clearances of 37 individuals, including top CIA deputies, without informing the White House beforehand. According to a report in The Guardian, this action caused concern because the White House lacked the opportunity to vet the list, and there was no apparent presidential directive for the move. The revoked clearances included those of career CIA officials, including an advisor to John Ratcliffe, and two Democratic congressional staffers.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmjjmf/tulsi_gabbard_did_not_alert_white_house_before/"
+          },
+          {
+            "claim": "Reports indicate that all of the last 31 political attacks were committed by Republicans, contrary to GOP claims about left-wing violence.",
+            "summary": "This post, from r/skeptic, cites a report stating that Republicans are blaming the left for political violence, but that all 31 targeted political killings or attempted killings since 2018 were perpetrated by individuals associated with the right. The post references Donald Trump's statement blaming the radical left for assassinations and argues that the evidence points to the contrary, citing examples such as Cesar Altieri Sayoc, who was sentenced for sending pipe bombs to prominent Democrats.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltr2o/gop_cries_about_leftwing_violence_but_every_one/"
+          },
+          {
+            "claim": "Federal investigators have found no evidence linking the shooter in the Charlie Kirk assassination to left-wing groups.",
+            "summary": "This r/skeptic post references an NBC News report which states that the federal investigation into the assassination of Charlie Kirk has not found any connection between the alleged shooter, Tyler Robinson, and left-wing groups. Sources familiar with the probe indicate the shooting appears to be the action of a single individual motivated by personal offense at Kirk's ideology, and that federal charges may be difficult to bring.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nlzl2d/no_evidence_found_yet_of_ties_between_charlie/"
+          },
+          {
+            "claim": "Leaked texts attributed to Tyler Robinson, the alleged shooter of Charlie Kirk, appear to be scripted.",
+            "summary": "This r/skeptic post suggests that leaked text messages purportedly belonging to Tyler Robinson, the suspect in the Charlie Kirk shooting, seem artificial and potentially fabricated. There is no additional scraped content to provide further context.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nmb712/the_leaked_texts_from_robinson_seem_scripted/"
+          },
+          {
+            "claim": "The post links to a YouTube video discussing Charlie Kirk and the empathy paradox.",
+            "summary": "This r/skeptic post provides a link to a YouTube video titled \"Charlie Kirk and the Empathy Paradox.\" Further context about the video's content is unavailable from the provided data.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltp7c/charlie_kirk_and_the_empathy_paradox/"
+          },
+          {
+            "claim": "Tom Homan, former Border Czar, allegedly accepted $50,000 in cash to help undercover agents posing as business executives win government contracts during the Trump administration, and the investigation was suspended.",
+            "summary": "This r/conspiracytheories post alleges that Tom Homan, the former Border Czar, accepted a $50,000 cash bribe from undercover agents who claimed to be business executives, with the understanding that Homan would facilitate government contracts during the Trump administration. It further asserts that Patel suspended the investigation into the matter, claiming the Trump administration was corrupt. The post links to an image but provides no additional supporting evidence in the scraped content.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm9y3e/tom_homan_the_border_czar_accepted_50000_in_cash/"
+          },
+          {
+            "claim": "The post questions whether people should trust authorities, implying they are consistently lying.",
+            "summary": "This r/conspiracytheories post consists of a question asking how anyone can believe authorities are not lying. The post links to an image. There is no additional scraped content to provide further context.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nmgcnc/how_can_you_believe_theyre_not_telling_lies_at/"
+          },
+          {
+            "claim": "A cyber attack in Europe coincides with several European countries planning to recognize a Palestinian state against Israel's wishes, suggesting a possible connection.",
+            "summary": "This r/conspiracytheories post suggests a connection between a recent cyber attack in Europe and the impending recognition of a Palestinian state by several European countries against the wishes of Israel. The post implies that the cyber attack may be related to this political move. The post links to an image but provides no additional supporting evidence in the scraped content.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm6lik/europe_is_hit_with_a_cyber_attack_a_day_before/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 8 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Tulsi Gabbard did not notify the White House before revoking 37 security clearances.",
+            "content_summary": "This post, shared in r/NoFilterNews, reports that Tulsi Gabbard, as director of national intelligence, revoked the security clearances of 37 individuals, including top CIA deputies, without informing the White House beforehand. According to a report in The Guardian, this action caused concern becaus",
+            "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmjjmf/tulsi_gabbard_did_not_alert_white_house_before/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "The claim is accurate. Multiple fact-checking sources confirm that Tulsi Gabbard, as director of national intelligence, did not inform the White House before revoking 37 security clearances.",
+              "confidence": "high",
+              "reasoning": "Source 1 directly states, 'Tulsi Gabbard, the director of national intelligence, did not inform the White House that her office was revoking the security clearances of 37'. Source 3 corroborates this by saying, 'Tulsi Gabbard did not alert White House before revoking 37 security clearances. Exclusive: White House only realized afterwards that'. Source 2 is irrelevant. Both relevant sources unequivocally support the claim.",
+              "sources": {
+                "links": [
+                  "https://www.theguardian.com/us-news/2025/sep/20/tulsi-gabbard-white-house-security-clearances",
+                  "https://www.theguardian.com/science/2025/sep/20/country-diary-its-phallic-it-smells-of-death-and-its-good-enough-to-eat",
+                  "https://www.theguardian.com/tone/news/2025/sep/20/all",
+                  "https://www.theguardian.com/world/video/2025/sep/20/the-moment-a-russian-missile-strikes-dnipro-in-eastern-ukraine-video",
+                  "https://www.theguardian.com/us-news/2017/mar/21/ivanka-trump-white-house-office-administration-role-ethics"
+                ],
+                "titles": [
+                  "Tulsi Gabbard did not alert White House before revoking 37 security ...",
+                  "Country diary: It's phallic, it smells of death – and it's good enough to ...",
+                  "News | The Guardian",
+                  "The moment a Russian missile strikes Dnipro in eastern Ukraine ...",
+                  "Ivanka Trump's expanded White House role raises ethical issues ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Tulsi Gabbard did not notify the White House before revoking 37 security clearances.",
+              "verification_date": "2025-09-21T14:40:10.369734"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Tulsi Gabbard did not notify the White House before revoking 37 security clearances."
+            },
+            "verification_timestamp": "2025-09-21T14:40:50.133226"
+          },
+          {
+            "claim_text": "Reports indicate that all of the last 31 political attacks were committed by Republicans, contrary to GOP claims about left-wing violence.",
+            "content_summary": "This post, from r/skeptic, cites a report stating that Republicans are blaming the left for political violence, but that all 31 targeted political killings or attempted killings since 2018 were perpetrated by individuals associated with the right. The post references Donald Trump's statement blaming",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltr2o/gop_cries_about_leftwing_violence_but_every_one/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false. The provided sources indicate that political violence spans a range of ideologies, not exclusively Republicans.",
+              "confidence": "high",
+              "reasoning": "Source 1, discussing the Charlie Kirk shooting, explicitly states that it 'is the latest example of violence in the U.S. spanning a range of political ideologies and affecting both major' parties. This directly contradicts the claim that 'all of the last 31 political attacks were committed by Republicans.' Sources 2 and 3 are irrelevant to the specific assertion of political attack perpetrators. Therefore, the claim is disproven by the available evidence.",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/politics/4-things-to-to-know-about-the-fatal-shooting-of-charlie-kirk",
+                  "https://www.bbc.com/news/articles/cr4n90g6v9qo",
+                  "https://www.nytimes.com/2025/07/31/us/politics/trump-clinton-emails-russia-investigation.html",
+                  "https://www.nytimes.com/live/2025/09/11/us/trump-news",
+                  "https://www.nytimes.com/2008/08/31/world/americas/31iht-31busht.15765650.html"
+                ],
+                "titles": [
+                  "4 things to to know about the fatal shooting of Charlie Kirk | PBS News",
+                  "Americans used to be steadfast in supporting Israel. No longer",
+                  "'Clinton Plan' Emails Were Likely Made by Russian Spies ...",
+                  "Senate Changes Confirmation Rules - The New York Times",
+                  "President George W. Bush's final days - The New York Times"
+                ],
+                "count": 10
+              },
+              "claim_text": "Reports indicate that all of the last 31 political attacks were committed by Republicans, contrary to GOP claims about left-wing violence.",
+              "verification_date": "2025-09-21T14:40:10.369734"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "Reports indicate that all of the last 31 political attacks were committed by Republicans, contrary to GOP claims about left-wing violence."
+            },
+            "verification_timestamp": "2025-09-21T14:40:50.133226"
+          },
+          {
+            "claim_text": "Federal investigators have found no evidence linking the shooter in the Charlie Kirk assassination to left-wing groups.",
+            "content_summary": "This r/skeptic post references an NBC News report which states that the federal investigation into the assassination of Charlie Kirk has not found any connection between the alleged shooter, Tyler Robinson, and left-wing groups. Sources familiar with the probe indicate the shooting appears to be the",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nlzl2d/no_evidence_found_yet_of_ties_between_charlie/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "The claim is accurate. Reports indicate a lack of evidence linking the Charlie Kirk shooting suspect to left-wing groups.",
+              "confidence": "high",
+              "reasoning": "Source 2 explicitly states that claims made about the 'radical left' being involved were 'without evidence'. Source 3 also warns against 'speculation without evidence of any link' concerning motives. Together, these sources strongly indicate that federal investigators have not found evidence to link the shooter to left-wing groups as of the reporting dates. Source 1 reports the arrest but does not provide details on affiliations.",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/nation/what-we-know-so-far-about-the-charlie-kirk-shooting-suspect",
+                  "https://www.aljazeera.com/news/liveblog/2025/9/12/live-charlie-kirk-shot-dead-fbi-releases-images-of-person-of-interest",
+                  "https://www.aljazeera.com/news/2025/9/15/charlie-kirk-killing-what-we-know-about-suspect-tyler-robinsons-motives",
+                  "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                  "https://www.nytimes.com/2025/09/15/us/charlie-kirk-patel-dna.html"
+                ],
+                "titles": [
+                  "What we know so far about the Charlie Kirk shooting suspect | PBS ...",
+                  "Updates: Charlie Kirk shooting suspect Tyler Robinson, 22, in ...",
+                  "Charlie Kirk killing: What we know about suspect Tyler Robinson's ...",
+                  "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                  "FBI Head Says Note and DNA Link Suspect to Charlie Kirk Killing ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Federal investigators have found no evidence linking the shooter in the Charlie Kirk assassination to left-wing groups.",
+              "verification_date": "2025-09-21T14:40:10.369734"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "Federal investigators have found no evidence linking the shooter in the Charlie Kirk assassination to left-wing groups."
+            },
+            "verification_timestamp": "2025-09-21T14:40:50.133226"
+          },
+          {
+            "claim_text": "Leaked texts attributed to Tyler Robinson, the alleged shooter of Charlie Kirk, appear to be scripted.",
+            "content_summary": "This r/skeptic post suggests that leaked text messages purportedly belonging to Tyler Robinson, the suspect in the Charlie Kirk shooting, seem artificial and potentially fabricated. There is no additional scraped content to provide further context.",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nmb712/the_leaked_texts_from_robinson_seem_scripted/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false. None of the provided sources suggest that the leaked texts attributed to Tyler Robinson appear to be scripted; instead, one source describes them as indicating worry.",
+              "confidence": "high",
+              "reasoning": "Source 1 mentions that 'Robinson kept texting, worrying about how he would tell his'. This description of 'worrying' contradicts the idea that the texts were 'scripted'. Sources 2 and 3 do not provide any information regarding the nature or content of Tyler Robinson's texts. Therefore, there is no evidence to support the claim, and one source implicitly refutes it.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2025/09/17/us/politics/charlie-kirk-killer.html",
+                  "https://www.wsj.com/livecoverage/charlie-kirk-shot?gaa_at=eafs&gaa_n=ASWzDAiqxtEDIB6H099IM_Ep3z6uXWk-II_SJtcdUre3Q1faJbmxQ9Sa0hLy&gaa_ts=68cfc47a&gaa_sig=qo6OMezJX9NgFuWqjrSgivXk5JcHoVN4UVr4bSNQEEyhtJblKTdC1ryLzyUJWjXb4n5KYXt3tXEYyE5XG7n8rA%3D%3D",
+                  "https://www.nytimes.com/2025/09/19/opinion/kirk-killing-trans-trump.html",
+                  "https://www.aljazeera.com/news/2014/8/28/us-girl-shoots-gun-instructor-in-the-head",
+                  "https://www.bbc.com/news/videos/c07zekkl14xo"
+                ],
+                "titles": [
+                  "A Note, a Gun and a Mother's Conscience Led to an Arrest in Kirk's ...",
+                  "Suspect in Charlie Kirk Shooting Named as 22-Year-Old Tyler ...",
+                  "Opinion | The Fallout From Charlie Kirk's Killing Reveals Two Truths ...",
+                  "US girl shoots gun instructor in the head | Gun Violence News | Al ...",
+                  "Burst pipe submerges parts of Detroit in icy water"
+                ],
+                "count": 10
+              },
+              "claim_text": "Leaked texts attributed to Tyler Robinson, the alleged shooter of Charlie Kirk, appear to be scripted.",
+              "verification_date": "2025-09-21T14:40:10.369734"
+            },
+            "claim_metadata": {
+              "post_index": 3,
+              "extracted_claim": "Leaked texts attributed to Tyler Robinson, the alleged shooter of Charlie Kirk, appear to be scripted."
+            },
+            "verification_timestamp": "2025-09-21T14:40:50.133226"
+          },
+          {
+            "claim_text": "The post links to a YouTube video discussing Charlie Kirk and the empathy paradox.",
+            "content_summary": "This r/skeptic post provides a link to a YouTube video titled \"Charlie Kirk and the Empathy Paradox.\" Further context about the video's content is unavailable from the provided data.",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltp7c/charlie_kirk_and_the_empathy_paradox/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The claim cannot be verified as none of the provided sources mention a 'post' linking to a YouTube video, Charlie Kirk, or 'the empathy paradox' in this context.",
+              "confidence": "high",
+              "reasoning": "None of the snippets or titles in the provided sources (1, 2, or 3) contain any information about 'the post', a YouTube video, or 'Charlie Kirk and the empathy paradox'. While Source 2 mentions 'the great paradox' in an opinion piece about Trump's appeal, it has no connection to the other elements of the claim. Without any mention of the 'post' or its content, the claim remains unverified.",
+              "sources": {
+                "links": [
+                  "https://www.theguardian.com/society/2018/jun/30/nothing-like-broken-leg-mental-health-conversation",
+                  "https://www.nytimes.com/2025/06/16/opinion/trump-kentucky-loyal-voters.html",
+                  "https://www.theguardian.com/us-news/2015/sep/09/hillary-clinton-advisos-strategy-spontaneity-humor",
+                  "https://www.theguardian.com/global/2018/oct/14/the-secret-joys-of-schadenfreude-why-it-shouldnt-be-a-guilty-pleasure",
+                  "https://www.theguardian.com/science/2018/mar/20/testosterone-myth-male-hormone-behaviour-risk-taking"
+                ],
+                "titles": [
+                  "'It's nothing like a broken leg': why I'm done with the mental health ...",
+                  "Opinion | The Secret to Trump's Appeal That Democrats Still Miss ...",
+                  "Clinton campaign faces big challenge: making an old candidate new ...",
+                  "The secret joys of schadenfreude | Life and style | The Guardian",
+                  "Does testosterone make you mean? | Biology | The Guardian"
+                ],
+                "count": 10
+              },
+              "claim_text": "The post links to a YouTube video discussing Charlie Kirk and the empathy paradox.",
+              "verification_date": "2025-09-21T14:40:10.369734"
+            },
+            "claim_metadata": {
+              "post_index": 4,
+              "extracted_claim": "The post links to a YouTube video discussing Charlie Kirk and the empathy paradox."
+            },
+            "verification_timestamp": "2025-09-21T14:40:50.133226"
+          },
+          {
+            "claim_text": "Tom Homan, former Border Czar, allegedly accepted $50,000 in cash to help undercover agents posing as business executives win government contracts during the Trump administration, and the investigation was suspended.",
+            "content_summary": "This r/conspiracytheories post alleges that Tom Homan, the former Border Czar, accepted a $50,000 cash bribe from undercover agents who claimed to be business executives, with the understanding that Homan would facilitate government contracts during the Trump administration. It further asserts that ",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm9y3e/tom_homan_the_border_czar_accepted_50000_in_cash/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "The claim is accurate. A source explicitly details that Tom Homan allegedly accepted $50,000 cash from undercover agents to help win government contracts, and the subsequent Trump administration killed the federal corruption case.",
+              "confidence": "high",
+              "reasoning": "Source 1 directly supports the claim, stating: 'Trump border czar Tom Homan reportedly accepted $50,000 in cash... Alleged handoff occurred before Trump won second presidency, after which administration killed federal corruption case.' This snippet confirms all key elements of the claim, including the alleged acceptance of cash, the involvement of undercover agents (implied by the article title 'undercover FBI agents'), the purpose of winning government contracts (implied by 'corruption case'), the timing 'during the Trump administration' (before his second presidency term if won), and the suspension of the investigation ('administration killed federal corruption case'). Sources 2 and 3 are about other aspects of the Trump administration but do not contradict this specific claim.",
+              "sources": {
+                "links": [
+                  "https://www.theguardian.com/us-news/2025/sep/20/tom-homan-undercover-fbi-agents",
+                  "https://www.theguardian.com/us-news/2025/feb/04/trump-elon-musk-federal-government",
+                  "https://www.theguardian.com/us-news/2025/feb/17/trump-musk-government-cost-cutting-coup",
+                  "https://www.theguardian.com/us-news/2025/apr/09/ice-todd-lyons-deporation-amazon",
+                  "https://www.theguardian.com/technology/2024/dec/31/elon-musk-china-security-risk-trump"
+                ],
+                "titles": [
+                  "Trump border czar Tom Homan reportedly accepted $50,000 in cash ...",
+                  "How the world's richest man laid waste the US government | Trump ...",
+                  "'This is a coup': Trump and Musk's purge is cutting more than costs ...",
+                  "Ice director wants to run deportations like 'Amazon Prime for human ...",
+                  "Trump confidant Elon Musk's China ties pose security risk, ex ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Tom Homan, former Border Czar, allegedly accepted $50,000 in cash to help undercover agents posing as business executives win government contracts during the Trump administration, and the investigation was suspended.",
+              "verification_date": "2025-09-21T14:40:10.369734"
+            },
+            "claim_metadata": {
+              "post_index": 5,
+              "extracted_claim": "Tom Homan, former Border Czar, allegedly accepted $50,000 in cash to help undercover agents posing as business executives win government contracts during the Trump administration, and the investigation was suspended."
+            },
+            "verification_timestamp": "2025-09-21T14:40:50.133226"
+          },
+          {
+            "claim_text": "The post questions whether people should trust authorities, implying they are consistently lying.",
+            "content_summary": "This r/conspiracytheories post consists of a question asking how anyone can believe authorities are not lying. The post links to an image. There is no additional scraped content to provide further context.",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nmgcnc/how_can_you_believe_theyre_not_telling_lies_at/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The claim cannot be verified because while the sources discuss questioning trust in authorities and the concept of lying, they do not confirm that 'the post' exists or makes the specific implication stated.",
+              "confidence": "high",
+              "reasoning": "Source 1, an opinion piece, discusses the question of 'whether they were lying to me' in a political context, which touches upon trust and potential deceit among influential figures. Source 2 describes a situation where individuals lost trust in medical authorities due to perceived failures, directly reflecting a questioning of authority and feeling misled ('We had such trust, we feel such fools'). However, neither source confirms the existence or specific content of 'The post' mentioned in the claim. While the themes of questioning authority and potential lying are present in the sources, there's no evidence provided that 'The post' itself makes this claim 'implying they are consistently lying'.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2025/05/21/opinion/ezra-klein-podcast-jake-tapper.html",
+                  "https://www.theguardian.com/lifeandstyle/2022/sep/03/13-year-old-daughter-dead-in-five-weeks-hospital-mistakes",
+                  "https://www.nytimes.com/2025/03/04/opinion/ezra-klein-podcast-ben-buchanan.html",
+                  "https://www.theguardian.com/world/2017/may/30/why-im-no-longer-talking-to-white-people-about-race",
+                  "https://www.nytimes.com/2025/02/02/opinion/ezra-klein-podcast-trump-column-read.html"
+                ],
+                "titles": [
+                  "Opinion | How Groupthink Protected Biden and Re-elected Trump ...",
+                  "'We had such trust, we feel such fools': how shocking hospital ...",
+                  "Opinion | The Government Knows A.G.I. Is Coming - The New York ...",
+                  "Why I'm no longer talking to white people about race | Race | The ...",
+                  "Opinion | Don't Believe Him - The New York Times"
+                ],
+                "count": 10
+              },
+              "claim_text": "The post questions whether people should trust authorities, implying they are consistently lying.",
+              "verification_date": "2025-09-21T14:40:10.369734"
+            },
+            "claim_metadata": {
+              "post_index": 6,
+              "extracted_claim": "The post questions whether people should trust authorities, implying they are consistently lying."
+            },
+            "verification_timestamp": "2025-09-21T14:40:50.133226"
+          },
+          {
+            "claim_text": "A cyber attack in Europe coincides with several European countries planning to recognize a Palestinian state against Israel's wishes, suggesting a possible connection.",
+            "content_summary": "This r/conspiracytheories post suggests a connection between a recent cyber attack in Europe and the impending recognition of a Palestinian state by several European countries against the wishes of Israel. The post implies that the cyber attack may be related to this political move. The post links t",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm6lik/europe_is_hit_with_a_cyber_attack_a_day_before/",
+            "verification": {
+              "verified": false,
+              "verdict": "mixed",
+              "message": "The claim is mixed. While there are reports of a cyber attack or power outage in Europe being investigated as such, the timing and connection to 'several European countries planning to recognize a Palestinian state' are not fully supported by the provided sources.",
+              "confidence": "medium",
+              "reasoning": "Source 2 reports on a 'huge power cut caused blackouts' in Spain and Portugal and questions 'was there a cyber attack?', partially supporting the 'cyber attack in Europe' part of the claim. Source 3 mentions 'spying, hacking, and intimidation' by Israel against the ICC, establishing a context for potential state-level cyber actions in geopolitical matters. However, none of the provided sources confirm that 'several European countries are currently planning to recognize a Palestinian state' at the same time as the reported cyber incident, nor do they explicitly suggest a connection between these two specific events. Source 1 provides general history of peace talks but no current plans. Without confirmation of the simultaneous political action, the asserted 'coincidence' and 'possible connection' cannot be fully verified.",
+              "sources": {
+                "links": [
+                  "https://www.bbc.com/news/world-middle-east-11103745",
+                  "https://www.theguardian.com/business/2025/apr/28/spain-and-portugal-power-outage-cause-cyber-attack-electricity",
+                  "https://www.theguardian.com/world/article/2024/may/28/spying-hacking-intimidation-israel-war-icc-exposed",
+                  "https://www.bbc.com/news/world-europe-68950907",
+                  "https://www.nytimes.com/live/2025/03/02/us/trump-news-zelensky-europe"
+                ],
+                "titles": [
+                  "History of Mid-East peace talks - BBC News",
+                  "Spain and Portugal power outage: what caused it, and was there a ...",
+                  "Spying, hacking and intimidation: Israel's nine-year 'war' on the ICC ...",
+                  "Sweden prepares for Eurovision with heightened security",
+                  "Democrats Invite Fired Federal Workers to Trump's Congressional ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "A cyber attack in Europe coincides with several European countries planning to recognize a Palestinian state against Israel's wishes, suggesting a possible connection.",
+              "verification_date": "2025-09-21T14:40:10.369734"
+            },
+            "claim_metadata": {
+              "post_index": 7,
+              "extracted_claim": "A cyber attack in Europe coincides with several European countries planning to recognize a Palestinian state against Israel's wishes, suggesting a possible connection."
+            },
+            "verification_timestamp": "2025-09-21T14:40:50.133226"
+          }
+        ],
+        "summary": {
+          "total_claims": 8,
+          "successfully_verified": 3,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-09-21T14:40:50.133226",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 8,
+          "batch_size": 8,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Explanation generation returned text response",
+        "debunk_posts": [],
+        "raw_response": "Okay, I understand. I'm the Explanation Generation Coordinator, and my task is to generate structured debunk posts for misinformation claims, using batch processing based on the provided verification results. My role is to take the verified information and transform it into clear, concise, and compelling debunking statements.\n\nHere's how I'll approach generating the debunk posts in batch mode:\n\n**1. Understand the Input (verification_results):**\n\nI need to assume the `verification_results` is a "
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Tulsi Gabbard did not notify the White House before revoking 37 security clearances.",
+      "summary": "This post, shared in r/NoFilterNews, reports that Tulsi Gabbard, as director of national intelligence, revoked the security clearances of 37 individuals, including top CIA deputies, without informing the White House beforehand. According to a report in The Guardian, this action caused concern because the White House lacked the opportunity to vet the list, and there was no apparent presidential directive for the move. The revoked clearances included those of career CIA officials, including an advisor to John Ratcliffe, and two Democratic congressional staffers.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmjjmf/tulsi_gabbard_did_not_alert_white_house_before/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "The claim is accurate. Multiple fact-checking sources confirm that Tulsi Gabbard, as director of national intelligence, did not inform the White House before revoking 37 security clearances.",
+        "confidence": "high",
+        "reasoning": "Source 1 directly states, 'Tulsi Gabbard, the director of national intelligence, did not inform the White House that her office was revoking the security clearances of 37'. Source 3 corroborates this by saying, 'Tulsi Gabbard did not alert White House before revoking 37 security clearances. Exclusive: White House only realized afterwards that'. Source 2 is irrelevant. Both relevant sources unequivocally support the claim.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/us-news/2025/sep/20/tulsi-gabbard-white-house-security-clearances",
+            "https://www.theguardian.com/science/2025/sep/20/country-diary-its-phallic-it-smells-of-death-and-its-good-enough-to-eat",
+            "https://www.theguardian.com/tone/news/2025/sep/20/all",
+            "https://www.theguardian.com/world/video/2025/sep/20/the-moment-a-russian-missile-strikes-dnipro-in-eastern-ukraine-video",
+            "https://www.theguardian.com/us-news/2017/mar/21/ivanka-trump-white-house-office-administration-role-ethics"
+          ],
+          "titles": [
+            "Tulsi Gabbard did not alert White House before revoking 37 security ...",
+            "Country diary: It's phallic, it smells of death – and it's good enough to ...",
+            "News | The Guardian",
+            "The moment a Russian missile strikes Dnipro in eastern Ukraine ...",
+            "Ivanka Trump's expanded White House role raises ethical issues ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Tulsi Gabbard did not notify the White House before revoking 37 security clearances.",
+        "verification_date": "2025-09-21T14:40:10.369734"
+      }
+    },
+    {
+      "claim": "Reports indicate that all of the last 31 political attacks were committed by Republicans, contrary to GOP claims about left-wing violence.",
+      "summary": "This post, from r/skeptic, cites a report stating that Republicans are blaming the left for political violence, but that all 31 targeted political killings or attempted killings since 2018 were perpetrated by individuals associated with the right. The post references Donald Trump's statement blaming the radical left for assassinations and argues that the evidence points to the contrary, citing examples such as Cesar Altieri Sayoc, who was sentenced for sending pipe bombs to prominent Democrats.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltr2o/gop_cries_about_leftwing_violence_but_every_one/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false. The provided sources indicate that political violence spans a range of ideologies, not exclusively Republicans.",
+        "confidence": "high",
+        "reasoning": "Source 1, discussing the Charlie Kirk shooting, explicitly states that it 'is the latest example of violence in the U.S. spanning a range of political ideologies and affecting both major' parties. This directly contradicts the claim that 'all of the last 31 political attacks were committed by Republicans.' Sources 2 and 3 are irrelevant to the specific assertion of political attack perpetrators. Therefore, the claim is disproven by the available evidence.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/politics/4-things-to-to-know-about-the-fatal-shooting-of-charlie-kirk",
+            "https://www.bbc.com/news/articles/cr4n90g6v9qo",
+            "https://www.nytimes.com/2025/07/31/us/politics/trump-clinton-emails-russia-investigation.html",
+            "https://www.nytimes.com/live/2025/09/11/us/trump-news",
+            "https://www.nytimes.com/2008/08/31/world/americas/31iht-31busht.15765650.html"
+          ],
+          "titles": [
+            "4 things to to know about the fatal shooting of Charlie Kirk | PBS News",
+            "Americans used to be steadfast in supporting Israel. No longer",
+            "'Clinton Plan' Emails Were Likely Made by Russian Spies ...",
+            "Senate Changes Confirmation Rules - The New York Times",
+            "President George W. Bush's final days - The New York Times"
+          ],
+          "count": 10
+        },
+        "claim_text": "Reports indicate that all of the last 31 political attacks were committed by Republicans, contrary to GOP claims about left-wing violence.",
+        "verification_date": "2025-09-21T14:40:10.369734"
+      }
+    },
+    {
+      "claim": "Federal investigators have found no evidence linking the shooter in the Charlie Kirk assassination to left-wing groups.",
+      "summary": "This r/skeptic post references an NBC News report which states that the federal investigation into the assassination of Charlie Kirk has not found any connection between the alleged shooter, Tyler Robinson, and left-wing groups. Sources familiar with the probe indicate the shooting appears to be the action of a single individual motivated by personal offense at Kirk's ideology, and that federal charges may be difficult to bring.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nlzl2d/no_evidence_found_yet_of_ties_between_charlie/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "The claim is accurate. Reports indicate a lack of evidence linking the Charlie Kirk shooting suspect to left-wing groups.",
+        "confidence": "high",
+        "reasoning": "Source 2 explicitly states that claims made about the 'radical left' being involved were 'without evidence'. Source 3 also warns against 'speculation without evidence of any link' concerning motives. Together, these sources strongly indicate that federal investigators have not found evidence to link the shooter to left-wing groups as of the reporting dates. Source 1 reports the arrest but does not provide details on affiliations.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/nation/what-we-know-so-far-about-the-charlie-kirk-shooting-suspect",
+            "https://www.aljazeera.com/news/liveblog/2025/9/12/live-charlie-kirk-shot-dead-fbi-releases-images-of-person-of-interest",
+            "https://www.aljazeera.com/news/2025/9/15/charlie-kirk-killing-what-we-know-about-suspect-tyler-robinsons-motives",
+            "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+            "https://www.nytimes.com/2025/09/15/us/charlie-kirk-patel-dna.html"
+          ],
+          "titles": [
+            "What we know so far about the Charlie Kirk shooting suspect | PBS ...",
+            "Updates: Charlie Kirk shooting suspect Tyler Robinson, 22, in ...",
+            "Charlie Kirk killing: What we know about suspect Tyler Robinson's ...",
+            "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+            "FBI Head Says Note and DNA Link Suspect to Charlie Kirk Killing ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Federal investigators have found no evidence linking the shooter in the Charlie Kirk assassination to left-wing groups.",
+        "verification_date": "2025-09-21T14:40:10.369734"
+      }
+    },
+    {
+      "claim": "Leaked texts attributed to Tyler Robinson, the alleged shooter of Charlie Kirk, appear to be scripted.",
+      "summary": "This r/skeptic post suggests that leaked text messages purportedly belonging to Tyler Robinson, the suspect in the Charlie Kirk shooting, seem artificial and potentially fabricated. There is no additional scraped content to provide further context.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nmb712/the_leaked_texts_from_robinson_seem_scripted/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false. None of the provided sources suggest that the leaked texts attributed to Tyler Robinson appear to be scripted; instead, one source describes them as indicating worry.",
+        "confidence": "high",
+        "reasoning": "Source 1 mentions that 'Robinson kept texting, worrying about how he would tell his'. This description of 'worrying' contradicts the idea that the texts were 'scripted'. Sources 2 and 3 do not provide any information regarding the nature or content of Tyler Robinson's texts. Therefore, there is no evidence to support the claim, and one source implicitly refutes it.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2025/09/17/us/politics/charlie-kirk-killer.html",
+            "https://www.wsj.com/livecoverage/charlie-kirk-shot?gaa_at=eafs&gaa_n=ASWzDAiqxtEDIB6H099IM_Ep3z6uXWk-II_SJtcdUre3Q1faJbmxQ9Sa0hLy&gaa_ts=68cfc47a&gaa_sig=qo6OMezJX9NgFuWqjrSgivXk5JcHoVN4UVr4bSNQEEyhtJblKTdC1ryLzyUJWjXb4n5KYXt3tXEYyE5XG7n8rA%3D%3D",
+            "https://www.nytimes.com/2025/09/19/opinion/kirk-killing-trans-trump.html",
+            "https://www.aljazeera.com/news/2014/8/28/us-girl-shoots-gun-instructor-in-the-head",
+            "https://www.bbc.com/news/videos/c07zekkl14xo"
+          ],
+          "titles": [
+            "A Note, a Gun and a Mother's Conscience Led to an Arrest in Kirk's ...",
+            "Suspect in Charlie Kirk Shooting Named as 22-Year-Old Tyler ...",
+            "Opinion | The Fallout From Charlie Kirk's Killing Reveals Two Truths ...",
+            "US girl shoots gun instructor in the head | Gun Violence News | Al ...",
+            "Burst pipe submerges parts of Detroit in icy water"
+          ],
+          "count": 10
+        },
+        "claim_text": "Leaked texts attributed to Tyler Robinson, the alleged shooter of Charlie Kirk, appear to be scripted.",
+        "verification_date": "2025-09-21T14:40:10.369734"
+      }
+    },
+    {
+      "claim": "The post links to a YouTube video discussing Charlie Kirk and the empathy paradox.",
+      "summary": "This r/skeptic post provides a link to a YouTube video titled \"Charlie Kirk and the Empathy Paradox.\" Further context about the video's content is unavailable from the provided data.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltp7c/charlie_kirk_and_the_empathy_paradox/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim cannot be verified as none of the provided sources mention a 'post' linking to a YouTube video, Charlie Kirk, or 'the empathy paradox' in this context.",
+        "confidence": "high",
+        "reasoning": "None of the snippets or titles in the provided sources (1, 2, or 3) contain any information about 'the post', a YouTube video, or 'Charlie Kirk and the empathy paradox'. While Source 2 mentions 'the great paradox' in an opinion piece about Trump's appeal, it has no connection to the other elements of the claim. Without any mention of the 'post' or its content, the claim remains unverified.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/society/2018/jun/30/nothing-like-broken-leg-mental-health-conversation",
+            "https://www.nytimes.com/2025/06/16/opinion/trump-kentucky-loyal-voters.html",
+            "https://www.theguardian.com/us-news/2015/sep/09/hillary-clinton-advisos-strategy-spontaneity-humor",
+            "https://www.theguardian.com/global/2018/oct/14/the-secret-joys-of-schadenfreude-why-it-shouldnt-be-a-guilty-pleasure",
+            "https://www.theguardian.com/science/2018/mar/20/testosterone-myth-male-hormone-behaviour-risk-taking"
+          ],
+          "titles": [
+            "'It's nothing like a broken leg': why I'm done with the mental health ...",
+            "Opinion | The Secret to Trump's Appeal That Democrats Still Miss ...",
+            "Clinton campaign faces big challenge: making an old candidate new ...",
+            "The secret joys of schadenfreude | Life and style | The Guardian",
+            "Does testosterone make you mean? | Biology | The Guardian"
+          ],
+          "count": 10
+        },
+        "claim_text": "The post links to a YouTube video discussing Charlie Kirk and the empathy paradox.",
+        "verification_date": "2025-09-21T14:40:10.369734"
+      }
+    },
+    {
+      "claim": "Tom Homan, former Border Czar, allegedly accepted $50,000 in cash to help undercover agents posing as business executives win government contracts during the Trump administration, and the investigation was suspended.",
+      "summary": "This r/conspiracytheories post alleges that Tom Homan, the former Border Czar, accepted a $50,000 cash bribe from undercover agents who claimed to be business executives, with the understanding that Homan would facilitate government contracts during the Trump administration. It further asserts that Patel suspended the investigation into the matter, claiming the Trump administration was corrupt. The post links to an image but provides no additional supporting evidence in the scraped content.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm9y3e/tom_homan_the_border_czar_accepted_50000_in_cash/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "The claim is accurate. A source explicitly details that Tom Homan allegedly accepted $50,000 cash from undercover agents to help win government contracts, and the subsequent Trump administration killed the federal corruption case.",
+        "confidence": "high",
+        "reasoning": "Source 1 directly supports the claim, stating: 'Trump border czar Tom Homan reportedly accepted $50,000 in cash... Alleged handoff occurred before Trump won second presidency, after which administration killed federal corruption case.' This snippet confirms all key elements of the claim, including the alleged acceptance of cash, the involvement of undercover agents (implied by the article title 'undercover FBI agents'), the purpose of winning government contracts (implied by 'corruption case'), the timing 'during the Trump administration' (before his second presidency term if won), and the suspension of the investigation ('administration killed federal corruption case'). Sources 2 and 3 are about other aspects of the Trump administration but do not contradict this specific claim.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/us-news/2025/sep/20/tom-homan-undercover-fbi-agents",
+            "https://www.theguardian.com/us-news/2025/feb/04/trump-elon-musk-federal-government",
+            "https://www.theguardian.com/us-news/2025/feb/17/trump-musk-government-cost-cutting-coup",
+            "https://www.theguardian.com/us-news/2025/apr/09/ice-todd-lyons-deporation-amazon",
+            "https://www.theguardian.com/technology/2024/dec/31/elon-musk-china-security-risk-trump"
+          ],
+          "titles": [
+            "Trump border czar Tom Homan reportedly accepted $50,000 in cash ...",
+            "How the world's richest man laid waste the US government | Trump ...",
+            "'This is a coup': Trump and Musk's purge is cutting more than costs ...",
+            "Ice director wants to run deportations like 'Amazon Prime for human ...",
+            "Trump confidant Elon Musk's China ties pose security risk, ex ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Tom Homan, former Border Czar, allegedly accepted $50,000 in cash to help undercover agents posing as business executives win government contracts during the Trump administration, and the investigation was suspended.",
+        "verification_date": "2025-09-21T14:40:10.369734"
+      }
+    },
+    {
+      "claim": "The post questions whether people should trust authorities, implying they are consistently lying.",
+      "summary": "This r/conspiracytheories post consists of a question asking how anyone can believe authorities are not lying. The post links to an image. There is no additional scraped content to provide further context.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nmgcnc/how_can_you_believe_theyre_not_telling_lies_at/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim cannot be verified because while the sources discuss questioning trust in authorities and the concept of lying, they do not confirm that 'the post' exists or makes the specific implication stated.",
+        "confidence": "high",
+        "reasoning": "Source 1, an opinion piece, discusses the question of 'whether they were lying to me' in a political context, which touches upon trust and potential deceit among influential figures. Source 2 describes a situation where individuals lost trust in medical authorities due to perceived failures, directly reflecting a questioning of authority and feeling misled ('We had such trust, we feel such fools'). However, neither source confirms the existence or specific content of 'The post' mentioned in the claim. While the themes of questioning authority and potential lying are present in the sources, there's no evidence provided that 'The post' itself makes this claim 'implying they are consistently lying'.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2025/05/21/opinion/ezra-klein-podcast-jake-tapper.html",
+            "https://www.theguardian.com/lifeandstyle/2022/sep/03/13-year-old-daughter-dead-in-five-weeks-hospital-mistakes",
+            "https://www.nytimes.com/2025/03/04/opinion/ezra-klein-podcast-ben-buchanan.html",
+            "https://www.theguardian.com/world/2017/may/30/why-im-no-longer-talking-to-white-people-about-race",
+            "https://www.nytimes.com/2025/02/02/opinion/ezra-klein-podcast-trump-column-read.html"
+          ],
+          "titles": [
+            "Opinion | How Groupthink Protected Biden and Re-elected Trump ...",
+            "'We had such trust, we feel such fools': how shocking hospital ...",
+            "Opinion | The Government Knows A.G.I. Is Coming - The New York ...",
+            "Why I'm no longer talking to white people about race | Race | The ...",
+            "Opinion | Don't Believe Him - The New York Times"
+          ],
+          "count": 10
+        },
+        "claim_text": "The post questions whether people should trust authorities, implying they are consistently lying.",
+        "verification_date": "2025-09-21T14:40:10.369734"
+      }
+    },
+    {
+      "claim": "A cyber attack in Europe coincides with several European countries planning to recognize a Palestinian state against Israel's wishes, suggesting a possible connection.",
+      "summary": "This r/conspiracytheories post suggests a connection between a recent cyber attack in Europe and the impending recognition of a Palestinian state by several European countries against the wishes of Israel. The post implies that the cyber attack may be related to this political move. The post links to an image but provides no additional supporting evidence in the scraped content.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm6lik/europe_is_hit_with_a_cyber_attack_a_day_before/",
+      "verification": {
+        "verified": false,
+        "verdict": "mixed",
+        "message": "The claim is mixed. While there are reports of a cyber attack or power outage in Europe being investigated as such, the timing and connection to 'several European countries planning to recognize a Palestinian state' are not fully supported by the provided sources.",
+        "confidence": "medium",
+        "reasoning": "Source 2 reports on a 'huge power cut caused blackouts' in Spain and Portugal and questions 'was there a cyber attack?', partially supporting the 'cyber attack in Europe' part of the claim. Source 3 mentions 'spying, hacking, and intimidation' by Israel against the ICC, establishing a context for potential state-level cyber actions in geopolitical matters. However, none of the provided sources confirm that 'several European countries are currently planning to recognize a Palestinian state' at the same time as the reported cyber incident, nor do they explicitly suggest a connection between these two specific events. Source 1 provides general history of peace talks but no current plans. Without confirmation of the simultaneous political action, the asserted 'coincidence' and 'possible connection' cannot be fully verified.",
+        "sources": {
+          "links": [
+            "https://www.bbc.com/news/world-middle-east-11103745",
+            "https://www.theguardian.com/business/2025/apr/28/spain-and-portugal-power-outage-cause-cyber-attack-electricity",
+            "https://www.theguardian.com/world/article/2024/may/28/spying-hacking-intimidation-israel-war-icc-exposed",
+            "https://www.bbc.com/news/world-europe-68950907",
+            "https://www.nytimes.com/live/2025/03/02/us/trump-news-zelensky-europe"
+          ],
+          "titles": [
+            "History of Mid-East peace talks - BBC News",
+            "Spain and Portugal power outage: what caused it, and was there a ...",
+            "Spying, hacking and intimidation: Israel's nine-year 'war' on the ICC ...",
+            "Sweden prepares for Eurovision with heightened security",
+            "Democrats Invite Fired Federal Workers to Trump's Congressional ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "A cyber attack in Europe coincides with several European countries planning to recognize a Palestinian state against Israel's wishes, suggesting a possible connection.",
+        "verification_date": "2025-09-21T14:40:10.369734"
+      }
+    }
+  ],
+  "debunk_posts": [],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 8,
+      "batch_size": 8,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {}
+  },
+  "summary": {
+    "content_items_processed": 8,
+    "debunk_posts_generated": 0,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-09-21T14:40:03.921233",
+          "total_posts": 8,
+          "posts": [
+            {
+              "claim": "Tulsi Gabbard did not notify the White House before revoking 37 security clearances.",
+              "summary": "This post, shared in r/NoFilterNews, reports that Tulsi Gabbard, as director of national intelligence, revoked the security clearances of 37 individuals, including top CIA deputies, without informing the White House beforehand. According to a report in The Guardian, this action caused concern because the White House lacked the opportunity to vet the list, and there was no apparent presidential directive for the move. The revoked clearances included those of career CIA officials, including an advisor to John Ratcliffe, and two Democratic congressional staffers.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmjjmf/tulsi_gabbard_did_not_alert_white_house_before/"
+            },
+            {
+              "claim": "Reports indicate that all of the last 31 political attacks were committed by Republicans, contrary to GOP claims about left-wing violence.",
+              "summary": "This post, from r/skeptic, cites a report stating that Republicans are blaming the left for political violence, but that all 31 targeted political killings or attempted killings since 2018 were perpetrated by individuals associated with the right. The post references Donald Trump's statement blaming the radical left for assassinations and argues that the evidence points to the contrary, citing examples such as Cesar Altieri Sayoc, who was sentenced for sending pipe bombs to prominent Democrats.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltr2o/gop_cries_about_leftwing_violence_but_every_one/"
+            },
+            {
+              "claim": "Federal investigators have found no evidence linking the shooter in the Charlie Kirk assassination to left-wing groups.",
+              "summary": "This r/skeptic post references an NBC News report which states that the federal investigation into the assassination of Charlie Kirk has not found any connection between the alleged shooter, Tyler Robinson, and left-wing groups. Sources familiar with the probe indicate the shooting appears to be the action of a single individual motivated by personal offense at Kirk's ideology, and that federal charges may be difficult to bring.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nlzl2d/no_evidence_found_yet_of_ties_between_charlie/"
+            },
+            {
+              "claim": "Leaked texts attributed to Tyler Robinson, the alleged shooter of Charlie Kirk, appear to be scripted.",
+              "summary": "This r/skeptic post suggests that leaked text messages purportedly belonging to Tyler Robinson, the suspect in the Charlie Kirk shooting, seem artificial and potentially fabricated. There is no additional scraped content to provide further context.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nmb712/the_leaked_texts_from_robinson_seem_scripted/"
+            },
+            {
+              "claim": "The post links to a YouTube video discussing Charlie Kirk and the empathy paradox.",
+              "summary": "This r/skeptic post provides a link to a YouTube video titled \"Charlie Kirk and the Empathy Paradox.\" Further context about the video's content is unavailable from the provided data.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltp7c/charlie_kirk_and_the_empathy_paradox/"
+            },
+            {
+              "claim": "Tom Homan, former Border Czar, allegedly accepted $50,000 in cash to help undercover agents posing as business executives win government contracts during the Trump administration, and the investigation was suspended.",
+              "summary": "This r/conspiracytheories post alleges that Tom Homan, the former Border Czar, accepted a $50,000 cash bribe from undercover agents who claimed to be business executives, with the understanding that Homan would facilitate government contracts during the Trump administration. It further asserts that Patel suspended the investigation into the matter, claiming the Trump administration was corrupt. The post links to an image but provides no additional supporting evidence in the scraped content.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm9y3e/tom_homan_the_border_czar_accepted_50000_in_cash/"
+            },
+            {
+              "claim": "The post questions whether people should trust authorities, implying they are consistently lying.",
+              "summary": "This r/conspiracytheories post consists of a question asking how anyone can believe authorities are not lying. The post links to an image. There is no additional scraped content to provide further context.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nmgcnc/how_can_you_believe_theyre_not_telling_lies_at/"
+            },
+            {
+              "claim": "A cyber attack in Europe coincides with several European countries planning to recognize a Palestinian state against Israel's wishes, suggesting a possible connection.",
+              "summary": "This r/conspiracytheories post suggests a connection between a recent cyber attack in Europe and the impending recognition of a Palestinian state by several European countries against the wishes of Israel. The post implies that the cyber attack may be related to this political move. The post links to an image but provides no additional supporting evidence in the scraped content.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm6lik/europe_is_hit_with_a_cyber_attack_a_day_before/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 8 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Tulsi Gabbard did not notify the White House before revoking 37 security clearances.",
+              "content_summary": "This post, shared in r/NoFilterNews, reports that Tulsi Gabbard, as director of national intelligence, revoked the security clearances of 37 individuals, including top CIA deputies, without informing the White House beforehand. According to a report in The Guardian, this action caused concern becaus",
+              "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmjjmf/tulsi_gabbard_did_not_alert_white_house_before/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "The claim is accurate. Multiple fact-checking sources confirm that Tulsi Gabbard, as director of national intelligence, did not inform the White House before revoking 37 security clearances.",
+                "confidence": "high",
+                "reasoning": "Source 1 directly states, 'Tulsi Gabbard, the director of national intelligence, did not inform the White House that her office was revoking the security clearances of 37'. Source 3 corroborates this by saying, 'Tulsi Gabbard did not alert White House before revoking 37 security clearances. Exclusive: White House only realized afterwards that'. Source 2 is irrelevant. Both relevant sources unequivocally support the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.theguardian.com/us-news/2025/sep/20/tulsi-gabbard-white-house-security-clearances",
+                    "https://www.theguardian.com/science/2025/sep/20/country-diary-its-phallic-it-smells-of-death-and-its-good-enough-to-eat",
+                    "https://www.theguardian.com/tone/news/2025/sep/20/all",
+                    "https://www.theguardian.com/world/video/2025/sep/20/the-moment-a-russian-missile-strikes-dnipro-in-eastern-ukraine-video",
+                    "https://www.theguardian.com/us-news/2017/mar/21/ivanka-trump-white-house-office-administration-role-ethics"
+                  ],
+                  "titles": [
+                    "Tulsi Gabbard did not alert White House before revoking 37 security ...",
+                    "Country diary: It's phallic, it smells of death – and it's good enough to ...",
+                    "News | The Guardian",
+                    "The moment a Russian missile strikes Dnipro in eastern Ukraine ...",
+                    "Ivanka Trump's expanded White House role raises ethical issues ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Tulsi Gabbard did not notify the White House before revoking 37 security clearances.",
+                "verification_date": "2025-09-21T14:40:10.369734"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Tulsi Gabbard did not notify the White House before revoking 37 security clearances."
+              },
+              "verification_timestamp": "2025-09-21T14:40:50.133226"
+            },
+            {
+              "claim_text": "Reports indicate that all of the last 31 political attacks were committed by Republicans, contrary to GOP claims about left-wing violence.",
+              "content_summary": "This post, from r/skeptic, cites a report stating that Republicans are blaming the left for political violence, but that all 31 targeted political killings or attempted killings since 2018 were perpetrated by individuals associated with the right. The post references Donald Trump's statement blaming",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltr2o/gop_cries_about_leftwing_violence_but_every_one/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false. The provided sources indicate that political violence spans a range of ideologies, not exclusively Republicans.",
+                "confidence": "high",
+                "reasoning": "Source 1, discussing the Charlie Kirk shooting, explicitly states that it 'is the latest example of violence in the U.S. spanning a range of political ideologies and affecting both major' parties. This directly contradicts the claim that 'all of the last 31 political attacks were committed by Republicans.' Sources 2 and 3 are irrelevant to the specific assertion of political attack perpetrators. Therefore, the claim is disproven by the available evidence.",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/politics/4-things-to-to-know-about-the-fatal-shooting-of-charlie-kirk",
+                    "https://www.bbc.com/news/articles/cr4n90g6v9qo",
+                    "https://www.nytimes.com/2025/07/31/us/politics/trump-clinton-emails-russia-investigation.html",
+                    "https://www.nytimes.com/live/2025/09/11/us/trump-news",
+                    "https://www.nytimes.com/2008/08/31/world/americas/31iht-31busht.15765650.html"
+                  ],
+                  "titles": [
+                    "4 things to to know about the fatal shooting of Charlie Kirk | PBS News",
+                    "Americans used to be steadfast in supporting Israel. No longer",
+                    "'Clinton Plan' Emails Were Likely Made by Russian Spies ...",
+                    "Senate Changes Confirmation Rules - The New York Times",
+                    "President George W. Bush's final days - The New York Times"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Reports indicate that all of the last 31 political attacks were committed by Republicans, contrary to GOP claims about left-wing violence.",
+                "verification_date": "2025-09-21T14:40:10.369734"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "Reports indicate that all of the last 31 political attacks were committed by Republicans, contrary to GOP claims about left-wing violence."
+              },
+              "verification_timestamp": "2025-09-21T14:40:50.133226"
+            },
+            {
+              "claim_text": "Federal investigators have found no evidence linking the shooter in the Charlie Kirk assassination to left-wing groups.",
+              "content_summary": "This r/skeptic post references an NBC News report which states that the federal investigation into the assassination of Charlie Kirk has not found any connection between the alleged shooter, Tyler Robinson, and left-wing groups. Sources familiar with the probe indicate the shooting appears to be the",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nlzl2d/no_evidence_found_yet_of_ties_between_charlie/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "The claim is accurate. Reports indicate a lack of evidence linking the Charlie Kirk shooting suspect to left-wing groups.",
+                "confidence": "high",
+                "reasoning": "Source 2 explicitly states that claims made about the 'radical left' being involved were 'without evidence'. Source 3 also warns against 'speculation without evidence of any link' concerning motives. Together, these sources strongly indicate that federal investigators have not found evidence to link the shooter to left-wing groups as of the reporting dates. Source 1 reports the arrest but does not provide details on affiliations.",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/nation/what-we-know-so-far-about-the-charlie-kirk-shooting-suspect",
+                    "https://www.aljazeera.com/news/liveblog/2025/9/12/live-charlie-kirk-shot-dead-fbi-releases-images-of-person-of-interest",
+                    "https://www.aljazeera.com/news/2025/9/15/charlie-kirk-killing-what-we-know-about-suspect-tyler-robinsons-motives",
+                    "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                    "https://www.nytimes.com/2025/09/15/us/charlie-kirk-patel-dna.html"
+                  ],
+                  "titles": [
+                    "What we know so far about the Charlie Kirk shooting suspect | PBS ...",
+                    "Updates: Charlie Kirk shooting suspect Tyler Robinson, 22, in ...",
+                    "Charlie Kirk killing: What we know about suspect Tyler Robinson's ...",
+                    "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                    "FBI Head Says Note and DNA Link Suspect to Charlie Kirk Killing ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Federal investigators have found no evidence linking the shooter in the Charlie Kirk assassination to left-wing groups.",
+                "verification_date": "2025-09-21T14:40:10.369734"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "Federal investigators have found no evidence linking the shooter in the Charlie Kirk assassination to left-wing groups."
+              },
+              "verification_timestamp": "2025-09-21T14:40:50.133226"
+            },
+            {
+              "claim_text": "Leaked texts attributed to Tyler Robinson, the alleged shooter of Charlie Kirk, appear to be scripted.",
+              "content_summary": "This r/skeptic post suggests that leaked text messages purportedly belonging to Tyler Robinson, the suspect in the Charlie Kirk shooting, seem artificial and potentially fabricated. There is no additional scraped content to provide further context.",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nmb712/the_leaked_texts_from_robinson_seem_scripted/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false. None of the provided sources suggest that the leaked texts attributed to Tyler Robinson appear to be scripted; instead, one source describes them as indicating worry.",
+                "confidence": "high",
+                "reasoning": "Source 1 mentions that 'Robinson kept texting, worrying about how he would tell his'. This description of 'worrying' contradicts the idea that the texts were 'scripted'. Sources 2 and 3 do not provide any information regarding the nature or content of Tyler Robinson's texts. Therefore, there is no evidence to support the claim, and one source implicitly refutes it.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/09/17/us/politics/charlie-kirk-killer.html",
+                    "https://www.wsj.com/livecoverage/charlie-kirk-shot?gaa_at=eafs&gaa_n=ASWzDAiqxtEDIB6H099IM_Ep3z6uXWk-II_SJtcdUre3Q1faJbmxQ9Sa0hLy&gaa_ts=68cfc47a&gaa_sig=qo6OMezJX9NgFuWqjrSgivXk5JcHoVN4UVr4bSNQEEyhtJblKTdC1ryLzyUJWjXb4n5KYXt3tXEYyE5XG7n8rA%3D%3D",
+                    "https://www.nytimes.com/2025/09/19/opinion/kirk-killing-trans-trump.html",
+                    "https://www.aljazeera.com/news/2014/8/28/us-girl-shoots-gun-instructor-in-the-head",
+                    "https://www.bbc.com/news/videos/c07zekkl14xo"
+                  ],
+                  "titles": [
+                    "A Note, a Gun and a Mother's Conscience Led to an Arrest in Kirk's ...",
+                    "Suspect in Charlie Kirk Shooting Named as 22-Year-Old Tyler ...",
+                    "Opinion | The Fallout From Charlie Kirk's Killing Reveals Two Truths ...",
+                    "US girl shoots gun instructor in the head | Gun Violence News | Al ...",
+                    "Burst pipe submerges parts of Detroit in icy water"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Leaked texts attributed to Tyler Robinson, the alleged shooter of Charlie Kirk, appear to be scripted.",
+                "verification_date": "2025-09-21T14:40:10.369734"
+              },
+              "claim_metadata": {
+                "post_index": 3,
+                "extracted_claim": "Leaked texts attributed to Tyler Robinson, the alleged shooter of Charlie Kirk, appear to be scripted."
+              },
+              "verification_timestamp": "2025-09-21T14:40:50.133226"
+            },
+            {
+              "claim_text": "The post links to a YouTube video discussing Charlie Kirk and the empathy paradox.",
+              "content_summary": "This r/skeptic post provides a link to a YouTube video titled \"Charlie Kirk and the Empathy Paradox.\" Further context about the video's content is unavailable from the provided data.",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1nltp7c/charlie_kirk_and_the_empathy_paradox/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The claim cannot be verified as none of the provided sources mention a 'post' linking to a YouTube video, Charlie Kirk, or 'the empathy paradox' in this context.",
+                "confidence": "high",
+                "reasoning": "None of the snippets or titles in the provided sources (1, 2, or 3) contain any information about 'the post', a YouTube video, or 'Charlie Kirk and the empathy paradox'. While Source 2 mentions 'the great paradox' in an opinion piece about Trump's appeal, it has no connection to the other elements of the claim. Without any mention of the 'post' or its content, the claim remains unverified.",
+                "sources": {
+                  "links": [
+                    "https://www.theguardian.com/society/2018/jun/30/nothing-like-broken-leg-mental-health-conversation",
+                    "https://www.nytimes.com/2025/06/16/opinion/trump-kentucky-loyal-voters.html",
+                    "https://www.theguardian.com/us-news/2015/sep/09/hillary-clinton-advisos-strategy-spontaneity-humor",
+                    "https://www.theguardian.com/global/2018/oct/14/the-secret-joys-of-schadenfreude-why-it-shouldnt-be-a-guilty-pleasure",
+                    "https://www.theguardian.com/science/2018/mar/20/testosterone-myth-male-hormone-behaviour-risk-taking"
+                  ],
+                  "titles": [
+                    "'It's nothing like a broken leg': why I'm done with the mental health ...",
+                    "Opinion | The Secret to Trump's Appeal That Democrats Still Miss ...",
+                    "Clinton campaign faces big challenge: making an old candidate new ...",
+                    "The secret joys of schadenfreude | Life and style | The Guardian",
+                    "Does testosterone make you mean? | Biology | The Guardian"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The post links to a YouTube video discussing Charlie Kirk and the empathy paradox.",
+                "verification_date": "2025-09-21T14:40:10.369734"
+              },
+              "claim_metadata": {
+                "post_index": 4,
+                "extracted_claim": "The post links to a YouTube video discussing Charlie Kirk and the empathy paradox."
+              },
+              "verification_timestamp": "2025-09-21T14:40:50.133226"
+            },
+            {
+              "claim_text": "Tom Homan, former Border Czar, allegedly accepted $50,000 in cash to help undercover agents posing as business executives win government contracts during the Trump administration, and the investigation was suspended.",
+              "content_summary": "This r/conspiracytheories post alleges that Tom Homan, the former Border Czar, accepted a $50,000 cash bribe from undercover agents who claimed to be business executives, with the understanding that Homan would facilitate government contracts during the Trump administration. It further asserts that ",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm9y3e/tom_homan_the_border_czar_accepted_50000_in_cash/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "The claim is accurate. A source explicitly details that Tom Homan allegedly accepted $50,000 cash from undercover agents to help win government contracts, and the subsequent Trump administration killed the federal corruption case.",
+                "confidence": "high",
+                "reasoning": "Source 1 directly supports the claim, stating: 'Trump border czar Tom Homan reportedly accepted $50,000 in cash... Alleged handoff occurred before Trump won second presidency, after which administration killed federal corruption case.' This snippet confirms all key elements of the claim, including the alleged acceptance of cash, the involvement of undercover agents (implied by the article title 'undercover FBI agents'), the purpose of winning government contracts (implied by 'corruption case'), the timing 'during the Trump administration' (before his second presidency term if won), and the suspension of the investigation ('administration killed federal corruption case'). Sources 2 and 3 are about other aspects of the Trump administration but do not contradict this specific claim.",
+                "sources": {
+                  "links": [
+                    "https://www.theguardian.com/us-news/2025/sep/20/tom-homan-undercover-fbi-agents",
+                    "https://www.theguardian.com/us-news/2025/feb/04/trump-elon-musk-federal-government",
+                    "https://www.theguardian.com/us-news/2025/feb/17/trump-musk-government-cost-cutting-coup",
+                    "https://www.theguardian.com/us-news/2025/apr/09/ice-todd-lyons-deporation-amazon",
+                    "https://www.theguardian.com/technology/2024/dec/31/elon-musk-china-security-risk-trump"
+                  ],
+                  "titles": [
+                    "Trump border czar Tom Homan reportedly accepted $50,000 in cash ...",
+                    "How the world's richest man laid waste the US government | Trump ...",
+                    "'This is a coup': Trump and Musk's purge is cutting more than costs ...",
+                    "Ice director wants to run deportations like 'Amazon Prime for human ...",
+                    "Trump confidant Elon Musk's China ties pose security risk, ex ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Tom Homan, former Border Czar, allegedly accepted $50,000 in cash to help undercover agents posing as business executives win government contracts during the Trump administration, and the investigation was suspended.",
+                "verification_date": "2025-09-21T14:40:10.369734"
+              },
+              "claim_metadata": {
+                "post_index": 5,
+                "extracted_claim": "Tom Homan, former Border Czar, allegedly accepted $50,000 in cash to help undercover agents posing as business executives win government contracts during the Trump administration, and the investigation was suspended."
+              },
+              "verification_timestamp": "2025-09-21T14:40:50.133226"
+            },
+            {
+              "claim_text": "The post questions whether people should trust authorities, implying they are consistently lying.",
+              "content_summary": "This r/conspiracytheories post consists of a question asking how anyone can believe authorities are not lying. The post links to an image. There is no additional scraped content to provide further context.",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nmgcnc/how_can_you_believe_theyre_not_telling_lies_at/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The claim cannot be verified because while the sources discuss questioning trust in authorities and the concept of lying, they do not confirm that 'the post' exists or makes the specific implication stated.",
+                "confidence": "high",
+                "reasoning": "Source 1, an opinion piece, discusses the question of 'whether they were lying to me' in a political context, which touches upon trust and potential deceit among influential figures. Source 2 describes a situation where individuals lost trust in medical authorities due to perceived failures, directly reflecting a questioning of authority and feeling misled ('We had such trust, we feel such fools'). However, neither source confirms the existence or specific content of 'The post' mentioned in the claim. While the themes of questioning authority and potential lying are present in the sources, there's no evidence provided that 'The post' itself makes this claim 'implying they are consistently lying'.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/05/21/opinion/ezra-klein-podcast-jake-tapper.html",
+                    "https://www.theguardian.com/lifeandstyle/2022/sep/03/13-year-old-daughter-dead-in-five-weeks-hospital-mistakes",
+                    "https://www.nytimes.com/2025/03/04/opinion/ezra-klein-podcast-ben-buchanan.html",
+                    "https://www.theguardian.com/world/2017/may/30/why-im-no-longer-talking-to-white-people-about-race",
+                    "https://www.nytimes.com/2025/02/02/opinion/ezra-klein-podcast-trump-column-read.html"
+                  ],
+                  "titles": [
+                    "Opinion | How Groupthink Protected Biden and Re-elected Trump ...",
+                    "'We had such trust, we feel such fools': how shocking hospital ...",
+                    "Opinion | The Government Knows A.G.I. Is Coming - The New York ...",
+                    "Why I'm no longer talking to white people about race | Race | The ...",
+                    "Opinion | Don't Believe Him - The New York Times"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The post questions whether people should trust authorities, implying they are consistently lying.",
+                "verification_date": "2025-09-21T14:40:10.369734"
+              },
+              "claim_metadata": {
+                "post_index": 6,
+                "extracted_claim": "The post questions whether people should trust authorities, implying they are consistently lying."
+              },
+              "verification_timestamp": "2025-09-21T14:40:50.133226"
+            },
+            {
+              "claim_text": "A cyber attack in Europe coincides with several European countries planning to recognize a Palestinian state against Israel's wishes, suggesting a possible connection.",
+              "content_summary": "This r/conspiracytheories post suggests a connection between a recent cyber attack in Europe and the impending recognition of a Palestinian state by several European countries against the wishes of Israel. The post implies that the cyber attack may be related to this political move. The post links t",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1nm6lik/europe_is_hit_with_a_cyber_attack_a_day_before/",
+              "verification": {
+                "verified": false,
+                "verdict": "mixed",
+                "message": "The claim is mixed. While there are reports of a cyber attack or power outage in Europe being investigated as such, the timing and connection to 'several European countries planning to recognize a Palestinian state' are not fully supported by the provided sources.",
+                "confidence": "medium",
+                "reasoning": "Source 2 reports on a 'huge power cut caused blackouts' in Spain and Portugal and questions 'was there a cyber attack?', partially supporting the 'cyber attack in Europe' part of the claim. Source 3 mentions 'spying, hacking, and intimidation' by Israel against the ICC, establishing a context for potential state-level cyber actions in geopolitical matters. However, none of the provided sources confirm that 'several European countries are currently planning to recognize a Palestinian state' at the same time as the reported cyber incident, nor do they explicitly suggest a connection between these two specific events. Source 1 provides general history of peace talks but no current plans. Without confirmation of the simultaneous political action, the asserted 'coincidence' and 'possible connection' cannot be fully verified.",
+                "sources": {
+                  "links": [
+                    "https://www.bbc.com/news/world-middle-east-11103745",
+                    "https://www.theguardian.com/business/2025/apr/28/spain-and-portugal-power-outage-cause-cyber-attack-electricity",
+                    "https://www.theguardian.com/world/article/2024/may/28/spying-hacking-intimidation-israel-war-icc-exposed",
+                    "https://www.bbc.com/news/world-europe-68950907",
+                    "https://www.nytimes.com/live/2025/03/02/us/trump-news-zelensky-europe"
+                  ],
+                  "titles": [
+                    "History of Mid-East peace talks - BBC News",
+                    "Spain and Portugal power outage: what caused it, and was there a ...",
+                    "Spying, hacking and intimidation: Israel's nine-year 'war' on the ICC ...",
+                    "Sweden prepares for Eurovision with heightened security",
+                    "Democrats Invite Fired Federal Workers to Trump's Congressional ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "A cyber attack in Europe coincides with several European countries planning to recognize a Palestinian state against Israel's wishes, suggesting a possible connection.",
+                "verification_date": "2025-09-21T14:40:10.369734"
+              },
+              "claim_metadata": {
+                "post_index": 7,
+                "extracted_claim": "A cyber attack in Europe coincides with several European countries planning to recognize a Palestinian state against Israel's wishes, suggesting a possible connection."
+              },
+              "verification_timestamp": "2025-09-21T14:40:50.133226"
+            }
+          ],
+          "summary": {
+            "total_claims": 8,
+            "successfully_verified": 3,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-09-21T14:40:50.133226",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 8,
+            "batch_size": 8,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Explanation generation returned text response",
+          "debunk_posts": [],
+          "raw_response": "Okay, I understand. I'm the Explanation Generation Coordinator, and my task is to generate structured debunk posts for misinformation claims, using batch processing based on the provided verification results. My role is to take the verified information and transform it into clear, concise, and compelling debunking statements.\n\nHere's how I'll approach generating the debunk posts in batch mode:\n\n**1. Understand the Input (verification_results):**\n\nI need to assume the `verification_results` is a "
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20250921_144106",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-09-21T14:41:06.080875",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20250921_143722",
+    "created_at": "2025-09-21T14:41:06.080875",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  }
+}

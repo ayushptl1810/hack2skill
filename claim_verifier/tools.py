@@ -93,6 +93,97 @@ class TextFactChecker:
                 }
             }
     
+    async def verify_batch(self, claims_batch: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        Verify multiple claims in a single batch using optimized Gemini processing
+        
+        Args:
+            claims_batch: List of claim dictionaries with keys: text_input, claim_context, claim_date
+            
+        Returns:
+            List of verification results for each claim
+        """
+        try:
+            print(f"Starting batch verification for {len(claims_batch)} claims")
+            
+            # Process all search operations first
+            search_results_list = []
+            for i, claim_data in enumerate(claims_batch):
+                text_input = claim_data.get('text_input', '')
+                print(f"Searching for claim {i+1}/{len(claims_batch)}: {text_input[:50]}...")
+                
+                search_results = await self._search_claims(text_input)
+                search_results_list.append({
+                    'claim_data': claim_data,
+                    'search_results': search_results
+                })
+            
+            # Batch analyze all claims with Gemini in a single call
+            batch_analysis = await self._analyze_batch_with_gemini(search_results_list)
+            
+            # Format final results
+            verification_results = []
+            for i, (claim_item, analysis) in enumerate(zip(search_results_list, batch_analysis)):
+                claim_data = claim_item['claim_data']
+                search_results = claim_item['search_results']
+                
+                if not search_results:
+                    verification_results.append({
+                        "verified": False,
+                        "verdict": "no_content",
+                        "message": "No fact-checked information found for this claim",
+                        "confidence": "low",
+                        "reasoning": "No reliable sources found to verify this claim",
+                        "sources": {
+                            "links": [],
+                            "titles": [],
+                            "count": 0
+                        },
+                        "claim_text": claim_data.get('text_input', ''),
+                        "verification_date": claim_data.get('claim_date', 'Unknown date')
+                    })
+                    continue
+                
+                # Extract source links for clean output
+                source_links = [result.get("link", "") for result in search_results[:5] if result.get("link")]
+                source_titles = [result.get("title", "") for result in search_results[:5] if result.get("title")]
+                
+                verification_results.append({
+                    "verified": analysis["verified"],
+                    "verdict": analysis["verdict"],
+                    "message": analysis["message"],
+                    "confidence": analysis.get("confidence", "medium"),
+                    "reasoning": analysis.get("reasoning", "Analysis completed"),
+                    "sources": {
+                        "links": source_links,
+                        "titles": source_titles,
+                        "count": len(search_results)
+                    },
+                    "claim_text": claim_data.get('text_input', ''),
+                    "verification_date": claim_data.get('claim_date', 'Unknown date')
+                })
+            
+            print(f"Batch verification completed for {len(verification_results)} claims")
+            return verification_results
+            
+        except Exception as e:
+            print(f"Batch verification failed: {e}")
+            # Return error results for all claims
+            error_results = []
+            for claim_data in claims_batch:
+                error_results.append({
+                    "verified": False,
+                    "verdict": "error",
+                    "message": f"Error during batch fact-checking: {str(e)}",
+                    "details": {
+                        "claim_text": claim_data.get('text_input', ''),
+                        "claim_context": claim_data.get('claim_context', ''),
+                        "claim_date": claim_data.get('claim_date', ''),
+                        "error": str(e)
+                    }
+                })
+            return error_results
+    
     async def _search_claims(self, query: str) -> List[Dict[str, Any]]:
         """
         Search for fact-checked claims using Google Custom Search API with LLM-powered fallback strategies
@@ -484,6 +575,149 @@ Respond in this exact JSON format:
         except Exception as e:
             print(f"Gemini analysis error: {e}")
             return self._fallback_analysis(results)
+    
+    async def _analyze_batch_with_gemini(self, search_results_list: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        Use Gemini AI to analyze multiple fact-check results in a single batch call
+        
+        Args:
+            search_results_list: List of dictionaries containing claim_data and search_results
+            
+        Returns:
+            List of analysis results with verdict and message for each claim
+        """
+        try:
+            # Prepare batch prompt
+            batch_prompt = """
+You are a fact-checking expert. Analyze the following claims against their provided fact-checking sources.
+
+INSTRUCTIONS:
+1. For each claim, determine if it's true, false, mixed, or uncertain
+2. Provide clear reasoning based on the evidence
+3. Assign confidence levels (high/medium/low)
+4. Be consistent in your analysis approach
+
+"""
+            
+            claims_text = ""
+            for i, item in enumerate(search_results_list, 1):
+                claim_data = item['claim_data']
+                search_results = item['search_results']
+                claim_text = claim_data.get('text_input', f'Claim {i}')
+                
+                claims_text += f"\n--- CLAIM {i} ---\n"
+                claims_text += f"CLAIM TO VERIFY: \"{claim_text}\"\n\n"
+                
+                if search_results:
+                    claims_text += "FACT-CHECKING SOURCES:\n"
+                    for j, result in enumerate(search_results[:3], 1):  # Limit to top 3 results per claim
+                        title = result.get("title", "")
+                        snippet = result.get("snippet", "")
+                        link = result.get("link", "")
+                        claims_text += f"{j}. Title: {title}\n   Snippet: {snippet}\n   Link: {link}\n\n"
+                else:
+                    claims_text += "FACT-CHECKING SOURCES: No sources found\n\n"
+            
+            batch_prompt += claims_text
+            batch_prompt += f"""
+
+Respond with a JSON array containing exactly {len(search_results_list)} analysis objects in the same order as the claims above.
+
+Each object should have this exact format:
+{{
+    "verdict": "true|false|mixed|uncertain",
+    "verified": true|false,
+    "message": "Your explanation here",
+    "confidence": "high|medium|low",
+    "reasoning": "Your step-by-step reasoning process"
+}}
+
+Example response format:
+[
+    {{
+        "verdict": "false",
+        "verified": false,
+        "message": "This claim is false based on evidence...",
+        "confidence": "high",
+        "reasoning": "The sources show that..."
+    }},
+    {{
+        "verdict": "true",
+        "verified": true,
+        "message": "This claim is accurate...",
+        "confidence": "medium",
+        "reasoning": "Multiple sources confirm..."
+    }}
+]
+"""
+
+            # Make single Gemini API call for all claims
+            response = self.model.generate_content(batch_prompt)
+            response_text = response.text.strip()
+            
+            # Clean up response
+            if response_text.startswith('```json'):
+                response_text = response_text.replace('```json', '').replace('```', '').strip()
+            elif response_text.startswith('```'):
+                response_text = response_text.replace('```', '').strip()
+            
+            # Parse JSON array
+            batch_analysis = json.loads(response_text)
+            
+            # Validate and ensure we have the right number of results
+            if not isinstance(batch_analysis, list):
+                raise ValueError("Expected JSON array response")
+            
+            if len(batch_analysis) != len(search_results_list):
+                print(f"Warning: Expected {len(search_results_list)} results, got {len(batch_analysis)}")
+                # Pad or truncate as needed
+                while len(batch_analysis) < len(search_results_list):
+                    batch_analysis.append({
+                        "verdict": "uncertain",
+                        "verified": False,
+                        "message": "Analysis incomplete due to batch processing error",
+                        "confidence": "low",
+                        "reasoning": "Insufficient analysis data"
+                    })
+                batch_analysis = batch_analysis[:len(search_results_list)]
+            
+            # Ensure all required fields and add metadata
+            for i, analysis in enumerate(batch_analysis):
+                analysis.setdefault("verdict", "uncertain")
+                analysis.setdefault("verified", False)
+                analysis.setdefault("message", "Analysis completed")
+                analysis.setdefault("confidence", "medium")
+                analysis.setdefault("reasoning", "Analysis completed")
+                analysis["analysis_method"] = "gemini_batch"
+                analysis["batch_position"] = i + 1
+                analysis["batch_size"] = len(search_results_list)
+            
+            print(f"Batch Gemini analysis completed for {len(batch_analysis)} claims")
+            return batch_analysis
+            
+        except json.JSONDecodeError as e:
+            print(f"Failed to parse batch Gemini JSON response: {str(e)}")
+            return self._fallback_batch_analysis(search_results_list)
+        except Exception as e:
+            print(f"Batch Gemini analysis error: {str(e)}")
+            return self._fallback_batch_analysis(search_results_list)
+    
+    def _fallback_batch_analysis(self, search_results_list: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Fallback analysis when batch Gemini processing fails"""
+        fallback_results = []
+        for item in search_results_list:
+            search_results = item['search_results']
+            if search_results:
+                fallback_results.append(self._fallback_analysis(search_results))
+            else:
+                fallback_results.append({
+                    "verified": False,
+                    "verdict": "no_content",
+                    "message": "No fact-checked information found for this claim",
+                    "confidence": "low",
+                    "reasoning": "No reliable sources found"
+                })
+        return fallback_results
     
     def _fallback_analysis(self, results: List[Dict[str, Any]]) -> Dict[str, Any]:
         """

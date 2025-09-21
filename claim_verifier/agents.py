@@ -321,13 +321,14 @@ class ClaimVerifierOrchestrator:
         logger.info("Claim verification agents setup completed with Google Agents SDK")
     
     async def verify_content(self, content_data: List[Dict[str, Any]]) -> Dict[str, Any]:
-        """Run complete claim verification workflow using Google Agents"""
+        """Run complete claim verification workflow using Google Agents with batch processing"""
         try:
-            logger.info(f"Starting Google Agents claim verification for {len(content_data)} content items")
+            logger.info(f"Starting Google Agents claim verification for {len(content_data)} content items with batch processing")
             
             verified_claims = []
             
-            # Process each content item directly
+            # Prepare all claims first
+            all_claims = []
             for i, content_item in enumerate(content_data):
                 try:
                     title = content_item.get('title', f'Content item {i+1}')
@@ -345,56 +346,104 @@ class ClaimVerifierOrchestrator:
                         claim_text = content_text[:200]  # Limit length
                     
                     if claim_text:
-                        logger.info(f"Verifying claim {i+1}: {claim_text[:100]}...")
-                        
-                        # Use the fact-checking tool directly
-                        verification_result = await self.fact_checker.verify(
-                            text_input=claim_text,
-                            claim_context=content_text,
-                            claim_date=content_item.get('timestamp', datetime.now().isoformat())
-                        )
-                        
-                        verified_claim = {
-                            'claim_text': claim_text,
-                            'content_summary': content_text[:300],
-                            'source': source,
-                            'verification': verification_result,
-                            'claim_metadata': content_item.get('claim_metadata', {}),
-                            'verification_timestamp': datetime.now().isoformat()
-                        }
-                        
-                        verified_claims.append(verified_claim)
+                        all_claims.append({
+                            'text_input': claim_text,
+                            'claim_context': content_text,
+                            'claim_date': content_item.get('timestamp', datetime.now().isoformat()),
+                            'original_content': content_item,
+                            'source': source
+                        })
                         
                 except Exception as e:
-                    logger.error(f"Failed to verify content item {i+1}: {e}")
+                    logger.error(f"Failed to prepare content item {i+1}: {e}")
+                    # Add error result
                     verified_claims.append({
                         'claim_text': content_item.get('title', 'Unknown claim'),
                         'verification': {
                             'verified': False,
                             'verdict': 'error',
-                            'message': f'Verification failed: {str(e)}',
+                            'message': f'Preparation failed: {str(e)}',
                             'error': str(e)
                         },
                         'verification_timestamp': datetime.now().isoformat()
                     })
             
+            if not all_claims:
+                logger.warning("No valid claims found to verify")
+                return {
+                    'success': True,
+                    'message': 'No valid claims found to verify',
+                    'verified_claims': verified_claims,
+                    'summary': {
+                        'total_claims': len(verified_claims),
+                        'successfully_verified': 0,
+                        'verification_errors': len(verified_claims)
+                    },
+                    'timestamp': datetime.now().isoformat()
+                }
+            
+            # Process claims in batches of max 15
+            BATCH_SIZE = 15
+            logger.info(f"Processing {len(all_claims)} claims in batches of {BATCH_SIZE}")
+            
+            for batch_start in range(0, len(all_claims), BATCH_SIZE):
+                batch_end = min(batch_start + BATCH_SIZE, len(all_claims))
+                batch_claims = all_claims[batch_start:batch_end]
+                
+                logger.info(f"Processing batch {batch_start//BATCH_SIZE + 1}: claims {batch_start+1}-{batch_end}")
+                
+                try:
+                    # Use batch verification
+                    batch_verification_results = await self.fact_checker.verify_batch(batch_claims)
+                    
+                    # Process batch results
+                    for claim_data, verification_result in zip(batch_claims, batch_verification_results):
+                        verified_claim = {
+                            'claim_text': claim_data['text_input'],
+                            'content_summary': claim_data['claim_context'][:300],
+                            'source': claim_data['source'],
+                            'verification': verification_result,
+                            'claim_metadata': claim_data['original_content'].get('claim_metadata', {}),
+                            'verification_timestamp': datetime.now().isoformat()
+                        }
+                        verified_claims.append(verified_claim)
+                        
+                except Exception as e:
+                    logger.error(f"Batch verification failed for batch {batch_start//BATCH_SIZE + 1}: {e}")
+                    # Add error results for the entire batch
+                    for claim_data in batch_claims:
+                        verified_claims.append({
+                            'claim_text': claim_data['text_input'],
+                            'verification': {
+                                'verified': False,
+                                'verdict': 'error',
+                                'message': f'Batch verification failed: {str(e)}',
+                                'error': str(e)
+                            },
+                            'verification_timestamp': datetime.now().isoformat()
+                        })
+            
+            logger.info(f"Batch verification completed: {len(verified_claims)} total claims processed")
+            
             return {
                 'success': True,
-                'message': f'Successfully verified {len(verified_claims)} claims using Google Agents fact-checking',
+                'message': f'Successfully verified {len(verified_claims)} claims using batch Google Agents fact-checking',
                 'verified_claims': verified_claims,
                 'summary': {
                     'total_claims': len(verified_claims),
                     'successfully_verified': len([c for c in verified_claims if c.get('verification', {}).get('verified', False)]),
-                    'verification_errors': len([c for c in verified_claims if 'error' in c.get('verification', {})])
+                    'verification_errors': len([c for c in verified_claims if 'error' in c.get('verification', {})]),
+                    'batch_size_used': BATCH_SIZE,
+                    'total_batches': (len(all_claims) + BATCH_SIZE - 1) // BATCH_SIZE
                 },
                 'timestamp': datetime.now().isoformat()
             }
             
         except Exception as e:
-            logger.error(f"Google Agents claim verification workflow failed: {e}")
+            logger.error(f"Google Agents batch claim verification workflow failed: {e}")
             return {
                 'success': False,
-                'message': f'Verification workflow failed: {str(e)}',
+                'message': f'Batch verification workflow failed: {str(e)}',
                 'error': str(e),
                 'timestamp': datetime.now().isoformat()
             }

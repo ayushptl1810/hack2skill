@@ -42,17 +42,70 @@ With the rapid spread of misinformation on social media, there's a critical need
 ## 🏗️ System Architecture
 
 ```
-📱 Reddit Posts → 🔍 Trend Scanner → 🤖 Claim Extraction → ✅ Fact Verification → 📊 Final Results
-                          ↓                    ↓                     ↓
-                    Gemini AI            Orchestrator          Google Search + AI
-                  (Summarization)      (Coordination)        (Fact Checking)
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                              PROJECT AEGIS ARCHITECTURE                              │
+│                           ORCHESTRATOR-CENTRIC PIPELINE                              │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+
+                            ┌─────────────────────────┐
+                            │    ORCHESTRATOR AGENT   │
+                            │   🎼 Central Command    │
+                            │                         │
+                            │ • Workflow Coordinator  │
+                            │ • Agent Manager         │
+                            │ • Result Aggregator     │
+                            │ • Session Controller    │
+                            └─────────────────────────┘
+                                        │
+                                        │ coordinates
+                                        ▼
+                ┌───────────────────────────────────────────────────────────┐
+                │                   AGENT WORKFLOW                          │
+                └───────────────────────────────────────────────────────────┘
+                                        │
+            ┌───────────────────────────┼───────────────────────────┐
+            │                           │                           │
+            ▼                           ▼                           ▼
+    
+┌──────────────────┐            ┌──────────────────┐            ┌─────────────────────┐
+│  TREND SCANNER   │            │ CLAIM VERIFIER   │            │  EXPLANATION AGENT  │
+│      AGENT       │            │     AGENT        │            │                     │
+│                  │            │                  │            │                     │
+│ • Reddit Monitor │───────────>│ • Google Search  │───────────>│ • Debunk Generator  │
+│ • Web Scraper    │   step 1   │ • Fact Checkers  │   step 2   │ • Content Creator   │
+│ • Content Parser │            │ • Source Analysis│            │ • Educational Posts │
+│ • AI Summarizer  │            │ • Batch Verify   │            │ • Batch Processing  │
+└──────────────────┘            └──────────────────┘            └─────────────────────┘
+         │                               │                               │
+         │ data flow                     │ data flow                     │ data flow
+         ▼                               ▼                               ▼
+    
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                              DATA FLOW SEQUENCE                                     │
+│                                                                                     │
+│  Step 1: Orchestrator → Trend Scanner → Returns trending posts → Orchestrator       │
+│  Step 2: Orchestrator → Claim Verifier → Returns verified claims → Orchestrator     │
+│  Step 3: Orchestrator → Explanation Agent → Returns debunk posts → Orchestrator     │
+│  Step 4: Orchestrator → Compiles final structured JSON output                       │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                                AI FOUNDATION LAYER                                  │
+│                                                                                     │
+│  🤖 Google Gemini 2.5 Flash  │ 🔍 Google Custom Search  │ 🌐 Web Content Analysis  │
+│  • Content Summarization     │  • Fact-checking Sources  │  • Link Extraction       │
+│  • Claim Extraction          │  • Credibility Assessment │  • Content Scraping      │
+│  • Risk Assessment           │  • Evidence Gathering     │  • Source Validation     │
+│  • Batch Processing          │  • Verification Scoring   │  • Context Enrichment    │
+└─────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 🎯 **Three-Tier Architecture**
+### 🎯 **Four-Tier Multi-Agent Architecture**
 
-1. **Trend Scanner Agent** - Monitors Reddit and generates AI summaries
-2. **Claim Verifier Agent** - Fact-checks extracted claims using Google Search
-3. **Orchestrator Agent** - Coordinates the complete pipeline workflow
+1. **🔍 Trend Scanner Agent** - Multi-platform content monitoring and AI-powered analysis
+2. **✅ Claim Verifier Agent** - Comprehensive fact-checking with batch processing
+3. **📝 Explanation Agent** - Automated debunk post generation and educational content
+4. **🎼 Orchestrator Agent** - Intelligent workflow coordination and result compilation
 
 ## ✨ Key Features
 
@@ -70,11 +123,46 @@ With the rapid spread of misinformation on social media, there's a critical need
 - **Risk Assessment** - Priority scoring for high-risk content
 - **Structured Output** - JSON format ready for integration
 
-### 🛠️ **Advanced Technology Stack**
-- **Google Agents SDK** - Multi-agent orchestration framework
-- **Web Content Scraping** - Analysis of linked external content
-- **Structured Data Processing** - JSON-based data flow
-- **Comprehensive Logging** - Full audit trail of all operations
+### 🛠️ **Complete Technology Stack**
+
+#### 🤖 **AI & Machine Learning**
+- **Google Gemini 2.5 Flash** - Advanced multimodal AI for content analysis, summarization, and claim extraction
+- **Google Generative AI SDK** - Primary AI interface for content processing
+- **LiteLLM** - Multi-provider LLM integration and fallback handling
+- **Batch Processing** - Optimized AI workflows reducing API calls by 90%
+
+#### 🌐 **Web Scraping & Content Extraction**
+- **Beautiful Soup 4** - HTML/XML parsing and content extraction
+- **Newspaper3K** - Article extraction and natural language processing
+- **Trafilatura** - Web text extraction with content cleaning
+- **Readability-lxml** - Content readability and text optimization
+- **Requests** - HTTP client for web content fetching
+- **Feedparser** - RSS/Atom feed parsing and monitoring
+
+#### 🔍 **Data Sources & APIs**
+- **PRAW (Python Reddit API Wrapper)** - Reddit content monitoring and extraction
+- **Google Custom Search API** - Fact-checking and source verification
+- **Google API Python Client** - Google services integration
+- **NewsAPI Python** - News source aggregation and validation
+- **RSS/Atom Feeds** - Real-time content monitoring
+
+#### 🗄️ **Data Management & Storage**
+- **PyMongo** - MongoDB integration for data persistence
+- **JSON Processing** - Structured data handling and output formatting
+- **File-based Caching** - URL processing cache and ground truth storage
+
+#### 🛠️ **Development & Infrastructure**
+- **Python 3.8+** - Core programming language
+- **Google Auth** - Authentication for Google services
+- **Python-dotenv** - Environment configuration management
+- **Async/Await** - Asynchronous processing for performance
+- **Comprehensive Logging** - Full audit trail and debugging support
+
+#### 🏗️ **Architecture & Frameworks**
+- **Google Agents SDK** - Multi-agent orchestration and workflow management
+- **Multi-Agent Pattern** - Specialized agents for different pipeline stages
+- **Batch Processing Architecture** - Efficient resource utilization
+- **Modular Design** - Separated concerns with independent agent modules
 
 ### 🎯 **Configurable Targeting**
 ### 🎯 **Configurable Targeting**
@@ -166,28 +254,112 @@ The system outputs structured JSON with verified claims:
 
 ## 🔧 Pipeline Components
 
-### 1. **Orchestrator Agent** (`orchestrator_agent.py`)
-- **Coordinates complete pipeline** from trend scanning to fact-checking
-- **Manages workflow** between all components
-- **Combines results** into final structured output
-- **Session management** with comprehensive logging
+### 1. **🎼 Orchestrator Agent** (`orchestrator_agent.py`)
 
-### 2. **Trend Scanner Agent** (`trend_scanner_agent.py`)
-- **Reddit API integration** for live post monitoring
-- **Gemini AI batch processing** for claim extraction and summarization
-- **Velocity tracking** for rapid trend detection
-- **Risk assessment** based on content patterns
+**The Central Command Center**
+- **Workflow Coordination** - Manages complete pipeline from trend scanning to fact-checking
+- **Multi-Agent Communication** - Coordinates between all specialized agents
+- **Batch Processing Controller** - Optimizes API calls through intelligent batching
+- **Result Compilation** - Combines outputs into structured JSON format
+- **Session Management** - Comprehensive logging and state management
+- **Error Handling** - Robust fallback mechanisms and retry logic
 
-### 3. **Claim Verifier Agent** (`claim_verifier_agent.py`)
-- **Google Custom Search** integration for fact-checking
-- **Multi-agent verification** with specialized roles
-- **Source credibility analysis** using reliable fact-checkers
-- **Confidence scoring** for verification results
+**Key Features:**
+- Google Agents SDK integration for workflow orchestration
+- Async/await execution for optimal performance
+- Comprehensive debugging and monitoring capabilities
+- Dynamic agent routing based on content type
 
-### 4. **Integration Layer** (`run_pipeline.py`)
-- **Simple launcher** for complete pipeline
-- **Mode selection** for different use cases
-- **Error handling** with graceful fallbacks
+### 2. **🔍 Trend Scanner Agent** (`trend_scanner_agent.py`)
+
+**Multi-Platform Content Monitor**
+- **Reddit API Integration** (`trend_scanner/tools.py`) - Live post monitoring across multiple subreddits
+- **Web Content Scraper** (`trend_scanner/scraper.py`) - External link analysis and content extraction
+- **AI-Powered Analysis** (`trend_scanner/google_agents.py`) - Gemini 2.5 Flash for content summarization
+- **Velocity Tracking** - Real-time detection of rapidly trending content
+- **Risk Assessment Engine** - Intelligent scoring for misinformation likelihood
+
+**Scraping Capabilities:**
+- **Reddit Posts** - Title, content, metadata, engagement metrics
+- **External Links** - Article content, images, metadata extraction
+- **RSS/Atom Feeds** - Real-time news monitoring
+- **Web Pages** - Full content extraction with readability optimization
+
+**Data Models:** (`trend_scanner/models.py`)
+- Structured data classes for posts, trends, and analysis results
+- Standardized format for multi-platform content
+
+### 3. **✅ Claim Verifier Agent** (`claim_verifier_agent.py`)
+
+**Comprehensive Fact-Checking System**
+- **Google Custom Search Integration** (`claim_verifier/tools.py`) - Searches across trusted fact-checking sources
+- **Multi-Agent Verification** (`claim_verifier/agents.py`) - Specialized verification workflows
+- **Source Credibility Analysis** - Evaluates reliability of fact-checking sources
+- **Batch Processing** - Efficiently processes up to 15 claims simultaneously
+- **Evidence Aggregation** - Combines multiple sources for comprehensive verification
+
+**Verification Sources:**
+- Snopes.com - Myth-busting and urban legend verification
+- PolitiFact.com - Political fact-checking
+- FactCheck.org - Nonpartisan fact verification
+- Reuters Fact Check - News verification
+- AP Fact Check - Associated Press verification
+
+**Configuration:** (`claim_verifier/config.py`)
+- Customizable verification parameters
+- Source weighting and reliability scoring
+- API rate limiting and optimization
+
+### 4. **📝 Explanation Agent** (`explanation_agent_agent.py`)
+
+**Automated Debunk Content Generator**
+- **Educational Post Creation** (`explanation_agent/agents.py`) - Generates clear, factual explanations
+- **Batch Content Generation** - Creates up to 10 debunk posts simultaneously
+- **Source Integration** - Incorporates verification evidence into explanations
+- **Content Optimization** - Ensures readability and engagement
+- **Structured Output** - JSON format ready for social media posting
+
+**Content Types:**
+- Debunk posts with clear factual corrections
+- Educational content explaining why claims are false
+- Source citations and evidence presentation
+- Actionable recommendations for content moderators
+
+**Configuration:** (`explanation_agent/config.py`)
+- Content template customization
+- Tone and style parameters
+- Source citation formatting
+
+### 5. **🌐 Web Content Extraction Pipeline**
+
+**Advanced Scraping Infrastructure**
+- **Beautiful Soup 4** - HTML parsing and DOM manipulation
+- **Newspaper3K** - Article extraction with NLP preprocessing
+- **Trafilatura** - Clean text extraction from web pages
+- **Readability-lxml** - Content optimization and readability scoring
+- **Custom Scrapers** - Platform-specific extraction logic
+
+**Supported Content Types:**
+- News articles and blog posts
+- Social media embedded content
+- PDF documents and academic papers
+- Video transcripts and captions
+- Image metadata and alt text
+
+### 6. **🗄️ Data Management Layer**
+
+**Intelligent Caching and Storage**
+- **Processed URLs Cache** (`data/processed_urls.json`) - Prevents duplicate processing
+- **Ground Truth Storage** (`data/ground_truth_articles.json`) - Validation dataset
+- **Result Archives** - Historical data for trend analysis
+- **Performance Metrics** - Processing time and accuracy tracking
+
+**Data Flow:**
+```
+Input Sources → Content Extraction → AI Analysis → Verification → Output Generation
+     ↓              ↓                   ↓            ↓             ↓
+Cache Check → Scraping Cache → Analysis Cache → Fact Cache → Result Storage
+```
 
 ## ⚙️ Configuration
 
@@ -410,27 +582,92 @@ flake8 trend_scanner/
 ## 📁 Project Structure
 
 ```
-MumbaiHacks/
-├── README.md                 # This file
-├── requirements.txt          # Python dependencies
-├── .env.example             # Environment configuration template
-├── trend_scanner_agent.py   # Main application entry point
-├── trend_scanner.log.txt    # Application logs
-├── trend_scanner/           # Core package
-│   ├── __init__.py
-│   ├── models.py           # Data structures
-│   ├── tools.py            # Reddit scanning and batch processing
-│   ├── google_agents.py    # AI orchestration and workflow
-│   ├── scraper.py          # Web content extraction
-│   ├── config.py           # Configuration management
-│   └── README.md           # Package documentation
-├── data/                   # Data storage
-│   ├── processed_urls.json # URL processing cache
-│   └── ground_truth_articles.json # Validation data
-├── tools/                  # Additional utilities
-├── myenv/                  # Virtual environment
-└── .git/                   # Git repository
+MumbaiHacks/                                    # 🚀 Project Aegis Root
+├── README.md                                   # 📖 Main documentation (this file)
+├── requirements.txt                            # 📦 Python dependencies
+├── .env.example                               # 🔧 Environment configuration template
+├── .gitignore                                 # 🚫 Git ignore patterns
+│
+├── 🎼 ORCHESTRATION LAYER                      # Central coordination
+│   ├── orchestrator_agent.py                 # 🎼 Main orchestrator agent
+│   ├── run_google_agents_pipeline.py         # 🚀 Pipeline launcher
+│   ├── ORCHESTRATOR_README.md                # 📋 Orchestrator documentation
+│   └── orchestrator.log                      # 📊 Orchestrator logs
+│
+├── 🔍 TREND SCANNING AGENTS                   # Content monitoring
+│   ├── trend_scanner_agent.py                # 🔍 Main trend scanner
+│   ├── trend_scanner.log.txt                 # 📊 Scanner logs
+│   └── trend_scanner/                        # 📁 Scanner package
+│       ├── __init__.py                       # 📦 Package initializer
+│       ├── models.py                         # 🏗️ Data structures
+│       ├── tools.py                          # 🛠️ Reddit scanning & batch processing
+│       ├── google_agents.py                  # 🤖 AI orchestration & workflow
+│       └── scraper.py                        # 🌐 Web content extraction
+│
+├── ✅ FACT VERIFICATION AGENTS                # Claim verification
+│   ├── claim_verifier_agent.py              # ✅ Main verifier agent
+│   └── claim_verifier/                       # 📁 Verifier package
+│       ├── __init__.py                       # 📦 Package initializer
+│       ├── agents.py                         # 🤖 Verification agents
+│       ├── tools.py                          # 🔍 Google Search & fact-checking
+│       ├── config.py                         # ⚙️ Verification configuration
+│       └── README.md                         # 📋 Verifier documentation
+│
+├── 📝 EXPLANATION AGENTS                      # Content generation
+│   ├── explanation_agent/                    # 📁 Explanation package
+│       ├── __init__.py                       # 📦 Package initializer
+│       ├── agents.py                         # 📝 Debunk post generation
+│       ├── config.py                         # ⚙️ Content configuration
+│       ├── test_explanation_agent.py         # 🧪 Agent testing
+│       └── README.md                         # 📋 Explanation documentation
+│
+├── 🗄️ DATA & STORAGE                         # Data management
+│   ├── data/                                 # 📁 Application data
+│   │   ├── processed_urls.json              # 🔄 URL processing cache
+│   │   └── ground_truth_articles.json       # ✅ Validation dataset
+│   ├── orchestrator_results/                # 📊 Orchestrator outputs
+│   ├── claim_verification_results/           # ✅ Verification results
+│   └── aegis_feed_posts/                     # 📰 Feed monitoring data
+│
+├── 🧪 TESTING & VALIDATION                   # Quality assurance
+│   ├── test_batch_processing.py             # 🧪 Batch processing tests
+│   ├── test_batch_validation.py             # ✅ Validation tests
+│   ├── test_orchestrator_batch.py           # 🎼 Orchestrator tests
+│   └── batch_processing_test_results_*.json # 📊 Test results
+│
+├── 🐍 PYTHON ENVIRONMENT                     # Development environment
+│   ├── myenv/                               # 🐍 Virtual environment
+│   │   ├── Scripts/                         # 🛠️ Python executables
+│   │   ├── Lib/site-packages/              # 📦 Installed packages
+│   │   └── pyvenv.cfg                       # ⚙️ Environment configuration
+│   └── __pycache__/                         # 🗄️ Python bytecode cache
+│
+└── 🔧 CONFIGURATION                          # System configuration
+    ├── .env                                  # 🔑 Environment variables (private)
+    └── tools/                               # 🛠️ Additional utilities (empty)
 ```
+
+### 🎯 **Key Architecture Elements**
+
+#### **🎼 Multi-Agent Orchestration**
+- **Orchestrator Agent** - Central coordination and workflow management
+- **Specialized Agents** - Focused expertise for each pipeline stage
+- **Google Agents SDK** - Professional multi-agent framework
+
+#### **🔍 Content Analysis Pipeline**
+- **Trend Scanner** - Multi-platform monitoring (Reddit, RSS, Web)
+- **Content Scraper** - Web extraction with multiple parsing engines
+- **AI Summarization** - Gemini 2.5 Flash for intelligent analysis
+
+#### **✅ Verification Infrastructure**
+- **Claim Verifier** - Google Custom Search integration
+- **Fact-Checking Sources** - Trusted verification databases
+- **Evidence Aggregation** - Multi-source reliability scoring
+
+#### **📝 Response Generation**
+- **Explanation Agent** - Automated debunk post creation
+- **Batch Processing** - Efficient AI content generation
+- **Educational Content** - Clear, factual explanations
 
 ## 🔮 Future Roadmap
 

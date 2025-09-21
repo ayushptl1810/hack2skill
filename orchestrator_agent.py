@@ -13,6 +13,7 @@ import google.generativeai as genai
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from claim_verifier.agents import ClaimVerifierOrchestrator
+from explanation_agent.agents import ExplanationAgent
 from trend_scanner_agent import main_one_scan
 
 # Configure logging
@@ -43,7 +44,23 @@ class GoogleAgent:
         try:
             # If this agent has tools, try to use them first
             if self.tools:
-                for tool in self.tools:
+                logger.info(f"Agent {self.role} has {len(self.tools)} tools available")
+                for i, tool in enumerate(self.tools):
+                    logger.info(f"Tool {i}: {type(tool)} with methods: {[method for method in dir(tool) if not method.startswith('_')][:10]}...")
+                    
+                    logger.info(f"Starting tool detection for task: '{task_description}'")
+                    
+                    # Log all conditions for debugging
+                    logger.info(f"Checking conditions:")
+                    logger.info(f"  - hasattr(tool, '__call__'): {hasattr(tool, '__call__')}")
+                    logger.info(f"  - 'scan' in task_description.lower(): {'scan' in task_description.lower()}")
+                    logger.info(f"  - hasattr(tool, 'verify_content'): {hasattr(tool, 'verify_content')}")
+                    logger.info(f"  - 'verify' in task_description.lower(): {'verify' in task_description.lower()}")
+                    logger.info(f"  - hasattr(tool, 'execute_workflow'): {hasattr(tool, 'execute_workflow')}")
+                    logger.info(f"  - hasattr(tool, 'batch_create_posts'): {hasattr(tool, 'batch_create_posts')}")
+                    logger.info(f"  - 'explanation' in task_description.lower(): {'explanation' in task_description.lower()}")
+                    logger.info(f"  - hasattr(tool, 'create_debunk_post'): {hasattr(tool, 'create_debunk_post')}")
+                    
                     if hasattr(tool, '__call__') and 'scan' in task_description.lower():
                         # This is likely a trend scanning task
                         try:
@@ -67,14 +84,24 @@ class GoogleAgent:
                             pass
                     
                     elif hasattr(tool, 'verify_content') and 'verify' in task_description.lower():
-                        # This is a ClaimVerifierOrchestrator with async verify_content method
+                        # This is a ClaimVerifierOrchestrator with batch processing capability
                         try:
-                            logger.info(f"Agent {self.role} executing claim verification tool...")
+                            logger.info(f"Agent {self.role} executing claim verification tool with batch processing...")
                             content_data = context.get('content_data', []) if context else []
                             
                             if content_data:
-                                # Now we can properly await the async method
+                                # Use batch processing for claim verification (max 15 claims per batch)
+                                logger.info(f"Processing {len(content_data)} claims using batch verification...")
                                 tool_result = await tool.verify_content(content_data)
+                                
+                                # Add batch processing metadata
+                                if isinstance(tool_result, dict):
+                                    tool_result['batch_processing'] = {
+                                        'enabled': True,
+                                        'total_claims': len(content_data),
+                                        'batch_size': min(15, len(content_data)),
+                                        'processing_method': 'batch_verification'
+                                    }
                             else:
                                 # No content data provided, return empty result
                                 tool_result = {
@@ -95,7 +122,7 @@ class GoogleAgent:
                             return result
                             
                         except Exception as tool_error:
-                            logger.error(f"Tool execution failed: {tool_error}")
+                            logger.error(f"Batch verification tool execution failed: {tool_error}")
                             # Fall back to text response
                             pass
                     
@@ -146,6 +173,121 @@ class GoogleAgent:
                             
                         except Exception as tool_error:
                             logger.error(f"Tool execution failed: {tool_error}")
+                            # Fall back to text response
+                            pass
+                    
+                    elif hasattr(tool, 'batch_create_posts') and ('explanation' in task_description.lower() or 'debunk' in task_description.lower() or 'Generate debunk posts' in task_description):
+                        # This is an ExplanationAgent with batch processing capability
+                        try:
+                            logger.info(f"Agent {self.role} executing ExplanationAgent with batch processing...")
+                            logger.info(f"Tool type: {type(tool)}")
+                            logger.info(f"Tool methods: {[method for method in dir(tool) if not method.startswith('_')]}")
+                            logger.info(f"Task description: '{task_description}'")
+                            logger.info(f"Task description contains 'explanation': {'explanation' in task_description.lower()}")
+                            logger.info(f"Tool has batch_create_posts: {hasattr(tool, 'batch_create_posts')}")
+                            
+                            verification_results = context.get('verification_results', []) if context else []
+                            logger.info(f"Received verification_results: {len(verification_results)} items")
+                            
+                            if verification_results:
+                                logger.info(f"Found {len(verification_results)} verification results for explanation generation")
+                                
+                                # Log the structure of verification results for debugging
+                                for i, vr in enumerate(verification_results[:2]):  # Log first 2 for debugging
+                                    logger.info(f"Verification result {i}: keys = {list(vr.keys()) if isinstance(vr, dict) else type(vr)}")
+                                
+                                # Use batch processing for explanation generation (max 10 posts per batch)
+                                logger.info(f"Creating debunk posts for {len(verification_results)} claims using batch processing...")
+                                tool_result = tool.batch_create_posts(verification_results)
+                                logger.info(f"Tool result type: {type(tool_result)}")
+                                logger.info(f"Tool result keys: {list(tool_result.keys()) if isinstance(tool_result, dict) else 'Not a dict'}")
+                                
+                                # Add batch processing metadata
+                                if isinstance(tool_result, dict):
+                                    tool_result['batch_processing'] = {
+                                        'enabled': True,
+                                        'total_claims': len(verification_results),
+                                        'batch_size': min(10, len(verification_results)),
+                                        'processing_method': 'batch_explanation_generation'
+                                    }
+                                    debunk_posts_count = len(tool_result.get('debunk_posts', []))
+                                    logger.info(f"Batch explanation generation completed successfully with {debunk_posts_count} posts generated")
+                                else:
+                                    logger.warning(f"Unexpected tool result type: {type(tool_result)}")
+                            else:
+                                logger.info("No verification results provided for explanation generation")
+                                tool_result = {
+                                    'success': False,
+                                    'message': 'No verification results provided for explanation generation',
+                                    'debunk_posts': []
+                                }
+                            
+                            result = {
+                                'agent_role': self.role,
+                                'task': task_description,
+                                'result': tool_result,
+                                'timestamp': datetime.now().isoformat(),
+                                'tool_used': True
+                            }
+                            
+                            self.history.append(result)
+                            logger.info(f"ExplanationAgent tool execution completed - tool_used: True")
+                            return result
+                            
+                        except Exception as tool_error:
+                            logger.error(f"Batch ExplanationAgent execution failed: {tool_error}")
+                            logger.error(f"Exception type: {type(tool_error)}")
+                            logger.error(f"Exception args: {tool_error.args}")
+                            import traceback
+                            logger.error(f"Traceback: {traceback.format_exc()}")
+                            # Fall back to text response
+                            pass
+                    
+                    elif hasattr(tool, 'create_debunk_post') and 'explanation' in task_description.lower():
+                        # This is an ExplanationAgent with single post capability (fallback)
+                        try:
+                            logger.info(f"Agent {self.role} executing ExplanationAgent (single post mode)...")
+                            verification_results = context.get('verification_results', []) if context else []
+                            
+                            if verification_results:
+                                # Process single posts
+                                debunk_posts = []
+                                for verification_result in verification_results[:10]:  # Limit to 10 to match batch size
+                                    single_result = tool.create_debunk_post(verification_result)
+                                    if single_result.get('success'):
+                                        debunk_posts.append(single_result.get('debunk_post', {}))
+                                
+                                tool_result = {
+                                    'success': True,
+                                    'message': f'Generated {len(debunk_posts)} debunk posts using single post method',
+                                    'debunk_posts': debunk_posts,
+                                    'batch_processing': {
+                                        'enabled': False,
+                                        'total_claims': len(verification_results),
+                                        'processing_method': 'single_post_fallback'
+                                    }
+                                }
+                                logger.info(f"Single post explanation generation completed with {len(debunk_posts)} posts")
+                            else:
+                                tool_result = {
+                                    'success': False,
+                                    'message': 'No verification results provided for explanation generation',
+                                    'debunk_posts': []
+                                }
+                            
+                            result = {
+                                'agent_role': self.role,
+                                'task': task_description,
+                                'result': tool_result,
+                                'timestamp': datetime.now().isoformat(),
+                                'tool_used': True
+                            }
+                            
+                            self.history.append(result)
+                            return result
+                            
+                        except Exception as tool_error:
+                            logger.error(f"Single ExplanationAgent execution failed: {tool_error}")
                             # Fall back to text response
                             pass
             
@@ -343,6 +485,7 @@ class OrchestratorAgent:
         # Initialize Google Agents orchestrator
         self.google_agents = None
         self.claim_verifier = None
+        self.explanation_agent = None
         
         logger.info(f"Orchestrator Agent initialized with Google Agents SDK - Session: {self.session_id}")
     
@@ -354,6 +497,9 @@ class OrchestratorAgent:
             
             logger.info("Initializing Claim Verifier with Google Agents...")
             self.claim_verifier = ClaimVerifierOrchestrator()
+            
+            logger.info("Initializing Explanation Agent with Google Agents...")
+            self.explanation_agent = ExplanationAgent()
             
             # Setup orchestrator agents
             self._setup_orchestrator_agents()
@@ -382,6 +528,14 @@ class OrchestratorAgent:
             role="Claim Verification Coordinator", 
             goal="Coordinate comprehensive claim verification using Google Custom Search and AI analysis",
             tools=[self.claim_verifier]  # Claim verifier orchestrator as tool
+        )
+        
+        # Create explanation agent for generating debunk posts
+        self.explanation_coordinator = self.google_agents.create_agent(
+            name="explanation_coordinator",
+            role="Explanation Generation Coordinator",
+            goal="Generate structured debunk posts for misinformation claims identified by the verification process",
+            tools=[self.explanation_agent]  # Explanation agent as tool
         )
         
         # Create results integration agent
@@ -494,6 +648,8 @@ class OrchestratorAgent:
             
             # Step 3: Execute claim verification with actual content data
             verification_results = None
+            verified_claims_for_explanation = []
+            
             if content_data:
                 verification_task = {
                     'agent': 'verifier_coordinator',
@@ -505,7 +661,7 @@ class OrchestratorAgent:
                     }
                 }
                 
-                logger.info("Step 2: Executing claim verification with Google Agents...")
+                logger.info("Step 2: Executing claim verification with batch processing...")
                 verification_workflow = await self.google_agents.execute_workflow([verification_task])
                 
                 # Extract verification results
@@ -516,6 +672,12 @@ class OrchestratorAgent:
                         # Handle different verification result types
                         if isinstance(raw_verification, dict):
                             verification_results = raw_verification
+                            
+                            # Extract verified claims for explanation generation
+                            if verification_results.get('success') and 'verified_claims' in verification_results:
+                                verified_claims_for_explanation = verification_results['verified_claims']
+                                logger.info(f"Extracted {len(verified_claims_for_explanation)} verified claims for explanation generation")
+                            
                         elif isinstance(raw_verification, str):
                             logger.warning(f"Verification returned string result: {raw_verification[:200]}...")
                             # Create a structured response from string
@@ -537,26 +699,104 @@ class OrchestratorAgent:
                             }
                         break
             
-            # Step 4: Combine results
-            logger.info("Step 3: Processing and combining results...")
+            # Step 4: Execute explanation generation for misinformation claims
+            explanation_results = None
+            if verified_claims_for_explanation:
+                # Extract verification results from the verified claims and filter for misinformation
+                misinformation_claims = []
+                
+                for claim in verified_claims_for_explanation:
+                    verification = claim.get('verification', {})
+                    verdict = verification.get('verdict', '').lower()
+                    verified = verification.get('verified', True)
+                    
+                    # Include claims that are false, mixed, or unverified (potential misinformation)
+                    if verdict in ['false', 'mixed', 'uncertain'] or not verified:
+                        # Restructure the claim for explanation agent
+                        misinfo_claim = {
+                            'claim_text': claim.get('claim_text', ''),
+                            'verification': verification,
+                            'source': claim.get('source', ''),
+                            'content_summary': claim.get('content_summary', '')
+                        }
+                        misinformation_claims.append(misinfo_claim)
+                        logger.info(f"Including claim for debunk post: {claim.get('claim_text', 'Unknown')[:50]}... (verdict: {verdict})")
+                
+                if misinformation_claims:
+                    explanation_task = {
+                        'agent': 'explanation_coordinator',
+                        'task': 'Generate debunk posts for misinformation claims using batch processing',
+                        'context': {
+                            'verification_results': misinformation_claims,
+                            'generation_mode': 'batch_debunk_posts'
+                        }
+                    }
+                    
+                    logger.info(f"Step 3: Executing explanation generation with batch processing for {len(misinformation_claims)} misinformation claims...")
+                    explanation_workflow = await self.google_agents.execute_workflow([explanation_task])
+                    
+                    # Extract explanation results
+                    for result in explanation_workflow.get('workflow_results', []):
+                        if 'Explanation Generation' in result.get('agent_role', ''):
+                            raw_explanation = result.get('result')
+                            
+                            # Handle different explanation result types
+                            if isinstance(raw_explanation, dict):
+                                explanation_results = raw_explanation
+                                logger.info(f"Explanation generation completed: {explanation_results.get('success', False)}")
+                            elif isinstance(raw_explanation, str):
+                                logger.warning(f"Explanation returned string result: {raw_explanation[:200]}...")
+                                explanation_results = {
+                                    'success': True,
+                                    'message': 'Explanation generation returned text response',
+                                    'debunk_posts': [],
+                                    'raw_response': raw_explanation[:500]
+                                }
+                            else:
+                                logger.error(f"Unexpected explanation result type: {type(raw_explanation)}")
+                                explanation_results = {
+                                    'success': False,
+                                    'message': f'Unexpected explanation result type: {type(raw_explanation)}',
+                                    'debunk_posts': [],
+                                    'error': str(raw_explanation)[:500]
+                                }
+                            break
+                else:
+                    logger.info("No misinformation claims found in verification results - no debunk posts needed")
+                    explanation_results = {
+                        'success': True,
+                        'message': 'No misinformation claims found in verification results',
+                        'debunk_posts': []
+                    }
+            else:
+                logger.info("No verified claims available for explanation generation")
+                explanation_results = {
+                    'success': True,
+                    'message': 'No verified claims provided for explanation generation',
+                    'debunk_posts': []
+                }
+            
+            # Step 5: Combine all results
+            logger.info("Step 4: Processing and combining all results...")
             combined_workflow = {
                 'workflow_results': [
                     {'agent_role': 'Trend Scanning Coordinator', 'result': trend_results},
-                    {'agent_role': 'Claim Verification Coordinator', 'result': verification_results} if verification_results else {'agent_role': 'Claim Verification Coordinator', 'result': {'success': False, 'message': 'No claims to verify'}}
+                    {'agent_role': 'Claim Verification Coordinator', 'result': verification_results} if verification_results else {'agent_role': 'Claim Verification Coordinator', 'result': {'success': False, 'message': 'No claims to verify'}},
+                    {'agent_role': 'Explanation Generation Coordinator', 'result': explanation_results} if explanation_results else {'agent_role': 'Explanation Generation Coordinator', 'result': {'success': False, 'message': 'No explanation generation performed'}}
                 ],
                 'workflow_id': f"orchestrator_workflow_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
-                'completed_tasks': 2 if verification_results else 1,
-                'total_tasks': 2
+                'completed_tasks': 3 if (verification_results and explanation_results) else (2 if verification_results else 1),
+                'total_tasks': 3
             }
             
-            # Process workflow results
+            # Process workflow results with explanation integration
             final_output = self._process_orchestrator_workflow(combined_workflow)
             
             # Save results
             result_file = self._save_results(final_output)
             final_output['result_file'] = result_file
             
-            logger.info(f"Google Agents orchestrated pipeline completed successfully")
+            logger.info(f"Google Agents orchestrated pipeline with batch processing completed successfully")
             return final_output
             
         except Exception as e:
@@ -569,13 +809,14 @@ class OrchestratorAgent:
             }
     
     def _process_orchestrator_workflow(self, workflow_result: Dict[str, Any]) -> Dict[str, Any]:
-        """Process Google Agents workflow results into final output"""
+        """Process Google Agents workflow results into final output with batch processing and explanation integration"""
         try:
             workflow_results = workflow_result.get('workflow_results', [])
             
             # Extract results from each agent
             trend_results = None
             verification_results = None
+            explanation_results = None
             
             for result in workflow_results:
                 agent_role = result.get('agent_role', '')
@@ -611,6 +852,12 @@ class OrchestratorAgent:
                     if isinstance(raw_verification_result, dict):
                         verification_results = raw_verification_result
                         logger.info(f"Claim verification completed: {verification_results.get('success', False)}")
+                        
+                        # Log batch processing info if available
+                        batch_info = verification_results.get('batch_processing', {})
+                        if batch_info.get('enabled'):
+                            logger.info(f"Batch verification processed {batch_info.get('total_claims', 0)} claims in batches of {batch_info.get('batch_size', 0)}")
+                        
                     elif isinstance(raw_verification_result, str):
                         logger.warning(f"Verification result is string: {raw_verification_result[:100]}...")
                         verification_results = {
@@ -628,9 +875,50 @@ class OrchestratorAgent:
                             'workflow_results': [],
                             'verified_claims': []
                         }
+                
+                elif 'Explanation Generation' in agent_role:
+                    raw_explanation_result = result.get('result')
+                    
+                    # Handle different explanation result types
+                    if isinstance(raw_explanation_result, dict):
+                        explanation_results = raw_explanation_result
+                        logger.info(f"Explanation generation completed: {explanation_results.get('success', False)}")
+                        
+                        # Log batch processing info if available
+                        batch_info = explanation_results.get('batch_processing', {})
+                        if batch_info.get('enabled'):
+                            logger.info(f"Batch explanation generation processed {batch_info.get('total_claims', 0)} claims in batches of {batch_info.get('batch_size', 0)}")
+                        
+                        # Log debunk posts created
+                        debunk_posts = explanation_results.get('debunk_posts', [])
+                        if debunk_posts:
+                            logger.info(f"Successfully created {len(debunk_posts)} debunk posts")
+                        
+                    elif isinstance(raw_explanation_result, str):
+                        logger.warning(f"Explanation result is string: {raw_explanation_result[:100]}...")
+                        explanation_results = {
+                            'success': True,
+                            'message': 'Explanation generation returned text response',
+                            'debunk_posts': [],
+                            'raw_response': raw_explanation_result[:500]
+                        }
+                    else:
+                        logger.error(f"Unexpected explanation result type: {type(raw_explanation_result)}")
+                        explanation_results = {
+                            'success': False,
+                            'error': f'Unexpected result type: {type(raw_explanation_result)}',
+                            'debunk_posts': []
+                        }
             
             # Process actual verification results
             final_posts = []
+            debunk_posts = []
+            
+            # Extract debunk posts from explanation results
+            if explanation_results and explanation_results.get('success'):
+                debunk_posts = explanation_results.get('debunk_posts', [])
+                logger.info(f"Extracted {len(debunk_posts)} debunk posts from explanation generation")
+            
             if trend_results and isinstance(trend_results, dict):
                 posts = trend_results.get('posts', [])
                 
@@ -655,7 +943,7 @@ class OrchestratorAgent:
                         for i, claim in enumerate(verification_results['verified_claims']):
                             verification_data[i] = claim.get('verification', {})
                 
-                # Create final posts with actual verification data
+                # Create final posts with actual verification data and batch processing info
                 for i, post in enumerate(posts):
                     verification_info = verification_data.get(i, {})
                     
@@ -665,22 +953,25 @@ class OrchestratorAgent:
                             verification_info = {
                                 'verified': True,
                                 'verdict': 'verification_completed',
-                                'message': 'Claim processed through Google Agents fact-checking workflow',
+                                'message': 'Claim processed through Google Agents batch fact-checking workflow',
                                 'confidence': 'medium',
-                                'sources_checked': True
+                                'sources_checked': True,
+                                'batch_processed': True
                             }
                         else:
                             verification_info = {
                                 'verified': False,
                                 'verdict': 'verification_failed', 
                                 'message': verification_results.get('message', 'Verification process encountered an error'),
-                                'error': verification_results.get('error', 'Unknown error')
+                                'error': verification_results.get('error', 'Unknown error'),
+                                'batch_processed': False
                             }
                     elif not verification_info:
                         verification_info = {
                             'verified': False,
                             'verdict': 'not_verified',
-                            'message': 'No verification was performed for this claim'
+                            'message': 'No verification was performed for this claim',
+                            'batch_processed': False
                         }
                     
                     final_post = {
@@ -692,15 +983,25 @@ class OrchestratorAgent:
                     }
                     final_posts.append(final_post)
             
+            # Combine batch processing metadata
+            batch_metadata = {
+                'verification_batch_processing': verification_results.get('batch_processing', {}) if verification_results else {},
+                'explanation_batch_processing': explanation_results.get('batch_processing', {}) if explanation_results else {}
+            }
+            
             return {
                 'success': True,
-                'message': f'Successfully processed {len(final_posts)} posts with actual fact-checking results',
+                'message': f'Successfully processed {len(final_posts)} posts with batch fact-checking and explanation generation',
                 'workflow_results': workflow_results,
                 'final_output': final_posts,
+                'debunk_posts': debunk_posts,
+                'batch_processing_metadata': batch_metadata,
                 'summary': {
                     'content_items_processed': len(final_posts),
+                    'debunk_posts_generated': len(debunk_posts),
                     'agents_executed': len(workflow_results),
-                    'workflow_success': workflow_result.get('completed_tasks', 0) == workflow_result.get('total_tasks', 0)
+                    'workflow_success': workflow_result.get('completed_tasks', 0) == workflow_result.get('total_tasks', 0),
+                    'batch_optimization_enabled': True
                 },
                 'google_agents_workflow': workflow_result,
                 'timestamp': datetime.now().isoformat()

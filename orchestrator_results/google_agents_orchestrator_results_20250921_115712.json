@@ -1,0 +1,312 @@
+{
+  "success": true,
+  "message": "Successfully processed 2 posts with actual fact-checking results",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-09-21T11:56:37.739959",
+        "total_posts": 2,
+        "posts": [
+          {
+            "claim": "Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents.",
+            "summary": "A now-deleted Truth Social post by Donald Trump seemingly contained a letter directing Pam Bondi to arrest his political adversaries. The post was reported by Politico.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/"
+          },
+          {
+            "claim": "Tulsi Gabbard revoked 37 security clearances without informing the White House beforehand.",
+            "summary": "Tulsi Gabbard, as Director of National Intelligence, revoked the security clearances of 37 individuals, including high-ranking CIA deputies to John Ratcliffe and two Democratic congressional staffers, without prior notification to the White House. This action reportedly caused consternation because it prevented the White House from vetting the list and lacked a clear presidential directive. Officials discovered only after the fact that Gabbard had revoked clearances of career CIA officials, including a top advisor to Ratcliffe involved in sensitive military operations.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmjjmf/tulsi_gabbard_did_not_alert_white_house_before/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 2 claims using Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents.",
+            "content_summary": "A now-deleted Truth Social post by Donald Trump seemingly contained a letter directing Pam Bondi to arrest his political adversaries. The post was reported by Politico.",
+            "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/",
+            "verification": {
+              "verified": true,
+              "verdict": "false",
+              "message": "The claim is false. While Donald Trump did post on Truth Social and mentioned political opponents in July 2025, and Pam Bondi was part of the conversation, the sources indicate Trump was defending Pam Bondi or discussing 'hoaxes' fabricated by his political opponents against him, particularly concerning the Epstein files. There is no evidence in the provided sources that he posted a letter instructing Pam Bondi to arrest his political opponents.",
+              "confidence": "high",
+              "reasoning": "1. **What does each source say ACTUALLY HAPPENED?**\n    *   **Source 1 (PBS):** On July 15, 2025, President Donald Trump defended Attorney General Pam Bondi regarding her handling of the Epstein files.\n    *   **Source 2 (Al Jazeera):** On July 12, 2025, Trump posted on Truth Social, with the snippet 'What's going on with my...' in the context of MAGA influencers calling for Pam Bondi's removal over the Epstein matter. Trump also referred to something as a 'hoax' fabricated by his political opponents.\n    *   **Source 3 (FactCheck.org):** This source discusses a Supreme Court ruling from April 23, 2025, related to the Trump administration but does not mention Pam Bondi, Truth Social, or the specific context of the claim.\n    *   **Source 4 (BBC):** On July 16, 2025, Trump made a lengthy post on Truth Social discussing 'hoaxes' fabricated by his political opponents to bring him down, within the context of his 'Epstein strategy.'\n\n2. **What does each source say was FAKE or MISLEADING?**\n    *   None of the sources state that the claim itself ('Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents') is fake or misleading. However, the content of the relevant sources directly contradicts the claim's core assertion.\n    *   Sources 2 and 4 indicate that Trump himself referred to certain allegations or issues as 'hoaxes' fabricated by his political opponents *against him*, not that he was instructing Bondi to arrest his opponents based on these 'hoaxes'.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   Donald Trump did post on Truth Social in July 2025 (Sources 2, 4).\n    *   Pam Bondi's name was indeed mentioned in relation to Trump's statements around this time, specifically concerning the Epstein files (Sources 1, 2).\n    *   Trump did refer to 'political opponents' and 'hoaxes' in his Truth Social posts (Sources 2, 4).\n    *   However, the crucial part of the claim – that he posted a 'letter' (the sources refer to 'posts') or that it 'appeared to instruct Pam Bondi to arrest his political opponents' – is not supported by any of the provided sources. In fact, Source 1 explicitly states Trump *defended* Pam Bondi. Sources 2 and 4 indicate Trump was discussing 'hoaxes' fabricated by his opponents *against him*, or his 'Epstein strategy', implying a defensive stance or counter-narrative, not an instruction for arrests. The narrative consistently points to Trump defending Bondi or himself against political attacks, not directing arrests of his opponents.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                  "https://www.npr.org/2025/04/29/nx-s1-5327518/donald-trump-100-days-retribution-threats",
+                  "https://www.nytimes.com/live/2025/07/22/us/trump-news",
+                  "https://www.nytimes.com/2025/07/17/us/politics/timeline-trump-epstein.html",
+                  "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up"
+                ],
+                "titles": [
+                  "Attorney General Alerted Trump His Name Appeared in Epstein ...",
+                  "How Trump is using government power to target his enemies : NPR",
+                  "Trump Announces Trade Deal With Japan - The New York Times",
+                  "A Timeline of What We Know About Trump and Epstein - The New ...",
+                  "WATCH: Asked if his name appears in Epstein files, Trump claims ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents.",
+              "verification_date": "2025-09-21T11:56:40.971752"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents."
+            },
+            "verification_timestamp": "2025-09-21T11:56:54.964934"
+          },
+          {
+            "claim_text": "Tulsi Gabbard revoked 37 security clearances without informing the White House beforehand.",
+            "content_summary": "Tulsi Gabbard, as Director of National Intelligence, revoked the security clearances of 37 individuals, including high-ranking CIA deputies to John Ratcliffe and two Democratic congressional staffers, without prior notification to the White House. This action reportedly caused consternation because ",
+            "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmjjmf/tulsi_gabbard_did_not_alert_white_house_before/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "Unable to determine claim accuracy from available sources. Found fact-checking articles but analysis failed.",
+              "confidence": "low",
+              "reasoning": "Analysis completed",
+              "sources": {
+                "links": [
+                  "https://www.theguardian.com/us-news/article/2024/may/23/senate-democrats-immigration-border-bill",
+                  "https://www.theguardian.com/us-news/2025/feb/12/trump-putin-ukraine-ceasefire",
+                  "https://www.theguardian.com/us-news/2025/apr/10/trump-administration-authoritarian",
+                  "https://www.theguardian.com/law/2025/jan/17/tory-bill-to-ban-marriage-between-cousins-is-damaging-and-unenforceable",
+                  "https://www.theguardian.com/politics/2023/jun/14/home-office-u-turn-on-festival-drug-tests-puts-people-at-risk"
+                ],
+                "titles": [
+                  "Senate Republicans block bipartisan border security bill for a ...",
+                  "Trump says he has spoken to Putin and agreed to negotiate Ukraine ...",
+                  "Fear spreads as Trump targets lawyers and non-profits in ...",
+                  "Tory MP's bill to ban marriage between cousins is 'damaging' and ...",
+                  "Home Office U-turn on festival drug tests 'puts people at risk' | Drugs ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Tulsi Gabbard revoked 37 security clearances without informing the White House beforehand.",
+              "verification_date": "2025-09-21T11:56:40.971752"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "Tulsi Gabbard revoked 37 security clearances without informing the White House beforehand."
+            },
+            "verification_timestamp": "2025-09-21T11:57:12.259392"
+          }
+        ],
+        "summary": {
+          "total_claims": 2,
+          "successfully_verified": 1,
+          "verification_errors": 0
+        },
+        "timestamp": "2025-09-21T11:57:12.259392"
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents.",
+      "summary": "A now-deleted Truth Social post by Donald Trump seemingly contained a letter directing Pam Bondi to arrest his political adversaries. The post was reported by Politico.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/",
+      "verification": {
+        "verified": true,
+        "verdict": "false",
+        "message": "The claim is false. While Donald Trump did post on Truth Social and mentioned political opponents in July 2025, and Pam Bondi was part of the conversation, the sources indicate Trump was defending Pam Bondi or discussing 'hoaxes' fabricated by his political opponents against him, particularly concerning the Epstein files. There is no evidence in the provided sources that he posted a letter instructing Pam Bondi to arrest his political opponents.",
+        "confidence": "high",
+        "reasoning": "1. **What does each source say ACTUALLY HAPPENED?**\n    *   **Source 1 (PBS):** On July 15, 2025, President Donald Trump defended Attorney General Pam Bondi regarding her handling of the Epstein files.\n    *   **Source 2 (Al Jazeera):** On July 12, 2025, Trump posted on Truth Social, with the snippet 'What's going on with my...' in the context of MAGA influencers calling for Pam Bondi's removal over the Epstein matter. Trump also referred to something as a 'hoax' fabricated by his political opponents.\n    *   **Source 3 (FactCheck.org):** This source discusses a Supreme Court ruling from April 23, 2025, related to the Trump administration but does not mention Pam Bondi, Truth Social, or the specific context of the claim.\n    *   **Source 4 (BBC):** On July 16, 2025, Trump made a lengthy post on Truth Social discussing 'hoaxes' fabricated by his political opponents to bring him down, within the context of his 'Epstein strategy.'\n\n2. **What does each source say was FAKE or MISLEADING?**\n    *   None of the sources state that the claim itself ('Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents') is fake or misleading. However, the content of the relevant sources directly contradicts the claim's core assertion.\n    *   Sources 2 and 4 indicate that Trump himself referred to certain allegations or issues as 'hoaxes' fabricated by his political opponents *against him*, not that he was instructing Bondi to arrest his opponents based on these 'hoaxes'.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   Donald Trump did post on Truth Social in July 2025 (Sources 2, 4).\n    *   Pam Bondi's name was indeed mentioned in relation to Trump's statements around this time, specifically concerning the Epstein files (Sources 1, 2).\n    *   Trump did refer to 'political opponents' and 'hoaxes' in his Truth Social posts (Sources 2, 4).\n    *   However, the crucial part of the claim – that he posted a 'letter' (the sources refer to 'posts') or that it 'appeared to instruct Pam Bondi to arrest his political opponents' – is not supported by any of the provided sources. In fact, Source 1 explicitly states Trump *defended* Pam Bondi. Sources 2 and 4 indicate Trump was discussing 'hoaxes' fabricated by his opponents *against him*, or his 'Epstein strategy', implying a defensive stance or counter-narrative, not an instruction for arrests. The narrative consistently points to Trump defending Bondi or himself against political attacks, not directing arrests of his opponents.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+            "https://www.npr.org/2025/04/29/nx-s1-5327518/donald-trump-100-days-retribution-threats",
+            "https://www.nytimes.com/live/2025/07/22/us/trump-news",
+            "https://www.nytimes.com/2025/07/17/us/politics/timeline-trump-epstein.html",
+            "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up"
+          ],
+          "titles": [
+            "Attorney General Alerted Trump His Name Appeared in Epstein ...",
+            "How Trump is using government power to target his enemies : NPR",
+            "Trump Announces Trade Deal With Japan - The New York Times",
+            "A Timeline of What We Know About Trump and Epstein - The New ...",
+            "WATCH: Asked if his name appears in Epstein files, Trump claims ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents.",
+        "verification_date": "2025-09-21T11:56:40.971752"
+      }
+    },
+    {
+      "claim": "Tulsi Gabbard revoked 37 security clearances without informing the White House beforehand.",
+      "summary": "Tulsi Gabbard, as Director of National Intelligence, revoked the security clearances of 37 individuals, including high-ranking CIA deputies to John Ratcliffe and two Democratic congressional staffers, without prior notification to the White House. This action reportedly caused consternation because it prevented the White House from vetting the list and lacked a clear presidential directive. Officials discovered only after the fact that Gabbard had revoked clearances of career CIA officials, including a top advisor to Ratcliffe involved in sensitive military operations.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmjjmf/tulsi_gabbard_did_not_alert_white_house_before/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "Unable to determine claim accuracy from available sources. Found fact-checking articles but analysis failed.",
+        "confidence": "low",
+        "reasoning": "Analysis completed",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/us-news/article/2024/may/23/senate-democrats-immigration-border-bill",
+            "https://www.theguardian.com/us-news/2025/feb/12/trump-putin-ukraine-ceasefire",
+            "https://www.theguardian.com/us-news/2025/apr/10/trump-administration-authoritarian",
+            "https://www.theguardian.com/law/2025/jan/17/tory-bill-to-ban-marriage-between-cousins-is-damaging-and-unenforceable",
+            "https://www.theguardian.com/politics/2023/jun/14/home-office-u-turn-on-festival-drug-tests-puts-people-at-risk"
+          ],
+          "titles": [
+            "Senate Republicans block bipartisan border security bill for a ...",
+            "Trump says he has spoken to Putin and agreed to negotiate Ukraine ...",
+            "Fear spreads as Trump targets lawyers and non-profits in ...",
+            "Tory MP's bill to ban marriage between cousins is 'damaging' and ...",
+            "Home Office U-turn on festival drug tests 'puts people at risk' | Drugs ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Tulsi Gabbard revoked 37 security clearances without informing the White House beforehand.",
+        "verification_date": "2025-09-21T11:56:40.971752"
+      }
+    }
+  ],
+  "summary": {
+    "content_items_processed": 2,
+    "agents_executed": 2,
+    "workflow_success": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-09-21T11:56:37.739959",
+          "total_posts": 2,
+          "posts": [
+            {
+              "claim": "Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents.",
+              "summary": "A now-deleted Truth Social post by Donald Trump seemingly contained a letter directing Pam Bondi to arrest his political adversaries. The post was reported by Politico.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/"
+            },
+            {
+              "claim": "Tulsi Gabbard revoked 37 security clearances without informing the White House beforehand.",
+              "summary": "Tulsi Gabbard, as Director of National Intelligence, revoked the security clearances of 37 individuals, including high-ranking CIA deputies to John Ratcliffe and two Democratic congressional staffers, without prior notification to the White House. This action reportedly caused consternation because it prevented the White House from vetting the list and lacked a clear presidential directive. Officials discovered only after the fact that Gabbard had revoked clearances of career CIA officials, including a top advisor to Ratcliffe involved in sensitive military operations.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmjjmf/tulsi_gabbard_did_not_alert_white_house_before/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 2 claims using Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents.",
+              "content_summary": "A now-deleted Truth Social post by Donald Trump seemingly contained a letter directing Pam Bondi to arrest his political adversaries. The post was reported by Politico.",
+              "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmgh04/in_a_now_deleted_truth_social_post_trump_posts/",
+              "verification": {
+                "verified": true,
+                "verdict": "false",
+                "message": "The claim is false. While Donald Trump did post on Truth Social and mentioned political opponents in July 2025, and Pam Bondi was part of the conversation, the sources indicate Trump was defending Pam Bondi or discussing 'hoaxes' fabricated by his political opponents against him, particularly concerning the Epstein files. There is no evidence in the provided sources that he posted a letter instructing Pam Bondi to arrest his political opponents.",
+                "confidence": "high",
+                "reasoning": "1. **What does each source say ACTUALLY HAPPENED?**\n    *   **Source 1 (PBS):** On July 15, 2025, President Donald Trump defended Attorney General Pam Bondi regarding her handling of the Epstein files.\n    *   **Source 2 (Al Jazeera):** On July 12, 2025, Trump posted on Truth Social, with the snippet 'What's going on with my...' in the context of MAGA influencers calling for Pam Bondi's removal over the Epstein matter. Trump also referred to something as a 'hoax' fabricated by his political opponents.\n    *   **Source 3 (FactCheck.org):** This source discusses a Supreme Court ruling from April 23, 2025, related to the Trump administration but does not mention Pam Bondi, Truth Social, or the specific context of the claim.\n    *   **Source 4 (BBC):** On July 16, 2025, Trump made a lengthy post on Truth Social discussing 'hoaxes' fabricated by his political opponents to bring him down, within the context of his 'Epstein strategy.'\n\n2. **What does each source say was FAKE or MISLEADING?**\n    *   None of the sources state that the claim itself ('Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents') is fake or misleading. However, the content of the relevant sources directly contradicts the claim's core assertion.\n    *   Sources 2 and 4 indicate that Trump himself referred to certain allegations or issues as 'hoaxes' fabricated by his political opponents *against him*, not that he was instructing Bondi to arrest his opponents based on these 'hoaxes'.\n\n3. **Based on the evidence, what is the most likely truth about the claim?**\n    *   Donald Trump did post on Truth Social in July 2025 (Sources 2, 4).\n    *   Pam Bondi's name was indeed mentioned in relation to Trump's statements around this time, specifically concerning the Epstein files (Sources 1, 2).\n    *   Trump did refer to 'political opponents' and 'hoaxes' in his Truth Social posts (Sources 2, 4).\n    *   However, the crucial part of the claim – that he posted a 'letter' (the sources refer to 'posts') or that it 'appeared to instruct Pam Bondi to arrest his political opponents' – is not supported by any of the provided sources. In fact, Source 1 explicitly states Trump *defended* Pam Bondi. Sources 2 and 4 indicate Trump was discussing 'hoaxes' fabricated by his opponents *against him*, or his 'Epstein strategy', implying a defensive stance or counter-narrative, not an instruction for arrests. The narrative consistently points to Trump defending Bondi or himself against political attacks, not directing arrests of his opponents.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "https://www.npr.org/2025/04/29/nx-s1-5327518/donald-trump-100-days-retribution-threats",
+                    "https://www.nytimes.com/live/2025/07/22/us/trump-news",
+                    "https://www.nytimes.com/2025/07/17/us/politics/timeline-trump-epstein.html",
+                    "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up"
+                  ],
+                  "titles": [
+                    "Attorney General Alerted Trump His Name Appeared in Epstein ...",
+                    "How Trump is using government power to target his enemies : NPR",
+                    "Trump Announces Trade Deal With Japan - The New York Times",
+                    "A Timeline of What We Know About Trump and Epstein - The New ...",
+                    "WATCH: Asked if his name appears in Epstein files, Trump claims ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents.",
+                "verification_date": "2025-09-21T11:56:40.971752"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Donald Trump posted a letter on Truth Social appearing to instruct Pam Bondi to arrest his political opponents."
+              },
+              "verification_timestamp": "2025-09-21T11:56:54.964934"
+            },
+            {
+              "claim_text": "Tulsi Gabbard revoked 37 security clearances without informing the White House beforehand.",
+              "content_summary": "Tulsi Gabbard, as Director of National Intelligence, revoked the security clearances of 37 individuals, including high-ranking CIA deputies to John Ratcliffe and two Democratic congressional staffers, without prior notification to the White House. This action reportedly caused consternation because ",
+              "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1nmjjmf/tulsi_gabbard_did_not_alert_white_house_before/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "Unable to determine claim accuracy from available sources. Found fact-checking articles but analysis failed.",
+                "confidence": "low",
+                "reasoning": "Analysis completed",
+                "sources": {
+                  "links": [
+                    "https://www.theguardian.com/us-news/article/2024/may/23/senate-democrats-immigration-border-bill",
+                    "https://www.theguardian.com/us-news/2025/feb/12/trump-putin-ukraine-ceasefire",
+                    "https://www.theguardian.com/us-news/2025/apr/10/trump-administration-authoritarian",
+                    "https://www.theguardian.com/law/2025/jan/17/tory-bill-to-ban-marriage-between-cousins-is-damaging-and-unenforceable",
+                    "https://www.theguardian.com/politics/2023/jun/14/home-office-u-turn-on-festival-drug-tests-puts-people-at-risk"
+                  ],
+                  "titles": [
+                    "Senate Republicans block bipartisan border security bill for a ...",
+                    "Trump says he has spoken to Putin and agreed to negotiate Ukraine ...",
+                    "Fear spreads as Trump targets lawyers and non-profits in ...",
+                    "Tory MP's bill to ban marriage between cousins is 'damaging' and ...",
+                    "Home Office U-turn on festival drug tests 'puts people at risk' | Drugs ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Tulsi Gabbard revoked 37 security clearances without informing the White House beforehand.",
+                "verification_date": "2025-09-21T11:56:40.971752"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "Tulsi Gabbard revoked 37 security clearances without informing the White House beforehand."
+              },
+              "verification_timestamp": "2025-09-21T11:57:12.259392"
+            }
+          ],
+          "summary": {
+            "total_claims": 2,
+            "successfully_verified": 1,
+            "verification_errors": 0
+          },
+          "timestamp": "2025-09-21T11:57:12.259392"
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20250921_115712",
+    "completed_tasks": 2,
+    "total_tasks": 2
+  },
+  "timestamp": "2025-09-21T11:57:12.268643",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20250921_115506",
+    "created_at": "2025-09-21T11:57:12.269685",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "results_integrator"
+    ]
+  }
+}
