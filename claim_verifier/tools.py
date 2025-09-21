@@ -47,28 +47,37 @@ class TextFactChecker:
                     "verified": False,
                     "verdict": "no_content",
                     "message": "No fact-checked information found for this claim",
-                    "details": {
-                        "claim_text": text_input,
-                        "claim_context": claim_context,
-                        "claim_date": claim_date,
-                        "fact_checks": []
-                    }
+                    "confidence": "low",
+                    "reasoning": "No reliable sources found to verify this claim",
+                    "sources": {
+                        "links": [],
+                        "titles": [],
+                        "count": 0
+                    },
+                    "claim_text": text_input,
+                    "verification_date": claim_date
                 }
             
             # Analyze the search results
             analysis = self._analyze_results(search_results, text_input)
             
+            # Extract source links for clean output
+            source_links = [result.get("link", "") for result in search_results[:5] if result.get("link")]
+            source_titles = [result.get("title", "") for result in search_results[:5] if result.get("title")]
+            
             return {
                 "verified": analysis["verified"],
                 "verdict": analysis["verdict"],
                 "message": analysis["message"],
-                "details": {
-                    "claim_text": text_input,
-                    "claim_context": claim_context,
-                    "claim_date": claim_date,
-                    "fact_checks": search_results,
-                    "analysis": analysis
-                }
+                "confidence": analysis.get("confidence", "medium"),
+                "reasoning": analysis.get("reasoning", "Analysis completed"),
+                "sources": {
+                    "links": source_links,
+                    "titles": source_titles,
+                    "count": len(search_results)
+                },
+                "claim_text": text_input,
+                "verification_date": claim_date
             }
             
         except Exception as e:
