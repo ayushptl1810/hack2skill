@@ -2,6 +2,8 @@
 
 import os
 import logging
+import json
+from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -49,41 +51,184 @@ def main_one_scan() -> dict:
         print("🔍 Running comprehensive trend analysis with Google Agents...")
         results = orchestrator.scan_trending_content()
         
-        print("\n" + "="*80)
-        print("📊 GOOGLE AGENTS ORCHESTRATION RESULTS")
-        print("="*80)
-        print(f"📈 Total trending posts found: {results['total_posts_found']}")
-        print(f"🌐 Posts with scraped content: {results['posts_with_scraped_content']}")
-        print(f"🔗 Total links scraped: {results['total_links_scraped']}")
-        print(f"⚠️  Risk distribution: {results['risk_distribution']}")
-        print(f"🕒 Timestamp: {results['timestamp']}")
-        print(f"🤖 Orchestration: {results['orchestration_type']}")
+        # Get all posts for batch processing
+        all_posts = results.get('trending_posts', [])
         
-        # Display high-priority posts with Google analysis
-        high_priority = [p for p in results['trending_posts'] if p.get('risk_level') == 'HIGH']
-        if high_priority:
-            print(f"\n🚨 HIGH PRIORITY POSTS ({len(high_priority)})")
-            print("-" * 50)
-            for i, post in enumerate(high_priority[:3]):
-                print(f"\n{i+1}. {post['title']}")
-                print(f"   📍 r/{post['subreddit']} | ⚡ {post['velocity_score']:.1f}/hr | 👍 {post['score']}")
-                print(f"   🎯 Risk: {post['risk_level']} | 📊 Source: {post['content_source']}")
+        if not all_posts:
+            final_output = {
+                "timestamp": results.get('timestamp', datetime.now().isoformat()),
+                "total_posts": 0,
+                "posts": []
+            }
+            print(json.dumps(final_output, indent=2, ensure_ascii=False))
+            return final_output
+        
+        # Prepare posts data for Gemini batch processing
+        posts_for_gemini = []
+        for i, post in enumerate(all_posts):
+            post_data = {
+                "post_id": i + 1,
+                "title": post.get('title', ''),
+                "content": post.get('selftext', ''),
+                "scraped_content": post.get('scraped_content', ''),
+                "subreddit": post.get('subreddit', ''),
+                "url": post.get('url', ''),
+                "permalink": post.get('permalink', ''),
+                "score": post.get('score', 0)
+            }
+            posts_for_gemini.append(post_data)
+        
+        # Send to Gemini for batch summarization
+        try:
+            import google.generativeai as genai
+            
+            # Configure Gemini
+            gemini_api_key = os.getenv('GEMINI_API_KEY')
+            if gemini_api_key:
+                genai.configure(api_key=gemini_api_key)
+                model = genai.GenerativeModel('gemini-2.0-flash-exp')
+                
+                # Create batch prompt for Gemini
+                batch_prompt = f"""
+You are a content analyzer. Analyze these {len(posts_for_gemini)} Reddit posts and return a JSON array with summaries and claims.
+
+For each post, extract:
+1. A clear, simple claim in plain English (what the post is asserting)
+2. A comprehensive summary combining the post content and any scraped external content
+
+Posts data:
+{json.dumps(posts_for_gemini, indent=2)}
+
+Return ONLY a JSON array in this exact format:
+[
+  {{
+    "post_id": 1,
+    "claim": "Simple claim in plain English",
+    "summary": "Comprehensive summary combining all content"
+  }},
+  {{
+    "post_id": 2, 
+    "claim": "Another claim in plain English",
+    "summary": "Another comprehensive summary"
+  }}
+]
+
+Requirements:
+- Keep claims simple and factual
+- Make summaries detailed but concise
+- Include key information from both post content and scraped content
+- Return ONLY the JSON array, no other text
+"""
+                
+                response = model.generate_content(batch_prompt)
+                response_text = response.text.strip()
+                
+                # Clean up response if needed
+                if response_text.startswith('```json'):
+                    response_text = response_text.replace('```json', '').replace('```', '').strip()
+                elif response_text.startswith('```'):
+                    response_text = response_text.replace('```', '').strip()
+                
+                # Parse Gemini response
+                gemini_results = json.loads(response_text)
+                
+                # Build final output using Gemini results
+                output_posts = []
+                for post, gemini_data in zip(all_posts, gemini_results):
+                    # Build post link
+                    if post.get('permalink'):
+                        post_link = f"https://reddit.com{post['permalink']}"
+                    elif post.get('url') and 'reddit.com' in post.get('url', ''):
+                        post_link = post['url']
+                    else:
+                        post_link = f"https://reddit.com/r/{post.get('subreddit', 'unknown')}"
+                    
+                    formatted_post = {
+                        "claim": gemini_data.get('claim', post.get('title', 'No claim identified')),
+                        "summary": gemini_data.get('summary', 'No summary available'),
+                        "platform": "reddit",
+                        "Post_link": post_link
+                    }
+                    
+                    output_posts.append(formatted_post)
+                
+            else:
+                # Fallback if no Gemini API key
+                logger.warning("No Gemini API key found, using basic summarization")
+                output_posts = []
+                
+                for post in all_posts:
+                    # Basic fallback summarization
+                    summary_parts = []
+                    if post.get('title'):
+                        summary_parts.append(f"Title: {post['title']}")
+                    if post.get('selftext') and post['selftext'].strip():
+                        summary_parts.append(f"Post Content: {post['selftext']}")
+                    if post.get('scraped_content'):
+                        summary_parts.append(f"External Content: {post['scraped_content']}")
+                    
+                    claim = post.get('title', 'No specific claim identified')
+                    summary = " | ".join(summary_parts) if summary_parts else "No content available"
+                    
+                    if post.get('permalink'):
+                        post_link = f"https://reddit.com{post['permalink']}"
+                    elif post.get('url') and 'reddit.com' in post.get('url', ''):
+                        post_link = post['url']
+                    else:
+                        post_link = f"https://reddit.com/r/{post.get('subreddit', 'unknown')}"
+                    
+                    formatted_post = {
+                        "claim": claim,
+                        "summary": summary,
+                        "platform": "reddit",
+                        "Post_link": post_link
+                    }
+                    
+                    output_posts.append(formatted_post)
+        
+        except Exception as e:
+            logger.error(f"Error in Gemini batch processing: {e}")
+            # Fallback to basic processing
+            output_posts = []
+            
+            for post in all_posts:
+                summary_parts = []
+                if post.get('title'):
+                    summary_parts.append(f"Title: {post['title']}")
+                if post.get('selftext') and post['selftext'].strip():
+                    summary_parts.append(f"Post Content: {post['selftext']}")
                 if post.get('scraped_content'):
-                    print(f"   🌐 External content analyzed: {len(post['scraped_content'])} chars")
+                    summary_parts.append(f"External Content: {post['scraped_content']}")
+                
+                claim = post.get('title', 'No specific claim identified')
+                summary = " | ".join(summary_parts) if summary_parts else "No content available"
+                
+                if post.get('permalink'):
+                    post_link = f"https://reddit.com{post['permalink']}"
+                elif post.get('url') and 'reddit.com' in post.get('url', ''):
+                    post_link = post['url']
+                else:
+                    post_link = f"https://reddit.com/r/{post.get('subreddit', 'unknown')}"
+                
+                formatted_post = {
+                    "claim": claim,
+                    "summary": summary,
+                    "platform": "reddit",
+                    "Post_link": post_link
+                }
+                
+                output_posts.append(formatted_post)
         
-        medium_priority = [p for p in results['trending_posts'] if p.get('risk_level') == 'MEDIUM']
-        if medium_priority:
-            print(f"\n⚠️ MEDIUM PRIORITY POSTS ({len(medium_priority)})")
-            print("-" * 50)
-            for post in medium_priority[:2]:
-                print(f"• {post['title'][:80]}...")
-                print(f"  r/{post['subreddit']} | {post['velocity_score']:.1f}/hr | {post['score']} points")
+        # Output as single JSON
+        final_output = {
+            "timestamp": results.get('timestamp', datetime.now().isoformat()),
+            "total_posts": len(output_posts),
+            "posts": output_posts
+        }
         
-        print(f"\n🤖 GOOGLE AGENTS ANALYSIS SUMMARY")
-        print("-" * 50)
-        print(results['risk_assessment'])
+        print(json.dumps(final_output, indent=2, ensure_ascii=False))
         
-        print("\n" + "="*80)
+        return final_output
         
     except Exception as e:
         logger.error(f"Error running enhanced scan: {e}")

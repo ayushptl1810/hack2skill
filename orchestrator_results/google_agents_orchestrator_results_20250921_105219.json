@@ -1,0 +1,17 @@
+{
+  "success": false,
+  "message": "Workflow processing failed: 'str' object has no attribute 'get'",
+  "error": "'str' object has no attribute 'get'",
+  "timestamp": "2025-09-21T10:52:19.499168",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20250921_104954",
+    "created_at": "2025-09-21T10:52:19.499168",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "results_integrator"
+    ]
+  }
+}

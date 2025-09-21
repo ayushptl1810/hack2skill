@@ -1,6 +1,6 @@
-# 🚀 Project Aegis - AI-Powered Misinformation Detection System
+# 🚀 Project Aegis - Complete Misinformation Detection Pipeline
 
-**An advanced Reddit trend scanning and misinformation detection system powered by Google Gemini 2.5 Flash and Google Agents SDK.**
+**An advanced end-to-end system for trend scanning, claim verification, and misinformation detection powered by Google Gemini AI and orchestrated agents.**
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
 [![Google AI](https://img.shields.io/badge/Google-Gemini%202.5%20Flash-brightgreen.svg)](https://ai.google.dev)
@@ -9,45 +9,66 @@
 ## 📋 Table of Contents
 
 - [🎯 Overview](#-overview)
+- [🏗️ System Architecture](#️-system-architecture)
 - [✨ Key Features](#-key-features)
-- [🏗️ Architecture](#️-architecture)
 - [🚀 Quick Start](#-quick-start)
 - [⚙️ Configuration](#️-configuration)
 - [📖 Usage](#-usage)
-- [🔧 Advanced Features](#-advanced-features)
-- [📊 Performance](#-performance)
+- [🔧 Pipeline Components](#-pipeline-components)
+- [📊 Output Format](#-output-format)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
 ## 🎯 Overview
 
-Project Aegis is a sophisticated misinformation detection system designed to monitor Reddit for rapidly trending posts that may contain false, misleading, or harmful content. The system leverages Google's latest AI technology to provide real-time analysis and risk assessment of social media trends.
+Project Aegis is a comprehensive misinformation detection pipeline that combines Reddit trend scanning, AI-powered content analysis, and automated fact-checking to provide real-time detection and verification of potentially harmful content.
 
 ### 🎪 Mumbai Hacks Project
 
-This project was developed for **Mumbai Hacks**, focusing on combating misinformation through advanced AI analysis and early detection of potentially harmful content spreading across social media platforms.
+This project was developed for **Mumbai Hacks**, featuring a complete automated pipeline that:
+- **Scans Reddit** for trending posts across multiple subreddits
+- **Generates AI summaries** and extracts claims using Google Gemini
+- **Fact-checks claims** against reliable sources with automated verification
+- **Provides structured output** ready for content moderation systems
 
 ### 🔍 Problem Statement
 
 With the rapid spread of misinformation on social media, there's a critical need for automated systems that can:
 - **Detect trending content** before it goes viral
-- **Assess misinformation risk** using AI analysis
-- **Provide actionable insights** for content moderators
-- **Scale efficiently** across multiple platforms
+- **Extract and verify claims** automatically using AI
+- **Provide comprehensive fact-checking** with reliable sources
+- **Scale efficiently** across multiple platforms with minimal human intervention
+
+## 🏗️ System Architecture
+
+```
+📱 Reddit Posts → 🔍 Trend Scanner → 🤖 Claim Extraction → ✅ Fact Verification → 📊 Final Results
+                          ↓                    ↓                     ↓
+                    Gemini AI            Orchestrator          Google Search + AI
+                  (Summarization)      (Coordination)        (Fact Checking)
+```
+
+### 🎯 **Three-Tier Architecture**
+
+1. **Trend Scanner Agent** - Monitors Reddit and generates AI summaries
+2. **Claim Verifier Agent** - Fact-checks extracted claims using Google Search
+3. **Orchestrator Agent** - Coordinates the complete pipeline workflow
 
 ## ✨ Key Features
 
-### 🤖 **AI-Powered Analysis**
-- **Google Gemini 2.5 Flash** - Latest and fastest Google AI model
-- **Batch Processing** - Efficient analysis of multiple posts simultaneously
-- **Multi-factor Risk Assessment** - Comprehensive misinformation scoring
-- **Context-Aware Analysis** - Understanding of social and political context
+### 🤖 **AI-Powered Complete Pipeline**
+- **Google Gemini 2.5 Flash** - Latest AI model for content analysis and summarization
+- **Automated Claim Extraction** - AI identifies verifiable claims from posts
+- **Comprehensive Fact-Checking** - Google Custom Search + AI analysis
+- **Batch Processing** - Efficient processing with minimal API calls
+- **End-to-End Automation** - Complete pipeline from detection to verification
 
-### 📊 **Real-Time Monitoring**
+### 📊 **Real-Time Detection & Verification**
 - **Live Reddit Scanning** - Continuous monitoring of multiple subreddits
-- **Velocity Tracking** - Detection of rapidly gaining posts
-- **Trend Identification** - Early warning system for viral content
-- **Risk Prioritization** - Focus on high-risk content first
+- **Velocity Tracking** - Detection of rapidly trending posts
+- **Automated Fact-Checking** - Real-time verification against reliable sources
+- **Risk Assessment** - Priority scoring for high-risk content
+- **Structured Output** - JSON format ready for integration
 
 ### 🛠️ **Advanced Technology Stack**
 - **Google Agents SDK** - Multi-agent orchestration framework
@@ -56,40 +77,12 @@ With the rapid spread of misinformation on social media, there's a critical need
 - **Comprehensive Logging** - Full audit trail of all operations
 
 ### 🎯 **Configurable Targeting**
+### 🎯 **Configurable Targeting**
+
 - **Multi-Subreddit Support** - Scan multiple communities simultaneously
 - **Customizable Thresholds** - Adjust sensitivity based on content type
 - **Flexible Risk Levels** - HIGH/MEDIUM/LOW classification system
 - **Actionable Recommendations** - Clear next steps for each detected post
-
-## 🏗️ Architecture
-
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│  Reddit API     │───▶│  Trend Scanner   │───▶│  Risk Assessor  │
-│  Data Source    │    │  Agent           │    │  Agent          │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                │                        │
-                                ▼                        ▼
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│  Web Scraper    │◀───│  Batch Processing│───▶│  Risk Analysis  │
-│  External Links │    │  Engine          │    │  Reports        │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                │
-                                ▼
-                    ┌──────────────────┐
-                    │  Google Gemini   │
-                    │  2.5 Flash AI    │
-                    └──────────────────┘
-```
-
-### 🔄 **Workflow Process**
-
-1. **Data Collection**: Scan target subreddits for new posts
-2. **Content Extraction**: Scrape external links for additional context
-3. **Batch Processing**: Group posts for efficient AI analysis
-4. **Risk Assessment**: AI-powered evaluation of misinformation indicators
-5. **Prioritization**: Rank posts by combined risk and velocity scores
-6. **Reporting**: Generate actionable insights and recommendations
 
 ## 🚀 Quick Start
 
@@ -98,6 +91,7 @@ With the rapid spread of misinformation on social media, there's a critical need
 - **Python 3.8+**
 - **Google AI API Key** (Gemini 2.5 Flash access)
 - **Reddit API Credentials** (Client ID & Secret)
+- **Google Custom Search API** (for fact-checking)
 
 ### ⚡ Installation
 
@@ -121,16 +115,79 @@ With the rapid spread of misinformation on social media, there's a critical need
 4. **Configure environment variables**
    ```bash
    cp .env.example .env
-   # Edit .env with your API keys
+   # Edit .env with your API keys (see Configuration section)
    ```
 
 ### 🏃‍♂️ Quick Run
 
+**Complete Pipeline (Recommended)**
 ```bash
-python trend_scanner_agent.py
+python run_pipeline.py --mode full
 ```
 
-That's it! The system will start scanning the predefined subreddits and provide real-time analysis.
+**Individual Components**
+```bash
+# Trend scanning only
+python run_pipeline.py --mode trend-only
+
+# Or run components directly
+python orchestrator_agent.py           # Full orchestrator
+python trend_scanner_agent.py          # Trend scanning + AI summarization  
+python claim_verifier_agent.py --operation verify-claim --claim "Your claim"
+```
+
+### 📊 Expected Output
+
+The system outputs structured JSON with verified claims:
+
+```json
+{
+  "timestamp": "2024-01-15T10:30:00",
+  "total_posts": 3,
+  "posts": [
+    {
+      "claim": "Government plans to ban social media platforms",
+      "summary": "Comprehensive AI-generated summary combining post content and external sources...",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/conspiracy/comments/abc123",
+      "verification": {
+        "verified": true,
+        "verdict": "false",
+        "message": "This claim has been debunked by multiple fact-checkers",
+        "details": {
+          "confidence": "high",
+          "sources_found": 5
+        }
+      }
+    }
+  ]
+}
+```
+
+## 🔧 Pipeline Components
+
+### 1. **Orchestrator Agent** (`orchestrator_agent.py`)
+- **Coordinates complete pipeline** from trend scanning to fact-checking
+- **Manages workflow** between all components
+- **Combines results** into final structured output
+- **Session management** with comprehensive logging
+
+### 2. **Trend Scanner Agent** (`trend_scanner_agent.py`)
+- **Reddit API integration** for live post monitoring
+- **Gemini AI batch processing** for claim extraction and summarization
+- **Velocity tracking** for rapid trend detection
+- **Risk assessment** based on content patterns
+
+### 3. **Claim Verifier Agent** (`claim_verifier_agent.py`)
+- **Google Custom Search** integration for fact-checking
+- **Multi-agent verification** with specialized roles
+- **Source credibility analysis** using reliable fact-checkers
+- **Confidence scoring** for verification results
+
+### 4. **Integration Layer** (`run_pipeline.py`)
+- **Simple launcher** for complete pipeline
+- **Mode selection** for different use cases
+- **Error handling** with graceful fallbacks
 
 ## ⚙️ Configuration
 
@@ -139,47 +196,87 @@ That's it! The system will start scanning the predefined subreddits and provide 
 Create a `.env` file in the project root:
 
 ```env
-# Google AI Configuration
-GOOGLE_API_KEY=your_google_api_key_here
+# Google AI Configuration  
 GEMINI_API_KEY=your_gemini_api_key_here
 
 # Reddit API Configuration
 REDDIT_CLIENT_ID=your_reddit_client_id
 REDDIT_CLIENT_SECRET=your_reddit_client_secret
 
-# Optional: Logging Level
-LOG_LEVEL=INFO
-```
+# Fact-Checking APIs
+GOOGLE_FACT_CHECK_API_KEY=your_google_search_api_key
+GOOGLE_FACT_CHECK_CX=your_custom_search_engine_id
 
-### 🎯 **Target Subreddits**
-
-Edit the `TARGET_SUBREDDITS` list in `trend_scanner_agent.py`:
-
-```python
-TARGET_SUBREDDITS = [
-    'worldnews',      # Global news and events
-    'technology',     # Tech trends and news
-    'politics',       # Political discussions
-    'news',           # General news
-    'conspiracy',     # Conspiracy theories (high-risk)
-    'science',        # Scientific discussions
-    'economics',      # Economic news and analysis
-    'climate'         # Climate-related content
 ]
 ```
 
-### ⚙️ **Risk Thresholds**
+### ⚙️ **API Configuration**
+
+For Google Custom Search (required for fact-checking):
+
+1. **Create Custom Search Engine**: Visit [Google CSE](https://cse.google.com/cse/)
+2. **Configure fact-checking sites**: Include snopes.com, politifact.com, factcheck.org, reuters.com/fact-check
+3. **Get Search Engine ID**: Copy the "Search engine ID" from settings
+4. **Enable Custom Search API**: In Google Cloud Console
+
+### 🎯 **Risk Thresholds**
 
 Adjust sensitivity in `trend_scanner/tools.py`:
 
 ```python
-# Velocity thresholds by risk level
-RISK_THRESHOLDS = {
-    "HIGH": 0.2,     # Lower threshold = more sensitive
-    "MEDIUM": 0.4,   # Moderate sensitivity
-    "LOW": 0.8       # Higher threshold = less sensitive
+# Adjust filtering sensitivity
+VELOCITY_THRESHOLD = 5      # Posts per hour threshold
+MIN_SCORE_THRESHOLD = 10    # Minimum Reddit score
+```
+
+## 📊 Output Format
+
+The complete pipeline produces structured JSON output with four key components per post:
+
+### **Standard Output Structure**
+
+```json
+{
+  "timestamp": "2024-01-15T10:30:00.000Z",
+  "total_posts": 3,
+  "posts": [
+    {
+      "claim": "Simple claim in plain English",
+      "summary": "Comprehensive AI-generated summary combining post content and external sources",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/subreddit/comments/postid",
+      "verification": {
+        "verified": true,
+        "verdict": "false|true|mixed|uncertain", 
+        "message": "Human-readable verification result",
+        "details": {
+          "confidence": "high|medium|low",
+          "sources_found": 5,
+          "analysis_method": "gemini",
+          "reasoning": "Detailed AI analysis explanation"
+        }
+      }
+    }
+  ]
 }
 ```
+
+### **Verification Verdicts**
+
+- **`true`**: Claim is accurate and supported by evidence
+- **`false`**: Claim is false or misleading
+- **`mixed`**: Claim contains both true and false elements
+- **`uncertain`**: Insufficient evidence to determine accuracy
+- **`error`**: Verification process failed
+
+### **Integration-Ready Format**
+
+The output is designed for easy integration with:
+- **Content moderation systems**
+- **Social media monitoring tools**
+- **Fact-checking platforms**
+- **Research databases**
+- **Alert systems**
 
 ## 📖 Usage
 
